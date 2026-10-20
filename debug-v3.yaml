@@ -1,0 +1,103 @@
+- generic [ref=f15e3]:
+  - banner [ref=f15e4]:
+    - link "✣ AEROFIBER AF–18" [ref=f15e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f15e6]: ✣
+      - text: AEROFIBER
+      - generic [ref=f15e7]: AF–18
+    - generic [ref=f15e8]: 3D EXPLORER
+  - main [ref=f15e10]:
+    - generic:
+      - text: КАРБОНОВАЯ ПЛАТФОРМА / AF-18-CFST
+      - heading "Рассмотрите каждую деталь." [level=1]
+      - paragraph: Вращайте дрон. Нажмите на компонент, чтобы узнать больше.
+    - generic [ref=f15e11]:
+      - 'generic "Интерактивная 3D-модель дрона: перетащите для вращения, нажмите на деталь для характеристик" [ref=f15e12]':
+        - generic [ref=f15e13] [cursor=pointer]
+      - generic:
+        - text: AF–18
+        - generic: ASSEMBLY / 01
+    - generic [ref=f15e14]:
+      - generic [ref=f15e15]:
+        - button "3D" [ref=f15e16] [cursor=pointer]
+        - button "Сверху" [ref=f15e17] [cursor=pointer]
+        - button "Спереди" [ref=f15e18] [cursor=pointer]
+      - button "Разобрать" [ref=f15e20] [cursor=pointer]
+      - button "Автовращение" [ref=f15e25] [cursor=pointer]
+      - button "Исследовать компоненты" [ref=f15e29] [cursor=pointer]
+    - generic:
+      - generic: Перетащите для вращения
+      - generic: Прокрутите для приближения
+      - generic: Нажмите на деталь
+  - contentinfo [ref=f15e34]:
+    - generic [ref=f15e35]: 3D-реконструкция по вашему референсу
+    - button "Официальные источники · проверено 21.10.2026" [ref=f15e36] [cursor=pointer]
+  - dialog "Бортовой компьютер" [ref=f15e41]:
+    - button "Закрыть характеристики" [ref=f15e42] [cursor=pointer]
+    - generic [ref=f15e46]:
+      - generic [ref=f15e47]:
+        - text: Электроника
+        - generic [ref=f15e49]: 10 / AF–18
+      - heading "Бортовой компьютер" [level=2] [ref=f15e50]
+      - paragraph [ref=f15e51]: Raspberry Pi 4
+    - generic [ref=f15e52]:
+      - complementary [ref=f15e53]:
+        - generic "Отдельная 3D-модель компонента" [ref=f15e54]: ВРАЩАЙТЕ ДЕТАЛЬ ДЛЯ ОСМОТРА
+        - generic [ref=f15e56]: Модель известна
+        - paragraph [ref=f15e61]: Бортовой компьютер может записывать изображения, обрабатывать данные и выполнять алгоритмы компьютерного зрения. Он дополняет полётный контроллер, а не заменяет его быстрый контур стабилизации.
+        - generic [ref=f15e62]:
+          - text: СВЯЗАНО С КОМПОНЕНТАМИ
+          - generic [ref=f15e63]:
+            - button "Полётный контроллер" [ref=f15e64] [cursor=pointer]
+            - button "Камера" [ref=f15e67] [cursor=pointer]
+            - button "Охлаждение компьютера" [ref=f15e70] [cursor=pointer]
+            - button "BEC для Raspberry Pi" [ref=f15e73] [cursor=pointer]
+      - generic [ref=f15e76]:
+        - tablist "Разделы паспорта" [ref=f15e77]:
+          - tab "О детали" [active] [selected] [ref=f15e78] [cursor=pointer]
+          - tab "Параметры" [ref=f15e79] [cursor=pointer]
+          - tab "Источники 1" [ref=f15e80] [cursor=pointer]:
+            - text: Источники
+            - generic [ref=f15e81]: "1"
+        - tabpanel [ref=f15e82]:
+          - generic [ref=f15e83]:
+            - text: ИНЖЕНЕРНЫЙ ФАКТ
+            - heading "Два компьютера — разные задачи" [level=3] [ref=f15e84]
+            - paragraph [ref=f15e85]: Pi удобен для Linux и работы с изображениями, FC — для детерминированного управления. Конкретные задачи, обмен данными и программное обеспечение этой сборки ещё не заданы.
+          - generic [ref=f15e86]:
+            - text: ИЗ ОФИЦИАЛЬНОГО ПАСПОРТА
+            - generic [ref=f15e87]:
+              - generic [ref=f15e88]:
+                - term [ref=f15e89]: SoC
+                - definition [ref=f15e90]: Broadcom BCM2711
+              - generic [ref=f15e91]:
+                - term [ref=f15e92]: CPU
+                - definition [ref=f15e93]: 4 × ARM Cortex-A72, 64 бита
+              - generic [ref=f15e94]:
+                - term [ref=f15e95]: Частота по текущему паспорту
+                - definition [ref=f15e96]: 1.8 ГГц
+            - link "Raspberry Pi — официальный паспорт Pi 4 ↗" [ref=f15e97] [cursor=pointer]:
+              - /url: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/
+          - paragraph [ref=f15e103]: Для б/у платы необходимо проверить ревизию и состояние. Накопитель и операционная система в сборке не определены.
+          - 'link "Источник пояснения: Raspberry Pi — официальный паспорт Pi 4 ↗" [ref=f15e104] [cursor=pointer]':
+            - /url: https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/
+    - generic [ref=f15e105]:
+      - button "Предыдущий компонент" [ref=f15e106] [cursor=pointer]: ←
+      - combobox "Выбрать компонент" [ref=f15e107]:
+        - option "01 · Карбоновая рама"
+        - option "02 · Бесколлекторные моторы"
+        - option "03 · Регуляторы скорости"
+        - option "04 · Пропеллеры"
+        - option "05 · Полётный контроллер"
+        - option "06 · Силовая плата / жгут"
+        - option "07 · BEC для Raspberry Pi"
+        - option "08 · BEC контроллера"
+        - option "09 · Аккумулятор"
+        - option "10 · Бортовой компьютер" [selected]
+        - option "11 · Охлаждение компьютера"
+        - option "12 · GNSS + компас"
+        - option "13 · Радиоприёмник"
+        - option "14 · Камера"
+        - option "15 · Зарядное устройство"
+        - option "16 · Проводка и крепёж"
+      - button "Следующий компонент" [ref=f15e108] [cursor=pointer]: →

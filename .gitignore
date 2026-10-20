@@ -6,3 +6,4 @@ qa*.js
 *-snapshot.yaml
 redesign.mjs
 assets-setup.mjs
+upgrade-*.mjs
