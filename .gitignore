@@ -1,5 +1,6 @@
 node_modules/
 dist/
+pages-dist/
 *.png
 *.log
 qa*.js
@@ -7,3 +8,17 @@ qa*.js
 redesign.mjs
 assets-setup.mjs
 upgrade-*.mjs
+.openai/
+DNS-SETUP.md
+debug-*.yaml
+.playwright/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.tmp
+*.tar.gz
