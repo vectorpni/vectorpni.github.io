@@ -22,3 +22,44 @@ select:focus-visible,[tabindex]:focus-visible{outline:2px solid #2f6d57;outline-
 @media(max-width:700px){header{height:56px}.studio{min-height:0}.title{padding:16px 16px 0}.title>span{font-size:8px;letter-spacing:1px}.title h1{font-size:clamp(23px,6.2vw,28px);max-width:380px;margin:10px auto;letter-spacing:-.7px}.title p{font-size:12px;max-width:360px;line-height:1.6}.model-stage{inset:auto;flex:none;height:clamp(250px,42svh,430px);min-height:250px}.side-index{display:none}.controls{display:grid;grid-template-columns:repeat(5,1fr);width:min(390px,calc(100% - 24px));gap:3px;padding:5px}.view-controls{grid-column:1/4;display:grid;grid-template-columns:repeat(3,1fr);gap:3px}.view-controls>button{padding:8px 5px;font-size:11px}.controls .separator{display:none}.controls .tool{grid-column:4/6;justify-content:center;font-size:11px;padding:8px 4px}.controls .icon{width:100%;height:44px}.controls .icon:last-child{grid-column:4/6}.controls .reset{grid-column:2/4}.desktop-instructions{display:none}.mobile-instructions{display:block;font-size:12px;line-height:1.65;color:#4d6555;text-align:center;margin:12px auto 16px;padding:0 18px;max-width:400px}footer{display:block;margin:0 5%;padding:14px 0}.project-description{font-size:11px}.project-description span{font-size:10px}footer>button{font-size:11px;text-align:left;margin-top:4px}.hover-label{bottom:0;font-size:11px}.modal-top h2{font-size:22px}.component-visual{grid-template-columns:100px minmax(0,1fr);padding:16px;gap:10px}.part-preview{height:130px}.component-summary{font-size:11px}.related button{font-size:10px;min-height:44px}.tab-content{padding:18px 16px}.modal-tabs{padding:0 16px;gap:20px}.modal-navigation{padding:8px 12px}.modal-navigation>select{font-size:11px}.fact-card p,.reference-intro p,.source-intro p{font-size:12px}.spec-section dd,.spec-section dt{font-size:11px}.source-card b{font-size:12px}.source-card p{font-size:11px}dd,.source-card,.inline-source{overflow-wrap:anywhere}.modal-top .modal-eyebrow{font-size:9px;flex-wrap:wrap}.part-number{font-size:8px}.preview-caption{font-size:7px;letter-spacing:0}.spec-modal.enriched{max-height:calc(100dvh - 26px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}
 @media(max-width:350px){.title h1{font-size:23px}.title p{font-size:11px}.component-visual{display:block}.part-preview{height:160px;margin-bottom:12px}.component-summary{margin:10px 0}.related{margin-top:12px}.modal-top{padding-left:16px}.modal-tabs{gap:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Vector PNI 2.0: restrained motion and an unobstructed engineering workspace. */
+.model-stage .three-view canvas{opacity:0;transition:opacity .32s ease-out}
+.model-stage.ready .three-view canvas{opacity:1}
+.header-caption{font-size:9px;color:#5d7065;letter-spacing:1.6px}
+.live{font-size:9px;color:#516c5b}.brand small{color:#5a6f63}
+.side-index{color:#52685b;font-size:11px}.side-index>span{font-size:8px;color:#64786c}
+.controls .tool{background:#e4ede6;border:1px solid #c7d7ca;border-radius:7px;color:#294c37;font-weight:600;padding-inline:14px}
+.controls .tool:hover{background:#d4e3d7}.controls .tool.active{background:#294735;color:#fff;border-color:#294735}
+.controls button{transition:background .18s,color .18s,box-shadow .18s}
+.controls button:active{box-shadow:inset 0 0 0 1px #29473550}
+.controls .icon.active{box-shadow:inset 0 0 0 1px #a9bfae}
+.about-label{display:block;font-size:10px;letter-spacing:1px;font-weight:600;color:#365943;margin-bottom:5px}
+.project-description{max-width:740px}.project-description span{margin-top:3px}
+@media(min-width:1100px){
+  .title{padding-top:18px}.title h1{margin:10px auto}.model-stage{height:clamp(340px,52svh,660px)}
+  .inspecting .studio{width:calc(100% - 464px)}
+  .inspecting .title h1{font-size:clamp(26px,2.25vw,33px);max-width:620px}
+  .inspecting footer{width:calc(92% - 464px);margin-right:0;flex-wrap:wrap;gap:4px 16px}
+  .modal-overlay{background:transparent;backdrop-filter:none;pointer-events:none;display:block;padding:0;animation:none}
+  .spec-modal.enriched{position:fixed;top:88px;right:24px;bottom:24px;width:416px;max-width:416px;max-height:none;pointer-events:auto;box-shadow:0 16px 60px #17332718;border:1px solid #d9e3dc;border-radius:16px;animation:inspector-in .24s ease-out}
+  .modal-top{padding:22px 54px 18px 22px}.modal-top h2{font-size:23px;line-height:1.25}.modal-top .modal-eyebrow{font-size:10px;flex-wrap:wrap;padding:0}.part-number{font-size:8px}
+  .modal-body{display:block;overflow:auto;overscroll-behavior:contain}
+  .component-visual{display:grid;grid-template-columns:116px minmax(0,1fr);gap:10px 14px;border-right:0;border-bottom:1px solid #e1e8e0;padding:18px;overflow:visible}
+  .part-preview{height:150px;grid-row:1/4}.preview-caption{font-size:7px;letter-spacing:0}
+  .evidence-badge{margin:0;font-size:10px;align-items:start}.component-summary{grid-column:2;margin:0;font-size:11px;line-height:1.8}.related{grid-column:1/-1}.related>div{margin-top:8px}.related button{min-height:36px}
+  .component-content{display:block}.modal-tabs{position:sticky;top:0;z-index:2;background:#f9fbfa;padding:0 20px;gap:24px}.tab-content{overflow:visible;padding:20px}.modal-navigation{padding:10px 14px}.modal-navigation>span{display:none}.modal-navigation>select{flex:1;max-width:none;min-width:0;font-size:11px}
+}
+@keyframes inspector-in{from{opacity:0;transform:translateX(10px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:1099px){.modal-overlay{align-items:end}.spec-modal.enriched{max-height:min(78svh,calc(100svh - 26px - env(safe-area-inset-top) - env(safe-area-inset-bottom)))}}
+@media(max-width:700px){
+  .live{font-size:7px}.title{padding-top:13px}.title h1{font-size:clamp(22px,5.9vw,26px);margin:9px auto;max-width:370px}.title p{font-size:12px;line-height:1.55}
+  .controls .tool{padding:8px 5px;font-size:11px}.model-stage{height:clamp(255px,43svh,430px)}
+  .modal-top{padding-top:18px;padding-bottom:14px}.modal-top h2{font-size:21px}
+}
+@media(max-height:500px) and (orientation:landscape){
+  header{height:48px}.title{padding-top:12px}.title h1{font-size:25px;margin:8px auto}.model-stage{height:290px;min-height:290px;flex:none}.studio{min-height:0}.spec-modal.enriched{max-height:calc(100svh - 20px)}.modal-top{padding-top:14px;padding-bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){.model-stage .three-view canvas{transition:none}.spec-modal.enriched{animation:none}}
+
+@media(min-width:701px){.drone-page{min-height:100svh}}

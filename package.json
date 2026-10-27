@@ -6,7 +6,8 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "build:pages": "vite build --base / --outDir pages-dist",
-    "preview:pages": "vite preview --outDir pages-dist --host 127.0.0.1"
+    "preview:pages": "vite preview --outDir pages-dist --host 127.0.0.1",
+    "test:motion": "node --test tests/viewer-motion.test.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",
