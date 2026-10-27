@@ -1,0 +1,12 @@
+[
+  {
+    "base": "http://127.0.0.1:5176",
+    "liveBuffers": 4117,
+    "bufferBytes": 19898684
+  },
+  {
+    "base": "http://127.0.0.1:5175",
+    "liveBuffers": 704,
+    "bufferBytes": 2994492
+  }
+]

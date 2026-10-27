@@ -24,3 +24,6 @@ debug-*.yaml
 *.tar.gz
 
 browser-state/
+
+bench/spring-kernel.js
+bench/spring-kernel.wasm
