@@ -15,8 +15,7 @@ npm.cmd run preview:pages -- --port 5174 --strictPort
 ```
 
 Open http://127.0.0.1:5174/. The Pages build uses `/` as its base and writes
-to `pages-dist`, preserving the existing `dist` directory. It does not clean
-old output; for releases use the fresh GitHub Actions checkout so stale assets
+to `pages-dist`, preserving the existing `dist` directory. Vite cleans the Pages output directory before each build so stale assets
 cannot accumulate. Node 24 and the committed package-lock.json are used in CI.
 
 ## Publication after explicit approval
@@ -65,8 +64,21 @@ preserved in README-SITE.md. DNS-SETUP.md, debug-v3.yaml and .openai/hosting.jso
 are removed only from the Git index, remain on disk, and are ignored going forward.
 They remain accessible in the retained historical commits.
 
-The current Pages source was verified as `main` / root (`legacy` build).
+At the initial preparation on 2026-10-21, Pages used `main` / root (`legacy` build).
 Before uploading source, switch Settings > Pages > Source to GitHub Actions;
 otherwise a push may trigger the existing branch-based Pages publication.
 No push, Actions run, Pages setting change or site publication is authorized
 as part of the local preparation.
+
+## Release configuration verified on 2026-10-27
+
+The authenticated GitHub API confirms that the default branch is `main`, the
+current account has push permission, Pages uses `workflow` (GitHub Actions),
+and `pages.yml` is active. The repository is
+`vectorpni/vectorpni.github.io`. The user has explicitly authorized committing,
+pushing and publishing the audited release in the current task.
+
+The final `build:pages` succeeds with `/` as its base. Only `pages-dist` is
+uploaded by the workflow; reports, browser tests and source files are not part
+of the static artifact. Dependencies and workflow action pins are unchanged.
+The workflow still requires an explicit dispatch after pushing to `main`.

@@ -22,3 +22,5 @@ debug-*.yaml
 *.pfx
 *.tmp
 *.tar.gz
+
+browser-state/
