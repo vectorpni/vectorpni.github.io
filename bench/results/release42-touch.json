@@ -1,0 +1,11 @@
+{
+  "checks": 6,
+  "passed": [
+    "pinch does not select a component",
+    "emulated pinch visibly zooms model",
+    "touch drag does not select a component",
+    "emulated touch drag rotates model",
+    "emulated tap selects component",
+    "touch closes component"
+  ]
+}

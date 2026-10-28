@@ -1,7 +1,9 @@
+import {createPreviewPart} from './viewer-preview.js';
+import {applyStudioMaterials,configureStudioLighting,createStudioEnvironment} from './viewer-presentation.js';
+import {addUltraDetail} from './ultra-detail.js';
 import {instancePartMeshes,getPartSourceMeshes} from './viewer-instancing.js';
 import {springTo, assemblyOffsets} from './viewer-motion.js';
 ﻿import {refineReference} from './reference-detail.js';
-import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import React,{useEffect,useRef,useState} from 'react';import{createRoot}from'react-dom/client';import * as THREE from 'three';import{OrbitControls}from'three/addons/controls/OrbitControls.js';import{RoundedBoxGeometry}from'three/addons/geometries/RoundedBoxGeometry.js';import{ArrowUpRight,RotateCcw,Layers,MousePointer2,Move,ChevronRight,X,Box,Info}from'lucide-react';import './style.css';import{knowledge}from'./knowledge.js';
 const parts=[
 {id:'frame',name:'Карбоновая рама',type:'Конструкция',model:'Аэрофайбер AF-18-CFST',qty:'1',specs:[['Модель','AF-18-CFST'],['Производитель','Аэрофайбер'],['Количество','1 рама']],note:'Габариты, масса и толщина карбона в исходной таблице не указаны.'},
@@ -22,8 +24,8 @@ const parts=[
 {id:'wiring',name:'Проводка и крепёж',type:'Конструкция',model:'XT90-S · монтажный комплект',qty:'1 комплект',specs:[['Разъём','XT90-S'],['Электрика','Провода, конденсатор'],['Крепёж','Стропы, мини-крепёж'],['Демпфирование','Виброизоляция']],note:'Сечения проводов, номинал конденсатора и размеры крепежа не указаны.'}
 ];
 function Viewer({selected,onSelect,exploded,auto,view,reset,onReady,onError,onHover,onInteract,suspended,apiRef}){const el=useRef(),state=useRef({});useEffect(()=>{let renderer;try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true})}catch(e){onError?.('Не удалось запустить 3D. Проверьте поддержку WebGL и аппаратное ускорение браузера. Компоненты доступны через кнопку с кубом.');return}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=false;renderer.shadowMap.type=THREE.VSMShadowMap;renderer.setClearColor(0x101412,0);renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.88;el.current.appendChild(renderer.domElement);const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(36,1,.1,100);camera.position.set(4.8,5.5,9.5);const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.minDistance=3.3;controls.maxDistance=17;controls.maxPolarAngle=Math.PI*.88;controls.target.set(0,-.1,0);scene.add(new THREE.HemisphereLight(0xf3f6ff,0x8d959f,1.5));const light=new THREE.DirectionalLight(0xfffaf2,2.5);light.position.set(-3,8,5);light.castShadow=false;light.shadow.mapSize.set(2048,2048);light.shadow.radius=5;light.shadow.blurSamples=12;light.shadow.bias=-.0002;light.shadow.normalBias=.025;scene.add(light);const rim=new THREE.DirectionalLight(0xdbe8ff,.7);rim.position.set(-5,3,-4);scene.add(rim);
-function createEnvironment(){const room=new RoomEnvironment(),pmrem=new THREE.PMREMGenerator(renderer);try{return pmrem.fromScene(room,.04);}finally{pmrem.dispose();room.dispose();}}
-let environment=createEnvironment();scene.environment=environment.texture;scene.environmentIntensity=.55;
+function createEnvironment(){return createStudioEnvironment(renderer);}
+let environment=createEnvironment();scene.environment=environment.texture;configureStudioLighting(scene,renderer);
 const drone=new THREE.Group();scene.add(drone);const meshes=[],groups={};const mat=(c,metal=.2,rough=.5)=>new THREE.MeshStandardMaterial({color:c,metalness:metal,roughness:rough});const carbon=mat('#242b2a',.65,.42),black=mat('#121817',.5,.45),grey=mat('#454c53',.45,.42),red=mat('#b83239',.4,.5),green=mat('#264b38'),gold=mat('#d4aa46',.7,.25),rubber=mat('#202321');
 parts.forEach(p=>{const g=new THREE.Group();g.userData.part=p.id;drone.add(g);groups[p.id]=g});
 const primitiveGeometries=new Map();const geometry=(key,create)=>{if(!primitiveGeometries.has(key))primitiveGeometries.set(key,create());return primitiveGeometries.get(key);};
@@ -64,6 +66,8 @@ for(const x of[-1,1]){for(const z of[-.65,.65]){const clamp=box('frame',black,x*
 const gpsRim=mesh(new THREE.TorusGeometry(.253,.012,8,48),black,'gps',-.62,1.88,-.78);gpsRim.rotation.x=Math.PI/2;for(let i=0;i<4;i++){let a=i*Math.PI/2;screw('gps',-.62+Math.cos(a)*.17,1.927,-.78+Math.sin(a)*.17,.014)}for(const x of[-.2,.2])for(const y of[-1.38,-1.12]){const bolt=cyl('camera',solder,x,y,.438,.014,.015);bolt.rotation.x=Math.PI/2}cable('camera','#252930',[[.2,-1.25,.05],[.4,-1.1,-.1],[.3,-.45,-.4]],.018);cyl('radio',grey,.71,1.01,-.76,.043,.09);box('radio',green,.72,.9,-.61,.16,.08,.02);
 
 refineReference({groups,meshes,mesh,box,cyl,rod,mat,carbon,black,grey,red,rubber});
+addUltraDetail({groups,meshes,mesh,carbon,black,grey,rubber});
+applyStudioMaterials(groups,weave,Math.min(8,renderer.capabilities.getMaxAnisotropy()));
 // Contact shadow on a seamless photographic studio floor.
 const floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.ShadowMaterial({opacity:.14}));floor.rotation.x=-Math.PI/2;floor.position.y=-1.79;floor.receiveShadow=true;scene.add(floor);
 const shadowCanvas=document.createElement('canvas');shadowCanvas.width=shadowCanvas.height=256;const shadowContext=shadowCanvas.getContext('2d');const gradient=shadowContext.createRadialGradient(128,128,8,128,128,125);gradient.addColorStop(0,'rgba(39,47,56,.26)');gradient.addColorStop(.35,'rgba(39,47,56,.17)');gradient.addColorStop(.7,'rgba(39,47,56,.06)');gradient.addColorStop(1,'rgba(39,47,56,0)');shadowContext.fillStyle=gradient;shadowContext.fillRect(0,0,256,256);const contact=new THREE.Mesh(new THREE.PlaneGeometry(7.5,6),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(shadowCanvas),transparent:true,depthWrite:false}));contact.rotation.x=-Math.PI/2;contact.position.set(.35,-1.785,.1);scene.add(contact);
@@ -80,6 +84,8 @@ scene.updateMatrixWorld(true);
 // Cache world-space mesh bounds once; fit the camera, never scale the model.
 const framing=[];for(const m of meshes){const box=new THREE.Box3().setFromObject(m),offset=assemblyOffsets[m.userData.part]||[0,0,0];for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z])framing.push({x,y,z,offset});}
 instancePartMeshes(groups,meshes);
+// Scene transforms change only during assembly; camera transforms stay automatic.
+scene.updateMatrixWorld(true);scene.matrixWorldAutoUpdate=false;
 const assembly={value:0,velocity:0};
 const assemblyGroups=Object.entries(groups).map(([id,group])=>({group,offset:assemblyOffsets[id]||[0,0,0]}));
 const cameraKeys=['theta','phi','radius','x','y','z'];const cameraSpherical=new THREE.Spherical();
@@ -109,7 +115,7 @@ const motionChange=()=>markDirty();motion.addEventListener('change',motionChange
 const resize=()=>{const w=el.current.clientWidth,h=el.current.clientHeight;if(!w||!h)return;renderer.setSize(w,h);camera.aspect=w/h;const base=w<360?36:w>=1100?32:34;camera.fov=Math.max(base,THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(base)/2)/camera.aspect)));camera.updateProjectionMatrix();state.current.framePreset(state.current.preset);markDirty();};
 const ro=new ResizeObserver(resize);ro.observe(el.current);resize();
 function tick(now){frame=null;const dt=Math.min((now-last)/1000,.05);last=now;const s=state.current;if(document.hidden||s.paused||s.contextLost)return;let moving=springTo(assembly,s.assemblyTarget,dt,12,motion.matches);
-if(moving)for(const {group,offset} of assemblyGroups)group.position.set(offset[0]*assembly.value,offset[1]*assembly.value,offset[2]*assembly.value);
+if(moving){for(const {group,offset} of assemblyGroups)group.position.set(offset[0]*assembly.value,offset[1]*assembly.value,offset[2]*assembly.value);drone.updateMatrixWorld(true);}
 for(const h of highlights){if(springTo(h.mix,h.id===s.selection?1:0,dt,16,motion.matches)){moving=true;for(const m of h.materials)if(m.emissive)m.emissiveIntensity=h.mix.value*.42;}}
 if(s.flight){const f=s.flight;let flying=false;for(const key of cameraKeys)flying=springTo(f[key],f.goal[key],dt,13,motion.matches)||flying;controls.target.set(f.x.value,f.y.value,f.z.value);camera.position.setFromSpherical(cameraSpherical.set(f.radius.value,f.phi.value,f.theta.value)).add(controls.target);moving=true;if(!flying)s.flight=null;}
 controls.update(dt);if(s.dirty||moving){renderer.render(scene,camera);s.dirty=false;if(!s.presented){s.presented=true;onReady?.();}}if(moving||s.flight||controls.autoRotate)invalidate();}
@@ -129,22 +135,20 @@ function PartPreview({group,external}){
     setFailed(false);if(!group||!group.children.length)return;
     let renderer;try{renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});}catch{setFailed(true);return;}
     renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;host.current.appendChild(renderer.domElement);
-    const scene=new THREE.Scene(),object=new THREE.Group();const single=['motors','props','esc'].includes(group.userData.part);
-    (getPartSourceMeshes(group)).filter(o=>!single||(o.position.x>1&&o.position.z>1)).forEach(o=>object.add(o.clone(true)));
-    object.traverse(o=>{if(o.isMesh){o.material=o.material.clone();o.material.emissive?.set('#000000');}});
-    const bounds=new THREE.Box3().setFromObject(object),center=bounds.getCenter(new THREE.Vector3()),sphere=bounds.getBoundingSphere(new THREE.Sphere());object.position.sub(center);scene.add(object);
+    const scene=new THREE.Scene(),preview=createPreviewPart(group),{object,sphere}=preview;scene.add(object);
     scene.add(new THREE.HemisphereLight(0xffffff,0x939fa5,3));const key=new THREE.DirectionalLight(0xffffff,3);key.position.set(3,5,4);scene.add(key);const fill=new THREE.DirectionalLight(0xc0d4e4,1.5);fill.position.set(-3,2,-3);scene.add(fill);
+    let previewEnvironment=createStudioEnvironment(renderer,128);scene.environment=previewEnvironment.texture;configureStudioLighting(scene,renderer,{preview:true});scene.updateMatrixWorld(true);scene.matrixWorldAutoUpdate=false;
     const camera=new THREE.PerspectiveCamera(35,1,.001,100);camera.position.set(.8,.6,1).normalize();
-    const control=new OrbitControls(camera,renderer.domElement);control.enablePan=false;control.enableDamping=true;control.minDistance=sphere.radius*.55;control.maxDistance=sphere.radius*20;
+    const control=new OrbitControls(camera,renderer.domElement);control.enablePan=false;control.enableDamping=true;control.minDistance=sphere.radius*(['motors','battery','camera','gps','radio','esc','becpi','becfc','cooling'].includes(group.userData.part)?1.05:.55);control.maxDistance=sphere.radius*20;
     let frame=null,contextLost=false,dirty=true,fitDistance=0;
     function invalidate(){dirty=true;if(frame===null&&!document.hidden&&!contextLost)frame=requestAnimationFrame(tick);}
     function tick(){frame=null;if(document.hidden||contextLost)return;control.update();if(dirty){renderer.render(scene,camera);dirty=false;}}
     const resize=()=>{const w=host.current.clientWidth,h=host.current.clientHeight;if(!w||!h)return;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();const half=THREE.MathUtils.degToRad(camera.fov)/2;const limiting=Math.min(half,Math.atan(Math.tan(half)*camera.aspect));const distance=sphere.radius/Math.sin(limiting)*1.08;camera.position.multiplyScalar(fitDistance?distance/fitDistance:distance);fitDistance=distance;invalidate();};
-    const lost=e=>{e.preventDefault();contextLost=true;cancelAnimationFrame(frame);frame=null;setFailed(true);};const restored=()=>{contextLost=false;setFailed(false);invalidate();};
+    const lost=e=>{e.preventDefault();contextLost=true;cancelAnimationFrame(frame);frame=null;setFailed(true);};const restored=()=>{try{previewEnvironment.dispose();previewEnvironment=createStudioEnvironment(renderer,128);scene.environment=previewEnvironment.texture;contextLost=false;setFailed(false);invalidate();}catch{setFailed(true);}};
     const visibility=()=>{if(document.hidden){cancelAnimationFrame(frame);frame=null;}else invalidate();};
     renderer.domElement.addEventListener('webglcontextlost',lost);renderer.domElement.addEventListener('webglcontextrestored',restored);document.addEventListener('visibilitychange',visibility);control.addEventListener('change',invalidate);
     const ro=new ResizeObserver(resize);ro.observe(host.current);resize();
-    return()=>{cancelAnimationFrame(frame);ro.disconnect();document.removeEventListener('visibilitychange',visibility);control.removeEventListener('change',invalidate);renderer.domElement.removeEventListener('webglcontextlost',lost);renderer.domElement.removeEventListener('webglcontextrestored',restored);control.dispose();object.traverse(o=>{if(o.isMesh)o.material.dispose();});renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();};
+    return()=>{cancelAnimationFrame(frame);ro.disconnect();document.removeEventListener('visibilitychange',visibility);control.removeEventListener('change',invalidate);renderer.domElement.removeEventListener('webglcontextlost',lost);renderer.domElement.removeEventListener('webglcontextrestored',restored);control.dispose();preview.dispose();previewEnvironment.dispose();renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();};
   },[group]);
   return <div className="part-preview" ref={host} aria-label="Отдельная 3D-модель компонента">{(failed||!group||!group.children.length)&&<div className="preview-external"><Box size={38}/><span>{failed?'3D-просмотр недоступен':external?'Внешнее оборудование':'Описание компонента ниже'}</span></div>}<span className="preview-caption">{external?'НЕ УСТАНАВЛИВАЕТСЯ НА ДРОН':'ВРАЩАЙТЕ ДЕТАЛЬ ДЛЯ ОСМОТРА'}</span></div>;
 }

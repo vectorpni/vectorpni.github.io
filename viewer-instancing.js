@@ -34,7 +34,7 @@ function materialKey(material) {
   return JSON.stringify(fields);
 }
 
-export function instancePartMeshes(groups, meshes) {
+export function instancePartMeshes(groups, meshes, {disposeDeduplicatedGeometry=true}={}) {
   const canonicalGeometry = new WeakMap(), geometryBuckets = new Map();
   const rendered = [];
   const intern = geometry => {
@@ -42,7 +42,7 @@ export function instancePartMeshes(groups, meshes) {
     if (Object.keys(geometry.morphAttributes).length || Object.values(geometry.attributes).some(a => a.isInterleavedBufferAttribute)) return geometry;
     const key = geometryKey(geometry), bucket = geometryBuckets.get(key) || [];
     const existing = bucket.find(other => sameGeometry(other, geometry));
-    if (existing) { canonicalGeometry.set(geometry, existing); geometry.dispose(); return existing; }
+    if (existing) { canonicalGeometry.set(geometry, existing); if(disposeDeduplicatedGeometry)geometry.dispose(); return existing; }
     bucket.push(geometry); geometryBuckets.set(key, bucket); canonicalGeometry.set(geometry, geometry); return geometry;
   };
   for (const [id, group] of Object.entries(groups)) {

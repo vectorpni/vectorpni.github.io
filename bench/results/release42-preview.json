@@ -1,0 +1,321 @@
+{
+  "rows": [
+    {
+      "id": "frame",
+      "version": "4.1",
+      "calls": 78,
+      "triangles": 29264,
+      "materials": 78,
+      "p95RenderMs": 0.7999999988824129
+    },
+    {
+      "id": "motors",
+      "version": "4.1",
+      "calls": 96,
+      "triangles": 26512,
+      "materials": 96,
+      "p95RenderMs": 0.5
+    },
+    {
+      "id": "esc",
+      "version": "4.1",
+      "calls": 18,
+      "triangles": 4712,
+      "materials": 18,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "props",
+      "version": "4.1",
+      "calls": 7,
+      "triangles": 6040,
+      "materials": 7,
+      "p95RenderMs": 0.2000000011175871
+    },
+    {
+      "id": "fc",
+      "version": "4.1",
+      "calls": 107,
+      "triangles": 25608,
+      "materials": 107,
+      "p95RenderMs": 0.7000000011175871
+    },
+    {
+      "id": "power",
+      "version": "4.1",
+      "calls": 55,
+      "triangles": 10696,
+      "materials": 55,
+      "p95RenderMs": 0.40000000037252903
+    },
+    {
+      "id": "becpi",
+      "version": "4.1",
+      "calls": 55,
+      "triangles": 10696,
+      "materials": 55,
+      "p95RenderMs": 0.6000000014901161
+    },
+    {
+      "id": "becfc",
+      "version": "4.1",
+      "calls": 55,
+      "triangles": 10696,
+      "materials": 55,
+      "p95RenderMs": 0.5
+    },
+    {
+      "id": "battery",
+      "version": "4.1",
+      "calls": 17,
+      "triangles": 6230,
+      "materials": 17,
+      "p95RenderMs": 0.5
+    },
+    {
+      "id": "pi",
+      "version": "4.1",
+      "calls": 136,
+      "triangles": 28656,
+      "materials": 136,
+      "p95RenderMs": 0.599999999627471
+    },
+    {
+      "id": "cooling",
+      "version": "4.1",
+      "calls": 64,
+      "triangles": 18782,
+      "materials": 64,
+      "p95RenderMs": 0.40000000037252903
+    },
+    {
+      "id": "gps",
+      "version": "4.1",
+      "calls": 13,
+      "triangles": 2786,
+      "materials": 13,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "radio",
+      "version": "4.1",
+      "calls": 8,
+      "triangles": 932,
+      "materials": 8,
+      "p95RenderMs": 0.2000000011175871
+    },
+    {
+      "id": "camera",
+      "version": "4.1",
+      "calls": 20,
+      "triangles": 6804,
+      "materials": 20,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "wiring",
+      "version": "4.1",
+      "calls": 52,
+      "triangles": 18932,
+      "materials": 52,
+      "p95RenderMs": 0.5
+    },
+    {
+      "id": "frame",
+      "version": "4.2",
+      "calls": 17,
+      "triangles": 29264,
+      "materials": 16,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "motors",
+      "version": "4.2",
+      "calls": 13,
+      "triangles": 26512,
+      "materials": 12,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "esc",
+      "version": "4.2",
+      "calls": 4,
+      "triangles": 4712,
+      "materials": 4,
+      "p95RenderMs": 0.2000000011175871
+    },
+    {
+      "id": "props",
+      "version": "4.2",
+      "calls": 7,
+      "triangles": 6040,
+      "materials": 4,
+      "p95RenderMs": 0.2000000011175871
+    },
+    {
+      "id": "fc",
+      "version": "4.2",
+      "calls": 14,
+      "triangles": 25608,
+      "materials": 12,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "power",
+      "version": "4.2",
+      "calls": 8,
+      "triangles": 10696,
+      "materials": 8,
+      "p95RenderMs": 0.2999999988824129
+    },
+    {
+      "id": "becpi",
+      "version": "4.2",
+      "calls": 8,
+      "triangles": 10696,
+      "materials": 8,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "becfc",
+      "version": "4.2",
+      "calls": 8,
+      "triangles": 10696,
+      "materials": 8,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "battery",
+      "version": "4.2",
+      "calls": 13,
+      "triangles": 6230,
+      "materials": 10,
+      "p95RenderMs": 0.5
+    },
+    {
+      "id": "pi",
+      "version": "4.2",
+      "calls": 14,
+      "triangles": 28656,
+      "materials": 13,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "cooling",
+      "version": "4.2",
+      "calls": 20,
+      "triangles": 18782,
+      "materials": 16,
+      "p95RenderMs": 0.3999999985098839
+    },
+    {
+      "id": "gps",
+      "version": "4.2",
+      "calls": 7,
+      "triangles": 2786,
+      "materials": 5,
+      "p95RenderMs": 0.40000000037252903
+    },
+    {
+      "id": "radio",
+      "version": "4.2",
+      "calls": 8,
+      "triangles": 932,
+      "materials": 4,
+      "p95RenderMs": 0.2000000011175871
+    },
+    {
+      "id": "camera",
+      "version": "4.2",
+      "calls": 15,
+      "triangles": 6804,
+      "materials": 10,
+      "p95RenderMs": 0.30000000074505806
+    },
+    {
+      "id": "wiring",
+      "version": "4.2",
+      "calls": 28,
+      "triangles": 18932,
+      "materials": 12,
+      "p95RenderMs": 0.30000000074505806
+    }
+  ],
+  "differences": [
+    {
+      "id": "frame",
+      "meanRGB": 0.004807881000039248,
+      "changedPct": 0.023548804898151417
+    },
+    {
+      "id": "motors",
+      "meanRGB": 0.0004709760979630284,
+      "changedPct": 0
+    },
+    {
+      "id": "esc",
+      "meanRGB": 0.0003728560775540641,
+      "changedPct": 0
+    },
+    {
+      "id": "props",
+      "meanRGB": 0.0034538247183955413,
+      "changedPct": 0.011774402449075709
+    },
+    {
+      "id": "fc",
+      "meanRGB": 0.004513520938812355,
+      "changedPct": 0.035323207347227124
+    },
+    {
+      "id": "power",
+      "meanRGB": 0.0008634561795988853,
+      "changedPct": 0.005887201224537854
+    },
+    {
+      "id": "becpi",
+      "meanRGB": 0.0013933042898072923,
+      "changedPct": 0.011774402449075709
+    },
+    {
+      "id": "becfc",
+      "meanRGB": 0.0015502963224616351,
+      "changedPct": 0.011774402449075709
+    },
+    {
+      "id": "battery",
+      "meanRGB": 0.03404764708191059,
+      "changedPct": 0.2119392440833628
+    },
+    {
+      "id": "pi",
+      "meanRGB": 0.008242081714352997,
+      "changedPct": 0.029436006122689273
+    },
+    {
+      "id": "cooling",
+      "meanRGB": 0.0010596962204168139,
+      "changedPct": 0.005887201224537854
+    },
+    {
+      "id": "gps",
+      "meanRGB": 0.007045017465363633,
+      "changedPct": 0.023548804898151417
+    },
+    {
+      "id": "radio",
+      "meanRGB": 0.0002747360571450999,
+      "changedPct": 0
+    },
+    {
+      "id": "camera",
+      "meanRGB": 0.0012363122571529496,
+      "changedPct": 0.005887201224537854
+    },
+    {
+      "id": "wiring",
+      "meanRGB": 0.029220142077789554,
+      "changedPct": 0.11774402449075709
+    }
+  ]
+}

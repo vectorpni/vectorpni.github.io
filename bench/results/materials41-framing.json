@@ -1,0 +1,383 @@
+{
+  "checks": 54,
+  "results": [
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": false,
+      "view": "3D",
+      "margin": 34
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 31
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 29
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": true,
+      "view": "3D",
+      "margin": 34
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 31
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 22
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": false,
+      "view": "3D",
+      "margin": 42
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 34
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 35
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": true,
+      "view": "3D",
+      "margin": 33
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 34
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 16
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": false,
+      "view": "3D",
+      "margin": 47
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 42
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 63
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": true,
+      "view": "3D",
+      "margin": 22
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 42
+    },
+    {
+      "width": 768,
+      "height": 844,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 18
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": false,
+      "view": "3D",
+      "margin": 48
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 56
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 70
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": true,
+      "view": "3D",
+      "margin": 29
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 56
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 25
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": false,
+      "view": "3D",
+      "margin": 34
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 25
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 42
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": true,
+      "view": "3D",
+      "margin": 13
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 25
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 11
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": false,
+      "view": "3D",
+      "margin": 31
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 28
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 42
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": true,
+      "view": "3D",
+      "margin": 15
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 28
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 12
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": false,
+      "view": "3D",
+      "margin": 36
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 33
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 48
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": true,
+      "view": "3D",
+      "margin": 17
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 33
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 14
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": false,
+      "view": "3D",
+      "margin": 28
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 33
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 41
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": true,
+      "view": "3D",
+      "margin": 17
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 33
+    },
+    {
+      "width": 1100,
+      "height": 700,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 14
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": false,
+      "view": "3D",
+      "margin": 54
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": false,
+      "view": "Сверху",
+      "margin": 64
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": false,
+      "view": "Спереди",
+      "margin": 80
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": true,
+      "view": "3D",
+      "margin": 33
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": true,
+      "view": "Сверху",
+      "margin": 63
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "exploded": true,
+      "view": "Спереди",
+      "margin": 28
+    }
+  ]
+}

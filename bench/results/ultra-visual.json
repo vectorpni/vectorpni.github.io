@@ -1,0 +1,17 @@
+{
+  "shots": [
+    "before frame",
+    "before motors",
+    "before props",
+    "before battery",
+    "before camera",
+    "before fc",
+    "after frame",
+    "after motors",
+    "after props",
+    "after battery",
+    "after camera",
+    "after fc"
+  ],
+  "errors": []
+}

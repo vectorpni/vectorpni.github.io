@@ -1,0 +1,205 @@
+{
+  "base": "http://127.0.0.1:5175",
+  "allocationSampling": false,
+  "cpuRate": 1,
+  "environment": {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "gpuTimerAvailable": true
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "load": {
+        "readyMs": 588.9000000003725,
+        "resources": [
+          {
+            "name": "/assets/index-BuZl6JWt.js",
+            "bytes": 861662,
+            "transfer": 861962
+          },
+          {
+            "name": "/assets/index-CR4iNuPg.css",
+            "bytes": 25540,
+            "transfer": 25840
+          },
+          {
+            "name": "/favicon.svg",
+            "bytes": 320,
+            "transfer": 620
+          }
+        ],
+        "longTasks": [
+          {
+            "start": 230.80000000074506,
+            "ms": 234
+          },
+          {
+            "start": 465.6000000014901,
+            "ms": 120
+          }
+        ],
+        "pending": 0
+      },
+      "heapBytes": 11213776,
+      "rotation": {
+        "frames": 576,
+        "fps": 144.02003757044457,
+        "p95FrameMs": 7.199999999254942,
+        "p95CallbackMs": 1.400000000372529,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 1,
+        "taskBusyPct": 18.437683686176836,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "disassembly": {
+        "frames": 168,
+        "fps": 144.1146013116091,
+        "p95FrameMs": 7.099999999627471,
+        "p95CallbackMs": 1.200000001117587,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 0,
+        "taskBusyPct": 10.194935451837136,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "pointer": {
+        "count": 80,
+        "medianMs": 0.2000000011175871,
+        "p95Ms": 1.400000000372529
+      }
+    },
+    {
+      "round": 1,
+      "load": {
+        "readyMs": 576,
+        "resources": [
+          {
+            "name": "/assets/index-BuZl6JWt.js",
+            "bytes": 861662,
+            "transfer": 861962
+          },
+          {
+            "name": "/assets/index-CR4iNuPg.css",
+            "bytes": 25540,
+            "transfer": 25840
+          },
+          {
+            "name": "/favicon.svg",
+            "bytes": 320,
+            "transfer": 620
+          }
+        ],
+        "longTasks": [
+          {
+            "start": 137.30000000074506,
+            "ms": 284
+          },
+          {
+            "start": 422.69999999925494,
+            "ms": 149
+          }
+        ],
+        "pending": 0
+      },
+      "heapBytes": 11112156,
+      "rotation": {
+        "frames": 577,
+        "fps": 144.0612260210321,
+        "p95FrameMs": 7.299999998882413,
+        "p95CallbackMs": 1.900000000372529,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 1,
+        "taskBusyPct": 22.36191896594581,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "disassembly": {
+        "frames": 168,
+        "fps": 144.0400207005474,
+        "p95FrameMs": 7.199999999254942,
+        "p95CallbackMs": 1.300000000745058,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 0,
+        "taskBusyPct": 10.957717121588093,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "pointer": {
+        "count": 80,
+        "medianMs": 0.2999999988824129,
+        "p95Ms": 1.400000000372529
+      }
+    },
+    {
+      "round": 2,
+      "load": {
+        "readyMs": 523.4000000003725,
+        "resources": [
+          {
+            "name": "/assets/index-BuZl6JWt.js",
+            "bytes": 861662,
+            "transfer": 861962
+          },
+          {
+            "name": "/assets/index-CR4iNuPg.css",
+            "bytes": 25540,
+            "transfer": 25840
+          },
+          {
+            "name": "/favicon.svg",
+            "bytes": 320,
+            "transfer": 620
+          }
+        ],
+        "longTasks": [
+          {
+            "start": 128.2000000011176,
+            "ms": 255
+          },
+          {
+            "start": 384.90000000037253,
+            "ms": 135
+          }
+        ],
+        "pending": 0
+      },
+      "heapBytes": 11114240,
+      "rotation": {
+        "frames": 577,
+        "fps": 144.04321296392942,
+        "p95FrameMs": 7.200000001117587,
+        "p95CallbackMs": 1.900000000372529,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 1,
+        "taskBusyPct": 21.523818995524614,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "disassembly": {
+        "frames": 168,
+        "fps": 144.07730135431396,
+        "p95FrameMs": 7.199999999254942,
+        "p95CallbackMs": 1.700000001117587,
+        "drawCalls": 202,
+        "triangles": 325286,
+        "pending": 0,
+        "taskBusyPct": 11.590119165839127,
+        "sampledAllocationBytes": 0,
+        "sampledBytesPerFrame": 0
+      },
+      "pointer": {
+        "count": 80,
+        "medianMs": 0.2999999988824129,
+        "p95Ms": 1.400000000372529
+      }
+    }
+  ]
+}

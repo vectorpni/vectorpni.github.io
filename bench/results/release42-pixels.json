@@ -1,0 +1,47 @@
+[
+  {
+    "id": "overview",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "frame",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "motors",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "props",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "battery",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "camera",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "fasteners",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "motor-fasteners",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  },
+  {
+    "id": "exploded",
+    "changedChannels": 0,
+    "meanChannelDifference": 0
+  }
+]

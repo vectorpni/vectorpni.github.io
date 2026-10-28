@@ -1,0 +1,28 @@
+{
+  "checks": 23,
+  "passed": [
+    "non-empty original component preview frame",
+    "independent original geometry rotates frame",
+    "preview drag does not change selection frame",
+    "non-empty original component preview motors",
+    "independent original geometry rotates motors",
+    "preview drag does not change selection motors",
+    "non-empty original component preview esc",
+    "non-empty original component preview props",
+    "independent original geometry rotates props",
+    "preview drag does not change selection props",
+    "non-empty original component preview fc",
+    "non-empty original component preview power",
+    "non-empty original component preview becpi",
+    "non-empty original component preview becfc",
+    "non-empty original component preview battery",
+    "non-empty original component preview pi",
+    "non-empty original component preview cooling",
+    "non-empty original component preview gps",
+    "non-empty original component preview radio",
+    "non-empty original component preview camera",
+    "external charger remains external",
+    "non-empty original component preview wiring",
+    "all instanced geometry/materials restore after WebGL context loss"
+  ]
+}

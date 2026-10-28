@@ -1,0 +1,16 @@
+[
+  {
+    "base": "http://127.0.0.1:5176",
+    "samples": 72,
+    "disjoint": false,
+    "medianGpuMs": 1.485729,
+    "p95GpuMs": 1.532343
+  },
+  {
+    "base": "http://127.0.0.1:5175",
+    "samples": 72,
+    "disjoint": false,
+    "medianGpuMs": 1.453229,
+    "p95GpuMs": 1.484635
+  }
+]

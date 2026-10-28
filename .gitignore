@@ -27,3 +27,4 @@ browser-state/
 
 bench/spring-kernel.js
 bench/spring-kernel.wasm
+qa-artifacts/

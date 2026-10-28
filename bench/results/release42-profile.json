@@ -1,0 +1,293 @@
+{
+  "method": "one wrapper per renderer frame, no per-draw GL wrappers; counterbalanced order",
+  "rows": [
+    {
+      "port": 5176,
+      "cpuRate": 1,
+      "readyMs": 584,
+      "heapBytes": 10887244,
+      "rotation": {
+        "frames": 288,
+        "fps": 144.02569378222464,
+        "p95FrameMs": 7.100000001490116,
+        "p95RenderMs": 1.300000000745058,
+        "meanMatrixMs": 0.06493055557883862,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.02759810263044,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.8000000007450581,
+        "meanMatrixMs": 0.056547619036531875,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5177,
+      "cpuRate": 1,
+      "readyMs": 587,
+      "heapBytes": 10997216,
+      "rotation": {
+        "frames": 288,
+        "fps": 144.01123990162395,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 1,
+        "meanMatrixMs": 0.058333333348855376,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.11460131184074,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.8000000007450581,
+        "meanMatrixMs": 0.05535714281722903,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5175,
+      "cpuRate": 1,
+      "readyMs": 575,
+      "heapBytes": 10970936,
+      "rotation": {
+        "frames": 288,
+        "fps": 144.02569378235927,
+        "p95FrameMs": 7.100000001490116,
+        "p95RenderMs": 0.900000000372529,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.1892591953958,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.7000000011175871,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5175,
+      "cpuRate": 1,
+      "readyMs": 565,
+      "heapBytes": 10971028,
+      "rotation": {
+        "frames": 288,
+        "fps": 144.0040140491721,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.900000000372529,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.02759810263044,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.8000000007450581,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5177,
+      "cpuRate": 1,
+      "readyMs": 575,
+      "heapBytes": 10996372,
+      "rotation": {
+        "frames": 288,
+        "fps": 144.01846647940633,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 1,
+        "meanMatrixMs": 0.05208333336567092,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.33880726015556,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.8000000007450581,
+        "meanMatrixMs": 0.055357142783967514,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5176,
+      "cpuRate": 1,
+      "readyMs": 534,
+      "heapBytes": 10889692,
+      "rotation": {
+        "frames": 289,
+        "fps": 144.01440144009035,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.900000000372529,
+        "meanMatrixMs": 0.06055363323088336,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.02759810263044,
+        "p95FrameMs": 7.099999999627471,
+        "p95RenderMs": 0.900000000372529,
+        "meanMatrixMs": 0.050595238095238096,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5176,
+      "cpuRate": 4,
+      "readyMs": 1596,
+      "heapBytes": 10824168,
+      "rotation": {
+        "frames": 284,
+        "fps": 142.01124046562333,
+        "p95FrameMs": 8.300000000745058,
+        "p95RenderMs": 6.5,
+        "meanMatrixMs": 0.3260563379022437,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 167,
+        "fps": 143.83502296166154,
+        "p95FrameMs": 7.300000000745058,
+        "p95RenderMs": 5.299999998882413,
+        "meanMatrixMs": 0.2041916166861614,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5177,
+      "cpuRate": 4,
+      "readyMs": 1670,
+      "heapBytes": 10958396,
+      "rotation": {
+        "frames": 285,
+        "fps": 142.48444712026196,
+        "p95FrameMs": 8.400000000372529,
+        "p95RenderMs": 6.799999998882413,
+        "meanMatrixMs": 0.29649122809631784,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 165,
+        "fps": 142.3487544484446,
+        "p95FrameMs": 8.099999999627471,
+        "p95RenderMs": 5.900000000372529,
+        "meanMatrixMs": 0.2454545454997005,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5175,
+      "cpuRate": 4,
+      "readyMs": 1716,
+      "heapBytes": 10933756,
+      "rotation": {
+        "frames": 287,
+        "fps": 143.51665997585962,
+        "p95FrameMs": 7.300000000745058,
+        "p95RenderMs": 5.400000000372529,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 164,
+        "fps": 141.37033824804857,
+        "p95FrameMs": 8.5,
+        "p95RenderMs": 6.400000000372529,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5175,
+      "cpuRate": 4,
+      "readyMs": 1702,
+      "heapBytes": 10960436,
+      "rotation": {
+        "frames": 288,
+        "fps": 143.63645463192708,
+        "p95FrameMs": 7.200000001117587,
+        "p95RenderMs": 4.900000000372529,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 168,
+        "fps": 144.60126417890334,
+        "p95FrameMs": 7.5,
+        "p95RenderMs": 5,
+        "meanMatrixMs": 0,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5177,
+      "cpuRate": 4,
+      "readyMs": 1859,
+      "heapBytes": 10962184,
+      "rotation": {
+        "frames": 289,
+        "fps": 144.42605686778688,
+        "p95FrameMs": 7.699999999254942,
+        "p95RenderMs": 6.400000000372529,
+        "meanMatrixMs": 0.19792387548795415,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 161,
+        "fps": 137.88348845221358,
+        "p95FrameMs": 9.300000000745058,
+        "p95RenderMs": 7.299999998882413,
+        "meanMatrixMs": 0.22484472045755904,
+        "calls": 202,
+        "triangles": 325286
+      }
+    },
+    {
+      "port": 5176,
+      "cpuRate": 4,
+      "readyMs": 1815,
+      "heapBytes": 10852032,
+      "rotation": {
+        "frames": 256,
+        "fps": 127.60208166530848,
+        "p95FrameMs": 12.799999998882413,
+        "p95RenderMs": 11.099999999627471,
+        "meanMatrixMs": 0.32421874997089617,
+        "calls": 202,
+        "triangles": 325286
+      },
+      "assembly": {
+        "frames": 155,
+        "fps": 132.87316652286455,
+        "p95FrameMs": 12,
+        "p95RenderMs": 9.5,
+        "meanMatrixMs": 0.27870967733042856,
+        "calls": 202,
+        "triangles": 325286
+      }
+    }
+  ]
+}

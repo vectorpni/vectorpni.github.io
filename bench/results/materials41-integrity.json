@@ -1,0 +1,170 @@
+{
+  "revisions": [
+    {
+      "url": "http://127.0.0.1:5176",
+      "calls": 202,
+      "triangles": 325286,
+      "rendererMemory": {
+        "geometries": 181,
+        "textures": 7
+      },
+      "textures": [
+        {
+          "width": 256,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 349525,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 87381,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 349525,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "type": 1016,
+          "colorSpace": "srgb-linear",
+          "estimatedBytes": 6291456,
+          "cpuTypedBytes": 0
+        }
+      ],
+      "estimatedTextureBytes": 9175040,
+      "expandedMeshes": 1156
+    },
+    {
+      "url": "http://127.0.0.1:5175",
+      "calls": 202,
+      "triangles": 325286,
+      "rendererMemory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "textures": [
+        {
+          "width": 256,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "srgb",
+          "estimatedBytes": 349525,
+          "cpuTypedBytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 349525,
+          "cpuTypedBytes": 262144
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "srgb",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "type": 1009,
+          "colorSpace": "srgb",
+          "estimatedBytes": 87381,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 87381,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "srgb",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 512,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "srgb",
+          "estimatedBytes": 699051,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "type": 1009,
+          "colorSpace": "",
+          "estimatedBytes": 349525,
+          "cpuTypedBytes": 0
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "type": 1016,
+          "colorSpace": "srgb-linear",
+          "estimatedBytes": 6291456,
+          "cpuTypedBytes": 0
+        }
+      ],
+      "estimatedTextureBytes": 9611946,
+      "expandedMeshes": 1156
+    }
+  ],
+  "geometryEqual": true,
+  "mainMemoryStable": {
+    "before": {
+      "geometries": 181,
+      "textures": 9
+    },
+    "after": {
+      "geometries": 181,
+      "textures": 9
+    }
+  },
+  "errors": []
+}

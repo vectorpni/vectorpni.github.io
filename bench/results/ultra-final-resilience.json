@@ -1,0 +1,12 @@
+{
+  "checks": 7,
+  "passed": [
+    "idle scene makes no draw calls",
+    "auto rotation draws frames",
+    "idle component preview makes no draw calls",
+    "context loss shows explanation",
+    "context recovery clears explanation",
+    "WebGL failure does not leave loader",
+    "component information available without WebGL"
+  ]
+}

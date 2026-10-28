@@ -1,0 +1,25 @@
+{
+  "checks": 15,
+  "passed": [
+    "wheel visibly changes model scale",
+    "reset restores original model image after zoom",
+    "preview context loss keeps description",
+    "preview context recovery",
+    "only main WebGL context remains after repeated previews",
+    "only main canvas remains after repeated previews",
+    "short/landscape no overflow 320x568",
+    "dialog fits 320x568",
+    "short/landscape no overflow 390x664",
+    "dialog fits 390x664",
+    "short/landscape no overflow 844x390",
+    "dialog fits 844x390",
+    "short/landscape no overflow 1024x600",
+    "dialog fits 1024x600",
+    "favicon available"
+  ],
+  "contexts": {
+    "created": 50,
+    "live": 1,
+    "attached": 1
+  }
+}

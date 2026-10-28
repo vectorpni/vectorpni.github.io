@@ -1,3 +1,5 @@
+import {createMotorBellGeometry} from './motor-geometry.js';
+import {createAirfoilGeometry} from './airfoil-geometry.js';
 import * as THREE from 'three';
 
 // Reference detailing in the same part groups keeps picking and exploded views intact.
@@ -14,27 +16,14 @@ export function refineReference({groups,meshes,mesh,box,cyl,rod,mat,carbon,black
   for(const x of[-1,1])for(const z of[-1,1]){
     const mx=x*2.08,mz=z*2.08;
     for(const o of [...groups.motors.children])if(Math.abs(o.position.x-mx)<.01&&Math.abs(o.position.z-mz)<.01&&Math.abs(o.position.y-.66)<.01)remove(o);
-    const bell=mesh(new THREE.CylinderGeometry(.247,.247,.19,64,1,true),aluminium,'motors',mx,.61,mz);
+    const bell=mesh(createMotorBellGeometry(),aluminium,'motors',mx,.61,mz);
     for(const y of[.515,.705]){const ring=mesh(new THREE.TorusGeometry(.24,.013,10,64),black,'motors',mx,y,mz);ring.rotation.x=Math.PI/2;}
     cyl('motors',black,mx,.68,mz,.074,.09);
     for(let k=0;k<7;k++){const a=k*Math.PI*2/7;rod('motors',aluminium,[mx+Math.cos(a)*.07,.695,mz+Math.sin(a)*.07],[mx+Math.cos(a+.15)*.234,.695,mz+Math.sin(a+.15)*.234],.017);}
     const angle=x*z>0?(x>0?-.95:-.4):1.13;
     for(const side of[0,Math.PI]){
-      const vertices=[],uv=[],indices=[];const n=44,m=10;
-      for(let i=0;i<=n;i++){
-        const t=i/n,r=.065+t*1.51;
-        const width=.025+.14*Math.pow(Math.sin(Math.PI*t),.65)*(1-.36*t);
-        const sweep=.11*Math.sin(t*Math.PI)-.055*t;
-        for(let j=0;j<=m;j++){
-          const v=j/m-.5,across=v*width*2+sweep;
-          const yy=.79+v*width*(.62-.48*t)+Math.sin(j/m*Math.PI)*.018*Math.sin(t*Math.PI);
-          const a=angle+side;
-          vertices.push(mx+r*Math.cos(a)-across*Math.sin(a),yy,mz+r*Math.sin(a)+across*Math.cos(a));uv.push(t,j/m);
-          if(i<n&&j<m){const p=i*(m+1)+j;indices.push(p,p+m+1,p+1,p+1,p+m+1,p+m+2);}
-        }
-      }
-      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(indices);g.computeVertexNormals();
-      const blade=graphite.clone();blade.side=THREE.DoubleSide;blade.map=carbon.map;blade.bumpMap=carbon.map;blade.bumpScale=.001;mesh(g,blade,'props');
+      const g=createAirfoilGeometry(angle+side,x*z>0?1:-1);
+      const blade=graphite.clone();blade.side=THREE.FrontSide;blade.map=carbon.map;blade.bumpMap=carbon.map;blade.bumpScale=.001;mesh(g,blade,'props',mx,0,mz);
     }
     cyl('props',red,mx,.807,mz,.105,.016);cyl('props',grey,mx,.857,mz,.043,.045);
   }
