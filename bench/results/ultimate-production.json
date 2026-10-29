@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-29T19:22:42.849Z",
+  "base": "/",
+  "distMatchesPages": true,
+  "runtimeFreezeIntact": true,
+  "rows": [
+    {
+      "file": "favicon.svg",
+      "bytes": 320,
+      "gzipBytes": 201,
+      "status": 200,
+      "type": "image/svg+xml",
+      "sha256": "4201115ec581e9a13fdbc28825d176d73a1369053e70dc1321add915614f8a26"
+    },
+    {
+      "file": "index.html",
+      "bytes": 740,
+      "gzipBytes": 489,
+      "status": 200,
+      "type": "text/html;charset=utf-8",
+      "sha256": "7b1f07f6d83c8b3e5ca1b9735952c3a9790a6c731f673d352b5051f70100aa09"
+    },
+    {
+      "file": "assets\\index-CuL2hyd5.js",
+      "bytes": 865154,
+      "gzipBytes": 241232,
+      "status": 200,
+      "type": "text/javascript",
+      "sha256": "a3bd6c9971ffcb6dfbd2b503590bce48d953151e93735ac0bfec0c90a9f1f0d3"
+    },
+    {
+      "file": "assets\\index-Dhi-h_IZ.css",
+      "bytes": 26010,
+      "gzipBytes": 6156,
+      "status": 200,
+      "type": "text/css",
+      "sha256": "152122f9bb0f812b3868b3e688853bd20eaa9a13efc8d77a21b13e9f8e026803"
+    }
+  ]
+}

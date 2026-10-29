@@ -1,0 +1,198 @@
+{
+  "expectedBeforeFix": true,
+  "initialization": "### Error\r\nError: [{\"target\":\"main\",\"failure\":\"locator.waitFor: Timeout 4000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByRole('alert') to be visible\\u001b[22m\\n\",\"errors\":[\"QA: environment allocation failed\"],\"body\":\"\",\"failedContextReleased\":false},{\"target\":\"preview\",\"failure\":\"locator.waitFor: Timeout 4000ms exceeded.\\nCall log:\\n\\u001b[2m  - waiting for getByText('3D-просмотр недоступен', { exact: true }) to be visible\\u001b[22m\\n\",\"errors\":[\"QA: environment allocation failed\"],\"body\":\"\",\"failedContextReleased\":false}]\r\n",
+  "sharedResources": "### Error\r\nError: {\"before\":{\"geometryListeners\":181,\"textureListeners\":8,\"maxGeometryListeners\":1,\"maxTextureListeners\":1,\"memory\":{\"geometries\":181,\"textures\":9}},\"after\":{\"geometryListeners\":829,\"textureListeners\":86,\"maxGeometryListeners\":25,\"maxTextureListeners\":31,\"memory\":{\"geometries\":181,\"textures\":9}}}\r\n",
+  "cardNavigation": {
+    "browser": "chrome",
+    "finishedAt": "2026-10-29T18:43:00.786Z",
+    "results": [
+      {
+        "filename": "tests/viewer.card-navigation.js",
+        "passed": false,
+        "durationMs": 13974,
+        "error": "Error: [{\"width\":1440,\"scrolled\":318,\"afterSwitch\":318,\"selected\":\"power\",\"tab\":\"true\"},{\"width\":768,\"scrolled\":0,\"afterSwitch\":0,\"selected\":\"power\",\"tab\":\"true\"},{\"width\":390,\"scrolled\":410,\"afterSwitch\":390,\"selected\":\"power\",\"tab\":\"true\"},{\"width\":320,\"scrolled\":614,\"afterSwitch\":594,\"selected\":\"power\",\"tab\":\"true\"}]\n    at evalmachine.<anonymous>:11:46\n    at async file:///C:/Sites/MyWebsite/drone-lab/tests/viewer.ultimate-runner.mjs:21:20"
+      }
+    ]
+  },
+  "cardFocus": {
+    "browser": "chrome",
+    "finishedAt": "2026-10-29T18:49:49.930Z",
+    "results": [
+      {
+        "filename": "tests/viewer.card-navigation.js",
+        "passed": false,
+        "durationMs": 17946,
+        "error": "Error: [{\"width\":1440,\"scrolled\":318,\"afterSwitch\":0,\"selected\":\"power\",\"tab\":\"true\",\"keyboardSelectKeepsFocus\":false,\"nextKeepsFocus\":false},{\"width\":768,\"scrolled\":0,\"afterSwitch\":0,\"selected\":\"power\",\"tab\":\"true\",\"keyboardSelectKeepsFocus\":false,\"nextKeepsFocus\":false},{\"width\":390,\"scrolled\":410,\"afterSwitch\":0,\"selected\":\"power\",\"tab\":\"true\",\"keyboardSelectKeepsFocus\":false,\"nextKeepsFocus\":false},{\"width\":320,\"scrolled\":614,\"afterSwitch\":0,\"selected\":\"power\",\"tab\":\"true\",\"keyboardSelectKeepsFocus\":false,\"nextKeepsFocus\":false}]\n    at evalmachine.<anonymous>:16:94\n    at async file:///C:/Sites/MyWebsite/drone-lab/tests/viewer.ultimate-runner.mjs:21:20"
+      }
+    ]
+  },
+  "touchClickthrough": {
+    "browser": "chrome",
+    "finishedAt": "2026-10-29T19:04:04.806Z",
+    "results": [
+      {
+        "filename": "tests/viewer.component-matrix.js",
+        "passed": false,
+        "durationMs": 11966,
+        "error": "Error: {\"failure\":\"Wrong selection\",\"id\":\"camera\",\"actual\":\"becpi\",\"row\":{\"mobile\":true,\"exploded\":true,\"id\":\"camera\",\"modelPick\":true,\"camera\":[4.8,5.5,9.5]},\"diagnostic\":{\"expected\":{\"x\":180,\"y\":531,\"position\":[4.8,5.5,9.5]},\"events\":[{\"type\":\"pointerdown\",\"capture\":true,\"x\":180,\"y\":531,\"rect\":{\"x\":0,\"y\":201.40625,\"width\":390,\"height\":363},\"camera\":[4.8,5.5,9.5],\"quaternion\":[-0.22449440191467993,0.22553990777550442,0.05349409403759404,0.9465053594210041],\"referenceHit\":\"camera\"},{\"type\":\"pointerdown\",\"capture\":false,\"x\":180,\"y\":531,\"rect\":{\"x\":0,\"y\":201.40625,\"width\":390,\"height\":363},\"camera\":[4.8,5.5,9.5],\"quaternion\":[-0.22449440191467993,0.22553990777550442,0.05349409403759404,0.9465053594210041],\"referenceHit\":\"camera\"},{\"type\":\"pointerup\",\"capture\":true,\"x\":180,\"y\":531,\"rect\":{\"x\":0,\"y\":201.40625,\"width\":390,\"height\":363},\"camera\":[4.8,5.5,9.5],\"quaternion\":[-0.22449440191467993,0.22553990777550442,0.05349409403759404,0.9465053594210041],\"referenceHit\":\"camera\"},{\"type\":\"pointerup\",\"capture\":false,\"x\":180,\"y\":531,\"rect\":{\"x\":0,\"y\":201.40625,\"width\":390,\"height\":363},\"camera\":[4.8,5.5,9.5],\"quaternion\":[-0.22449440191467993,0.22553990777550442,0.05349409403759404,0.9465053594210041],\"referenceHit\":\"camera\"},{\"type\":\"click\",\"target\":\"BEC для Raspberry Pi\",\"selected\":\"camera\"}],\"bounds\":[{\"min\":[-2.1849999928922585,-1.729999989271164,-2.1849999928922585],\"max\":[2.1849999928922585,0.6539999842643738,2.1849999928922585],\"origin\":[4.8,5.5,9.5],\"result\":true},{\"min\":[-2.3799999356269836,0.32249999418854713,-2.3799999356269836],\"max\":[2.3799999356269836,0.8925000189595362,2.3799999356269836],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-2.0894622802734375,0.3561045229434967,-2.0903217792510986],\"max\":[2.0894622802734375,0.5949999948497862,2.0903217792510986],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-3.5189885663986207,1.7349999696016312,-3.4916492700576782],\"max\":[2.9724538493156434,1.9010000228881836,3.4916492700576782],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.32499998807907104,1.0300000008940697,0.425000011920929],\"max\":[0.32499998807907104,1.2274999916553497,1.074999988079071],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.625,0.2500000006705523,-0.7549999940395355],\"max\":[0.625,0.3924999892711639,0.1949999940395355],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-1.6506000027060508,0.9700000013411045,-0.6200000029802322],\"max\":[-1.3894000068306922,1.1675000011920929,-0.21999999701976775],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[1.3894000068306922,0.9700000013411045,-0.6200000029802322],\"max\":[1.6506000027060508,1.1675000011920929,-0.21999999701976775],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.5788798928260803,2.1831371426582336,-1.0100000277161598],\"max\":[0.6100000143051147,2.9609052181243896,0.7700000181794167],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.5600000023841858,-1.2300000007450582,-0.6350000023841857],\"max\":[0.579999997317791,-0.9200000047683716,0.7350000023841858],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.6200000047683716,-2.540000003576279,-0.6500000190734864],\"max\":[0.6254999707452953,-1.7129896014928818,0.8795000001862645],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-1.300000001192093,1.4999999761581422,-1.060000001192093],\"max\":[-0.7399999988079071,2.842000057315454,-0.49999999880790713],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[0.720000014305115,1.5199999982118606,-0.885],\"max\":[1.4999999856948851,3.145000000372529,-0.43000000044703485],\"origin\":[4.8,5.5,9.5],\"result\":false},{\"min\":[-0.36019614338874817,-3.552000007033348,0.08375698328018188],\"max\":[0.430606484413147,-2.5423278868198396,1.1303000004589556],\"origin\":[4.8,5.5,9.5],\"result\":true},{\"min\":[-2.0898995399475098,1.1564678788185119,-2.0898995399475098],\"max\":[2.0898995399475098,1.957145595550537,2.0898995399475098],\"origin\":[4.8,5.5,9.5],\"result\":false}]}}\n    at evalmachine.<anonymous>:70:71\n    at async file:///C:/Sites/MyWebsite/drone-lab/tests/viewer.ultimate-runner.mjs:25:20"
+      }
+    ]
+  },
+  "interruptedStress": {
+    "startedAt": "2026-10-29T18:22:05.031Z",
+    "requestedMinutes": 60,
+    "complete": false,
+    "cycles": 91,
+    "errors": [],
+    "samples": [
+      {
+        "elapsedMs": 7315,
+        "cycles": 0,
+        "heapBytes": 12494112,
+        "canvases": 1,
+        "liveContexts": 1,
+        "createdContexts": 2,
+        "pendingRAF": 0,
+        "maxPendingRAF": 2,
+        "memory": {
+          "geometries": 181,
+          "textures": 9
+        },
+        "programs": 9,
+        "buffers": 751,
+        "bufferBytes": 5231100,
+        "textures": 13,
+        "globalListeners": {
+          "document:selectionchange": 1,
+          "document:keydown": 1,
+          "document:visibilitychange": 1,
+          "window:resize": 1,
+          "window:pageshow": 1,
+          "window:keydown": 1,
+          "window:__playwright_global_listeners_check__": 1,
+          "window:mousemove": 1,
+          "window:pointerdown": 1,
+          "window:pointerup": 1,
+          "window:touchstart": 1,
+          "window:touchend": 1,
+          "window:touchcancel": 1,
+          "window:mousedown": 1,
+          "window:mouseup": 1,
+          "window:click": 1,
+          "window:auxclick": 1,
+          "window:dblclick": 1,
+          "window:contextmenu": 1
+        }
+      },
+      {
+        "elapsedMs": 69116,
+        "cycles": 49,
+        "heapBytes": 23861712,
+        "canvases": 1,
+        "liveContexts": 1,
+        "createdContexts": 276,
+        "pendingRAF": 0,
+        "maxPendingRAF": 2,
+        "memory": {
+          "geometries": 181,
+          "textures": 9
+        },
+        "programs": 9,
+        "buffers": 751,
+        "bufferBytes": 5231100,
+        "textures": 13,
+        "globalListeners": {
+          "document:selectionchange": 1,
+          "document:keydown": 1,
+          "document:visibilitychange": 1,
+          "window:resize": 1,
+          "window:pageshow": 1,
+          "window:keydown": 1,
+          "window:__playwright_global_listeners_check__": 1,
+          "window:mousemove": 1,
+          "window:pointerdown": 1,
+          "window:pointerup": 1,
+          "window:touchstart": 1,
+          "window:touchend": 1,
+          "window:touchcancel": 1,
+          "window:mousedown": 1,
+          "window:mouseup": 1,
+          "window:click": 1,
+          "window:auxclick": 1,
+          "window:dblclick": 1,
+          "window:contextmenu": 1
+        }
+      },
+      {
+        "elapsedMs": 130449,
+        "cycles": 91,
+        "heapBytes": 30922128,
+        "canvases": 1,
+        "liveContexts": 1,
+        "createdContexts": 516,
+        "pendingRAF": 0,
+        "maxPendingRAF": 2,
+        "memory": {
+          "geometries": 181,
+          "textures": 9
+        },
+        "programs": 9,
+        "buffers": 751,
+        "bufferBytes": 5231100,
+        "textures": 13,
+        "globalListeners": {
+          "document:selectionchange": 1,
+          "document:keydown": 1,
+          "document:visibilitychange": 1,
+          "window:resize": 1,
+          "window:pageshow": 1,
+          "window:keydown": 1,
+          "window:__playwright_global_listeners_check__": 1,
+          "window:mousemove": 1,
+          "window:pointerdown": 1,
+          "window:pointerup": 1,
+          "window:touchstart": 1,
+          "window:touchend": 1,
+          "window:touchcancel": 1,
+          "window:mousedown": 1,
+          "window:mouseup": 1,
+          "window:click": 1,
+          "window:auxclick": 1,
+          "window:dblclick": 1,
+          "window:contextmenu": 1
+        }
+      }
+    ],
+    "parts": {
+      "frame": 6,
+      "motors": 6,
+      "esc": 6,
+      "props": 6,
+      "fc": 6,
+      "power": 6,
+      "becpi": 6,
+      "becfc": 6,
+      "battery": 6,
+      "pi": 6,
+      "cooling": 6,
+      "gps": 5,
+      "radio": 5,
+      "camera": 5,
+      "charger": 5,
+      "wiring": 5
+    },
+    "contextRestores": 6,
+    "freezeResumes": 3,
+    "firstPerformance": {
+      "fps": 144.05461024947388,
+      "p95FrameMs": 8,
+      "p99FrameMs": 8.299999999813735,
+      "p95RenderMs": 2.1999999997206032,
+      "calls": 202,
+      "triangles": 325286
+    },
+    "elapsedMs": 130449,
+    "abortedReason": "Stopped after shared geometry/texture dispose-listener retention was confirmed. This was not a completed 60-minute test.",
+    "stoppedAt": "2026-10-29T18:24:53.486Z"
+  }
+}

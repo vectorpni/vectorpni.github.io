@@ -1,0 +1,152 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.73",
+  "finishedAt": "2026-10-29T19:24:59.849Z",
+  "results": [
+    {
+      "filename": "tests/viewer.max-zoom.js",
+      "passed": true,
+      "durationMs": 11982,
+      "result": {
+        "rows": [
+          {
+            "id": "frame",
+            "distance": 1.8215974808661,
+            "radius": 3.311995456870782,
+            "ratio": 0.5499999938366974,
+            "near": 0.001,
+            "calls": 17,
+            "triangles": 29264
+          },
+          {
+            "id": "motors",
+            "distance": 0.5366568536442388,
+            "radius": 0.5111017653754656,
+            "ratio": 1.0499999999999998,
+            "near": 0.001,
+            "calls": 13,
+            "triangles": 26512
+          },
+          {
+            "id": "esc",
+            "distance": 0.3802174606471103,
+            "radius": 0.36211186648628446,
+            "ratio": 1.0500000023100917,
+            "near": 0.001,
+            "calls": 4,
+            "triangles": 4712
+          },
+          {
+            "id": "props",
+            "distance": 0.8810400230750314,
+            "radius": 1.6018909510455115,
+            "ratio": 0.55,
+            "near": 0.001,
+            "calls": 7,
+            "triangles": 6040
+          },
+          {
+            "id": "fc",
+            "distance": 0.2585594084390798,
+            "radius": 0.47010801534378144,
+            "ratio": 0.55,
+            "near": 0.001,
+            "calls": 12,
+            "triangles": 25548
+          },
+          {
+            "id": "power",
+            "distance": 0.433533485670564,
+            "radius": 0.7882427012192073,
+            "ratio": 0.55,
+            "near": 0.001,
+            "calls": 6,
+            "triangles": 10636
+          },
+          {
+            "id": "becpi",
+            "distance": 0.27139590340756736,
+            "radius": 0.25847228698392377,
+            "ratio": 1.050000008025802,
+            "near": 0.001,
+            "calls": 7,
+            "triangles": 10648
+          },
+          {
+            "id": "becfc",
+            "distance": 0.27139590340756736,
+            "radius": 0.25847228698392377,
+            "ratio": 1.050000008025802,
+            "near": 0.001,
+            "calls": 7,
+            "triangles": 10648
+          },
+          {
+            "id": "battery",
+            "distance": 1.1956589567669147,
+            "radius": 1.1387228346027471,
+            "ratio": 1.0499999828176187,
+            "near": 0.001,
+            "calls": 13,
+            "triangles": 6230
+          },
+          {
+            "id": "pi",
+            "distance": 0.49748404586255035,
+            "radius": 0.904516446767469,
+            "ratio": 0.550000000155268,
+            "near": 0.001,
+            "calls": 12,
+            "triangles": 28056
+          },
+          {
+            "id": "cooling",
+            "distance": 1.1228848916988319,
+            "radius": 1.0694141741012066,
+            "ratio": 1.0500000083153609,
+            "near": 0.001,
+            "calls": 17,
+            "triangles": 16862
+          },
+          {
+            "id": "gps",
+            "distance": 0.8180847888085572,
+            "radius": 0.779128394933532,
+            "ratio": 1.0499999667941105,
+            "near": 0.001,
+            "calls": 1,
+            "triangles": 48
+          },
+          {
+            "id": "radio",
+            "distance": 0.975998857976626,
+            "radius": 0.929522721882501,
+            "ratio": 1.05,
+            "near": 0.001,
+            "calls": 4,
+            "triangles": 524
+          },
+          {
+            "id": "camera",
+            "distance": 0.8690389674507877,
+            "radius": 0.8276561594769406,
+            "ratio": 1.05,
+            "near": 0.001,
+            "calls": 9,
+            "triangles": 3412
+          },
+          {
+            "id": "wiring",
+            "distance": 1.640404977783897,
+            "radius": 2.9825545050616302,
+            "ratio": 0.5500000000000002,
+            "near": 0.001,
+            "calls": 8,
+            "triangles": 7240
+          }
+        ],
+        "errors": []
+      }
+    }
+  ]
+}

@@ -12,7 +12,7 @@
     "test:detail": "node --test tests/airfoil.test.mjs tests/ultra-detail.test.mjs",
     "test:presentation": "node --test tests/viewer-presentation.test.mjs",
     "test:preview": "node --test tests/viewer-preview.test.mjs",
-    "test": "node --test tests/viewer-motion.test.mjs tests/viewer-instancing.test.mjs tests/airfoil.test.mjs tests/ultra-detail.test.mjs tests/viewer-presentation.test.mjs tests/viewer-preview.test.mjs"
+    "test": "node --test tests/viewer-motion.test.mjs tests/viewer-instancing.test.mjs tests/airfoil.test.mjs tests/ultra-detail.test.mjs tests/viewer-presentation.test.mjs tests/viewer-preview.test.mjs tests/viewer-picking.test.mjs tests/viewer-resolution.test.mjs tests/viewer-controls.test.mjs tests/viewer-resources.test.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",

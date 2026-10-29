@@ -1,0 +1,217 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.73",
+  "finishedAt": "2026-10-29T19:32:59.776Z",
+  "results": [
+    {
+      "filename": "tests/viewer.profile.js",
+      "passed": true,
+      "durationMs": 39111,
+      "result": {
+        "base": "http://127.0.0.1:5175",
+        "allocationSampling": true,
+        "cpuRate": 1,
+        "environment": {
+          "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+          "dpr": 1,
+          "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "gpuTimerAvailable": true
+        },
+        "rounds": [
+          {
+            "round": 0,
+            "load": {
+              "readyMs": 1628,
+              "resources": [
+                {
+                  "name": "/assets/index-CuL2hyd5.js",
+                  "bytes": 865154,
+                  "transfer": 865454
+                },
+                {
+                  "name": "/assets/index-Dhi-h_IZ.css",
+                  "bytes": 26010,
+                  "transfer": 26310
+                },
+                {
+                  "name": "/favicon.svg",
+                  "bytes": 320,
+                  "transfer": 620
+                }
+              ],
+              "longTasks": [
+                {
+                  "start": 750.4000000003725,
+                  "ms": 348
+                },
+                {
+                  "start": 1099.4000000003725,
+                  "ms": 520
+                }
+              ],
+              "pending": 0
+            },
+            "heapBytes": 11211624,
+            "rotation": {
+              "frames": 579,
+              "fps": 144.06420577750293,
+              "p95FrameMs": 7.2000000001862645,
+              "p95CallbackMs": 2,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 1,
+              "taskBusyPct": 22.243327556325823,
+              "sampledAllocationBytes": 39618724,
+              "sampledBytesPerFrame": 68426.12089810017
+            },
+            "disassembly": {
+              "frames": 168,
+              "fps": 144.05244544123767,
+              "p95FrameMs": 7.1000000005587935,
+              "p95CallbackMs": 1.5,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 0,
+              "taskBusyPct": 11.234142715559956,
+              "sampledAllocationBytes": 11646472,
+              "sampledBytesPerFrame": 69324.23809523809
+            },
+            "pointer": {
+              "count": 80,
+              "medianMs": 0.2999999998137355,
+              "p95Ms": 1.2000000001862645
+            }
+          },
+          {
+            "round": 1,
+            "load": {
+              "readyMs": 653.5,
+              "resources": [
+                {
+                  "name": "/assets/index-CuL2hyd5.js",
+                  "bytes": 865154,
+                  "transfer": 865454
+                },
+                {
+                  "name": "/assets/index-Dhi-h_IZ.css",
+                  "bytes": 26010,
+                  "transfer": 26310
+                },
+                {
+                  "name": "/favicon.svg",
+                  "bytes": 320,
+                  "transfer": 620
+                }
+              ],
+              "longTasks": [
+                {
+                  "start": 230.29999999981374,
+                  "ms": 275
+                },
+                {
+                  "start": 506.90000000037253,
+                  "ms": 143
+                }
+              ],
+              "pending": 0
+            },
+            "heapBytes": 11135484,
+            "rotation": {
+              "frames": 578,
+              "fps": 143.9333466374044,
+              "p95FrameMs": 7.2000000001862645,
+              "p95CallbackMs": 1.800000000745058,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 1,
+              "taskBusyPct": 20.857710454432585,
+              "sampledAllocationBytes": 38523840,
+              "sampledBytesPerFrame": 66650.24221453287
+            },
+            "disassembly": {
+              "frames": 168,
+              "fps": 144.06487232571874,
+              "p95FrameMs": 7.1000000005587935,
+              "p95CallbackMs": 1.7000000001862645,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 0,
+              "taskBusyPct": 11.405844477464099,
+              "sampledAllocationBytes": 10921316,
+              "sampledBytesPerFrame": 65007.833333333336
+            },
+            "pointer": {
+              "count": 80,
+              "medianMs": 0.20000000018626451,
+              "p95Ms": 0.900000000372529
+            }
+          },
+          {
+            "round": 2,
+            "load": {
+              "readyMs": 672.7000000001863,
+              "resources": [
+                {
+                  "name": "/assets/index-CuL2hyd5.js",
+                  "bytes": 865154,
+                  "transfer": 865454
+                },
+                {
+                  "name": "/assets/index-Dhi-h_IZ.css",
+                  "bytes": 26010,
+                  "transfer": 26310
+                },
+                {
+                  "name": "/favicon.svg",
+                  "bytes": 320,
+                  "transfer": 620
+                }
+              ],
+              "longTasks": [
+                {
+                  "start": 241.70000000018626,
+                  "ms": 272
+                },
+                {
+                  "start": 514.9000000003725,
+                  "ms": 155
+                }
+              ],
+              "pending": 0
+            },
+            "heapBytes": 11137248,
+            "rotation": {
+              "frames": 578,
+              "fps": 144.04473625083585,
+              "p95FrameMs": 7.2000000001862645,
+              "p95CallbackMs": 1.8999999994412065,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 1,
+              "taskBusyPct": 21.07389468455042,
+              "sampledAllocationBytes": 40002864,
+              "sampledBytesPerFrame": 69209.10726643598
+            },
+            "disassembly": {
+              "frames": 168,
+              "fps": 144.06487232571874,
+              "p95FrameMs": 7.1000000005587935,
+              "p95CallbackMs": 1.7000000001862645,
+              "drawCalls": 202,
+              "triangles": 325286,
+              "pending": 0,
+              "taskBusyPct": 11.208304498269888,
+              "sampledAllocationBytes": 11088856,
+              "sampledBytesPerFrame": 66005.09523809524
+            },
+            "pointer": {
+              "count": 80,
+              "medianMs": 0.20000000018626451,
+              "p95Ms": 1.5
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

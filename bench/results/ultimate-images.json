@@ -1,0 +1,107 @@
+[
+  {
+    "id": "overview",
+    "label": "Общий вид",
+    "byteIdentical": true,
+    "beforeSHA256": "908a84cf3926038a224a31a6d3ed458148bb5901ed92e9694cd6630048b2546c",
+    "afterSHA256": "908a84cf3926038a224a31a6d3ed458148bb5901ed92e9694cd6630048b2546c"
+  },
+  {
+    "id": "top",
+    "label": "Сверху",
+    "byteIdentical": true,
+    "beforeSHA256": "2ea5d8b57661362528dda08b0f6ee76e1177a9cf3e558e3af45ba555e949bfbe",
+    "afterSHA256": "2ea5d8b57661362528dda08b0f6ee76e1177a9cf3e558e3af45ba555e949bfbe"
+  },
+  {
+    "id": "front",
+    "label": "Спереди",
+    "byteIdentical": true,
+    "beforeSHA256": "ca616df16a042e45a318a4cf10c0d3eeabc36a6c0c7c92285fb38df07ff04656",
+    "afterSHA256": "ca616df16a042e45a318a4cf10c0d3eeabc36a6c0c7c92285fb38df07ff04656"
+  },
+  {
+    "id": "exploded",
+    "label": "Разобранная модель",
+    "byteIdentical": true,
+    "beforeSHA256": "af1eb1ac1ddf19c9edda440008e3083b300c12cc754032dd48ccf52fe3a55012",
+    "afterSHA256": "af1eb1ac1ddf19c9edda440008e3083b300c12cc754032dd48ccf52fe3a55012"
+  },
+  {
+    "id": "motors",
+    "label": "Двигатель",
+    "byteIdentical": true,
+    "beforeSHA256": "8dc63cb77e4f70fccf169baeffc908fce18025f2a57f019dcf9ec0fd3a287551",
+    "afterSHA256": "8dc63cb77e4f70fccf169baeffc908fce18025f2a57f019dcf9ec0fd3a287551"
+  },
+  {
+    "id": "frame",
+    "label": "Карбоновая рама",
+    "byteIdentical": true,
+    "beforeSHA256": "a11e34a57052eb6314a4f98a1a614670d33b3073b3854786c29cb9eaaaaed656",
+    "afterSHA256": "a11e34a57052eb6314a4f98a1a614670d33b3073b3854786c29cb9eaaaaed656"
+  },
+  {
+    "id": "props",
+    "label": "Пропеллер",
+    "byteIdentical": true,
+    "beforeSHA256": "3f4e88a17510ac4a0615a5ffca194c46183a42436caf53ecd946ffdb590fedc1",
+    "afterSHA256": "3f4e88a17510ac4a0615a5ffca194c46183a42436caf53ecd946ffdb590fedc1"
+  },
+  {
+    "id": "battery",
+    "label": "Аккумулятор",
+    "byteIdentical": true,
+    "beforeSHA256": "d1ebef50e5faf77f4b276f6577aa7dd7658230e271adebcd8b0caceaf9b8c2eb",
+    "afterSHA256": "d1ebef50e5faf77f4b276f6577aa7dd7658230e271adebcd8b0caceaf9b8c2eb"
+  },
+  {
+    "id": "camera",
+    "label": "Камера",
+    "byteIdentical": true,
+    "beforeSHA256": "8d67b9e5b4a4ed16e3eb144bda1a18f3a5d903e871bd58050dcf136aca9f6b3b",
+    "afterSHA256": "8d67b9e5b4a4ed16e3eb144bda1a18f3a5d903e871bd58050dcf136aca9f6b3b"
+  },
+  {
+    "id": "electronics",
+    "label": "Электроника",
+    "byteIdentical": true,
+    "beforeSHA256": "1e927847cf46178f86c6eb49f809b939c8949352d7840c996d85d66fccc59020",
+    "afterSHA256": "1e927847cf46178f86c6eb49f809b939c8949352d7840c996d85d66fccc59020"
+  },
+  {
+    "id": "fasteners",
+    "label": "Крепёж",
+    "byteIdentical": true,
+    "beforeSHA256": "381397e8cf8cd6418cd7d5932feb5a05e9423e2255e309b3022ef56f0111a87a",
+    "afterSHA256": "381397e8cf8cd6418cd7d5932feb5a05e9423e2255e309b3022ef56f0111a87a"
+  },
+  {
+    "id": "mobile",
+    "label": "Мобильный интерфейс",
+    "byteIdentical": true,
+    "beforeSHA256": "3cc99b2c929e8a4378413f94f2572d6522502aa2005fd6b6f3c101a5994f3b71",
+    "afterSHA256": "3cc99b2c929e8a4378413f94f2572d6522502aa2005fd6b6f3c101a5994f3b71"
+  },
+  {
+    "id": "mobile-card",
+    "label": "Карточка на телефоне",
+    "byteIdentical": true,
+    "beforeSHA256": "5649dfd389da9387f8e80d02c41e2a287ab6d11fc467b556136484d7196c6a1a",
+    "afterSHA256": "5649dfd389da9387f8e80d02c41e2a287ab6d11fc467b556136484d7196c6a1a"
+  },
+  {
+    "id": "landscape-safe-area",
+    "label": "Горизонтальный экран: safe-area",
+    "byteIdentical": false,
+    "beforeSHA256": "acab287122ca94159338652e7e15ff1942ea3c3072c59724329f6b1d7f4d6634",
+    "afterSHA256": "3be007a98445b4199ef4a69c87442c1abfee6e912f035bc30627eea811cbde47"
+  },
+  {
+    "id": "card-navigation",
+    "label": "Смена компонента: прокрутка и фокус",
+    "byteIdentical": false,
+    "beforeSHA256": "3c16b78c7fdaab2631c3dbabf48e24458b436686fd3c67c8b2dca3465ac681a6",
+    "afterSHA256": "4961b0f65d2359f4f52cbbcbf15a109fd29353c53945e8508d643919c3824dbb"
+  }
+]

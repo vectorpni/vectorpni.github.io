@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-29T19:10:56.241Z",
+  "method": "HTTP HEAD (GET fallback for 405), no document/specification revalidation",
+  "rows": [
+    {
+      "url": "https://ardupilot.org/copter/docs/common-vibration-damping.html",
+      "status": 200,
+      "finalURL": "https://ardupilot.org/copter/docs/common-vibration-damping.html",
+      "type": "text/html"
+    },
+    {
+      "url": "https://store.tmotor.com/product/mn501-s-kv360-motor-navigator-type.html",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "url": "https://www.hobbywing.com/en/products/-xrotorh60a6sbldc",
+      "status": 200,
+      "finalURL": "https://www.hobbywing.com/en/products/-xrotorh60a6sbldc",
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://store.tmotor.com/product/polish-carbon-fiber-17x5_8-prop.html",
+      "status": 200,
+      "finalURL": "https://store.tmotor.com/product/polish-carbon-fiber-17x5_8-prop.html",
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.mateksys.com/?portfolio=h743-slim-v4",
+      "status": 200,
+      "finalURL": "https://www.mateksys.com/?portfolio=h743-slim-v4",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.mateksys.com/downloads/HUBOSD8-SE_EN.pdf",
+      "status": 200,
+      "finalURL": "https://www.mateksys.com/downloads/HUBOSD8-SE_EN.pdf",
+      "type": "application/pdf"
+    },
+    {
+      "url": "https://www.pololu.com/product/4091",
+      "status": 200,
+      "finalURL": "https://www.pololu.com/product/4091",
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/",
+      "status": 403,
+      "finalURL": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.pololu.com/product/3782",
+      "status": 200,
+      "finalURL": "https://www.pololu.com/product/3782",
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://genstattu.com/16000mah-lipo-battery",
+      "status": 200,
+      "finalURL": "https://genstattu.com/16000mah-lipo-battery",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://isdt.co/down/pdf/Q6nano_EN.pdf",
+      "status": 200,
+      "finalURL": "https://isdt.co/down/pdf/Q6nano_EN.pdf",
+      "type": "application/pdf"
+    },
+    {
+      "url": "https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/",
+      "status": 403,
+      "finalURL": "https://www.raspberrypi.com/products/raspberry-pi-4-case-fan/",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.mateksys.com/?portfolio=m10q-5883",
+      "status": 200,
+      "finalURL": "https://www.mateksys.com/?portfolio=m10q-5883",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver",
+      "status": 200,
+      "finalURL": "https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver",
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.raspberrypi.com/products/camera-module-3/",
+      "status": 403,
+      "finalURL": "https://www.raspberrypi.com/products/camera-module-3/",
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.china-amass.com/public/upload/20240723/c1ae9604bbe795ebfd366c9063019e3e.pdf",
+      "status": 200,
+      "finalURL": "https://www.china-amass.com/public/upload/20240723/c1ae9604bbe795ebfd366c9063019e3e.pdf",
+      "type": "application/pdf"
+    }
+  ]
+}

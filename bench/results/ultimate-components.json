@@ -1,0 +1,950 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.73",
+  "finishedAt": "2026-10-29T19:17:30.938Z",
+  "results": [
+    {
+      "filename": "tests/viewer.component-matrix.js",
+      "passed": true,
+      "durationMs": 208615,
+      "result": {
+        "scenarios": 64,
+        "results": [
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "frame",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "motors",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "esc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "props",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "fc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "power",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "becpi",
+            "modelPick": true,
+            "camera": [
+              -4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "becfc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "battery",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "pi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "cooling",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "gps",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "radio",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "camera",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "charger",
+            "modelPick": false,
+            "selection": "external equipment selector",
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": false,
+            "id": "wiring",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "frame",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "motors",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "esc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "props",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "fc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "power",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "becpi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "becfc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "battery",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "pi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "cooling",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "gps",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "radio",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "camera",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "charger",
+            "modelPick": false,
+            "selection": "external equipment selector",
+            "reopened": true
+          },
+          {
+            "mobile": false,
+            "exploded": true,
+            "id": "wiring",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "frame",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "motors",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "esc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "props",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "fc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "power",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "becpi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "becfc",
+            "modelPick": true,
+            "camera": [
+              0,
+              -8,
+              9
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "battery",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "pi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "cooling",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "gps",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "radio",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "camera",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "charger",
+            "modelPick": false,
+            "selection": "external equipment selector",
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": false,
+            "id": "wiring",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "frame",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "motors",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "esc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "props",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "fc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "power",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              1,
+              -9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "becpi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "becfc",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "battery",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "pi",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "cooling",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "gps",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "radio",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "camera",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "charger",
+            "modelPick": false,
+            "selection": "external equipment selector",
+            "reopened": true
+          },
+          {
+            "mobile": true,
+            "exploded": true,
+            "id": "wiring",
+            "modelPick": true,
+            "camera": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "completedClickOnCanvas": true,
+            "highlight": true,
+            "previewRotateZoom": true,
+            "reopened": true
+          }
+        ],
+        "errors": []
+      }
+    }
+  ]
+}

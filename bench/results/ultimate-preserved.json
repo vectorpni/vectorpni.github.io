@@ -1,0 +1,42 @@
+[
+  {
+    "file": "viewer-presentation.js",
+    "unchanged": true
+  },
+  {
+    "file": "ultra-detail.js",
+    "unchanged": true
+  },
+  {
+    "file": "reference-detail.js",
+    "unchanged": true
+  },
+  {
+    "file": "airfoil-geometry.js",
+    "unchanged": true
+  },
+  {
+    "file": "motor-geometry.js",
+    "unchanged": true
+  },
+  {
+    "file": "viewer-instancing.js",
+    "unchanged": true
+  },
+  {
+    "file": "viewer-motion.js",
+    "unchanged": true
+  },
+  {
+    "file": "knowledge.js",
+    "unchanged": true
+  },
+  {
+    "file": "package-lock.json",
+    "unchanged": true
+  },
+  {
+    "file": ".github/workflows/pages.yml",
+    "unchanged": true
+  }
+]

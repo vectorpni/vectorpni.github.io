@@ -1,0 +1,413 @@
+{
+  "browser": "firefox",
+  "browserVersion": "157.0",
+  "finishedAt": "2026-10-29T19:18:28.807Z",
+  "results": [
+    {
+      "filename": "tests/viewer.audit.js",
+      "passed": true,
+      "durationMs": 21423,
+      "result": {
+        "checks": 101,
+        "passed": [
+          "WebGL initialized",
+          "no overflow 320",
+          "controls outside model 320",
+          "44px controls 320",
+          "dialog close 320",
+          "dialog no overflow 320",
+          "focus restored 320",
+          "no overflow 375",
+          "controls outside model 375",
+          "44px controls 375",
+          "dialog close 375",
+          "dialog no overflow 375",
+          "focus restored 375",
+          "no overflow 390",
+          "controls outside model 390",
+          "44px controls 390",
+          "dialog close 390",
+          "dialog no overflow 390",
+          "focus restored 390",
+          "no overflow 430",
+          "controls outside model 430",
+          "44px controls 430",
+          "dialog close 430",
+          "dialog no overflow 430",
+          "focus restored 430",
+          "no overflow 768",
+          "controls outside model 768",
+          "44px controls 768",
+          "dialog close 768",
+          "dialog no overflow 768",
+          "focus restored 768",
+          "no overflow 1024",
+          "controls outside model 1024",
+          "44px controls 1024",
+          "dialog close 1024",
+          "dialog no overflow 1024",
+          "focus restored 1024",
+          "no overflow 1440",
+          "controls outside model 1440",
+          "44px controls 1440",
+          "dialog close 1440",
+          "dialog no overflow 1440",
+          "focus restored 1440",
+          "description frame",
+          "specifications frame",
+          "sources frame",
+          "description motors",
+          "specifications motors",
+          "sources motors",
+          "description esc",
+          "specifications esc",
+          "sources esc",
+          "description props",
+          "specifications props",
+          "sources props",
+          "description fc",
+          "specifications fc",
+          "sources fc",
+          "description power",
+          "specifications power",
+          "sources power",
+          "description becpi",
+          "specifications becpi",
+          "sources becpi",
+          "description becfc",
+          "specifications becfc",
+          "sources becfc",
+          "description battery",
+          "specifications battery",
+          "sources battery",
+          "description pi",
+          "specifications pi",
+          "sources pi",
+          "description cooling",
+          "specifications cooling",
+          "sources cooling",
+          "description gps",
+          "specifications gps",
+          "sources gps",
+          "description radio",
+          "specifications radio",
+          "sources radio",
+          "description camera",
+          "specifications camera",
+          "sources camera",
+          "description charger",
+          "specifications charger",
+          "sources charger",
+          "description wiring",
+          "specifications wiring",
+          "sources wiring",
+          "tab arrow navigation",
+          "top active",
+          "front active",
+          "drag does not select",
+          "orbit changes image",
+          "reset assembles after rapid toggles",
+          "geometry picking opens component",
+          "auto rotation active",
+          "mobile dialog scroll",
+          "no runtime errors"
+        ],
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "filename": "tests/viewer.instancing-regression.js",
+      "passed": true,
+      "durationMs": 15314,
+      "result": {
+        "checks": 23,
+        "passed": [
+          "non-empty original component preview frame",
+          "independent original geometry rotates frame",
+          "preview drag does not change selection frame",
+          "non-empty original component preview motors",
+          "independent original geometry rotates motors",
+          "preview drag does not change selection motors",
+          "non-empty original component preview esc",
+          "non-empty original component preview props",
+          "independent original geometry rotates props",
+          "preview drag does not change selection props",
+          "non-empty original component preview fc",
+          "non-empty original component preview power",
+          "non-empty original component preview becpi",
+          "non-empty original component preview becfc",
+          "non-empty original component preview battery",
+          "non-empty original component preview pi",
+          "non-empty original component preview cooling",
+          "non-empty original component preview gps",
+          "non-empty original component preview radio",
+          "non-empty original component preview camera",
+          "external charger remains external",
+          "non-empty original component preview wiring",
+          "all instanced geometry/materials restore after WebGL context loss"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.final.js",
+      "passed": true,
+      "durationMs": 34830,
+      "result": {
+        "checks": 15,
+        "passed": [
+          "wheel visibly changes model scale",
+          "reset restores original model image after zoom",
+          "preview context loss keeps description",
+          "preview context recovery",
+          "only main WebGL context remains after repeated previews",
+          "only main canvas remains after repeated previews",
+          "short/landscape no overflow 320x568",
+          "dialog fits 320x568",
+          "short/landscape no overflow 390x664",
+          "dialog fits 390x664",
+          "short/landscape no overflow 844x390",
+          "dialog fits 844x390",
+          "short/landscape no overflow 1024x600",
+          "dialog fits 1024x600",
+          "favicon available"
+        ],
+        "contexts": {
+          "created": 50,
+          "live": 1,
+          "attached": 1
+        }
+      }
+    },
+    {
+      "filename": "tests/viewer.shared-resource-lifecycle.js",
+      "passed": true,
+      "durationMs": 30028,
+      "result": {
+        "cycles": 24,
+        "before": {
+          "geometryListeners": 181,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 181,
+            "textures": 9
+          }
+        },
+        "after": {
+          "geometryListeners": 181,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 181,
+            "textures": 9
+          }
+        },
+        "restores": [
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.conflicts.js",
+      "passed": true,
+      "durationMs": 35148,
+      "result": {
+        "checks": 9,
+        "passed": [
+          "reset image identical after 120 interleaved actions",
+          "restore during animation assembles 0",
+          "restore during animation assembles 1",
+          "restore during animation assembles 2",
+          "reduced motion settles interleaved assembly/camera",
+          "all 16 groups retained",
+          "all animated matrices finite and attached",
+          "at most one RAF per main/preview",
+          "no conflicting-action runtime errors"
+        ],
+        "state": {
+          "frames": 1572,
+          "maxPending": 2,
+          "invalid": [],
+          "groups": 16
+        },
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.lifecycle.js",
+      "passed": true,
+      "durationMs": 44801,
+      "result": {
+        "cycles": 40,
+        "ctrlHeldDuringClose": 20,
+        "before": {
+          "listeners": {
+            "document:keydown": 1,
+            "document:visibilitychange": 1,
+            "window:resize": 1,
+            "window:pageshow": 1,
+            "window:keydown": 1
+          },
+          "live": 1,
+          "created": 2
+        },
+        "after": {
+          "listeners": {
+            "document:keydown": 1,
+            "document:visibilitychange": 1,
+            "window:resize": 1,
+            "window:pageshow": 1,
+            "window:keydown": 1
+          },
+          "live": 1,
+          "created": 82
+        },
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.initialization-failure.js",
+      "passed": true,
+      "durationMs": 3260,
+      "result": [
+        {
+          "target": "main",
+          "informationAvailable": true,
+          "failedContextReleased": true,
+          "errors": []
+        },
+        {
+          "target": "preview",
+          "informationAvailable": true,
+          "failedContextReleased": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "filename": "tests/viewer.card-navigation.js",
+      "passed": true,
+      "durationMs": 10516,
+      "result": [
+        {
+          "width": 1440,
+          "scrolled": 317,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 768,
+          "scrolled": 0,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 390,
+          "scrolled": 410,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 320,
+          "scrolled": 615,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        }
+      ]
+    },
+    {
+      "filename": "tests/viewer.premium.js",
+      "passed": true,
+      "durationMs": 17616,
+      "result": {
+        "checks": 39,
+        "passed": [
+          "top camera transition has intermediate frames",
+          "camera retargets mid flight",
+          "desktop inspector does not cover scene",
+          "desktop inspector is non-modal",
+          "desktop scene remains interactive",
+          "selection visibly highlights different components",
+          "scene rotates with inspector open",
+          "orbit does not dismiss inspector",
+          "manual camera clears preset highlight",
+          "reset returns to overview",
+          "reset assembles during transitions",
+          "premium no overflow 320",
+          "compact inspector fits 320",
+          "compact inspector modal 320",
+          "background inert 320",
+          "scroll restored 320",
+          "premium no overflow 375",
+          "compact inspector fits 375",
+          "compact inspector modal 375",
+          "background inert 375",
+          "scroll restored 375",
+          "premium no overflow 390",
+          "compact inspector fits 390",
+          "compact inspector modal 390",
+          "background inert 390",
+          "scroll restored 390",
+          "premium no overflow 430",
+          "compact inspector fits 430",
+          "compact inspector modal 430",
+          "background inert 430",
+          "scroll restored 430",
+          "premium no overflow 768",
+          "compact inspector fits 768",
+          "compact inspector modal 768",
+          "background inert 768",
+          "scroll restored 768",
+          "reduced motion camera has no ongoing flight",
+          "reduced motion assembly has no ongoing transition",
+          "no premium runtime errors"
+        ],
+        "errors": []
+      }
+    }
+  ]
+}

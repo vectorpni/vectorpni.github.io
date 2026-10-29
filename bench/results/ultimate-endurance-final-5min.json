@@ -1,0 +1,315 @@
+{
+  "startedAt": "2026-10-29T19:22:28.999Z",
+  "requestedMinutes": 5,
+  "complete": true,
+  "cycles": 250,
+  "errors": [],
+  "warnings": [],
+  "samples": [
+    {
+      "elapsedMs": 6864,
+      "cycles": 0,
+      "heapBytes": 12460676,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 2,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    },
+    {
+      "elapsedMs": 68614,
+      "cycles": 52,
+      "heapBytes": 14729520,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 294,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    },
+    {
+      "elapsedMs": 130912,
+      "cycles": 106,
+      "heapBytes": 15400860,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 600,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    },
+    {
+      "elapsedMs": 192173,
+      "cycles": 158,
+      "heapBytes": 15529848,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 893,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    },
+    {
+      "elapsedMs": 253799,
+      "cycles": 210,
+      "heapBytes": 15502332,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 1182,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    },
+    {
+      "elapsedMs": 301264,
+      "cycles": 250,
+      "heapBytes": 15516108,
+      "canvases": 1,
+      "liveContexts": 1,
+      "createdContexts": 1410,
+      "pendingRAF": 0,
+      "maxPendingRAF": 2,
+      "memory": {
+        "geometries": 181,
+        "textures": 9
+      },
+      "programs": 9,
+      "buffers": 751,
+      "bufferBytes": 5231100,
+      "textures": 13,
+      "disposeListeners": {
+        "geometries": 181,
+        "textures": 8
+      },
+      "globalListeners": {
+        "document:selectionchange": 1,
+        "document:keydown": 1,
+        "document:visibilitychange": 1,
+        "window:resize": 1,
+        "window:pageshow": 1,
+        "window:keydown": 1,
+        "window:__playwright_global_listeners_check__": 1,
+        "window:mousemove": 1,
+        "window:pointerdown": 1,
+        "window:pointerup": 1,
+        "window:touchstart": 1,
+        "window:touchend": 1,
+        "window:touchcancel": 1,
+        "window:mousedown": 1,
+        "window:mouseup": 1,
+        "window:click": 1,
+        "window:auxclick": 1,
+        "window:dblclick": 1,
+        "window:contextmenu": 1
+      }
+    }
+  ],
+  "parts": {
+    "frame": 16,
+    "motors": 16,
+    "esc": 16,
+    "props": 16,
+    "fc": 16,
+    "power": 16,
+    "becpi": 16,
+    "becfc": 16,
+    "battery": 16,
+    "pi": 16,
+    "cooling": 15,
+    "gps": 15,
+    "radio": 15,
+    "camera": 15,
+    "charger": 15,
+    "wiring": 15
+  },
+  "contextRestores": 14,
+  "freezeResumes": 7,
+  "runtimeAssets": {
+    "scripts": [
+      "http://127.0.0.1:5175/assets/index-CuL2hyd5.js"
+    ],
+    "styles": [
+      "http://127.0.0.1:5175/assets/index-Dhi-h_IZ.css"
+    ]
+  },
+  "browserVersion": "156.0.8078.73",
+  "firstPerformance": {
+    "fps": 144.01846647933903,
+    "p95FrameMs": 7.2000000001862645,
+    "p99FrameMs": 7.400000000372529,
+    "p95RenderMs": 2.2999999998137355,
+    "calls": 202,
+    "triangles": 325286
+  },
+  "elapsedMs": 310443,
+  "lastPerformance": {
+    "fps": 144.01123990169123,
+    "p95FrameMs": 7.1000000005587935,
+    "p99FrameMs": 7.1000000005587935,
+    "p95RenderMs": 1.8999999994412065,
+    "calls": 202,
+    "triangles": 325286
+  },
+  "finishedAt": "2026-10-29T19:27:33.714Z"
+}

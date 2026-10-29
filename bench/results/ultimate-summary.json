@@ -1,0 +1,136 @@
+{
+  "elapsedMinutes": 103.01666666666667,
+  "desktop": {
+    "1-before": {
+      "rotationFPS": 144.02056164909857,
+      "assemblyFPS": 144.0338094014732,
+      "p95FrameMs": 7.100000000093132,
+      "p99FrameMs": 7.2000000001862645,
+      "p95RenderMs": 1.7499999995343387,
+      "p99RenderMs": 1.8500000005587935,
+      "hoverMedianMs": 0.09999999962747097,
+      "hoverP95Ms": 1.349999999627471,
+      "raycastsPerEvent": 200,
+      "readyMin": 781.0999999996275,
+      "readyMax": 1302.5999999996275,
+      "heap": 11165584
+    },
+    "1-after": {
+      "rotationFPS": 144.0219207378155,
+      "assemblyFPS": 144.04623307077682,
+      "p95FrameMs": 7.1000000005587935,
+      "p99FrameMs": 7.199999999720603,
+      "p95RenderMs": 1.5499999998137355,
+      "p99RenderMs": 1.7000000001862645,
+      "hoverMedianMs": 0,
+      "hoverP95Ms": 1,
+      "raycastsPerEvent": 27.90277777777778,
+      "readyMin": 747.8000000007451,
+      "readyMax": 754.5999999996275,
+      "heap": 11201282
+    },
+    "4-before": {
+      "rotationFPS": 119.02840214322995,
+      "assemblyFPS": 103.79249514792104,
+      "p95FrameMs": 10.75,
+      "p99FrameMs": 12.600000000093132,
+      "p95RenderMs": 9.050000000279397,
+      "p99RenderMs": 10.799999999813735,
+      "hoverMedianMs": 0.5,
+      "hoverP95Ms": 6.600000000093132,
+      "raycastsPerEvent": 200,
+      "readyMin": 1980,
+      "readyMax": 2054.399999999441,
+      "heap": 11148898
+    },
+    "4-after": {
+      "rotationFPS": 117.78992837330733,
+      "assemblyFPS": 106.94131049481709,
+      "p95FrameMs": 10.750000000465661,
+      "p99FrameMs": 11.749999999534339,
+      "p95RenderMs": 9.199999999720603,
+      "p99RenderMs": 10.049999999813735,
+      "hoverMedianMs": 0.20000000018626451,
+      "hoverP95Ms": 4.7000000001862645,
+      "raycastsPerEvent": 27.90277777777778,
+      "readyMin": 1886.6000000005588,
+      "readyMax": 1996,
+      "heap": 11167834
+    }
+  },
+  "gpu": [
+    {
+      "base": "http://127.0.0.1:5176",
+      "samples": 72,
+      "disjoint": false,
+      "medianGpuMs": 1.431302,
+      "p95GpuMs": 1.502604
+    },
+    {
+      "base": "http://127.0.0.1:5175",
+      "samples": 72,
+      "disjoint": false,
+      "medianGpuMs": 1.457916,
+      "p95GpuMs": 1.530571
+    }
+  ],
+  "mobile": [
+    {
+      "name": "rotation",
+      "frames": 440,
+      "fps": 144.15183555524604,
+      "p95FrameMs": 7.5,
+      "calls": 202
+    },
+    {
+      "name": "disassembly",
+      "frames": 168,
+      "fps": 144.2515332123807,
+      "p95FrameMs": 7.5,
+      "calls": 202
+    }
+  ],
+  "chromeChecks": 306,
+  "firefoxChecks": 187,
+  "components": 64,
+  "allocationBytesPerFrame": [
+    {
+      "rotation": 68426.12089810017,
+      "assembly": 69324.23809523809
+    },
+    {
+      "rotation": 66650.24221453287,
+      "assembly": 65007.833333333336
+    },
+    {
+      "rotation": 69209.10726643598,
+      "assembly": 66005.09523809524
+    }
+  ],
+  "beforeAssets": [
+    {
+      "file": "index-CLI2wzlD.js",
+      "bytes": 862191,
+      "gzipBytes": 240340
+    },
+    {
+      "file": "index-CR4iNuPg.css",
+      "bytes": 25540,
+      "gzipBytes": 6099
+    }
+  ],
+  "afterAssets": [
+    {
+      "file": "index-CuL2hyd5.js",
+      "bytes": 865154,
+      "gzipBytes": 241232
+    },
+    {
+      "file": "index-Dhi-h_IZ.css",
+      "bytes": 26010,
+      "gzipBytes": 6156
+    }
+  ],
+  "measurementsCollectedAt": "2026-10-29T19:36:32.620Z",
+  "finalClockCheckpoint": "2026-10-29T19:40:23Z"
+}

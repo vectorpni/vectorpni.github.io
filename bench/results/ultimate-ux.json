@@ -1,0 +1,49 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.73",
+  "finishedAt": "2026-10-29T19:20:15.876Z",
+  "results": [
+    {
+      "filename": "tests/viewer.ux-comparison.js",
+      "passed": true,
+      "durationMs": 5509,
+      "result": {
+        "rows": [
+          {
+            "version": "before",
+            "view": "landscape-safe-area",
+            "bounds": {
+              "x": 24,
+              "y": -1,
+              "width": 796,
+              "height": 370
+            }
+          },
+          {
+            "version": "before",
+            "view": "card-navigation",
+            "scrollTop": 318,
+            "comboFocused": false
+          },
+          {
+            "version": "after",
+            "view": "landscape-safe-area",
+            "bounds": {
+              "x": 47,
+              "y": 20,
+              "width": 750,
+              "height": 349
+            }
+          },
+          {
+            "version": "after",
+            "view": "card-navigation",
+            "scrollTop": 0,
+            "comboFocused": true
+          }
+        ],
+        "output": "C:/Sites/MyWebsite/drone-lab/qa-artifacts/ultimate"
+      }
+    }
+  ]
+}

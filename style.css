@@ -63,3 +63,13 @@ select:focus-visible,[tabindex]:focus-visible{outline:2px solid #2f6d57;outline-
 @media(prefers-reduced-motion:reduce){.model-stage .three-view canvas{transition:none}.spec-modal.enriched{animation:none}}
 
 @media(min-width:701px){.drone-page{min-height:100svh}}
+
+/* Keep the inspector clear of landscape display cutouts as well as the home indicator. */
+@media(max-width:1099px){
+  .modal-overlay{padding-left:max(13px,env(safe-area-inset-left));padding-right:max(13px,env(safe-area-inset-right))}
+  .spec-modal.enriched{max-width:min(100%,calc(100vw - 48px))}
+}
+@media(max-width:750px){.spec-modal.enriched{max-width:min(100%,calc(100vw - 26px))}}
+@media(max-width:1099px) and (max-height:500px) and (orientation:landscape){
+  .spec-modal.enriched{max-height:calc(100svh - 20px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+}

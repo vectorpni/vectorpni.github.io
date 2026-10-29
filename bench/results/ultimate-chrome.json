@@ -1,0 +1,1762 @@
+{
+  "browser": "chrome",
+  "finishedAt": "2026-10-29T19:14:45.304Z",
+  "results": [
+    {
+      "filename": "tests/viewer.safe-area.js",
+      "passed": true,
+      "durationMs": 13324,
+      "result": {
+        "emulation": "Chromium env(safe-area-inset-*) override, not physical iOS",
+        "rows": [
+          {
+            "width": 390,
+            "height": 844,
+            "insets": {
+              "top": 47,
+              "bottom": 34,
+              "left": 0,
+              "right": 0
+            },
+            "rect": {
+              "x": 13,
+              "y": 151.6875,
+              "width": 364,
+              "height": 658.3125
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "47px 0px 34px"
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "insets": {
+              "top": 0,
+              "bottom": 21,
+              "left": 47,
+              "right": 47
+            },
+            "rect": {
+              "x": 47,
+              "y": 20,
+              "width": 750,
+              "height": 349
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "0px 47px 21px"
+            }
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "insets": {
+              "top": 20,
+              "bottom": 0,
+              "left": 0,
+              "right": 0
+            },
+            "rect": {
+              "x": 13,
+              "y": 111.96875,
+              "width": 294,
+              "height": 443.03125
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "20px 0px 0px"
+            }
+          },
+          {
+            "width": 430,
+            "height": 932,
+            "insets": {
+              "top": 59,
+              "bottom": 34,
+              "left": 0,
+              "right": 0
+            },
+            "rect": {
+              "x": 13.160476684570312,
+              "y": 171.81228637695312,
+              "width": 403.67906188964844,
+              "height": 726.3755798339844
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "59px 0px 34px"
+            }
+          },
+          {
+            "width": 768,
+            "height": 1024,
+            "insets": {
+              "top": 24,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "rect": {
+              "x": 24.22039794921875,
+              "y": 205.89312744140625,
+              "width": 719.5592041015625,
+              "height": 798.229736328125
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "24px 0px 20px"
+            }
+          },
+          {
+            "width": 390,
+            "height": 664,
+            "insets": {
+              "top": 47,
+              "bottom": 34,
+              "left": 0,
+              "right": 0
+            },
+            "rect": {
+              "x": 13.059829711914062,
+              "y": 112.3760986328125,
+              "width": 363.88035583496094,
+              "height": 517.7360229492188
+            },
+            "initial": {
+              "overflow": false,
+              "padding": "47px 0px 34px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.card-navigation.js",
+      "passed": true,
+      "durationMs": 6720,
+      "result": [
+        {
+          "width": 1440,
+          "scrolled": 318,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 768,
+          "scrolled": 0,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 390,
+          "scrolled": 410,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        },
+        {
+          "width": 320,
+          "scrolled": 614,
+          "afterSwitch": 0,
+          "selected": "power",
+          "tab": "true",
+          "keyboardSelectKeepsFocus": true,
+          "nextKeepsFocus": true
+        }
+      ]
+    },
+    {
+      "filename": "tests/viewer.audit.js",
+      "passed": true,
+      "durationMs": 12928,
+      "result": {
+        "checks": 101,
+        "passed": [
+          "WebGL initialized",
+          "no overflow 320",
+          "controls outside model 320",
+          "44px controls 320",
+          "dialog close 320",
+          "dialog no overflow 320",
+          "focus restored 320",
+          "no overflow 375",
+          "controls outside model 375",
+          "44px controls 375",
+          "dialog close 375",
+          "dialog no overflow 375",
+          "focus restored 375",
+          "no overflow 390",
+          "controls outside model 390",
+          "44px controls 390",
+          "dialog close 390",
+          "dialog no overflow 390",
+          "focus restored 390",
+          "no overflow 430",
+          "controls outside model 430",
+          "44px controls 430",
+          "dialog close 430",
+          "dialog no overflow 430",
+          "focus restored 430",
+          "no overflow 768",
+          "controls outside model 768",
+          "44px controls 768",
+          "dialog close 768",
+          "dialog no overflow 768",
+          "focus restored 768",
+          "no overflow 1024",
+          "controls outside model 1024",
+          "44px controls 1024",
+          "dialog close 1024",
+          "dialog no overflow 1024",
+          "focus restored 1024",
+          "no overflow 1440",
+          "controls outside model 1440",
+          "44px controls 1440",
+          "dialog close 1440",
+          "dialog no overflow 1440",
+          "focus restored 1440",
+          "description frame",
+          "specifications frame",
+          "sources frame",
+          "description motors",
+          "specifications motors",
+          "sources motors",
+          "description esc",
+          "specifications esc",
+          "sources esc",
+          "description props",
+          "specifications props",
+          "sources props",
+          "description fc",
+          "specifications fc",
+          "sources fc",
+          "description power",
+          "specifications power",
+          "sources power",
+          "description becpi",
+          "specifications becpi",
+          "sources becpi",
+          "description becfc",
+          "specifications becfc",
+          "sources becfc",
+          "description battery",
+          "specifications battery",
+          "sources battery",
+          "description pi",
+          "specifications pi",
+          "sources pi",
+          "description cooling",
+          "specifications cooling",
+          "sources cooling",
+          "description gps",
+          "specifications gps",
+          "sources gps",
+          "description radio",
+          "specifications radio",
+          "sources radio",
+          "description camera",
+          "specifications camera",
+          "sources camera",
+          "description charger",
+          "specifications charger",
+          "sources charger",
+          "description wiring",
+          "specifications wiring",
+          "sources wiring",
+          "tab arrow navigation",
+          "top active",
+          "front active",
+          "drag does not select",
+          "orbit changes image",
+          "reset assembles after rapid toggles",
+          "geometry picking opens component",
+          "auto rotation active",
+          "mobile dialog scroll",
+          "no runtime errors"
+        ],
+        "errors": [],
+        "failed": []
+      }
+    },
+    {
+      "filename": "tests/viewer.instancing-regression.js",
+      "passed": true,
+      "durationMs": 11644,
+      "result": {
+        "checks": 23,
+        "passed": [
+          "non-empty original component preview frame",
+          "independent original geometry rotates frame",
+          "preview drag does not change selection frame",
+          "non-empty original component preview motors",
+          "independent original geometry rotates motors",
+          "preview drag does not change selection motors",
+          "non-empty original component preview esc",
+          "non-empty original component preview props",
+          "independent original geometry rotates props",
+          "preview drag does not change selection props",
+          "non-empty original component preview fc",
+          "non-empty original component preview power",
+          "non-empty original component preview becpi",
+          "non-empty original component preview becfc",
+          "non-empty original component preview battery",
+          "non-empty original component preview pi",
+          "non-empty original component preview cooling",
+          "non-empty original component preview gps",
+          "non-empty original component preview radio",
+          "non-empty original component preview camera",
+          "external charger remains external",
+          "non-empty original component preview wiring",
+          "all instanced geometry/materials restore after WebGL context loss"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.premium.js",
+      "passed": true,
+      "durationMs": 18009,
+      "result": {
+        "checks": 39,
+        "passed": [
+          "top camera transition has intermediate frames",
+          "camera retargets mid flight",
+          "desktop inspector does not cover scene",
+          "desktop inspector is non-modal",
+          "desktop scene remains interactive",
+          "selection visibly highlights different components",
+          "scene rotates with inspector open",
+          "orbit does not dismiss inspector",
+          "manual camera clears preset highlight",
+          "reset returns to overview",
+          "reset assembles during transitions",
+          "premium no overflow 320",
+          "compact inspector fits 320",
+          "compact inspector modal 320",
+          "background inert 320",
+          "scroll restored 320",
+          "premium no overflow 375",
+          "compact inspector fits 375",
+          "compact inspector modal 375",
+          "background inert 375",
+          "scroll restored 375",
+          "premium no overflow 390",
+          "compact inspector fits 390",
+          "compact inspector modal 390",
+          "background inert 390",
+          "scroll restored 390",
+          "premium no overflow 430",
+          "compact inspector fits 430",
+          "compact inspector modal 430",
+          "background inert 430",
+          "scroll restored 430",
+          "premium no overflow 768",
+          "compact inspector fits 768",
+          "compact inspector modal 768",
+          "background inert 768",
+          "scroll restored 768",
+          "reduced motion camera has no ongoing flight",
+          "reduced motion assembly has no ongoing transition",
+          "no premium runtime errors"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.final.js",
+      "passed": true,
+      "durationMs": 11929,
+      "result": {
+        "checks": 15,
+        "passed": [
+          "wheel visibly changes model scale",
+          "reset restores original model image after zoom",
+          "preview context loss keeps description",
+          "preview context recovery",
+          "only main WebGL context remains after repeated previews",
+          "only main canvas remains after repeated previews",
+          "short/landscape no overflow 320x568",
+          "dialog fits 320x568",
+          "short/landscape no overflow 390x664",
+          "dialog fits 390x664",
+          "short/landscape no overflow 844x390",
+          "dialog fits 844x390",
+          "short/landscape no overflow 1024x600",
+          "dialog fits 1024x600",
+          "favicon available"
+        ],
+        "contexts": {
+          "created": 50,
+          "live": 1,
+          "attached": 1
+        }
+      }
+    },
+    {
+      "filename": "tests/viewer.resilience.js",
+      "passed": true,
+      "durationMs": 5129,
+      "result": {
+        "checks": 7,
+        "passed": [
+          "idle scene makes no draw calls",
+          "auto rotation draws frames",
+          "idle component preview makes no draw calls",
+          "context loss shows explanation",
+          "context recovery clears explanation",
+          "WebGL failure does not leave loader",
+          "component information available without WebGL"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.framing.js",
+      "passed": true,
+      "durationMs": 15521,
+      "result": {
+        "checks": 54,
+        "results": [
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": false,
+            "view": "3D",
+            "margin": 34
+          },
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 31
+          },
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 29
+          },
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": true,
+            "view": "3D",
+            "margin": 34
+          },
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 31
+          },
+          {
+            "width": 320,
+            "height": 844,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 22
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": false,
+            "view": "3D",
+            "margin": 42
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 34
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 35
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": true,
+            "view": "3D",
+            "margin": 33
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 34
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 16
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": false,
+            "view": "3D",
+            "margin": 47
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 42
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 63
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": true,
+            "view": "3D",
+            "margin": 22
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 42
+          },
+          {
+            "width": 768,
+            "height": 844,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 18
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": false,
+            "view": "3D",
+            "margin": 48
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 56
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 70
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": true,
+            "view": "3D",
+            "margin": 29
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 56
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 25
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": false,
+            "view": "3D",
+            "margin": 34
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 25
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 42
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": true,
+            "view": "3D",
+            "margin": 13
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 25
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 11
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": false,
+            "view": "3D",
+            "margin": 31
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 28
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 42
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": true,
+            "view": "3D",
+            "margin": 15
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 28
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 12
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": false,
+            "view": "3D",
+            "margin": 36
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 33
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 48
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": true,
+            "view": "3D",
+            "margin": 17
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 33
+          },
+          {
+            "width": 1024,
+            "height": 600,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 14
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": false,
+            "view": "3D",
+            "margin": 28
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 33
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 41
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": true,
+            "view": "3D",
+            "margin": 17
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 33
+          },
+          {
+            "width": 1100,
+            "height": 700,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 14
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": false,
+            "view": "3D",
+            "margin": 54
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": false,
+            "view": "Сверху",
+            "margin": 64
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": false,
+            "view": "Спереди",
+            "margin": 80
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": true,
+            "view": "3D",
+            "margin": 33
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": true,
+            "view": "Сверху",
+            "margin": 63
+          },
+          {
+            "width": 1920,
+            "height": 1080,
+            "exploded": true,
+            "view": "Спереди",
+            "margin": 28
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.touch.js",
+      "passed": true,
+      "durationMs": 4684,
+      "result": {
+        "checks": 6,
+        "passed": [
+          "pinch does not select a component",
+          "emulated pinch visibly zooms model",
+          "touch drag does not select a component",
+          "emulated touch drag rotates model",
+          "emulated tap selects component",
+          "touch closes component"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.shared-resource-lifecycle.js",
+      "passed": true,
+      "durationMs": 8151,
+      "result": {
+        "cycles": 24,
+        "before": {
+          "geometryListeners": 181,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 181,
+            "textures": 9
+          }
+        },
+        "after": {
+          "geometryListeners": 181,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 181,
+            "textures": 9
+          }
+        },
+        "restores": [
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 181,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            }
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.lifecycle.js",
+      "passed": true,
+      "durationMs": 17929,
+      "result": {
+        "cycles": 40,
+        "ctrlHeldDuringClose": 20,
+        "before": {
+          "listeners": {
+            "document:keydown": 1,
+            "document:visibilitychange": 1,
+            "window:resize": 1,
+            "window:pageshow": 1,
+            "window:keydown": 1
+          },
+          "live": 1,
+          "created": 2
+        },
+        "after": {
+          "listeners": {
+            "document:keydown": 1,
+            "document:visibilitychange": 1,
+            "window:resize": 1,
+            "window:pageshow": 1,
+            "window:keydown": 1
+          },
+          "live": 1,
+          "created": 82
+        },
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.initialization-failure.js",
+      "passed": true,
+      "durationMs": 1913,
+      "result": [
+        {
+          "target": "main",
+          "informationAvailable": true,
+          "failedContextReleased": true,
+          "errors": []
+        },
+        {
+          "target": "preview",
+          "informationAvailable": true,
+          "failedContextReleased": true,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "filename": "tests/viewer.pixel-ratio.js",
+      "passed": true,
+      "durationMs": 1922,
+      "result": [
+        {
+          "scale": 1,
+          "dpr": 1,
+          "canvases": [
+            {
+              "preview": false,
+              "cssWidth": 976,
+              "width": 976,
+              "ratio": 1
+            },
+            {
+              "preview": true,
+              "cssWidth": 114,
+              "width": 114,
+              "ratio": 1
+            }
+          ]
+        },
+        {
+          "scale": 2,
+          "dpr": 2,
+          "canvases": [
+            {
+              "preview": false,
+              "cssWidth": 976,
+              "width": 1952,
+              "ratio": 2
+            },
+            {
+              "preview": true,
+              "cssWidth": 114,
+              "width": 182,
+              "ratio": 1.5964912280701755
+            }
+          ]
+        },
+        {
+          "scale": 3,
+          "dpr": 3,
+          "canvases": [
+            {
+              "preview": false,
+              "cssWidth": 976,
+              "width": 1952,
+              "ratio": 2
+            },
+            {
+              "preview": true,
+              "cssWidth": 114,
+              "width": 182,
+              "ratio": 1.5964912280701755
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "dpr": 1,
+          "canvases": [
+            {
+              "preview": false,
+              "cssWidth": 976,
+              "width": 976,
+              "ratio": 1
+            },
+            {
+              "preview": true,
+              "cssWidth": 114,
+              "width": 114,
+              "ratio": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "tests/viewer.conflicts.js",
+      "passed": true,
+      "durationMs": 15481,
+      "result": {
+        "checks": 9,
+        "passed": [
+          "reset image identical after 120 interleaved actions",
+          "restore during animation assembles 0",
+          "restore during animation assembles 1",
+          "restore during animation assembles 2",
+          "reduced motion settles interleaved assembly/camera",
+          "all 16 groups retained",
+          "all animated matrices finite and attached",
+          "at most one RAF per main/preview",
+          "no conflicting-action runtime errors"
+        ],
+        "state": {
+          "frames": 1411,
+          "maxPending": 2,
+          "invalid": [],
+          "groups": 16
+        },
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.visibility.js",
+      "passed": true,
+      "durationMs": 3063,
+      "result": {
+        "nativeMinimization": {
+          "supported": false
+        },
+        "syntheticVisibility": {
+          "before": {
+            "callbacks": 48,
+            "pending": 0
+          },
+          "hidden": {
+            "callbacks": 48,
+            "pending": 0
+          },
+          "resumed": {
+            "callbacks": 71,
+            "pending": 1
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "filename": "tests/viewer.geometry-audit.js",
+      "passed": true,
+      "durationMs": 1096,
+      "result": {
+        "geometries": 181,
+        "uniqueTriangles": 89130,
+        "zeroArea": 0,
+        "errors": [],
+        "byType": {
+          "ExtrudeGeometry": 3,
+          "BufferGeometry": 27,
+          "CylinderGeometry": 46,
+          "RoundedBoxGeometry": 45,
+          "TorusGeometry": 14,
+          "TubeGeometry": 40,
+          "PlaneGeometry": 5,
+          "SphereGeometry": 1
+        }
+      }
+    },
+    {
+      "filename": "tests/viewer.ultimate-visual.js",
+      "passed": true,
+      "durationMs": 14545,
+      "result": {
+        "shots": [
+          {
+            "version": "before",
+            "id": "overview",
+            "position": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "quaternion": [
+              -0.22449440191467993,
+              0.22553990777550442,
+              0.05349409403759404,
+              0.9465053594210041
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "before",
+            "id": "top",
+            "position": [
+              0.01,
+              11,
+              0.01
+            ],
+            "quaternion": [
+              -0.6528555930395988,
+              0.27077434430772723,
+              0.2704216409081318,
+              0.6537070943703972
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "before",
+            "id": "front",
+            "position": [
+              0,
+              2,
+              11
+            ],
+            "quaternion": [
+              -0.08321491730282442,
+              0,
+              0,
+              0.9965316239529403
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "before",
+            "id": "frame",
+            "position": [
+              1.7,
+              1.65,
+              2
+            ],
+            "quaternion": [
+              -0.2144004316822648,
+              0.3366592668190124,
+              0.07901621406611488,
+              0.9134820364265525
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 19,
+            "triangles": 29268
+          },
+          {
+            "version": "before",
+            "id": "motors",
+            "position": [
+              2.8,
+              1.13,
+              2.9
+            ],
+            "quaternion": [
+              -0.20975494281126653,
+              0.34356357494750606,
+              0.07901871578320432,
+              0.9119884738808407
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 15,
+            "triangles": 106052
+          },
+          {
+            "version": "before",
+            "id": "props",
+            "position": [
+              3.25,
+              3.1,
+              5.2
+            ],
+            "quaternion": [
+              -0.2927268003444811,
+              0.17034601971180335,
+              0.053081491914071646,
+              0.9394017293706695
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 13,
+            "triangles": 24164
+          },
+          {
+            "version": "before",
+            "id": "battery",
+            "position": [
+              1.7,
+              1.9,
+              2.3
+            ],
+            "quaternion": [
+              -0.1475826950435745,
+              0.29779920101889856,
+              0.04665621311418438,
+              0.9419969117645899
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 15,
+            "triangles": 6234
+          },
+          {
+            "version": "before",
+            "id": "camera",
+            "position": [
+              0.85,
+              -0.7,
+              1.45
+            ],
+            "quaternion": [
+              -0.16961387779042705,
+              0.29845146888867014,
+              0.053985925641481525,
+              0.9376797817014728
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 17,
+            "triangles": 6808
+          },
+          {
+            "version": "before",
+            "id": "electronics",
+            "position": [
+              1.2,
+              0.9,
+              1.3
+            ],
+            "quaternion": [
+              -0.2801209906126677,
+              0.3558174406571594,
+              0.11269555629532615,
+              0.8844353515852097
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 16,
+            "triangles": 28660
+          },
+          {
+            "version": "before",
+            "id": "fasteners",
+            "position": [
+              1.04,
+              1.02,
+              1.18
+            ],
+            "quaternion": [
+              -0.345718442981917,
+              0.3003658774595559,
+              0.11785250050896297,
+              0.8811185425150777
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 19,
+            "triangles": 29268
+          },
+          {
+            "version": "before",
+            "id": "exploded",
+            "position": [
+              6,
+              7,
+              13
+            ],
+            "quaternion": [
+              -0.2161213393409144,
+              0.20920582424171338,
+              0.047468208867825566,
+              0.9525078786717279
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "after",
+            "id": "overview",
+            "position": [
+              4.8,
+              5.5,
+              9.5
+            ],
+            "quaternion": [
+              -0.22449440191467993,
+              0.22553990777550442,
+              0.05349409403759404,
+              0.9465053594210041
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "after",
+            "id": "top",
+            "position": [
+              0.01,
+              11,
+              0.01
+            ],
+            "quaternion": [
+              -0.6528555930395988,
+              0.27077434430772723,
+              0.2704216409081318,
+              0.6537070943703972
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "after",
+            "id": "front",
+            "position": [
+              0,
+              2,
+              11
+            ],
+            "quaternion": [
+              -0.08321491730282442,
+              0,
+              0,
+              0.9965316239529403
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          },
+          {
+            "version": "after",
+            "id": "frame",
+            "position": [
+              1.7,
+              1.65,
+              2
+            ],
+            "quaternion": [
+              -0.2144004316822648,
+              0.3366592668190124,
+              0.07901621406611488,
+              0.9134820364265525
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 19,
+            "triangles": 29268
+          },
+          {
+            "version": "after",
+            "id": "motors",
+            "position": [
+              2.8,
+              1.13,
+              2.9
+            ],
+            "quaternion": [
+              -0.20975494281126653,
+              0.34356357494750606,
+              0.07901871578320432,
+              0.9119884738808407
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 15,
+            "triangles": 106052
+          },
+          {
+            "version": "after",
+            "id": "props",
+            "position": [
+              3.25,
+              3.1,
+              5.2
+            ],
+            "quaternion": [
+              -0.2927268003444811,
+              0.17034601971180335,
+              0.053081491914071646,
+              0.9394017293706695
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 13,
+            "triangles": 24164
+          },
+          {
+            "version": "after",
+            "id": "battery",
+            "position": [
+              1.7,
+              1.9,
+              2.3
+            ],
+            "quaternion": [
+              -0.1475826950435745,
+              0.29779920101889856,
+              0.04665621311418438,
+              0.9419969117645899
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 15,
+            "triangles": 6234
+          },
+          {
+            "version": "after",
+            "id": "camera",
+            "position": [
+              0.85,
+              -0.7,
+              1.45
+            ],
+            "quaternion": [
+              -0.16961387779042705,
+              0.29845146888867014,
+              0.053985925641481525,
+              0.9376797817014728
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 17,
+            "triangles": 6808
+          },
+          {
+            "version": "after",
+            "id": "electronics",
+            "position": [
+              1.2,
+              0.9,
+              1.3
+            ],
+            "quaternion": [
+              -0.2801209906126677,
+              0.3558174406571594,
+              0.11269555629532615,
+              0.8844353515852097
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 16,
+            "triangles": 28660
+          },
+          {
+            "version": "after",
+            "id": "fasteners",
+            "position": [
+              1.04,
+              1.02,
+              1.18
+            ],
+            "quaternion": [
+              -0.345718442981917,
+              0.3003658774595559,
+              0.11785250050896297,
+              0.8811185425150777
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 19,
+            "triangles": 29268
+          },
+          {
+            "version": "after",
+            "id": "exploded",
+            "position": [
+              6,
+              7,
+              13
+            ],
+            "quaternion": [
+              -0.2161213393409144,
+              0.20920582424171338,
+              0.047468208867825566,
+              0.9525078786717279
+            ],
+            "fov": 32,
+            "aspect": 2.027027027027027,
+            "calls": 202,
+            "triangles": 325286
+          }
+        ],
+        "equality": [
+          {
+            "id": "overview",
+            "byteIdentical": true
+          },
+          {
+            "id": "top",
+            "byteIdentical": true
+          },
+          {
+            "id": "front",
+            "byteIdentical": true
+          },
+          {
+            "id": "frame",
+            "byteIdentical": true
+          },
+          {
+            "id": "motors",
+            "byteIdentical": true
+          },
+          {
+            "id": "props",
+            "byteIdentical": true
+          },
+          {
+            "id": "battery",
+            "byteIdentical": true
+          },
+          {
+            "id": "camera",
+            "byteIdentical": true
+          },
+          {
+            "id": "electronics",
+            "byteIdentical": true
+          },
+          {
+            "id": "fasteners",
+            "byteIdentical": true
+          },
+          {
+            "id": "exploded",
+            "byteIdentical": true
+          },
+          {
+            "id": "mobile",
+            "byteIdentical": true
+          },
+          {
+            "id": "mobile-card",
+            "byteIdentical": true
+          }
+        ],
+        "errors": [],
+        "output": "C:/Sites/MyWebsite/drone-lab/qa-artifacts/ultimate"
+      }
+    },
+    {
+      "filename": "tests/viewer.materials-integrity.js",
+      "passed": true,
+      "durationMs": 8879,
+      "result": {
+        "revisions": [
+          {
+            "url": "http://127.0.0.1:5176",
+            "calls": 202,
+            "triangles": 325286,
+            "rendererMemory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "textures": [
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 262144
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 262144
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 87381,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 87381,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 768,
+                "height": 1024,
+                "type": 1016,
+                "colorSpace": "srgb-linear",
+                "estimatedBytes": 6291456,
+                "cpuTypedBytes": 0
+              }
+            ],
+            "estimatedTextureBytes": 9611946,
+            "expandedMeshes": 1156
+          },
+          {
+            "url": "http://127.0.0.1:5175",
+            "calls": 202,
+            "triangles": 325286,
+            "rendererMemory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "textures": [
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 262144
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 262144
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 87381,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 128,
+                "height": 128,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 87381,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 512,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "srgb",
+                "estimatedBytes": 699051,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 256,
+                "height": 256,
+                "type": 1009,
+                "colorSpace": "",
+                "estimatedBytes": 349525,
+                "cpuTypedBytes": 0
+              },
+              {
+                "width": 768,
+                "height": 1024,
+                "type": 1016,
+                "colorSpace": "srgb-linear",
+                "estimatedBytes": 6291456,
+                "cpuTypedBytes": 0
+              }
+            ],
+            "estimatedTextureBytes": 9611946,
+            "expandedMeshes": 1156
+          }
+        ],
+        "geometryEqual": true,
+        "mainMemoryStable": {
+          "before": {
+            "geometries": 181,
+            "textures": 9
+          },
+          "after": {
+            "geometries": 181,
+            "textures": 9
+          }
+        },
+        "errors": []
+      }
+    }
+  ]
+}
