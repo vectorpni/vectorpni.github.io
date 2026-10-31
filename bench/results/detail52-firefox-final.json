@@ -1,0 +1,3330 @@
+{
+  "browser": "firefox",
+  "browserVersion": "157.0",
+  "finishedAt": "2026-10-31T04:40:57.481Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail52-network.js",
+      "passed": true,
+      "durationMs": 7187,
+      "diagnostics": [
+        {
+          "kind": "requestfailed",
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap",
+          "message": "NS_ERROR_FAILURE"
+        }
+      ],
+      "result": {
+        "results": [
+          {
+            "port": 5180,
+            "timeout": true,
+            "elapsedMs": 3502,
+            "pending": [
+              "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+            ],
+            "heldFonts": 1,
+            "ready": 0,
+            "state": "interactive",
+            "recovered": true,
+            "failed": [
+              {
+                "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap",
+                "reason": "NS_ERROR_FAILURE"
+              }
+            ],
+            "error": "page.goto: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5180/\", waiting until \"load\"\u001b[22m\n"
+          },
+          {
+            "port": 5175,
+            "timeout": false,
+            "elapsedMs": 1623,
+            "pending": [],
+            "heldFonts": 0,
+            "ready": 1,
+            "state": "complete",
+            "recovered": true,
+            "failed": []
+          }
+        ],
+        "note": "Network fault injection, not evidence of the historical failure cause."
+      }
+    },
+    {
+      "filename": "tests/viewer.detail51-navigation.js",
+      "passed": true,
+      "durationMs": 1353,
+      "diagnostics": [],
+      "result": {
+        "loadMs": 1174,
+        "pending": [],
+        "failed": [],
+        "responses": [
+          {
+            "url": "http://127.0.0.1:5175/",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/manrope-v23-latin-B6Sd7_ZV.woff2",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/favicon.svg",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/manrope-v23-cyrillic-DfGDO6bq.woff2",
+            "status": 200
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.detail52-regression.js",
+      "passed": true,
+      "durationMs": 44051,
+      "diagnostics": [
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"debugger eval code line 370 > eval\" line: 1}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        }
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "Detailed module not fetched on first screen",
+            "passed": true
+          },
+          {
+            "name": "16 main components",
+            "passed": true
+          },
+          {
+            "name": "frame no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "frame finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "frame reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "frame section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "frame section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "frame section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "frame section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "frame exterior restored",
+            "passed": true
+          },
+          {
+            "name": "motors no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "motors finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "motors reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "motors section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "motors section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "motors section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "motors section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "Detail WebGL loss supported",
+            "passed": true
+          },
+          {
+            "name": "Detail WebGL restored",
+            "passed": true
+          },
+          {
+            "name": "motors exterior restored",
+            "passed": true
+          },
+          {
+            "name": "esc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "esc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "esc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "esc section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "esc section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "esc section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "esc section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "esc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "props no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "props finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "props reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "props section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "props section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "props visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "props section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "props section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "props visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "props exterior restored",
+            "passed": true
+          },
+          {
+            "name": "fc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "fc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "fc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "fc section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "fc section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "fc section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "fc section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "fc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "power no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "power finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "power reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "power section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "power section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "power section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "power section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "power section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "power section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "power section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "power section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "power exterior restored",
+            "passed": true
+          },
+          {
+            "name": "becpi no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "becpi finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "becpi reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "becpi section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "becpi section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "becpi section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "becpi section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "becpi exterior restored",
+            "passed": true
+          },
+          {
+            "name": "becfc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "becfc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "becfc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "becfc section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "becfc section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "becfc section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "becfc section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "becfc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "battery no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "battery finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "battery reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "battery section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "battery section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "battery section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "battery exterior restored",
+            "passed": true
+          },
+          {
+            "name": "pi no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "pi finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "pi reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "pi section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "pi section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "pi section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "pi section 3 touch selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "pi exterior restored",
+            "passed": true
+          },
+          {
+            "name": "cooling no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "cooling finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "cooling reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "cooling section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "cooling section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "cooling section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "cooling exterior restored",
+            "passed": true
+          },
+          {
+            "name": "gps no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "gps finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "gps reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "gps section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "gps section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "gps section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "gps exterior restored",
+            "passed": true
+          },
+          {
+            "name": "radio no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "radio finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "radio reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "radio section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "radio section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "radio section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "radio exterior restored",
+            "passed": true
+          },
+          {
+            "name": "camera no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "camera finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "camera reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "camera section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "camera section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "camera section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "camera exterior restored",
+            "passed": true
+          },
+          {
+            "name": "Charger remains external without invented internals",
+            "passed": true
+          },
+          {
+            "name": "wiring no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "wiring finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "wiring reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "wiring section 0 touch selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "wiring section 1 touch selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "wiring section 2 touch selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "wiring exterior restored",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 320",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 320",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 375",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 375",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 390",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 390",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 430",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 430",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 768",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 768",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 1024",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 1024",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 844",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 844",
+            "passed": true
+          },
+          {
+            "name": "No JS errors",
+            "passed": true
+          }
+        ],
+        "rows": [
+          {
+            "id": "frame",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 28,
+            "instances": 15,
+            "triangles": 50272,
+            "geometries": 28,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 28
+          },
+          {
+            "id": "motors",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 23,
+            "instances": 8,
+            "triangles": 63792,
+            "geometries": 23,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 23
+          },
+          {
+            "id": "esc",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 19,
+            "instances": 10,
+            "triangles": 11284,
+            "geometries": 19,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 19
+          },
+          {
+            "id": "props",
+            "sections": 2,
+            "badRows": [],
+            "meshes": 6,
+            "instances": 0,
+            "triangles": 6936,
+            "geometries": 6,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 6
+          },
+          {
+            "id": "fc",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 31,
+            "instances": 15,
+            "triangles": 22128,
+            "geometries": 31,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 31
+          },
+          {
+            "id": "power",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 23,
+            "instances": 12,
+            "triangles": 15216,
+            "geometries": 23,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 23
+          },
+          {
+            "id": "becpi",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 23,
+            "instances": 12,
+            "triangles": 21224,
+            "geometries": 23,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 23
+          },
+          {
+            "id": "becfc",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 24,
+            "instances": 12,
+            "triangles": 21284,
+            "geometries": 24,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 24
+          },
+          {
+            "id": "battery",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 38,
+            "instances": 3,
+            "triangles": 9506,
+            "geometries": 38,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 38
+          },
+          {
+            "id": "pi",
+            "sections": 4,
+            "badRows": [],
+            "meshes": 31,
+            "instances": 15,
+            "triangles": 40800,
+            "geometries": 31,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 31
+          },
+          {
+            "id": "cooling",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 22,
+            "instances": 9,
+            "triangles": 20858,
+            "geometries": 22,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 22
+          },
+          {
+            "id": "gps",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 16,
+            "instances": 4,
+            "triangles": 4286,
+            "geometries": 16,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 16
+          },
+          {
+            "id": "radio",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 12,
+            "instances": 1,
+            "triangles": 2348,
+            "geometries": 12,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 12
+          },
+          {
+            "id": "camera",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 30,
+            "instances": 4,
+            "triangles": 21628,
+            "geometries": 30,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 30
+          },
+          {
+            "id": "wiring",
+            "sections": 3,
+            "badRows": [],
+            "meshes": 19,
+            "instances": 7,
+            "triangles": 21492,
+            "geometries": 19,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 19
+          }
+        ],
+        "errors": [],
+        "runtimeAssets": [
+          "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+          "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+          "http://127.0.0.1:5175/assets/engineering-inspector-C2pTG1YT.js"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.detail52-hierarchy.js",
+      "passed": true,
+      "durationMs": 3963,
+      "diagnostics": [
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        }
+      ],
+      "result": {
+        "rows": [
+          {
+            "part": "frame",
+            "sections": 4,
+            "leaves": 8,
+            "pieces": 106,
+            "selectionChecks": 24,
+            "rayChecks": 8,
+            "finiteVertices": 344820,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              4,
+              10,
+              10,
+              4,
+              4,
+              10,
+              4,
+              8,
+              4,
+              2,
+              4,
+              4,
+              8,
+              8,
+              4
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "motors",
+            "sections": 4,
+            "leaves": 11,
+            "pieces": 75,
+            "selectionChecks": 30,
+            "rayChecks": 8,
+            "finiteVertices": 96560,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12,
+              3,
+              24,
+              2,
+              7,
+              16,
+              60,
+              24
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "esc",
+            "sections": 4,
+            "leaves": 9,
+            "pieces": 84,
+            "selectionChecks": 26,
+            "rayChecks": 8,
+            "finiteVertices": 34716,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              9,
+              4,
+              4,
+              4,
+              6,
+              6,
+              4,
+              8,
+              16,
+              24
+            ],
+            "compaction": {
+              "batchCount": 1,
+              "savedCalls": 2
+            }
+          },
+          {
+            "part": "props",
+            "sections": 2,
+            "leaves": 4,
+            "pieces": 2,
+            "selectionChecks": 12,
+            "rayChecks": 4,
+            "finiteVertices": 25824,
+            "maxTransformError": 0,
+            "restoredInstances": [],
+            "compaction": {
+              "batchCount": 3,
+              "savedCalls": 3
+            }
+          },
+          {
+            "part": "fc",
+            "sections": 4,
+            "leaves": 12,
+            "pieces": 92,
+            "selectionChecks": 32,
+            "rayChecks": 8,
+            "finiteVertices": 45648,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12,
+              12,
+              4,
+              4,
+              12,
+              12,
+              32,
+              8,
+              16,
+              24,
+              14,
+              6,
+              6,
+              4,
+              4
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "power",
+            "sections": 4,
+            "leaves": 10,
+            "pieces": 84,
+            "selectionChecks": 28,
+            "rayChecks": 8,
+            "finiteVertices": 31572,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12,
+              12,
+              4,
+              12,
+              12,
+              8,
+              16,
+              24,
+              4,
+              4,
+              6,
+              6
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "becpi",
+            "sections": 4,
+            "leaves": 10,
+            "pieces": 44,
+            "selectionChecks": 28,
+            "rayChecks": 8,
+            "finiteVertices": 29992,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12,
+              12,
+              4,
+              12,
+              12,
+              8,
+              16,
+              8,
+              4,
+              4,
+              6,
+              6
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "becfc",
+            "sections": 4,
+            "leaves": 12,
+            "pieces": 49,
+            "selectionChecks": 32,
+            "rayChecks": 8,
+            "finiteVertices": 30472,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              4,
+              4,
+              12,
+              12,
+              4,
+              12,
+              12,
+              8,
+              16,
+              8,
+              6,
+              6
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "battery",
+            "sections": 3,
+            "leaves": 15,
+            "pieces": 58,
+            "selectionChecks": 36,
+            "rayChecks": 6,
+            "finiteVertices": 49240,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              2,
+              2,
+              4
+            ],
+            "compaction": {
+              "batchCount": 1,
+              "savedCalls": 3
+            }
+          },
+          {
+            "part": "pi",
+            "sections": 4,
+            "leaves": 10,
+            "pieces": 239,
+            "selectionChecks": 28,
+            "rayChecks": 8,
+            "finiteVertices": 106732,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12,
+              12,
+              2,
+              40,
+              40,
+              40,
+              12,
+              12,
+              4,
+              20,
+              8,
+              16,
+              16,
+              4,
+              4
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "cooling",
+            "sections": 3,
+            "leaves": 7,
+            "pieces": 13,
+            "selectionChecks": 20,
+            "rayChecks": 6,
+            "finiteVertices": 73988,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              7,
+              7,
+              7,
+              4,
+              4,
+              6,
+              4,
+              4,
+              10
+            ],
+            "compaction": {
+              "batchCount": 1,
+              "savedCalls": 2
+            }
+          },
+          {
+            "part": "gps",
+            "sections": 3,
+            "leaves": 9,
+            "pieces": 9,
+            "selectionChecks": 24,
+            "rayChecks": 6,
+            "finiteVertices": 13908,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              4,
+              4,
+              4,
+              12
+            ],
+            "compaction": {
+              "batchCount": 0,
+              "savedCalls": 0
+            }
+          },
+          {
+            "part": "radio",
+            "sections": 3,
+            "leaves": 8,
+            "pieces": 18,
+            "selectionChecks": 22,
+            "rayChecks": 6,
+            "finiteVertices": 17192,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              12
+            ],
+            "compaction": {
+              "batchCount": 1,
+              "savedCalls": 3
+            }
+          },
+          {
+            "part": "camera",
+            "sections": 3,
+            "leaves": 10,
+            "pieces": 68,
+            "selectionChecks": 26,
+            "rayChecks": 6,
+            "finiteVertices": 108564,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              2,
+              2,
+              4,
+              10
+            ],
+            "compaction": {
+              "batchCount": 1,
+              "savedCalls": 3
+            }
+          },
+          {
+            "part": "wiring",
+            "sections": 3,
+            "leaves": 7,
+            "pieces": 36,
+            "selectionChecks": 20,
+            "rayChecks": 6,
+            "finiteVertices": 57652,
+            "maxTransformError": 0,
+            "restoredInstances": [
+              4,
+              12,
+              12,
+              12,
+              7,
+              2,
+              4
+            ],
+            "compaction": {
+              "batchCount": 4,
+              "savedCalls": 16
+            }
+          }
+        ],
+        "errors": [],
+        "note": "Actual production factories; both endpoints, all leaf selections, section ray grids, 120 conflicting updates per node, exact pose and instance restoration. Not a CAD interference proof."
+      }
+    },
+    {
+      "filename": "tests/viewer.detail52-focus.js",
+      "passed": true,
+      "durationMs": 11025,
+      "diagnostics": [
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        }
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "Focus follows a moving node through animation reversal",
+            "passed": true
+          },
+          {
+            "name": "Actual ray click selects one instanced element",
+            "passed": true
+          },
+          {
+            "name": "Only the selected instance remains visible",
+            "passed": true
+          },
+          {
+            "name": "Overview restores all instances",
+            "passed": true
+          },
+          {
+            "name": "Maximum zoom stays outside closed battery housing",
+            "passed": true
+          }
+        ],
+        "batteryCameraDistanceToRadius": 1.050191638414518
+      }
+    },
+    {
+      "filename": "tests/viewer.shared-resource-lifecycle.js",
+      "passed": true,
+      "durationMs": 21806,
+      "diagnostics": [
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"http://127.0.0.1:5175/assets/index-D6Fvf-KR.js\" line: 3840}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"debugger eval code line 370 > eval\" line: 1}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"debugger eval code line 370 > eval\" line: 1}]"
+        },
+        {
+          "kind": "console",
+          "level": "warning",
+          "url": "http://127.0.0.1:5175/",
+          "message": "[JavaScript Warning: \"WebGL context was lost.\" {file: \"debugger eval code line 370 > eval\" line: 1}]"
+        }
+      ],
+      "result": {
+        "cycles": 24,
+        "before": {
+          "geometryListeners": 209,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 209,
+            "textures": 9
+          }
+        },
+        "after": {
+          "geometryListeners": 209,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 209,
+            "textures": 9
+          }
+        },
+        "restores": [
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          }
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.detail52-preservation.js",
+      "passed": true,
+      "durationMs": 13579,
+      "diagnostics": [],
+      "result": {
+        "rows": [
+          {
+            "width": 320,
+            "height": 568,
+            "pair": [
+              {
+                "port": 5180,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      16,
+                      0,
+                      288,
+                      56
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      56,
+                      320,
+                      143
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      199,
+                      320,
+                      255
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      12,
+                      454,
+                      296,
+                      103
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      16,
+                      644.4000244140625,
+                      288,
+                      210.8000030517578
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-cxVmL9Tn.css",
+                    "bytes": 27973
+                  },
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-B8j9w___.js",
+                    "bytes": 882288
+                  }
+                ]
+              },
+              {
+                "port": 5175,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      16,
+                      0,
+                      288,
+                      56
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      56,
+                      320,
+                      143
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      199,
+                      320,
+                      255
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      12,
+                      454,
+                      296,
+                      103
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      16,
+                      644.4000244140625,
+                      288,
+                      210.8000030517578
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+                    "bytes": 32983
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+                    "bytes": 882898
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-latin-B6Sd7_ZV.woff2",
+                    "bytes": 24532
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-cyrillic-DfGDO6bq.woff2",
+                    "bytes": 14352
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "pair": [
+              {
+                "port": 5180,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      19.5,
+                      0,
+                      351,
+                      56
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      56,
+                      390,
+                      145.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      201.39999389648438,
+                      390,
+                      362.91668701171875
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      12,
+                      564.316650390625,
+                      366,
+                      103
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      19.5,
+                      734.9166870117188,
+                      351,
+                      192.09999084472656
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-cxVmL9Tn.css",
+                    "bytes": 27973
+                  },
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-B8j9w___.js",
+                    "bytes": 882288
+                  }
+                ]
+              },
+              {
+                "port": 5175,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      19.5,
+                      0,
+                      351,
+                      56
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      56,
+                      390,
+                      145.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      201.39999389648438,
+                      390,
+                      362.91668701171875
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      12,
+                      564.316650390625,
+                      366,
+                      103
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      19.5,
+                      734.9166870117188,
+                      351,
+                      192.09999084472656
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+                    "bytes": 32983
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+                    "bytes": 882898
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-latin-B6Sd7_ZV.woff2",
+                    "bytes": 24532
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-cyrillic-DfGDO6bq.woff2",
+                    "bytes": 14352
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "width": 1024,
+            "height": 768,
+            "pair": [
+              {
+                "port": 5180,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      40.94999694824219,
+                      0,
+                      942.0999755859375,
+                      72
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      72,
+                      1024,
+                      119.51666259765625
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      191.51666259765625,
+                      1024,
+                      357.5833435058594
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      268.566650390625,
+                      549.0999755859375,
+                      486.8666687011719,
+                      58
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      607.0999755859375,
+                      1024,
+                      48.5
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      40.94999694824219,
+                      655.5999755859375,
+                      942.0999755859375,
+                      112.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-cxVmL9Tn.css",
+                    "bytes": 27973
+                  },
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-B8j9w___.js",
+                    "bytes": 882288
+                  }
+                ]
+              },
+              {
+                "port": 5175,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      40.94999694824219,
+                      0,
+                      942.0999755859375,
+                      72
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      72,
+                      1024,
+                      119.51666259765625
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      191.51666259765625,
+                      1024,
+                      357.5833435058594
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      268.566650390625,
+                      549.0999755859375,
+                      486.8666687011719,
+                      58
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      607.0999755859375,
+                      1024,
+                      48.5
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      40.94999694824219,
+                      655.5999755859375,
+                      942.0999755859375,
+                      112.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+                    "bytes": 32983
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+                    "bytes": 882898
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-latin-B6Sd7_ZV.woff2",
+                    "bytes": 24532
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-cyrillic-DfGDO6bq.woff2",
+                    "bytes": 14352
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "height": 1000,
+            "pair": [
+              {
+                "port": 5180,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      57.600006103515625,
+                      0,
+                      1324.800048828125,
+                      72
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      72,
+                      1440,
+                      124
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      196,
+                      1440,
+                      585.0999755859375
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      476.566650390625,
+                      781.0999755859375,
+                      486.8666687011719,
+                      58
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      839.0999755859375,
+                      1440,
+                      48.5
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      57.600006103515625,
+                      887.5999755859375,
+                      1324.800048828125,
+                      112.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-cxVmL9Tn.css",
+                    "bytes": 27973
+                  },
+                  {
+                    "url": "http://127.0.0.1:5180/assets/index-B8j9w___.js",
+                    "bytes": 882288
+                  }
+                ]
+              },
+              {
+                "port": 5175,
+                "fonts": [
+                  {
+                    "weight": 400,
+                    "width": 302.76666259765625,
+                    "available": true
+                  },
+                  {
+                    "weight": 500,
+                    "width": 307.7833251953125,
+                    "available": true
+                  },
+                  {
+                    "weight": 600,
+                    "width": 312.73333740234375,
+                    "available": true
+                  },
+                  {
+                    "weight": 700,
+                    "width": 317.6166687011719,
+                    "available": true
+                  },
+                  {
+                    "weight": 800,
+                    "width": 322.54998779296875,
+                    "available": true
+                  }
+                ],
+                "boxes": [
+                  {
+                    "selector": "header",
+                    "box": [
+                      57.600006103515625,
+                      0,
+                      1324.800048828125,
+                      72
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".title",
+                    "box": [
+                      0,
+                      72,
+                      1440,
+                      124
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".model-stage",
+                    "box": [
+                      0,
+                      196,
+                      1440,
+                      585.0999755859375
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".controls",
+                    "box": [
+                      476.566650390625,
+                      781.0999755859375,
+                      486.8666687011719,
+                      58
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": ".instructions",
+                    "box": [
+                      0,
+                      839.0999755859375,
+                      1440,
+                      48.5
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  },
+                  {
+                    "selector": "footer",
+                    "box": [
+                      57.600006103515625,
+                      887.5999755859375,
+                      1324.800048828125,
+                      112.39999389648438
+                    ],
+                    "font": "Manrope, Arial, sans-serif"
+                  }
+                ],
+                "overflow": false,
+                "assets": [
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-MXxogbdK.css",
+                    "bytes": 32983
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/index-D6Fvf-KR.js",
+                    "bytes": 882898
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-latin-B6Sd7_ZV.woff2",
+                    "bytes": 24532
+                  },
+                  {
+                    "url": "http://127.0.0.1:5175/assets/manrope-v23-cyrillic-DfGDO6bq.woff2",
+                    "bytes": 14352
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "note": "Same original Manrope files; all five weights measured after document.fonts.ready. Production pages, matching CSS box coordinates; no claim of physical-device testing."
+      }
+    }
+  ]
+}

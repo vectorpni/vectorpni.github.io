@@ -1,5 +1,6 @@
 import {createMotorBellGeometry} from './motor-geometry.js';
 import {createAirfoilGeometry} from './airfoil-geometry.js';
+import {createPackLeadCurve} from './pack-lead-geometry.js';
 import * as THREE from 'three';
 
 // Reference detailing in the same part groups keeps picking and exploded views intact.
@@ -42,7 +43,7 @@ export function refineReference({groups,meshes,mesh,box,cyl,rod,mat,carbon,black
   for(const x of[-.44,.44])for(const y of[-.83,-.47]){const b=cyl('cooling',black,x,y,.817,.025,.018);b.rotation.x=Math.PI/2;}
   // Cable loops and connector sockets visible beside the pack.
   for(const z of[.77,-1.01]){
-    const curve=new THREE.CatmullRomCurve3([new THREE.Vector3(-.2,.94,z),new THREE.Vector3(-.62,.84,z+.1),new THREE.Vector3(-.69,.63,z-.12),new THREE.Vector3(-.55,.65,z-.25)]);
+    const curve=createPackLeadCurve(z);
     mesh(new THREE.TubeGeometry(curve,40,.029,10,false),red,'wiring');
     const connector=box('wiring',mat('#dba53b',.2,.5),-.56,.67,z-.27,.16,.12,.12);
     for(const dx of[-.035,.035])cyl('wiring',black,-.56+dx,.735,z-.27,.019,.008);

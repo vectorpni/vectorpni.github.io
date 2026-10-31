@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+const root='qa-artifacts/detail51',g=JSON.parse(fs.readFileSync(root+'/gallery.json')).results[0].result;
+const blocks=[...Array.from({length:4},(_,i)=>({name:'sections-'+i,rows:g.comparisons.slice(i*13,(i+1)*13).map(r=>({label:r.part+'/'+r.section,file:'sections-after/'+r.part+'-'+r.section+'.png'}))})),...Array.from({length:Math.ceil(g.macros.length/12)},(_,i)=>({name:'macros-'+i,rows:g.macros.slice(i*12,(i+1)*12).map(r=>({label:r.part+'/'+r.id,file:'macros/'+r.file}))}))];
+for(const block of blocks)fs.writeFileSync(root+'/'+block.name+'.html','<!doctype html><meta charset="utf-8"><style>body{margin:8px;background:#edf1ef;font:12px system-ui;display:grid;grid-template-columns:repeat(4,310px);gap:8px}figure{margin:0;background:white;padding:4px;box-sizing:border-box}img{width:302px;height:272px;object-fit:contain}figcaption{min-height:30px}</style>'+block.rows.map(r=>'<figure><figcaption>'+r.label+'</figcaption><img src="'+r.file+'"></figure>').join(''));
+console.log(JSON.stringify({sheets:blocks.length,sections:g.comparisons.length,macros:g.macros.length}));

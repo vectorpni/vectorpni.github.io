@@ -1,0 +1,36 @@
+{
+  "before": [
+    {
+      "name": "index-CuL2hyd5.js",
+      "bytes": 865154,
+      "gzipBytes": 241232,
+      "SHA256": "a3bd6c9971ffcb6dfbd2b503590bce48d953151e93735ac0bfec0c90a9f1f0d3"
+    },
+    {
+      "name": "index-Dhi-h_IZ.css",
+      "bytes": 26010,
+      "gzipBytes": 6156,
+      "SHA256": "152122f9bb0f812b3868b3e688853bd20eaa9a13efc8d77a21b13e9f8e026803"
+    }
+  ],
+  "after": [
+    {
+      "name": "engineering-inspector-B4E9U7d0.js",
+      "bytes": 31533,
+      "gzipBytes": 11258,
+      "SHA256": "a1cdf5a20be857ef5e7fd8917eb0e282863f3cbecdce1cff64fe97b468c1b7f4"
+    },
+    {
+      "name": "index-BvDkDNUR.js",
+      "bytes": 873960,
+      "gzipBytes": 244756,
+      "SHA256": "0f7f0d24cc6adcd9e1d405f0bb1012a081d99b745322969fcc48a8748c37d6d8"
+    },
+    {
+      "name": "index-cxVmL9Tn.css",
+      "bytes": 27973,
+      "gzipBytes": 6561,
+      "SHA256": "892096f832ba7df5d2418838ae5e5db1d2f108d1147a62a20c99a49ac2efecc2"
+    }
+  ]
+}

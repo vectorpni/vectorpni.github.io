@@ -1,0 +1,1629 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T23:02:43.500Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail51.js",
+      "passed": true,
+      "durationMs": 34749,
+      "result": {
+        "version": "before",
+        "setup": {
+          "ids": [
+            "frame",
+            "motors",
+            "esc",
+            "props",
+            "fc",
+            "power",
+            "becpi",
+            "becfc",
+            "battery",
+            "pi",
+            "cooling",
+            "gps",
+            "radio",
+            "camera",
+            "wiring"
+          ],
+          "exports": [
+            "configureStudioLighting",
+            "createEngineeringAssembly",
+            "createStudioEnvironment",
+            "default"
+          ],
+          "runtimeChunk": "http://127.0.0.1:5180/assets/engineering-inspector-CVrxkpz-.js",
+          "main": {
+            "calls": 230,
+            "triangles": 326430
+          },
+          "mainResources": {
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            },
+            "disposeListeners": 209
+          }
+        },
+        "rows": [
+          {
+            "id": "frame",
+            "inventory": [
+              {
+                "id": "plates",
+                "label": "Пластины",
+                "meshes": 3,
+                "instances": 0,
+                "triangles": 4264,
+                "axisAlignedNormalsRatio": 0.24577861163227016,
+                "leaves": [
+                  {
+                    "id": "plates/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4264
+                  }
+                ]
+              },
+              {
+                "id": "mounts",
+                "label": "Стойки и крепёж",
+                "meshes": 7,
+                "instances": 32,
+                "triangles": 12312,
+                "axisAlignedNormalsRatio": 0.09831460674157304,
+                "leaves": [
+                  {
+                    "id": "mounts/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 11800
+                  },
+                  {
+                    "id": "mounts/bushings",
+                    "name": "Втулки и посадочные кольца",
+                    "triangles": 512
+                  }
+                ]
+              },
+              {
+                "id": "arms",
+                "label": "Лучи и моторные площадки",
+                "meshes": 4,
+                "instances": 12,
+                "triangles": 8544,
+                "axisAlignedNormalsRatio": 0.26383723474075693,
+                "leaves": [
+                  {
+                    "id": "arms/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 8544
+                  }
+                ]
+              },
+              {
+                "id": "landing",
+                "label": "Посадочные опоры",
+                "meshes": 9,
+                "instances": 34,
+                "triangles": 9168,
+                "axisAlignedNormalsRatio": 0.11138236191638694,
+                "leaves": [
+                  {
+                    "id": "landing/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 9168
+                  }
+                ]
+              }
+            ],
+            "calls": 23,
+            "triangles": 34288,
+            "rendererMemory": {
+              "geometries": 23,
+              "textures": 3
+            },
+            "view": {
+              "position": [
+                8.126750597458901,
+                6.095062948094175,
+                10.158438246823627
+              ],
+              "quaternion": [
+                -0.20507529985516365,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                -0.5,
+                0
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "motors",
+            "inventory": [
+              {
+                "id": "base",
+                "label": "Основание и крепёж",
+                "meshes": 4,
+                "instances": 15,
+                "triangles": 5584,
+                "axisAlignedNormalsRatio": 0.26933625891387825,
+                "leaves": [
+                  {
+                    "id": "base/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 5456
+                  },
+                  {
+                    "id": "base/seat",
+                    "name": "Открытое основание",
+                    "triangles": 128
+                  }
+                ]
+              },
+              {
+                "id": "shell",
+                "label": "Колокол и ротор",
+                "meshes": 5,
+                "instances": 31,
+                "triangles": 13200,
+                "axisAlignedNormalsRatio": 0.18742156935114784,
+                "leaves": [
+                  {
+                    "id": "shell/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 13200
+                  }
+                ]
+              },
+              {
+                "id": "shaft",
+                "label": "Вал и подшипниковый узел",
+                "meshes": 6,
+                "instances": 0,
+                "triangles": 2176,
+                "axisAlignedNormalsRatio": 0.4146019160885365,
+                "leaves": [
+                  {
+                    "id": "shaft/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1664
+                  },
+                  {
+                    "id": "shaft/bearings",
+                    "name": "Подшипниковые кольца",
+                    "triangles": 512
+                  }
+                ]
+              },
+              {
+                "id": "stator",
+                "label": "Статор и обмотки",
+                "meshes": 2,
+                "instances": 60,
+                "triangles": 31504,
+                "axisAlignedNormalsRatio": 0.5107587768969423,
+                "leaves": [
+                  {
+                    "id": "stator/laminations",
+                    "name": "Пакет и зубцы статора",
+                    "triangles": 784
+                  },
+                  {
+                    "id": "stator/windings",
+                    "name": "Изолированные обмотки",
+                    "triangles": 30720
+                  }
+                ]
+              }
+            ],
+            "calls": 17,
+            "triangles": 52464,
+            "rendererMemory": {
+              "geometries": 16,
+              "textures": 3
+            },
+            "view": {
+              "position": [
+                1.6253501194917805,
+                1.2190125896188353,
+                2.031687649364726
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                2.08,
+                0.6,
+                2.08
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "esc",
+            "inventory": [
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 4,
+                "instances": 17,
+                "triangles": 4712,
+                "axisAlignedNormalsRatio": 0.19751381215469613,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4712
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 5,
+                "instances": 6,
+                "triangles": 1776,
+                "axisAlignedNormalsRatio": 0.1812327506899724,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1536
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              },
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 1,
+                "instances": 0,
+                "triangles": 12,
+                "axisAlignedNormalsRatio": 1,
+                "leaves": [
+                  {
+                    "id": "board/substrate",
+                    "name": "Условная плата под оболочкой",
+                    "triangles": 12
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 2,
+                "instances": 24,
+                "triangles": 288,
+                "axisAlignedNormalsRatio": 1,
+                "leaves": [
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              }
+            ],
+            "calls": 12,
+            "triangles": 6788,
+            "rendererMemory": {
+              "geometries": 12,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                1.6253501194917805,
+                1.2190125896188353,
+                2.031687649364726
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                1.45,
+                0.46,
+                1.45
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "props",
+            "inventory": [
+              {
+                "id": "hub",
+                "label": "Ступица и прижим",
+                "meshes": 6,
+                "instances": 0,
+                "triangles": 2008,
+                "axisAlignedNormalsRatio": 0.25948103792415167,
+                "leaves": [
+                  {
+                    "id": "hub/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1880
+                  },
+                  {
+                    "id": "hub/bore",
+                    "name": "Посадочная втулка",
+                    "triangles": 128
+                  }
+                ]
+              },
+              {
+                "id": "blades",
+                "label": "Лопасти",
+                "meshes": 2,
+                "instances": 0,
+                "triangles": 4672,
+                "axisAlignedNormalsRatio": 0.006837606837606838,
+                "leaves": [
+                  {
+                    "id": "blades/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4672
+                  }
+                ]
+              }
+            ],
+            "calls": 8,
+            "triangles": 6680,
+            "rendererMemory": {
+              "geometries": 8,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                3.657037768856506,
+                2.7427783266423793,
+                4.5712972110706325
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                2.08,
+                0.8,
+                2.08
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "fc",
+            "inventory": [
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 3,
+                "instances": 24,
+                "triangles": 1980,
+                "axisAlignedNormalsRatio": 0.275,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1980
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 10,
+                "instances": 84,
+                "triangles": 9712,
+                "axisAlignedNormalsRatio": 0.3269230769230769,
+                "leaves": [
+                  {
+                    "id": "devices/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 9424
+                  },
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 5,
+                "instances": 20,
+                "triangles": 4500,
+                "axisAlignedNormalsRatio": 0.4012539184952978,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4260
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              },
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 2,
+                "instances": 4,
+                "triangles": 1536,
+                "axisAlignedNormalsRatio": 0.4837181764357608,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1536
+                  }
+                ]
+              }
+            ],
+            "calls": 20,
+            "triangles": 17728,
+            "rendererMemory": {
+              "geometries": 20,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                2.2348564143011984,
+                1.6761423107258986,
+                2.7935705178764976
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766457,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                0.36,
+                0.2
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "power",
+            "inventory": [
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 3,
+                "instances": 24,
+                "triangles": 1980,
+                "axisAlignedNormalsRatio": 0.275,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1980
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 6,
+                "instances": 48,
+                "triangles": 7704,
+                "axisAlignedNormalsRatio": 0.3942307692307692,
+                "leaves": [
+                  {
+                    "id": "devices/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 7416
+                  },
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              },
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 1,
+                "instances": 4,
+                "triangles": 1024,
+                "axisAlignedNormalsRatio": 0.3202614379084967,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1024
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 4,
+                "instances": 6,
+                "triangles": 300,
+                "axisAlignedNormalsRatio": 0.9787234042553191,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 60
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              }
+            ],
+            "calls": 14,
+            "triangles": 11008,
+            "rendererMemory": {
+              "geometries": 14,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                2.0316876493647253,
+                1.5237657370235438,
+                2.5396095617059067
+              ],
+              "quaternion": [
+                -0.20507529985516365,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                0.25,
+                -0.28
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "becpi",
+            "inventory": [
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 3,
+                "instances": 24,
+                "triangles": 1980,
+                "axisAlignedNormalsRatio": 0.275,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1980
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 6,
+                "instances": 48,
+                "triangles": 7704,
+                "axisAlignedNormalsRatio": 0.3942307692307692,
+                "leaves": [
+                  {
+                    "id": "devices/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 7416
+                  },
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              },
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 1,
+                "instances": 4,
+                "triangles": 1024,
+                "axisAlignedNormalsRatio": 0.3202614379084967,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1024
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 4,
+                "instances": 6,
+                "triangles": 300,
+                "axisAlignedNormalsRatio": 0.9787234042553191,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 60
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              }
+            ],
+            "calls": 14,
+            "triangles": 11008,
+            "rendererMemory": {
+              "geometries": 14,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                1.1174282071505992,
+                0.8380711553629493,
+                1.3967852589382488
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766457,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                -0.62,
+                0.36,
+                -0.42
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "becfc",
+            "inventory": [
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 2,
+                "instances": 4,
+                "triangles": 1324,
+                "axisAlignedNormalsRatio": 0.18328584995251662,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1324
+                  }
+                ]
+              },
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 3,
+                "instances": 24,
+                "triangles": 1692,
+                "axisAlignedNormalsRatio": 0.78125,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1680
+                  },
+                  {
+                    "id": "board/substrate",
+                    "name": "Условная плата под оболочкой",
+                    "triangles": 12
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 6,
+                "instances": 48,
+                "triangles": 7704,
+                "axisAlignedNormalsRatio": 0.3942307692307692,
+                "leaves": [
+                  {
+                    "id": "devices/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 7416
+                  },
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 4,
+                "instances": 6,
+                "triangles": 300,
+                "axisAlignedNormalsRatio": 0.9787234042553191,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 60
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              }
+            ],
+            "calls": 15,
+            "triangles": 11020,
+            "rendererMemory": {
+              "geometries": 15,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                1.1174282071505992,
+                0.8380711553629493,
+                1.3967852589382488
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766457,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0.62,
+                0.36,
+                -0.42
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "battery",
+            "inventory": [
+              {
+                "id": "shell",
+                "label": "Упаковка и торцы",
+                "meshes": 5,
+                "instances": 4,
+                "triangles": 1550,
+                "axisAlignedNormalsRatio": 0.20365168539325842,
+                "leaves": [
+                  {
+                    "id": "shell/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1550
+                  }
+                ]
+              },
+              {
+                "id": "straps",
+                "label": "Ремни и пряжки",
+                "meshes": 11,
+                "instances": 8,
+                "triangles": 4992,
+                "axisAlignedNormalsRatio": 0.6621735467565291,
+                "leaves": [
+                  {
+                    "id": "straps/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4800
+                  },
+                  {
+                    "id": "straps/keepers",
+                    "name": "Пряжки и держатели",
+                    "triangles": 192
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Кабельный ввод",
+                "meshes": 1,
+                "instances": 0,
+                "triangles": 256,
+                "axisAlignedNormalsRatio": 0.5,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 256
+                  }
+                ]
+              }
+            ],
+            "calls": 17,
+            "triangles": 6798,
+            "rendererMemory": {
+              "geometries": 17,
+              "textures": 4
+            },
+            "view": {
+              "position": [
+                5.079219123411813,
+                3.80941434255886,
+                6.349023904264766
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                0.94,
+                -0.12
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "pi",
+            "inventory": [
+              {
+                "id": "board",
+                "label": "Основание платы",
+                "meshes": 3,
+                "instances": 24,
+                "triangles": 1980,
+                "axisAlignedNormalsRatio": 0.275,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1980
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы и контакты",
+                "meshes": 9,
+                "instances": 62,
+                "triangles": 11248,
+                "axisAlignedNormalsRatio": 0.3189233278955954,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 11008
+                  },
+                  {
+                    "id": "connector/contacts",
+                    "name": "Контактная колодка",
+                    "triangles": 240
+                  }
+                ]
+              },
+              {
+                "id": "devices",
+                "label": "Корпуса элементов",
+                "meshes": 9,
+                "instances": 72,
+                "triangles": 9764,
+                "axisAlignedNormalsRatio": 0.3095890410958904,
+                "leaves": [
+                  {
+                    "id": "devices/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 9476
+                  },
+                  {
+                    "id": "devices/passives",
+                    "name": "SMD-корпуса и выводы",
+                    "triangles": 288
+                  }
+                ]
+              },
+              {
+                "id": "cover",
+                "label": "Защита и крепёж",
+                "meshes": 1,
+                "instances": 4,
+                "triangles": 1024,
+                "axisAlignedNormalsRatio": 0.3202614379084967,
+                "leaves": [
+                  {
+                    "id": "cover/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1024
+                  }
+                ]
+              }
+            ],
+            "calls": 22,
+            "triangles": 24016,
+            "rendererMemory": {
+              "geometries": 22,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                3.657037768856506,
+                2.7427783266423793,
+                4.5712972110706325
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                -0.3,
+                0.05
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "cooling",
+            "inventory": [
+              {
+                "id": "housing",
+                "label": "Корпус и решётка",
+                "meshes": 13,
+                "instances": 29,
+                "triangles": 13014,
+                "axisAlignedNormalsRatio": 0.21466813348001468,
+                "leaves": [
+                  {
+                    "id": "housing/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 13014
+                  }
+                ]
+              },
+              {
+                "id": "fan",
+                "label": "Вентилятор и питание",
+                "meshes": 6,
+                "instances": 6,
+                "triangles": 1696,
+                "axisAlignedNormalsRatio": 0.367911479944675,
+                "leaves": [
+                  {
+                    "id": "fan/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1568
+                  },
+                  {
+                    "id": "fan/bearing",
+                    "name": "Опора ступицы",
+                    "triangles": 128
+                  }
+                ]
+              },
+              {
+                "id": "heatsink",
+                "label": "Радиатор",
+                "meshes": 3,
+                "instances": 18,
+                "triangles": 4712,
+                "axisAlignedNormalsRatio": 0.21442885771543085,
+                "leaves": [
+                  {
+                    "id": "heatsink/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 4712
+                  }
+                ]
+              }
+            ],
+            "calls": 22,
+            "triangles": 19422,
+            "rendererMemory": {
+              "geometries": 22,
+              "textures": 2
+            },
+            "view": {
+              "position": [
+                2.4380251792376706,
+                1.8285188844282527,
+                3.047531474047088
+              ],
+              "quaternion": [
+                -0.20507529985516365,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                -0.6,
+                0.08
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "gps",
+            "inventory": [
+              {
+                "id": "mounts",
+                "label": "Стойка и ввод",
+                "meshes": 2,
+                "instances": 0,
+                "triangles": 176,
+                "axisAlignedNormalsRatio": 0.5478260869565217,
+                "leaves": [
+                  {
+                    "id": "mounts/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 176
+                  }
+                ]
+              },
+              {
+                "id": "housing",
+                "label": "Кожух",
+                "meshes": 6,
+                "instances": 8,
+                "triangles": 2962,
+                "axisAlignedNormalsRatio": 0.3913354815610455,
+                "leaves": [
+                  {
+                    "id": "housing/lid",
+                    "name": "Крышка и её крепёж",
+                    "triangles": 1842
+                  },
+                  {
+                    "id": "housing/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 768
+                  },
+                  {
+                    "id": "housing/cup",
+                    "name": "Полость кожуха",
+                    "triangles": 352
+                  }
+                ]
+              },
+              {
+                "id": "board",
+                "label": "Условная плата",
+                "meshes": 3,
+                "instances": 12,
+                "triangles": 168,
+                "axisAlignedNormalsRatio": 1,
+                "leaves": [
+                  {
+                    "id": "board/substrate",
+                    "name": "Условный носитель",
+                    "triangles": 12
+                  },
+                  {
+                    "id": "board/packages",
+                    "name": "Обобщённые корпуса",
+                    "triangles": 156
+                  }
+                ]
+              }
+            ],
+            "calls": 11,
+            "triangles": 3306,
+            "rendererMemory": {
+              "geometries": 11,
+              "textures": 2
+            },
+            "view": {
+              "position": [
+                2.5396095617059067,
+                1.90470717127943,
+                3.174511952132383
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766456,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                -0.62,
+                1.3,
+                -0.78
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "radio",
+            "inventory": [
+              {
+                "id": "housing",
+                "label": "Корпус",
+                "meshes": 2,
+                "instances": 0,
+                "triangles": 668,
+                "axisAlignedNormalsRatio": 0.3592814371257485,
+                "leaves": [
+                  {
+                    "id": "housing/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 668
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Антенны и ввод",
+                "meshes": 6,
+                "instances": 0,
+                "triangles": 332,
+                "axisAlignedNormalsRatio": 0.8278145695364238,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 332
+                  }
+                ]
+              },
+              {
+                "id": "board",
+                "label": "Условная плата",
+                "meshes": 3,
+                "instances": 12,
+                "triangles": 456,
+                "axisAlignedNormalsRatio": 0.2125,
+                "leaves": [
+                  {
+                    "id": "board/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 300
+                  },
+                  {
+                    "id": "board/packages",
+                    "name": "Обобщённые корпуса",
+                    "triangles": 156
+                  }
+                ]
+              }
+            ],
+            "calls": 11,
+            "triangles": 1456,
+            "rendererMemory": {
+              "geometries": 11,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                2.4380251792376706,
+                1.8285188844282527,
+                3.047531474047088
+              ],
+              "quaternion": [
+                -0.20507529985516365,
+                0.3230955443766456,
+                0.07193653093139732,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0.71,
+                1.4,
+                -0.7
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "camera",
+            "inventory": [
+              {
+                "id": "mounts",
+                "label": "Подвес и крепления",
+                "meshes": 4,
+                "instances": 4,
+                "triangles": 1168,
+                "axisAlignedNormalsRatio": 0.13423831070889894,
+                "leaves": [
+                  {
+                    "id": "mounts/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1168
+                  }
+                ]
+              },
+              {
+                "id": "housing",
+                "label": "Корпус и кабель",
+                "meshes": 4,
+                "instances": 4,
+                "triangles": 1348,
+                "axisAlignedNormalsRatio": 0.24300341296928327,
+                "leaves": [
+                  {
+                    "id": "housing/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 1348
+                  }
+                ]
+              },
+              {
+                "id": "optics",
+                "label": "Оправа и оптическое окно",
+                "meshes": 11,
+                "instances": 0,
+                "triangles": 5632,
+                "axisAlignedNormalsRatio": 0.37948658380764316,
+                "leaves": [
+                  {
+                    "id": "optics/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 5504
+                  },
+                  {
+                    "id": "optics/retainer",
+                    "name": "Посадка оптического окна",
+                    "triangles": 128
+                  }
+                ]
+              }
+            ],
+            "calls": 19,
+            "triangles": 8148,
+            "rendererMemory": {
+              "geometries": 19,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                2.844362709110616,
+                2.1332720318329614,
+                3.5554533863882694
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.32309554437664567,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                -1.05,
+                0.25
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          },
+          {
+            "id": "wiring",
+            "inventory": [
+              {
+                "id": "loom",
+                "label": "Жгуты",
+                "meshes": 22,
+                "instances": 4,
+                "triangles": 11520,
+                "axisAlignedNormalsRatio": 0.019483461712732214,
+                "leaves": [
+                  {
+                    "id": "loom/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 11520
+                  }
+                ]
+              },
+              {
+                "id": "mounts",
+                "label": "Фиксаторы",
+                "meshes": 2,
+                "instances": 12,
+                "triangles": 3900,
+                "axisAlignedNormalsRatio": 0.16,
+                "leaves": [
+                  {
+                    "id": "mounts/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 3900
+                  }
+                ]
+              },
+              {
+                "id": "connector",
+                "label": "Разъёмы",
+                "meshes": 6,
+                "instances": 13,
+                "triangles": 4024,
+                "axisAlignedNormalsRatio": 0.30234657039711194,
+                "leaves": [
+                  {
+                    "id": "connector/exterior",
+                    "name": "Внешние детали",
+                    "triangles": 3768
+                  },
+                  {
+                    "id": "connector/contact-sleeves",
+                    "name": "Контактные гильзы",
+                    "triangles": 256
+                  }
+                ]
+              }
+            ],
+            "calls": 30,
+            "triangles": 19444,
+            "rendererMemory": {
+              "geometries": 30,
+              "textures": 1
+            },
+            "view": {
+              "position": [
+                6.9077380078400665,
+                5.180803505880049,
+                8.634672509800081
+              ],
+              "quaternion": [
+                -0.20507529985516368,
+                0.3230955443766457,
+                0.07193653093139735,
+                0.9210746582719718
+              ],
+              "fov": 35,
+              "aspect": 1.1111111111111112,
+              "sourceCenter": [
+                0,
+                0.5,
+                0
+              ],
+              "buffer": [
+                1000,
+                900
+              ],
+              "DPR": 1
+            }
+          }
+        ],
+        "profiles": [
+          {
+            "cpuRate": 1,
+            "beforeHeapBytes": 13569292,
+            "afterHeapBytes": 15954428,
+            "prepareMs": 79.69999999925494,
+            "modes": [
+              {
+                "mode": "assembled-rotation",
+                "frames": 209,
+                "fps": 143.32965821389197,
+                "p95FrameMs": 7.100000000000364,
+                "p99FrameMs": 7.800000000000182,
+                "p95RenderMs": 1.199999999254942,
+                "calls": 255,
+                "triangles": 233574
+              },
+              {
+                "mode": "opened-rotation",
+                "frames": 210,
+                "fps": 144.018743109151,
+                "p95FrameMs": 7.100000000000364,
+                "p99FrameMs": 7.100000000000364,
+                "p95RenderMs": 1.300000000745058,
+                "calls": 255,
+                "triangles": 233574
+              },
+              {
+                "mode": "reversing",
+                "frames": 210,
+                "fps": 144.01874310915107,
+                "p95FrameMs": 7.100000000000364,
+                "p99FrameMs": 7.100000000000364,
+                "p95RenderMs": 1.1000000014901161,
+                "calls": 255,
+                "triangles": 233574
+              }
+            ],
+            "loadedMemory": {
+              "geometries": 254,
+              "textures": 8
+            },
+            "loadedHeapBytes": 18761824,
+            "afterDisposal": {
+              "geometries": 0,
+              "textures": 1
+            }
+          },
+          {
+            "cpuRate": 4,
+            "beforeHeapBytes": 15954428,
+            "afterHeapBytes": 16093680,
+            "prepareMs": 289.20000000298023,
+            "modes": [
+              {
+                "mode": "assembled-rotation",
+                "frames": 202,
+                "fps": 138.5251550654721,
+                "p95FrameMs": 7.100000000000364,
+                "p99FrameMs": 13.899999999999636,
+                "p95RenderMs": 9.5,
+                "calls": 255,
+                "triangles": 233574
+              },
+              {
+                "mode": "opened-rotation",
+                "frames": 205,
+                "fps": 140.57331863285566,
+                "p95FrameMs": 7,
+                "p99FrameMs": 13.899999999999636,
+                "p95RenderMs": 8.600000001490116,
+                "calls": 255,
+                "triangles": 233574
+              },
+              {
+                "mode": "reversing",
+                "frames": 196,
+                "fps": 134.37155457552365,
+                "p95FrameMs": 13.800000000001091,
+                "p99FrameMs": 13.900000000001455,
+                "p95RenderMs": 10.300000000745058,
+                "calls": 255,
+                "triangles": 233574
+              }
+            ],
+            "loadedMemory": {
+              "geometries": 254,
+              "textures": 8
+            },
+            "loadedHeapBytes": 18932072,
+            "afterDisposal": {
+              "geometries": 0,
+              "textures": 1
+            }
+          }
+        ],
+        "sequence": [
+          {
+            "round": 1,
+            "heapBytes": 17070360,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            },
+            "disposeListeners": 209,
+            "canvasCount": 2
+          },
+          {
+            "round": 2,
+            "heapBytes": 17437644,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            },
+            "disposeListeners": 209,
+            "canvasCount": 2
+          },
+          {
+            "round": 3,
+            "heapBytes": 17608884,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            },
+            "disposeListeners": 209,
+            "canvasCount": 2
+          }
+        ],
+        "errors": [],
+        "method": "Actual production factory; one representative per 15 main nodes; independent 1000x900 DPR1 renderer with the same materials/lights/environment; simultaneous 5x3 atlas is a synthetic worst case, not a product mode. CPU x4 uses Chromium CDP. Heap samples include a forced GC, including the fully populated atlas."
+      }
+    }
+  ]
+}

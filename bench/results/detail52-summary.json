@@ -1,0 +1,195 @@
+{
+  "createdAt": "2026-10-31T04:55:27.118Z",
+  "pieces": 977,
+  "baseline": {
+    "port": 5180,
+    "cpuRate": 1,
+    "round": 0,
+    "prepareMs": 125.10000000149012,
+    "nodes": 15,
+    "calls": 378,
+    "triangles": 306846,
+    "cpuGeometryBytes": 11320956,
+    "gpuResources": {
+      "geometries": 377,
+      "textures": 8
+    },
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "hardwareConcurrency": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+  },
+  "current": {
+    "port": 5175,
+    "cpuRate": 1,
+    "round": 1,
+    "prepareMs": 138,
+    "nodes": 15,
+    "calls": 345,
+    "triangles": 333054,
+    "cpuGeometryBytes": 9009060,
+    "gpuResources": {
+      "geometries": 345,
+      "textures": 8
+    },
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A7A8) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "hardwareConcurrency": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+  },
+  "perf": [
+    {
+      "port": 5180,
+      "cpuRate": 1,
+      "mode": "assembled-rotation",
+      "fps": 144.01639571274268,
+      "minFPS": 144.01240722277612,
+      "maxFPS": 144.02038442364147,
+      "p95": 7.100000000000364,
+      "p99": 7.900000000000091,
+      "render95": 1.6000000014901161
+    },
+    {
+      "port": 5175,
+      "cpuRate": 1,
+      "mode": "assembled-rotation",
+      "fps": 143.45851334884236,
+      "minFPS": 142.91253531269044,
+      "maxFPS": 144.00443090556632,
+      "p95": 7.100000000000136,
+      "p99": 8.300000000000182,
+      "render95": 1.7000000029802322
+    },
+    {
+      "port": 5180,
+      "cpuRate": 1,
+      "mode": "opened-rotation",
+      "fps": 144.01240722277615,
+      "minFPS": 144.01240722277615,
+      "maxFPS": 144.01240722277615,
+      "p95": 7.100000000000364,
+      "p99": 7.100000000000364,
+      "render95": 1.5
+    },
+    {
+      "port": 5175,
+      "cpuRate": 1,
+      "mode": "opened-rotation",
+      "fps": 144.00044307828637,
+      "minFPS": 143.9884809215263,
+      "maxFPS": 144.01240722277606,
+      "p95": 7.100000000000364,
+      "p99": 7.300000000000182,
+      "render95": 1.3999999985098839
+    },
+    {
+      "port": 5180,
+      "cpuRate": 1,
+      "mode": "reversing",
+      "fps": 143.7513848881011,
+      "minFPS": 143.46645986816603,
+      "maxFPS": 144.03634147692654,
+      "p95": 7.100000000000364,
+      "p99": 7.200000000000728,
+      "render95": 1.3999999985098839
+    },
+    {
+      "port": 5175,
+      "cpuRate": 1,
+      "mode": "reversing",
+      "fps": 144.03235188211502,
+      "minFPS": 144.02038442364142,
+      "maxFPS": 144.0443213296399,
+      "p95": 7.100000000000364,
+      "p99": 7.199999999999818,
+      "render95": 1.3999999985098839
+    },
+    {
+      "port": 5180,
+      "cpuRate": 4,
+      "mode": "assembled-rotation",
+      "fps": 139.58512199850443,
+      "minFPS": 135.1575915360328,
+      "maxFPS": 144.01240722277606,
+      "p95": 7.100000000000364,
+      "p99": 13.900000000000091,
+      "render95": 8
+    },
+    {
+      "port": 5175,
+      "cpuRate": 4,
+      "mode": "assembled-rotation",
+      "fps": 143.46645986816597,
+      "minFPS": 142.91253531269047,
+      "maxFPS": 144.02038442364147,
+      "p95": 7.099999999999454,
+      "p99": 7.100000000000364,
+      "render95": 7.100000001490116
+    },
+    {
+      "port": 5180,
+      "cpuRate": 4,
+      "mode": "opened-rotation",
+      "fps": 142.08314904909335,
+      "minFPS": 140.16113011808852,
+      "maxFPS": 144.01240722277615,
+      "p95": 7,
+      "p99": 13.799999999999272,
+      "render95": 7.5
+    },
+    {
+      "port": 5175,
+      "cpuRate": 4,
+      "mode": "opened-rotation",
+      "fps": 142.35466806990334,
+      "minFPS": 141.7889781224037,
+      "maxFPS": 142.92045202747627,
+      "p95": 7.100000000000364,
+      "p99": 7.100000000000364,
+      "render95": 7.4000000059604645
+    },
+    {
+      "port": 5180,
+      "cpuRate": 4,
+      "mode": "reversing",
+      "fps": 141.79683172704105,
+      "minFPS": 140.12738853503186,
+      "maxFPS": 143.46645986816586,
+      "p95": 7.100000000000364,
+      "p99": 13.800000000001091,
+      "render95": 7
+    },
+    {
+      "port": 5175,
+      "cpuRate": 4,
+      "mode": "reversing",
+      "fps": 139.32658815723994,
+      "minFPS": 136.8269443828938,
+      "maxFPS": 141.81657653680602,
+      "p95": 7.100000000000364,
+      "p99": 13.899999999999636,
+      "render95": 8.299999997019768
+    }
+  ],
+  "modified": [
+    "detail-primitives.js",
+    "engineering-assembly.js",
+    "engineering-interiors.js",
+    "interior-geometry.js",
+    "package-lock.json",
+    "package.json",
+    "style.css",
+    "tests/viewer.ultimate-runner.mjs"
+  ],
+  "preserved": [
+    "src.jsx",
+    "viewer-presentation.js",
+    "reference-detail.js",
+    "ultra-detail.js",
+    "engineering-detail.js",
+    "viewer-instancing.js",
+    "viewer-preview.js",
+    "engineering-catalog.js",
+    ".github/workflows/pages.yml"
+  ],
+  "sourceZIP": "e9767e1c8d60ae97f5063ce783e0d11a01b5e601aa113cc6618db5662082eab0",
+  "images": 410
+}

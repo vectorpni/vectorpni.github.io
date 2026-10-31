@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "file": "engineering-inspector-C6IoeEnk.js",
+      "bytes": 70085,
+      "gzipBytes": 23889,
+      "sha256": "8fc3fd0dd6153f86ce1da2a458da8884f3982b889071939dd2f56c86d97ef319"
+    },
+    {
+      "file": "index-B8j9w___.js",
+      "bytes": 882288,
+      "gzipBytes": 247550,
+      "sha256": "6527ffbe49cc77f7a8e159793b0f5f3bb469eacc9db6fd44917aca297628031d"
+    },
+    {
+      "file": "index-cxVmL9Tn.css",
+      "bytes": 27973,
+      "gzipBytes": 6561,
+      "sha256": "892096f832ba7df5d2418838ae5e5db1d2f108d1147a62a20c99a49ac2efecc2"
+    }
+  ]
+}

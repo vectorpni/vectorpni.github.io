@@ -1,0 +1,19 @@
+{
+  "method": "CPU typed arrays only: same 60 torus loops; vertex, normal, UV, index and instance matrix buffers. Not process RSS or GPU timing.",
+  "rows": [
+    {
+      "variant": "merged",
+      "elements": 60,
+      "draws": 1,
+      "triangles": 23040,
+      "typedBufferBytes": 2211840
+    },
+    {
+      "variant": "instanced",
+      "elements": 60,
+      "draws": 1,
+      "triangles": 23040,
+      "typedBufferBytes": 13536
+    }
+  ]
+}

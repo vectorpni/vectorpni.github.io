@@ -1,0 +1,53 @@
+{
+  "createdAt": "2026-10-31T04:55:26.794Z",
+  "assets": [
+    {
+      "file": "engineering-inspector-C2pTG1YT.js",
+      "bytes": 75672,
+      "gzip": 26275,
+      "sha256": "52e000d3a02f337046d8bbbea2d984e65fba1aad3400dd1c5ad76c0b686fb3b5"
+    },
+    {
+      "file": "index-D6Fvf-KR.js",
+      "bytes": 882898,
+      "gzip": 247860,
+      "sha256": "a545bd907cff6cbbb42fcf31bb837128ca2e428b4a888f059adae9c9154d32fc"
+    },
+    {
+      "file": "index-MXxogbdK.css",
+      "bytes": 32983,
+      "gzip": 10097,
+      "sha256": "20b72cc3940f3402c31ec0e5862b3285ea29b7624a51d1fe1798353cbcf83c0f"
+    },
+    {
+      "file": "manrope-v23-cyrillic-DfGDO6bq.woff2",
+      "bytes": 14352,
+      "gzip": 14375,
+      "sha256": "447c49583b1b735cc6f566151db1d24354cec41076c55dd98455cfbde9e806c1"
+    },
+    {
+      "file": "manrope-v23-greek-DYTlBpHj.woff2",
+      "bytes": 9268,
+      "gzip": 9291,
+      "sha256": "e507c109c31789b33994646b457ee288639324516357250607c9b1398186e069"
+    },
+    {
+      "file": "manrope-v23-latin-B6Sd7_ZV.woff2",
+      "bytes": 24532,
+      "gzip": 24560,
+      "sha256": "8c2def024c1bf31aacf3624ae3c4d701269b4ec3dc765c04830839f0d36b2d9e"
+    },
+    {
+      "file": "manrope-v23-latin-ext-C-cYlMBm.woff2",
+      "bytes": 15160,
+      "gzip": 15183,
+      "sha256": "2f7335119075b2079f1d882530bbc18728461612bf90743203d73a74a48f4d9b"
+    },
+    {
+      "file": "manrope-v23-vietnamese-CYN2vEce.woff2",
+      "bytes": 8388,
+      "gzip": 8411,
+      "sha256": "dbf64d973b3987844df30992c93f47d24ac8935ee8c9b1e320942aeb1b367703"
+    }
+  ]
+}

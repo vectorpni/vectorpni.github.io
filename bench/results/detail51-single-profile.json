@@ -1,0 +1,317 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T23:39:56.076Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail51-single-profile.js",
+      "passed": true,
+      "durationMs": 57573,
+      "result": {
+        "rows": [
+          {
+            "id": "frame",
+            "cpuRate": 1,
+            "fps": 144.02866790710493,
+            "p95FrameMs": 7.099999999999909,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.20000000298023224,
+            "calls": 28,
+            "triangles": 44480
+          },
+          {
+            "id": "motors",
+            "cpuRate": 1,
+            "fps": 144.02866790710493,
+            "p95FrameMs": 7.099999999999454,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.20000000298023224,
+            "calls": 24,
+            "triangles": 58928
+          },
+          {
+            "id": "esc",
+            "cpuRate": 1,
+            "fps": 144.01874310915107,
+            "p95FrameMs": 7.099999999999454,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 21,
+            "triangles": 10388
+          },
+          {
+            "id": "props",
+            "cpuRate": 1,
+            "fps": 144.018743109151,
+            "p95FrameMs": 7.100000000000364,
+            "p99FrameMs": 7.200000000000728,
+            "p95RenderMs": 0.10000000149011612,
+            "calls": 9,
+            "triangles": 6872
+          },
+          {
+            "id": "fc",
+            "cpuRate": 1,
+            "fps": 144.00881967890865,
+            "p95FrameMs": 7.100000000000364,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.20000000298023224,
+            "calls": 31,
+            "triangles": 20720
+          },
+          {
+            "id": "power",
+            "cpuRate": 1,
+            "fps": 144.018743109151,
+            "p95FrameMs": 7.100000000000364,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 23,
+            "triangles": 14320
+          },
+          {
+            "id": "becpi",
+            "cpuRate": 1,
+            "fps": 144.00881967890865,
+            "p95FrameMs": 7.100000000000364,
+            "p99FrameMs": 7.100000000000364,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 23,
+            "triangles": 20328
+          },
+          {
+            "id": "becfc",
+            "cpuRate": 1,
+            "fps": 143.99889761609484,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 24,
+            "triangles": 20388
+          },
+          {
+            "id": "battery",
+            "cpuRate": 1,
+            "fps": 144.0027593343105,
+            "p95FrameMs": 7.100000000002183,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.20000000298023224,
+            "calls": 41,
+            "triangles": 9506
+          },
+          {
+            "id": "pi",
+            "cpuRate": 1,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 31,
+            "triangles": 32608
+          },
+          {
+            "id": "cooling",
+            "cpuRate": 1,
+            "fps": 144.018743109151,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 24,
+            "triangles": 20538
+          },
+          {
+            "id": "gps",
+            "cpuRate": 1,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 16,
+            "triangles": 4030
+          },
+          {
+            "id": "radio",
+            "cpuRate": 1,
+            "fps": 144.018743109151,
+            "p95FrameMs": 7.100000000002183,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 15,
+            "triangles": 2220
+          },
+          {
+            "id": "camera",
+            "cpuRate": 1,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.29999999701976776,
+            "calls": 33,
+            "triangles": 20412
+          },
+          {
+            "id": "wiring",
+            "cpuRate": 1,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.19999999925494194,
+            "calls": 35,
+            "triangles": 21108
+          },
+          {
+            "id": "frame",
+            "cpuRate": 4,
+            "fps": 144.02866790710473,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 1.5,
+            "calls": 28,
+            "triangles": 44480
+          },
+          {
+            "id": "motors",
+            "cpuRate": 4,
+            "fps": 144.02866790710473,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000002183,
+            "p95RenderMs": 0.6999999992549419,
+            "calls": 24,
+            "triangles": 58928
+          },
+          {
+            "id": "esc",
+            "cpuRate": 4,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 1.3999999985098839,
+            "calls": 21,
+            "triangles": 10388
+          },
+          {
+            "id": "props",
+            "cpuRate": 4,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.099999999998545,
+            "p95RenderMs": 1.5,
+            "calls": 9,
+            "triangles": 6872
+          },
+          {
+            "id": "fc",
+            "cpuRate": 4,
+            "fps": 143.32965821389152,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 1.7000000029802322,
+            "calls": 31,
+            "triangles": 20720
+          },
+          {
+            "id": "power",
+            "cpuRate": 4,
+            "fps": 144.01874310915062,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 2.600000001490116,
+            "calls": 23,
+            "triangles": 14320
+          },
+          {
+            "id": "becpi",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.099999999998545,
+            "p95RenderMs": 2.599999997764826,
+            "calls": 23,
+            "triangles": 20328
+          },
+          {
+            "id": "becfc",
+            "cpuRate": 4,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.099999999998545,
+            "p95RenderMs": 2.199999999254942,
+            "calls": 24,
+            "triangles": 20388
+          },
+          {
+            "id": "battery",
+            "cpuRate": 4,
+            "fps": 144.03638814016207,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.099999999998545,
+            "p95RenderMs": 2.199999999254942,
+            "calls": 41,
+            "triangles": 9506
+          },
+          {
+            "id": "pi",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 2.600000001490116,
+            "calls": 31,
+            "triangles": 32608
+          },
+          {
+            "id": "cooling",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 2.399999998509884,
+            "calls": 24,
+            "triangles": 20538
+          },
+          {
+            "id": "gps",
+            "cpuRate": 4,
+            "fps": 144.0286679071051,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 2.199999999254942,
+            "calls": 16,
+            "triangles": 4030
+          },
+          {
+            "id": "radio",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 1.800000000745058,
+            "calls": 15,
+            "triangles": 2220
+          },
+          {
+            "id": "camera",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 2.099999997764826,
+            "calls": 33,
+            "triangles": 20412
+          },
+          {
+            "id": "wiring",
+            "cpuRate": 4,
+            "fps": 144.01874310915133,
+            "p95FrameMs": 7.099999999998545,
+            "p99FrameMs": 7.100000000005821,
+            "p95RenderMs": 1.8999999985098839,
+            "calls": 35,
+            "triangles": 21108
+          }
+        ],
+        "method": "One fully opened node at a time, independent production renderer, 1000x900 DPR1, 1.8 s orbit samples with 350 ms warm-up. Not a physical device."
+      }
+    }
+  ]
+}

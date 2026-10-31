@@ -1,0 +1,73 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T18:09:31.123Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail50-focus.js",
+      "passed": true,
+      "durationMs": 10789,
+      "result": {
+        "checks": [
+          {
+            "name": "Focus follows a moving node through animation reversal",
+            "passed": true
+          },
+          {
+            "name": "Actual ray click selects one instanced element",
+            "passed": true
+          },
+          {
+            "name": "Only the selected instance remains visible",
+            "passed": true
+          },
+          {
+            "name": "Overview restores all instances",
+            "passed": true
+          },
+          {
+            "name": "Maximum zoom stays outside closed battery housing",
+            "passed": true
+          }
+        ],
+        "batteryCameraDistanceToRadius": 1.0702508978713827
+      }
+    },
+    {
+      "filename": "tests/viewer.geometry-audit.js",
+      "passed": true,
+      "durationMs": 994,
+      "result": {
+        "hierarchy": {
+          "groups": 16,
+          "children": 233,
+          "instances": 99
+        },
+        "geometries": 214,
+        "uniqueTriangles": 101206,
+        "zeroArea": 0,
+        "errors": [],
+        "byType": {
+          "ExtrudeGeometry": 3,
+          "BufferGeometry": 60,
+          "CylinderGeometry": 46,
+          "RoundedBoxGeometry": 45,
+          "TorusGeometry": 14,
+          "TubeGeometry": 40,
+          "PlaneGeometry": 5,
+          "SphereGeometry": 1
+        }
+      }
+    },
+    {
+      "filename": "tests/viewer.detail50-load-failure.js",
+      "passed": true,
+      "durationMs": 2398,
+      "result": {
+        "handledChunkFailure": true,
+        "exteriorAvailable": true,
+        "mainViewerAvailable": true
+      }
+    }
+  ]
+}

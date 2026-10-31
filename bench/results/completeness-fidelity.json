@@ -1,0 +1,265 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T19:58:27.249Z",
+  "results": [
+    {
+      "filename": "tests/viewer.completeness-fidelity.js",
+      "passed": true,
+      "durationMs": 2734,
+      "result": {
+        "globalEnvelopePreserved": true,
+        "lightingPreserved": true,
+        "existingMaterialDefinitionsPreserved": true,
+        "before": {
+          "bounds": {
+            "min": [
+              -3.5189885663986207,
+              -1.729999989271164,
+              -3.4916492700576782
+            ],
+            "max": [
+              2.9724538493156434,
+              2.2450000003725292,
+              3.4916492700576782
+            ]
+          },
+          "materials": [
+            "[\"121817\",0,0.6,1,0,false,false,false]",
+            "[\"172c35\",0,0.075,1.65,0,false,false,false]",
+            "[\"202321\",0,0.88,0.75,0,false,false,false]",
+            "[\"202321\",0,0.88,1,0,false,false,false]",
+            "[\"21252a\",0,0.67,1,0,false,false,false]",
+            "[\"22272a\",0,0.52,0.75,0,false,false,false]",
+            "[\"222831\",0,0.67,1,0,false,false,false]",
+            "[\"24292d\",0,0.64,0.75,0,false,false,false]",
+            "[\"24292d\",0,0.64,1,0,false,false,false]",
+            "[\"25272b\",0,0.67,1,0,false,false,false]",
+            "[\"25292d\",0,0.57,1,0,false,false,false]",
+            "[\"252930\",0,0.67,1,0,false,false,false]",
+            "[\"253e47\",0,0.075,1.65,0,false,false,false]",
+            "[\"264b38\",0,0.64,1,0,false,false,false]",
+            "[\"272a2d\",0,0.67,1,0,false,false,false]",
+            "[\"31363b\",0.88,0.37,1,0,false,false,false]",
+            "[\"3c4349\",0,0.43,1,0,false,false,false]",
+            "[\"454c53\",0.8,0.43,1,0,false,false,false]",
+            "[\"62686b\",0,0.86,0.75,0,false,true,true]",
+            "[\"7a838a\",0.92,0.32,1,0,false,false,false]",
+            "[\"7a838a\",0.92,0.34,0.75,0,false,false,false]",
+            "[\"7d858a\",0,0.55,0.75,0,false,true,true]",
+            "[\"8a8170\",0,0.77,0.75,0,false,false,false]",
+            "[\"9b4853\",0,0.9,1,0,false,false,false]",
+            "[\"9ea5a8\",0.96,0.3,1,0,false,false,false]",
+            "[\"a96e38\",0.96,0.34,1,0,false,false,false]",
+            "[\"ad6b3c\",0.96,0.34,1,0,false,false,false]",
+            "[\"b83239\",0,0.63,1,0,false,false,false]",
+            "[\"b83239\",0,0.67,1,0,false,false,false]",
+            "[\"b83239\",0.75,0.38,1,0,false,false,false]",
+            "[\"b92a35\",0,0.67,1,0,false,false,false]",
+            "[\"ba2834\",0,0.67,1,0,false,false,false]",
+            "[\"c52634\",0,0.67,1,0,false,false,false]",
+            "[\"c7c9c9\",0,0.94,1,0,false,true,true]",
+            "[\"d4aa46\",0.95,0.32,1,0,false,false,false]",
+            "[\"dba53b\",0,0.67,1,0,false,false,false]",
+            "[\"e0ded3\",0.2,0.5,1,0,false,false,false]",
+            "[\"ffffff\",0,0.68,1,0,false,true,false]"
+          ],
+          "lighting": [
+            {
+              "type": "HemisphereLight",
+              "color": "f4f6f8",
+              "intensity": 0.95,
+              "position": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "type": "DirectionalLight",
+              "color": "fff8ef",
+              "intensity": 2.6,
+              "position": [
+                -3.8,
+                6.5,
+                4.5
+              ]
+            },
+            {
+              "type": "DirectionalLight",
+              "color": "edf3ff",
+              "intensity": 1.35,
+              "position": [
+                -4,
+                3,
+                -4
+              ]
+            }
+          ],
+          "exposure": 0.98,
+          "environmentIntensity": 0.75,
+          "groups": 16
+        },
+        "after": {
+          "bounds": {
+            "min": [
+              -3.5189885663986207,
+              -1.729999989271164,
+              -3.4916492700576782
+            ],
+            "max": [
+              2.9724538493156434,
+              2.2450000003725292,
+              3.4916492700576782
+            ]
+          },
+          "materials": [
+            "[\"121817\",0,0.6,1,0,false,false,false]",
+            "[\"172c35\",0,0.075,1.65,0,false,false,false]",
+            "[\"202321\",0,0.88,0.75,0,false,false,false]",
+            "[\"202321\",0,0.88,1,0,false,false,false]",
+            "[\"21252a\",0,0.67,1,0,false,false,false]",
+            "[\"22272a\",0,0.52,0.75,0,false,false,false]",
+            "[\"222831\",0,0.67,1,0,false,false,false]",
+            "[\"24292d\",0,0.64,0.75,0,false,false,false]",
+            "[\"24292d\",0,0.64,1,0,false,false,false]",
+            "[\"25272b\",0,0.67,1,0,false,false,false]",
+            "[\"25292d\",0,0.57,1,0,false,false,false]",
+            "[\"252930\",0,0.67,1,0,false,false,false]",
+            "[\"253e47\",0,0.075,1.65,0,false,false,false]",
+            "[\"264b38\",0,0.64,1,0,false,false,false]",
+            "[\"272a2d\",0,0.67,1,0,false,false,false]",
+            "[\"31363b\",0.88,0.37,1,0,false,false,false]",
+            "[\"3c4349\",0,0.43,1,0,false,false,false]",
+            "[\"454c53\",0.8,0.43,1,0,false,false,false]",
+            "[\"62686b\",0,0.86,0.75,0,false,true,true]",
+            "[\"7a838a\",0.92,0.32,1,0,false,false,false]",
+            "[\"7a838a\",0.92,0.34,0.75,0,false,false,false]",
+            "[\"7d858a\",0,0.55,0.75,0,false,true,true]",
+            "[\"8a8170\",0,0.77,0.75,0,false,false,false]",
+            "[\"9b4853\",0,0.9,1,0,false,false,false]",
+            "[\"9ea5a8\",0.96,0.3,1,0,false,false,false]",
+            "[\"a96e38\",0.96,0.34,1,0,false,false,false]",
+            "[\"ad6b3c\",0.96,0.34,1,0,false,false,false]",
+            "[\"b83239\",0,0.63,1,0,false,false,false]",
+            "[\"b83239\",0,0.67,1,0,false,false,false]",
+            "[\"b83239\",0.75,0.38,1,0,false,false,false]",
+            "[\"b92a35\",0,0.67,1,0,false,false,false]",
+            "[\"ba2834\",0,0.67,1,0,false,false,false]",
+            "[\"c4a462\",0.95,0.32,0.75,0,false,false,false]",
+            "[\"c52634\",0,0.67,1,0,false,false,false]",
+            "[\"c7c9c9\",0,0.94,1,0,false,true,true]",
+            "[\"d4aa46\",0.95,0.32,1,0,false,false,false]",
+            "[\"dba53b\",0,0.67,1,0,false,false,false]",
+            "[\"e0ded3\",0.2,0.5,1,0,false,false,false]",
+            "[\"ffffff\",0,0.68,1,0,false,true,false]"
+          ],
+          "lighting": [
+            {
+              "type": "HemisphereLight",
+              "color": "f4f6f8",
+              "intensity": 0.95,
+              "position": [
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "type": "DirectionalLight",
+              "color": "fff8ef",
+              "intensity": 2.6,
+              "position": [
+                -3.8,
+                6.5,
+                4.5
+              ]
+            },
+            {
+              "type": "DirectionalLight",
+              "color": "edf3ff",
+              "intensity": 1.35,
+              "position": [
+                -4,
+                3,
+                -4
+              ]
+            }
+          ],
+          "exposure": 0.98,
+          "environmentIntensity": 0.75,
+          "groups": 16
+        }
+      }
+    },
+    {
+      "filename": "tests/viewer.detail50-interaction.js",
+      "passed": true,
+      "durationMs": 7404,
+      "result": {
+        "checks": [
+          {
+            "name": "Native emulated pinch zooms inner node",
+            "passed": true
+          },
+          {
+            "name": "Pinch does not select a leaf",
+            "passed": true
+          },
+          {
+            "name": "Native emulated touch drag rotates inner node",
+            "passed": true
+          },
+          {
+            "name": "Drag does not select a leaf",
+            "passed": true
+          },
+          {
+            "name": "Native emulated tap selects a visible nested leaf",
+            "passed": true
+          },
+          {
+            "name": "Keyboard selects section",
+            "passed": true
+          },
+          {
+            "name": "Section button retains keyboard focus",
+            "passed": true
+          },
+          {
+            "name": "Keyboard selects nested detail",
+            "passed": true
+          },
+          {
+            "name": "Reduced motion settles with no idle render loop",
+            "passed": true
+          },
+          {
+            "name": "Rapid reversals retain assembled state",
+            "passed": true
+          },
+          {
+            "name": "Orientation retains selected detail",
+            "passed": true
+          },
+          {
+            "name": "Landscape has no overflow",
+            "passed": true
+          },
+          {
+            "name": "Escape closes nested inspector",
+            "passed": true
+          },
+          {
+            "name": "No JS errors",
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "cpuRate": 4,
+        "DPR": 2,
+        "physicalDevice": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "preservedBaselineFiles": 204,
+  "changedFromBaseline": [
+    {
+      "file": "engineering-assembly.js",
+      "before": "44baf237557591238d8b131be3ee644f2a1c4b0cc4a44385122ecacbdead21cf",
+      "after": "4C3C8F63C43897253836C0348155F214AD8BA3FD8D1658C2F9980038C666518F"
+    },
+    {
+      "file": "engineering-catalog.js",
+      "before": "53d5545b2e212ccba47c3c314906a4269cf7a08dd7f61d7fd7cb3f1fccf3402b",
+      "after": "9D57906E834887E32651E7F7E4E937B302CA9FA288B686EDEAE9F143448E2498"
+    },
+    {
+      "file": "engineering-detail.js",
+      "before": "f1c9bd21113e9318901427121ce75e0dc55b63610a254294dbe8c86db79d198e",
+      "after": "F9B82F435231FDB5CED3000933120957340308B673099B89C162A408FC59475C"
+    },
+    {
+      "file": "engineering-inspector.jsx",
+      "before": "e0b58d8cac133a26f716ae903a682ad00af089c9456155114b8674aeadba39d2",
+      "after": "8E09F6D6DA1BBE8B793E970128A7CD64F005F002FA868ACED1054DB3360EA750"
+    },
+    {
+      "file": "package.json",
+      "before": "c83888872b0f64a0391c32e9ad9e4b185640a1f748c4b29fe2557fc226347068",
+      "after": "F03B0E6C7D6D18628BD6DFA1A9F8A2D3DA0C7120797AF9C9AB48C4B6EECF88EF"
+    },
+    {
+      "file": "reference-detail.js",
+      "before": "e54d9d8976631fe1363d909ec548d8180d7256bd2bba92b7e369f669bee68b27",
+      "after": "C383C7D1E994ECCA80BD588425508CED9E2716B901E53CA109F29F881E4BEDF6"
+    },
+    {
+      "file": "tests/viewer.ultimate-runner.mjs",
+      "before": "9098aa43b7b3fb0d8d8ba34a636567b2b10f2d68a3285edc8ed689f904e84150",
+      "after": "857AC6022227DDDF6A3EFBBA12EDE3F4DBDA8DB350EB427496E7822501DCC333"
+    },
+    {
+      "file": "ultra-detail.js",
+      "before": "04d751b70122e8f76d286b1005fcc068f23a1a5f6a4d6724e1f5cbc4348a3e93",
+      "after": "C85F4D1D4BFEDE32EE7156949E1F677C0D0555530E6A576C7C2CCF012CAD7F56"
+    },
+    {
+      "file": "viewer-preview.js",
+      "before": "ad6b7b1b71bdd78a45aed48c5fe2b56d6d0fca3acc76c5196d0a316bce07439c",
+      "after": "F26FA7A550C5651E7538282EBBBB92B4EFDC8CC47814286DA2E882548E7A0B34"
+    }
+  ],
+  "preserved": [
+    "style.css",
+    "viewer-presentation.js",
+    "airfoil-geometry.js",
+    "motor-geometry.js",
+    "viewer-motion.js",
+    "knowledge.js",
+    ".github/workflows/pages.yml"
+  ]
+}

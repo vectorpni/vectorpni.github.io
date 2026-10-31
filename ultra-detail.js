@@ -23,9 +23,16 @@ export function addUltraDetail({groups, meshes, mesh, carbon, black, grey, rubbe
   const laminate=carbon.clone(); laminate.color.set('#353a3c'); laminate.roughness=.57;
   const batches=new Map(), cache=new Map();
   const geometry=(key,make)=>{if(!cache.has(key))cache.set(key,make());return cache.get(key);};
+  function sectionFor(id,p,material){
+    if(id==='frame')return material===laminate?'plates':p[1]<.1?'landing':Math.abs(p[0])>1||Math.abs(p[2])>1?'arms':'mounts';
+    if(id==='motors')return 'shell';if(id==='props')return 'hub';
+    if(id==='battery')return material===gasket?'shell':'straps';
+    if(id==='camera')return p[2]>.5?'optics':Math.abs(p[0])>.3?'mounts':'housing';
+    if(id==='cooling')return 'housing';return 'connector';
+  }
   function add(id,material,geo,p,rotation=[0,0,0],anchor=[0,0,0]) {
-    const key=id+':'+material.uuid+':'+anchor.join(',');
-    if(!batches.has(key))batches.set(key,{id,material,anchor,geometries:[]});
+    const section=sectionFor(id,p,material),key=id+':'+material.uuid+':'+anchor.join(',')+':'+section;
+    if(!batches.has(key))batches.set(key,{id,material,anchor,section,geometries:[]});
     const matrix=new THREE.Matrix4().compose(new THREE.Vector3(...p).sub(new THREE.Vector3(...anchor)),new THREE.Quaternion().setFromEuler(new THREE.Euler(...rotation)),new THREE.Vector3(1,1,1));
     batches.get(key).geometries.push(geo.clone().applyMatrix4(matrix));
   }
@@ -92,13 +99,13 @@ export function addUltraDetail({groups, meshes, mesh, carbon, black, grey, rubbe
   for(const x of [-.47,.47])for(const z of [-.52,.66])bolt('cooling',[x,-.3,z]);
   // Consolidate only new static details. Anchors keep single-motor/prop previews
   // intact; the existing instancer subsequently deduplicates identical batches.
-  for(const {id,material,anchor,geometries} of batches.values()){
+  for(const {id,material,anchor,section,geometries} of batches.values()){
     const normalized=geometries.map(g=>{const n=g.index?g.toNonIndexed():g;g.deleteAttribute('uv');n.deleteAttribute('uv');return n;});
     const merged=mergeGeometries(normalized,false);
     if(!merged)throw new Error('Unable to merge AF-18 detail: '+id);
     // Supply consistent UVs for the laminate material without another texture.
     const p=merged.attributes.position,uv=new Float32Array(p.count*2);for(let i=0;i<p.count;i++){uv[i*2]=p.getX(i);uv[i*2+1]=p.getZ(i);}merged.setAttribute('uv',new THREE.BufferAttribute(uv,2));
-    mesh(merged,material,id,...anchor);
+    mesh(merged,material,id,...anchor).userData.detailSection=section;
     for(const g of new Set([...geometries,...normalized]))g.dispose();
   }
   for(const g of cache.values())g.dispose();

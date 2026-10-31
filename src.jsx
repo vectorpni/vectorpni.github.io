@@ -5,6 +5,7 @@ import {createViewerControls} from './viewer-controls.js';
 import {disposeSceneResources} from './viewer-resources.js';
 import {applyStudioMaterials,configureStudioLighting,createStudioEnvironment} from './viewer-presentation.js';
 import {addUltraDetail} from './ultra-detail.js';
+import {addEngineeringDetail} from './engineering-detail.js';
 import {instancePartMeshes,getPartSourceMeshes} from './viewer-instancing.js';
 import {springTo, assemblyOffsets} from './viewer-motion.js';
 ﻿import {refineReference} from './reference-detail.js';
@@ -71,6 +72,7 @@ const gpsRim=mesh(new THREE.TorusGeometry(.253,.012,8,48),black,'gps',-.62,1.88,
 
 refineReference({groups,meshes,mesh,box,cyl,rod,mat,carbon,black,grey,red,rubber});
 addUltraDetail({groups,meshes,mesh,carbon,black,grey,rubber});
+addEngineeringDetail({mesh,groups});
 applyStudioMaterials(groups,weave,Math.min(8,renderer.capabilities.getMaxAnisotropy()));
 // Contact shadow on a seamless photographic studio floor.
 const floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.ShadowMaterial({opacity:.14}));floor.rotation.x=-Math.PI/2;floor.position.y=-1.79;floor.receiveShadow=true;scene.add(floor);
@@ -137,7 +139,13 @@ useEffect(()=>{const s=state.current;if(!s.camera)return;s.preset=view==='free'?
 return <div ref={el} className="three-view" aria-label="Интерактивная 3D-модель дрона: перетащите для вращения, нажмите на деталь для характеристик"/>}
 
 
+const EngineeringInspector=React.lazy(()=>import('./engineering-inspector.jsx'));
+class DetailLoadBoundary extends React.Component{state={failed:false};static getDerivedStateFromError(){return{failed:true};}render(){return this.state.failed?<p className="detail-notice" role="alert">Не удалось загрузить устройство узла. Вернитесь к внешнему виду компонента; его описание и управление доступны.</p>:this.props.children;}}
 function PartPreview({group,external}){
+  const [study,setStudy]=useState({id:null,inside:false}),inside=study.id===group?.uuid&&study.inside,setInside=fn=>setStudy({id:group?.uuid,inside:fn(inside)});
+  return <div className={inside?'part-study studying':'part-study'}>{inside&&group?<DetailLoadBoundary key={group.uuid}><React.Suspense fallback={<p role="status">Подготовка устройства узла…</p>}><EngineeringInspector group={group}/></React.Suspense></DetailLoadBoundary>:<PartPreviewCanvas group={group} external={external}/>} {!external&&group?.children.length>0&&<button className="study-toggle" aria-expanded={inside} onClick={()=>setInside(v=>!v)}>{inside?'← Внешний вид компонента':'Изучить устройство узла'}</button>}</div>;
+}
+function PartPreviewCanvas({group,external}){
   const host=useRef();const [failed,setFailed]=useState(false);
   useEffect(()=>{
     setFailed(false);if(!group||!group.children.length)return;

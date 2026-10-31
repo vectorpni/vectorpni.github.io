@@ -1,0 +1,1642 @@
+[
+  {
+    "file": "before/frame-assembled.png",
+    "sha256": "12842d2e4521e5ad6ff990ab32d2696fe365b66cf1dbeee82dc3ea627f2809dc"
+  },
+  {
+    "file": "before/frame-opened.png",
+    "sha256": "8bbe92fd6f5a00570cdde0b68e661414dc9dfda4cf00d3674115e151ebd57aeb"
+  },
+  {
+    "file": "before/motors-assembled.png",
+    "sha256": "002c7e0b7b2da9f7d5ff55d5311dce216fbe7018c33f775c0574a469e5f55035"
+  },
+  {
+    "file": "before/motors-opened.png",
+    "sha256": "92c20be84db6690790d9b22ba223f6f90363d9ec36c5be94437157d037552050"
+  },
+  {
+    "file": "before/esc-assembled.png",
+    "sha256": "b7a7ef7fac687353c90556405e8450259eda2ee2f8bd81efeb5fcc81b9e3b412"
+  },
+  {
+    "file": "before/esc-opened.png",
+    "sha256": "f212e43e2c5f1b4e799c6d7f960cae6beadfc8f4a9246084b7b4cc87f99dc450"
+  },
+  {
+    "file": "before/props-assembled.png",
+    "sha256": "bda8f579a276b2892558175e8cd92586121f9e002dc276f619c63bd995bb6758"
+  },
+  {
+    "file": "before/props-opened.png",
+    "sha256": "6a4f0076842cad3167a1b0dbfb45c8776c3f5a306a95e4285934842e044f4e20"
+  },
+  {
+    "file": "before/fc-assembled.png",
+    "sha256": "d8ca3ad517c2cbb9747ac21c5edbeba96c15fb0fb9c348e25b074bf2f1ba8477"
+  },
+  {
+    "file": "before/fc-opened.png",
+    "sha256": "832d7afab6d9538a9325849b0aaeaf0f132a677f8530ee4742e25251268ed4a4"
+  },
+  {
+    "file": "before/power-assembled.png",
+    "sha256": "814f7c7117e9760eee1bf649b572a5a64c20d154099df196fc8976aa24100ec8"
+  },
+  {
+    "file": "before/power-opened.png",
+    "sha256": "62bc1cd0c6898e57a135ac3adcc0e2053005c29cf55adffc1cd3ca01064b2ece"
+  },
+  {
+    "file": "before/becpi-assembled.png",
+    "sha256": "e2bd1ad270cb9cc3d5402df641988f9e8ac5880293ef529029339705725d0671"
+  },
+  {
+    "file": "before/becpi-opened.png",
+    "sha256": "01f6365583f88c6316d7010de6ed0c7bc980932245fb6aab9410c99dae9753b4"
+  },
+  {
+    "file": "before/becfc-assembled.png",
+    "sha256": "9f2e2ad5bbbd2ae46497b18d570aa4dbd534815391c5b0ed2f2c7807cfb96af6"
+  },
+  {
+    "file": "before/becfc-opened.png",
+    "sha256": "91dbf299f3580e5b57696560a1b92ff38d0b9ec55ada10b133188ddf17111ef9"
+  },
+  {
+    "file": "before/battery-assembled.png",
+    "sha256": "8f84f40a4c4179ba47bf84f7cd00e935ffa0700acccae23029f40a662787e5b6"
+  },
+  {
+    "file": "before/battery-opened.png",
+    "sha256": "2f4f940becc5299546187f8c560f2103ee55add96f9ff8f6503f4a6854c045e3"
+  },
+  {
+    "file": "before/pi-assembled.png",
+    "sha256": "e836c3a52c04a4bd1483e743d015aa38473d305a67a04470ef66072cef09d253"
+  },
+  {
+    "file": "before/pi-opened.png",
+    "sha256": "8e0aa1b46278ad72583c4d34879dc1c674f57e7a9474ee3cf867225522760ad3"
+  },
+  {
+    "file": "before/cooling-assembled.png",
+    "sha256": "01cb4f7631f2f06fc7c060aaa80e09820683d36a2be2bdac5839bafc2bd63d8b"
+  },
+  {
+    "file": "before/cooling-opened.png",
+    "sha256": "32930a702f4d8bc9f7c82bce1fcc18fc46bd52db0ea3d9e7de901d61499db8bc"
+  },
+  {
+    "file": "before/gps-assembled.png",
+    "sha256": "a6a01efb646aa4494b039b889ec8f21586c3fb868b65029324bd2f5766a595ac"
+  },
+  {
+    "file": "before/gps-opened.png",
+    "sha256": "bb018d1379fe5521b564805d095b1e780a97ad7f3d6fbe838d1723b6dc8ad3ec"
+  },
+  {
+    "file": "before/radio-assembled.png",
+    "sha256": "40bf924636082da664aa8a610500570f5768f2531a23dc8258068e6a25701349"
+  },
+  {
+    "file": "before/radio-opened.png",
+    "sha256": "3849cdbbbcf0a9f1d86fb747615022d96cbbcabf95faf2f354a343ea71cc54de"
+  },
+  {
+    "file": "before/camera-assembled.png",
+    "sha256": "b59f221e2f8c640cd2c4d118d810287d88a5a128ff36c5aead60c67ed74cb802"
+  },
+  {
+    "file": "before/camera-opened.png",
+    "sha256": "06a860ddfdb2f325f417dc89c591d2a7b20b67b718ed1ec32bcc135430cb9943"
+  },
+  {
+    "file": "before/wiring-assembled.png",
+    "sha256": "143de3d3151211111b08dd5e22bebbaba93d7d3be23e7cfba14722295facc650"
+  },
+  {
+    "file": "before/wiring-opened.png",
+    "sha256": "a8e747c2f058fb7ead4ceba23dafae9332fe7170e70c0703ffc33f9e63e0ebec"
+  },
+  {
+    "file": "before/atlas-assembled.png",
+    "sha256": "639c4cbd413ea224588d2826638215724502b595c314779236061272ab23f7ec"
+  },
+  {
+    "file": "before/atlas-opened.png",
+    "sha256": "f45bc8c1ad39d59e84afe3a955aceaaa1eccae8484ada556744d53271cc63a77"
+  },
+  {
+    "file": "sections-before/frame-plates-assembled.png",
+    "sha256": "92ec6e8942c3b887aecb0fb313b291b76c8d921fa729ebeef057522aa6307f2e"
+  },
+  {
+    "file": "sections-before/frame-arms-assembled.png",
+    "sha256": "e23972d412cdb06fc9a6bc830aa9029499b20c811fee60c1ec1d5e8838e84345"
+  },
+  {
+    "file": "sections-before/frame-mounts-assembled.png",
+    "sha256": "57607c9b338e7cf762e9d85ec06107d5a29f010fa442ec30da8e032b6a8687f6"
+  },
+  {
+    "file": "sections-before/frame-landing-assembled.png",
+    "sha256": "aaf241773c05e46a84706e7d9f28fc6368ef74d0f2e84520dec339e3755413b2"
+  },
+  {
+    "file": "sections-before/frame-plates-opened.png",
+    "sha256": "92ec6e8942c3b887aecb0fb313b291b76c8d921fa729ebeef057522aa6307f2e"
+  },
+  {
+    "file": "sections-before/frame-arms-opened.png",
+    "sha256": "e23972d412cdb06fc9a6bc830aa9029499b20c811fee60c1ec1d5e8838e84345"
+  },
+  {
+    "file": "sections-before/frame-mounts-opened.png",
+    "sha256": "57607c9b338e7cf762e9d85ec06107d5a29f010fa442ec30da8e032b6a8687f6"
+  },
+  {
+    "file": "sections-before/frame-landing-opened.png",
+    "sha256": "aaf241773c05e46a84706e7d9f28fc6368ef74d0f2e84520dec339e3755413b2"
+  },
+  {
+    "file": "sections-before/motors-shell-assembled.png",
+    "sha256": "0a05b472b7cf81b3e502a5ea716c1efbb016633dab8bcd6d739adeac7dbcf20b"
+  },
+  {
+    "file": "sections-before/motors-stator-assembled.png",
+    "sha256": "4f22bd246141215b0589c6c19e58d3de51e54e1c1749e83c46438b8e450d6faa"
+  },
+  {
+    "file": "sections-before/motors-shaft-assembled.png",
+    "sha256": "b70f726ae2cc555f9e2d19d79f05501db52b3e4023c01881d401903dd4b295ed"
+  },
+  {
+    "file": "sections-before/motors-base-assembled.png",
+    "sha256": "85ec3cf79f6eab4649fc19e424aa9a1ab2284d93f24767c69c4c16502d3a7021"
+  },
+  {
+    "file": "sections-before/motors-shell-opened.png",
+    "sha256": "0a05b472b7cf81b3e502a5ea716c1efbb016633dab8bcd6d739adeac7dbcf20b"
+  },
+  {
+    "file": "sections-before/motors-stator-opened.png",
+    "sha256": "4f22bd246141215b0589c6c19e58d3de51e54e1c1749e83c46438b8e450d6faa"
+  },
+  {
+    "file": "sections-before/motors-shaft-opened.png",
+    "sha256": "b70f726ae2cc555f9e2d19d79f05501db52b3e4023c01881d401903dd4b295ed"
+  },
+  {
+    "file": "sections-before/motors-base-opened.png",
+    "sha256": "85ec3cf79f6eab4649fc19e424aa9a1ab2284d93f24767c69c4c16502d3a7021"
+  },
+  {
+    "file": "sections-before/esc-board-assembled.png",
+    "sha256": "4ca063a958c6aa75b4b57aa69fde113ee53a498bd0a14212ad0ac49a165237a1"
+  },
+  {
+    "file": "sections-before/esc-devices-assembled.png",
+    "sha256": "61da71dd9ff50f0b45ad5827cb807d87e71c73bafdd88481e58930f1ac7d6876"
+  },
+  {
+    "file": "sections-before/esc-connector-assembled.png",
+    "sha256": "e66709a8819cbf9611dd09b78ff7b9b949ee0e3288315cf3b84371a9204f8a87"
+  },
+  {
+    "file": "sections-before/esc-cover-assembled.png",
+    "sha256": "9dfc9dd2973fea727577ed63415f0c54280bffdf124d4dff3adcad9c080d9722"
+  },
+  {
+    "file": "sections-before/esc-board-opened.png",
+    "sha256": "4ca063a958c6aa75b4b57aa69fde113ee53a498bd0a14212ad0ac49a165237a1"
+  },
+  {
+    "file": "sections-before/esc-devices-opened.png",
+    "sha256": "7f2b6286617027765afc7f2b992a9514f0d573aaf6fd9d5e7bc14e2cb0592b36"
+  },
+  {
+    "file": "sections-before/esc-connector-opened.png",
+    "sha256": "e66709a8819cbf9611dd09b78ff7b9b949ee0e3288315cf3b84371a9204f8a87"
+  },
+  {
+    "file": "sections-before/esc-cover-opened.png",
+    "sha256": "9dfc9dd2973fea727577ed63415f0c54280bffdf124d4dff3adcad9c080d9722"
+  },
+  {
+    "file": "sections-before/props-blades-assembled.png",
+    "sha256": "6e727d8a38e74204555b15017c8021dc07f0f9e92c2ca7f590d0b65108df1058"
+  },
+  {
+    "file": "sections-before/props-hub-assembled.png",
+    "sha256": "d267d854f2013515f196b9ec09a07090af4b8a2ab5b5594e43bac515c8405622"
+  },
+  {
+    "file": "sections-before/props-blades-opened.png",
+    "sha256": "6e727d8a38e74204555b15017c8021dc07f0f9e92c2ca7f590d0b65108df1058"
+  },
+  {
+    "file": "sections-before/props-hub-opened.png",
+    "sha256": "d267d854f2013515f196b9ec09a07090af4b8a2ab5b5594e43bac515c8405622"
+  },
+  {
+    "file": "sections-before/fc-board-assembled.png",
+    "sha256": "1acea580ac7078fb03f6c3a91426103ad4ac1f4dfc9d976b6678c4282dc0833a"
+  },
+  {
+    "file": "sections-before/fc-devices-assembled.png",
+    "sha256": "9f85a138251bdec99c0ef10cf0f007924389dc42b130a7bbdd920c9626a326ea"
+  },
+  {
+    "file": "sections-before/fc-connector-assembled.png",
+    "sha256": "5d98b0f76eb86245f543f920ce7249675934edaf922461aaf9262004f8756b0e"
+  },
+  {
+    "file": "sections-before/fc-cover-assembled.png",
+    "sha256": "8749853abeeed0e78a10e3c3e8bd394a397980f70548843040b8a7de0eb5e456"
+  },
+  {
+    "file": "sections-before/fc-board-opened.png",
+    "sha256": "1acea580ac7078fb03f6c3a91426103ad4ac1f4dfc9d976b6678c4282dc0833a"
+  },
+  {
+    "file": "sections-before/fc-devices-opened.png",
+    "sha256": "f21cad337fc7543d109b2de2bb51d094c2238898302c4af0fbe101ccee33a038"
+  },
+  {
+    "file": "sections-before/fc-connector-opened.png",
+    "sha256": "5d98b0f76eb86245f543f920ce7249675934edaf922461aaf9262004f8756b0e"
+  },
+  {
+    "file": "sections-before/fc-cover-opened.png",
+    "sha256": "8749853abeeed0e78a10e3c3e8bd394a397980f70548843040b8a7de0eb5e456"
+  },
+  {
+    "file": "sections-before/power-board-assembled.png",
+    "sha256": "e20dbd529e9fe7711d4bb5f943909d36880ff52e4efafe60cb6c9c14d4dce7e8"
+  },
+  {
+    "file": "sections-before/power-devices-assembled.png",
+    "sha256": "55b3374e4cf0553527163ac1fe76ae02bda0bfa2b515e8322b5564183d8ad295"
+  },
+  {
+    "file": "sections-before/power-connector-assembled.png",
+    "sha256": "f5d0fca102b67496467ba4f94a5395029e0e29c0d240701e8c943c1cfc4516be"
+  },
+  {
+    "file": "sections-before/power-cover-assembled.png",
+    "sha256": "2b29655e1f50d71f6f92cf138a975d02b8612a3264a8eeb7c6d8e97e0c6550ac"
+  },
+  {
+    "file": "sections-before/power-board-opened.png",
+    "sha256": "e20dbd529e9fe7711d4bb5f943909d36880ff52e4efafe60cb6c9c14d4dce7e8"
+  },
+  {
+    "file": "sections-before/power-devices-opened.png",
+    "sha256": "0f60490b18aec0e03c089e6939b35598bdae81f5b210c1702b0102a5ae37ad35"
+  },
+  {
+    "file": "sections-before/power-connector-opened.png",
+    "sha256": "f5d0fca102b67496467ba4f94a5395029e0e29c0d240701e8c943c1cfc4516be"
+  },
+  {
+    "file": "sections-before/power-cover-opened.png",
+    "sha256": "2b29655e1f50d71f6f92cf138a975d02b8612a3264a8eeb7c6d8e97e0c6550ac"
+  },
+  {
+    "file": "sections-before/becpi-board-assembled.png",
+    "sha256": "59dfe36020d7c91b58d2e24761daa7b589ad413d87745443ae273b4e063f5322"
+  },
+  {
+    "file": "sections-before/becpi-devices-assembled.png",
+    "sha256": "e09465b64a1fb9bc68e3d07ac191c1f6ebb9d9fe3c9eca235cce9e99b22ccd2f"
+  },
+  {
+    "file": "sections-before/becpi-connector-assembled.png",
+    "sha256": "27cbcff4abfd2948ff81ff139a742fcbf5c03580d8ada2081698156728062b2e"
+  },
+  {
+    "file": "sections-before/becpi-cover-assembled.png",
+    "sha256": "faf5231ac35396243e3c47b2b7d58974e2a9c468863d742b096cc7255b6f228b"
+  },
+  {
+    "file": "sections-before/becpi-board-opened.png",
+    "sha256": "59dfe36020d7c91b58d2e24761daa7b589ad413d87745443ae273b4e063f5322"
+  },
+  {
+    "file": "sections-before/becpi-devices-opened.png",
+    "sha256": "fe669da750d40064d89f73f3edbf9086fdbab87697aa8cbcd0f583be84b35818"
+  },
+  {
+    "file": "sections-before/becpi-connector-opened.png",
+    "sha256": "27cbcff4abfd2948ff81ff139a742fcbf5c03580d8ada2081698156728062b2e"
+  },
+  {
+    "file": "sections-before/becpi-cover-opened.png",
+    "sha256": "faf5231ac35396243e3c47b2b7d58974e2a9c468863d742b096cc7255b6f228b"
+  },
+  {
+    "file": "sections-before/becfc-board-assembled.png",
+    "sha256": "8472a9d1978669fb1e1928e41b775bdda509694f71b7f183cc36758acf151e45"
+  },
+  {
+    "file": "sections-before/becfc-devices-assembled.png",
+    "sha256": "53c2f9a7117897ef9959ad90ccced5167cdf5d859929fc435bbb685e92abdb59"
+  },
+  {
+    "file": "sections-before/becfc-connector-assembled.png",
+    "sha256": "db9d0ad12a8b7017a351c8d277426b3a730c8584c9d68ef015aca8d2eac6bc03"
+  },
+  {
+    "file": "sections-before/becfc-cover-assembled.png",
+    "sha256": "0aadb082f3d521b0302a88f364ce2d96cff2f02d96c1526e41380bfd1bcf22bf"
+  },
+  {
+    "file": "sections-before/becfc-board-opened.png",
+    "sha256": "8472a9d1978669fb1e1928e41b775bdda509694f71b7f183cc36758acf151e45"
+  },
+  {
+    "file": "sections-before/becfc-devices-opened.png",
+    "sha256": "2b0094b53564aeb62717be7b72d485ff74cdd281da3ecc53865795c5d473c06f"
+  },
+  {
+    "file": "sections-before/becfc-connector-opened.png",
+    "sha256": "db9d0ad12a8b7017a351c8d277426b3a730c8584c9d68ef015aca8d2eac6bc03"
+  },
+  {
+    "file": "sections-before/becfc-cover-opened.png",
+    "sha256": "0aadb082f3d521b0302a88f364ce2d96cff2f02d96c1526e41380bfd1bcf22bf"
+  },
+  {
+    "file": "sections-before/battery-shell-assembled.png",
+    "sha256": "ef5d00e5e6490038db1df97d100e09f5130a694a5eaf3abe59361455c722e7df"
+  },
+  {
+    "file": "sections-before/battery-straps-assembled.png",
+    "sha256": "97141658f86a8b89cfa84ba23b1506c4b28a9e16aba7275eff2421d4b06167f8"
+  },
+  {
+    "file": "sections-before/battery-connector-assembled.png",
+    "sha256": "f97cb5a99437e71ae698d69f150173bbe1e5ae2c17fe42d2764e931316cd34a8"
+  },
+  {
+    "file": "sections-before/battery-shell-opened.png",
+    "sha256": "00043f0872f3f8977ad339e8a150aeacc6f450da634e39e8859e136b0a8f9689"
+  },
+  {
+    "file": "sections-before/battery-straps-opened.png",
+    "sha256": "97141658f86a8b89cfa84ba23b1506c4b28a9e16aba7275eff2421d4b06167f8"
+  },
+  {
+    "file": "sections-before/battery-connector-opened.png",
+    "sha256": "d2a9e9a32ae10de733afe6e6dcfb3d10eaaa807bad92823c24b7382702b6c91a"
+  },
+  {
+    "file": "sections-before/pi-board-assembled.png",
+    "sha256": "157979cf8babd039a72ecfb022938f444d8b3c03caa0c5846c7a5ef9dffe99b3"
+  },
+  {
+    "file": "sections-before/pi-devices-assembled.png",
+    "sha256": "db25bfe679b14ed0dcb748cfb3b78ae51dfd3379bde43bb93e852aa8d9ca93d8"
+  },
+  {
+    "file": "sections-before/pi-connector-assembled.png",
+    "sha256": "5bd01dde443b34520df1d75dc91504c0ef5c0dd2671b2d890759a38718e815a9"
+  },
+  {
+    "file": "sections-before/pi-cover-assembled.png",
+    "sha256": "cc42a7c52480f320833402f147ae2bdfa6ad7269546cfc6759afbb50a2c12689"
+  },
+  {
+    "file": "sections-before/pi-board-opened.png",
+    "sha256": "157979cf8babd039a72ecfb022938f444d8b3c03caa0c5846c7a5ef9dffe99b3"
+  },
+  {
+    "file": "sections-before/pi-devices-opened.png",
+    "sha256": "176b32115bf2f5adb46f23892b74927d777deec9004033af0280e20b23229823"
+  },
+  {
+    "file": "sections-before/pi-connector-opened.png",
+    "sha256": "5bd01dde443b34520df1d75dc91504c0ef5c0dd2671b2d890759a38718e815a9"
+  },
+  {
+    "file": "sections-before/pi-cover-opened.png",
+    "sha256": "cc42a7c52480f320833402f147ae2bdfa6ad7269546cfc6759afbb50a2c12689"
+  },
+  {
+    "file": "sections-before/cooling-housing-assembled.png",
+    "sha256": "244d6488a7366897eb82ac1460c6a2d3b88f03950f17188ac03ab759353970b5"
+  },
+  {
+    "file": "sections-before/cooling-heatsink-assembled.png",
+    "sha256": "19ed256dfc5077aa224d50ac7c709c825803c160feba1de6d83e75cadd49942b"
+  },
+  {
+    "file": "sections-before/cooling-fan-assembled.png",
+    "sha256": "729ed023a1542621b5018ad50a287fa68678e54855afff49bec918047d07dcc6"
+  },
+  {
+    "file": "sections-before/cooling-housing-opened.png",
+    "sha256": "244d6488a7366897eb82ac1460c6a2d3b88f03950f17188ac03ab759353970b5"
+  },
+  {
+    "file": "sections-before/cooling-heatsink-opened.png",
+    "sha256": "19ed256dfc5077aa224d50ac7c709c825803c160feba1de6d83e75cadd49942b"
+  },
+  {
+    "file": "sections-before/cooling-fan-opened.png",
+    "sha256": "729ed023a1542621b5018ad50a287fa68678e54855afff49bec918047d07dcc6"
+  },
+  {
+    "file": "sections-before/gps-housing-assembled.png",
+    "sha256": "4b62c666850ea76b67b906c7ff0ed45929ebba79dfb9dcd1eaeb06c474991cd3"
+  },
+  {
+    "file": "sections-before/gps-board-assembled.png",
+    "sha256": "75bb5d3251c36cecbac81ad9f41b805d8ac3f451753123351d104fbe4e46755e"
+  },
+  {
+    "file": "sections-before/gps-mounts-assembled.png",
+    "sha256": "fe869dfe14480adc84ede24e8c2ff0d64cbad004148d70c2590ec6b6fbfe8ea7"
+  },
+  {
+    "file": "sections-before/gps-housing-opened.png",
+    "sha256": "78c793fa0919df5ba5e6943a747e000aee30d035648249516217cd4cfebc1907"
+  },
+  {
+    "file": "sections-before/gps-board-opened.png",
+    "sha256": "75bb5d3251c36cecbac81ad9f41b805d8ac3f451753123351d104fbe4e46755e"
+  },
+  {
+    "file": "sections-before/gps-mounts-opened.png",
+    "sha256": "fe869dfe14480adc84ede24e8c2ff0d64cbad004148d70c2590ec6b6fbfe8ea7"
+  },
+  {
+    "file": "sections-before/radio-housing-assembled.png",
+    "sha256": "0e8453f0617b735a276271ca65bcc37141e672f57c44f4950ce471bb9badfd86"
+  },
+  {
+    "file": "sections-before/radio-board-assembled.png",
+    "sha256": "0552e34f9d818e8e999d2e33ccc6bbfdbbb06c8558b07652ac71113eded383e9"
+  },
+  {
+    "file": "sections-before/radio-connector-assembled.png",
+    "sha256": "45c063dde1379779fdecfeda01507e8eb105340d6badaaba4a757d41fd9e8e9c"
+  },
+  {
+    "file": "sections-before/radio-housing-opened.png",
+    "sha256": "f9b8064a104de12f2fe56449b072beaa0db6a52ba87d691f73eaf8eb6a672c38"
+  },
+  {
+    "file": "sections-before/radio-board-opened.png",
+    "sha256": "0552e34f9d818e8e999d2e33ccc6bbfdbbb06c8558b07652ac71113eded383e9"
+  },
+  {
+    "file": "sections-before/radio-connector-opened.png",
+    "sha256": "45c063dde1379779fdecfeda01507e8eb105340d6badaaba4a757d41fd9e8e9c"
+  },
+  {
+    "file": "sections-before/camera-housing-assembled.png",
+    "sha256": "f4b05fb32055ac64f5f48d0d33136264214883643334518832fc8353ff77feae"
+  },
+  {
+    "file": "sections-before/camera-optics-assembled.png",
+    "sha256": "6c1bc8a5d5d105432461ab732ae64bae02a1e8d4738f9f9f7475c87a44614f2b"
+  },
+  {
+    "file": "sections-before/camera-mounts-assembled.png",
+    "sha256": "0c11731552a66574cb297fbc73b239b6d501f23b93e3038e22c830cde06c6b49"
+  },
+  {
+    "file": "sections-before/camera-housing-opened.png",
+    "sha256": "45be9c5cb76ed0530638a9b5ee6de491978f40f71f5ea0ba66db932bb0a2fba1"
+  },
+  {
+    "file": "sections-before/camera-optics-opened.png",
+    "sha256": "f29531695d8b02f95c6d955ac5687eaa945b00907c355b96329e77a0d1a83e51"
+  },
+  {
+    "file": "sections-before/camera-mounts-opened.png",
+    "sha256": "0c11731552a66574cb297fbc73b239b6d501f23b93e3038e22c830cde06c6b49"
+  },
+  {
+    "file": "sections-before/wiring-loom-assembled.png",
+    "sha256": "be2cea279acc56738a0925882b5178bd09acced5660ed69463b5f3f64ecad7bc"
+  },
+  {
+    "file": "sections-before/wiring-connector-assembled.png",
+    "sha256": "7dd032f728f244c065bf5ba00eb4b2bb586436e4e4db3564c031fbc4fd634e4f"
+  },
+  {
+    "file": "sections-before/wiring-mounts-assembled.png",
+    "sha256": "f0ea4650548409d16cdd08a546b780b8b016f66391e5576b88506b4dce6284ec"
+  },
+  {
+    "file": "sections-before/wiring-loom-opened.png",
+    "sha256": "be2cea279acc56738a0925882b5178bd09acced5660ed69463b5f3f64ecad7bc"
+  },
+  {
+    "file": "sections-before/wiring-connector-opened.png",
+    "sha256": "7dd032f728f244c065bf5ba00eb4b2bb586436e4e4db3564c031fbc4fd634e4f"
+  },
+  {
+    "file": "sections-before/wiring-mounts-opened.png",
+    "sha256": "f0ea4650548409d16cdd08a546b780b8b016f66391e5576b88506b4dce6284ec"
+  },
+  {
+    "file": "macros-before/frame-mounts--through-bolts51.png",
+    "sha256": "4475a937023140dcc9a51a92362b293e61ea1cc8283519e9948890a1ef5f007e"
+  },
+  {
+    "file": "macros-before/frame-arms--saddles51.png",
+    "sha256": "e550430da4cfbae0f0f16ff563e37bd46faf80d07b23192b1ab81e6330a9b5a7"
+  },
+  {
+    "file": "macros-before/frame-landing--pins51.png",
+    "sha256": "138d24551069f47c92dced18da2784855908a60be0bd131d0815168d105f2366"
+  },
+  {
+    "file": "macros-before/motors-shaft--rolling51.png",
+    "sha256": "ff121ee1e8d6bf2a4879dfd531474a0c46674b40c4f706bfabf43b060979a526"
+  },
+  {
+    "file": "macros-before/motors-stator--insulation51.png",
+    "sha256": "4bba80ffcb96ef55e333a043eed206e45a994645b52e5c9a77e5b22780452db7"
+  },
+  {
+    "file": "macros-before/motors-stator--tails51.png",
+    "sha256": "fb4c2d8a1f5897949c5d4011841f6e1beaa44e861684cdbed6a8ff3d5d62387b"
+  },
+  {
+    "file": "macros-before/motors-base--mounting51.png",
+    "sha256": "bda6bd86584472f11bfabb35fa4f2fc02aa43b25cae93f7fe8fcbcf84c59229e"
+  },
+  {
+    "file": "macros-before/motors-shell--retention51.png",
+    "sha256": "74a997fa8bcb5ea354ec003181558a838e82206cc55f688fd326583442f7f91d"
+  },
+  {
+    "file": "macros-before/esc-board--laminate51.png",
+    "sha256": "c4d2de44ba3de6818a75ed683c89398f74368042c7aff0ebea27cb592201d65a"
+  },
+  {
+    "file": "macros-before/esc-cover--mounts51.png",
+    "sha256": "febd6138e8086c6327efd14d4e57789f9a7544ac94a86e61b3518679ececc043"
+  },
+  {
+    "file": "macros-before/esc-devices--packages51.png",
+    "sha256": "f63dc9a611f332347ac867f767d05e74ccf5b7d84378811395c2bfb9c209f061"
+  },
+  {
+    "file": "macros-before/esc-connector--tails51.png",
+    "sha256": "18131d7e573f1c805e111657168adb2547ed7e4502d63f230e35719eed294cc1"
+  },
+  {
+    "file": "macros-before/props-hub--clamp51.png",
+    "sha256": "8b82bbdeb27cff281de43da9d2ce49c2091a01604d423c9ea84ce3917990d775"
+  },
+  {
+    "file": "macros-before/fc-board--laminate51.png",
+    "sha256": "6c711e51376de02eaf668b0d71241c8b29109ed9e4bdeebfd7c3ee82e92b3bf9"
+  },
+  {
+    "file": "macros-before/fc-cover--mounts51.png",
+    "sha256": "ea0b5429dd23c3a96543a6469f2345f10377e3f17983a2f35b806a156e3011fb"
+  },
+  {
+    "file": "macros-before/fc-devices--packages51.png",
+    "sha256": "9a8c705e680a0dce3e6912772ddf5cc791e803ab2cef6ff331aee1903d3c4800"
+  },
+  {
+    "file": "macros-before/fc-connector--tails51.png",
+    "sha256": "b34eb8071a929449ce6ebe7fab8faecd7bd55dee246799b0ece817bc9c9ad9d5"
+  },
+  {
+    "file": "macros-before/fc-devices--qfp51.png",
+    "sha256": "f7088d2c488f61b1409cc0419f75384da1b57f117d2fa36e3b2e8c09f392387a"
+  },
+  {
+    "file": "macros-before/fc-connector--interfaces51.png",
+    "sha256": "e17677bb85899d54142355102cbfe3f4dcbc7777db10b69cf44fc2d8386d65e8"
+  },
+  {
+    "file": "macros-before/power-board--laminate51.png",
+    "sha256": "2b73a7a7e9985270965fb9e3714531250f2737e5ec4a36812f8a00ff0a97e892"
+  },
+  {
+    "file": "macros-before/power-cover--mounts51.png",
+    "sha256": "5abc60606e7577ad4de1a3d7369e7efd40fccb22ad6018421efa909fecbdaa13"
+  },
+  {
+    "file": "macros-before/power-devices--packages51.png",
+    "sha256": "bc0f272b3fb103cfb279ea8f7e6696d1e9230653fb8c7eaf0cfe1d26b85bbfdf"
+  },
+  {
+    "file": "macros-before/power-connector--tails51.png",
+    "sha256": "7637e6390e64723fe066dc9397464bc52916bc56fa1db7e56552ce4932e20942"
+  },
+  {
+    "file": "macros-before/becpi-board--laminate51.png",
+    "sha256": "68c02992cdbc2f1765e677d54fa4035136ad62e0749e16ec5fc847d1b2ea9c7b"
+  },
+  {
+    "file": "macros-before/becpi-cover--mounts51.png",
+    "sha256": "00ec08d95a889da8f69c2da9276f5037413300a8fca71d9836f1a389736612e4"
+  },
+  {
+    "file": "macros-before/becpi-devices--packages51.png",
+    "sha256": "2bba3f6d4ec2b31010b01d1672feee2066ec992958a657f87c78b06658c7bf6c"
+  },
+  {
+    "file": "macros-before/becpi-connector--tails51.png",
+    "sha256": "eed2a1c3242cc7090ad4eea197439e3ce5aae4c953e0614b80926a144de3aff2"
+  },
+  {
+    "file": "macros-before/becfc-board--laminate51.png",
+    "sha256": "40949c182d19464d6338d2bbc310b360a62d1f9767b907a3435413d8a6c9d9ad"
+  },
+  {
+    "file": "macros-before/becfc-cover--mounts51.png",
+    "sha256": "d6b09356b95ec824947d21e18d927bfeb38676b42a88cbb364d771a2fd76eb38"
+  },
+  {
+    "file": "macros-before/becfc-devices--packages51.png",
+    "sha256": "8f3001fcf10f177d3a09c099751902b0ab1f6649251880ba05ebfe7f676b777f"
+  },
+  {
+    "file": "macros-before/becfc-connector--tails51.png",
+    "sha256": "664a0d878e3ff1572a4887478be2c2b0cde8accd979c397dbaacb130c8b91417"
+  },
+  {
+    "file": "macros-before/becfc-cover--case51.png",
+    "sha256": "a24c38bb94a69d39c3bf643189dca7aa8641f81f5fec9ea74c8cf5fa852afac7"
+  },
+  {
+    "file": "macros-before/battery-shell--tray51.png",
+    "sha256": "14cd7b42021c2aa6811f850009388285346785e57aad766c7908d4faa99c01a0"
+  },
+  {
+    "file": "macros-before/battery-shell--lid51.png",
+    "sha256": "ed8638f71001c8d5c2dd39120a6c252337a11107f622f84a7dab96b0345d6b15"
+  },
+  {
+    "file": "macros-before/battery-shell--cells51.png",
+    "sha256": "bee0235d1d1ccb8ef6e224776562922a378fc1cefbd28690dbb60c7e3063b2a0"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-1.png",
+    "sha256": "f39d3e0d40b1988e13ffceeb905a009dedf209f0a5750fedebde185824b1902b"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-2.png",
+    "sha256": "49a32cc0d6081b154895af589772db0622862f377f9e5da9ee373f2cbf41ae7b"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-3.png",
+    "sha256": "d32a549659447fb5aea5852f8e38cf5a1ab8cac5ba51f33c40b60b20e32d23c0"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-4.png",
+    "sha256": "11ee6344f99d44f1a88489e2b25af3e89d4b74d99b4aa72c4ae68601b10bc8ff"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-5.png",
+    "sha256": "2c201c381f2dbd8c0f4aa2376ec9db1c19acce3da6fb17537185b3b3bce4bf11"
+  },
+  {
+    "file": "macros-before/battery-shell--packet51-6.png",
+    "sha256": "e82e577c041697dc974aca640c228bc2d13225589a914ab12c77ac22882ddc4c"
+  },
+  {
+    "file": "macros-before/battery-straps--pins51.png",
+    "sha256": "1c1274d10e71c93ca510bc9054e7ee995c55ef0c699f9660d99ddbc6d1b71321"
+  },
+  {
+    "file": "macros-before/battery-connector--strain51.png",
+    "sha256": "d2a9e9a32ae10de733afe6e6dcfb3d10eaaa807bad92823c24b7382702b6c91a"
+  },
+  {
+    "file": "macros-before/battery-connector--entry-front51.png",
+    "sha256": "45543b61c9260a343cfcfb03314b794b8baae99c502ce7e98accf3f5076f9656"
+  },
+  {
+    "file": "macros-before/battery-connector--entry-rear51.png",
+    "sha256": "65b7c4e09d861be7b72b1437a034f8d81bf4633dfb3cb36abb721425b1833b2e"
+  },
+  {
+    "file": "macros-before/pi-board--laminate51.png",
+    "sha256": "dc994148bfd18199c6d32192f4cd3c6aadac6c76ea09a8bf466a7438116c7388"
+  },
+  {
+    "file": "macros-before/pi-cover--mounts51.png",
+    "sha256": "c6989edd527ae24190f541378af23f7a5f173ed59c198da5f56ddd18787fde2d"
+  },
+  {
+    "file": "macros-before/pi-devices--packages51.png",
+    "sha256": "729a8f47199c7befe3903d75441565c20af1bb8613363693489b508ebc57afb6"
+  },
+  {
+    "file": "macros-before/pi-connector--gpio51.png",
+    "sha256": "2c9e8eee8a3b9aeb8a08209b8228ac74a1023afe867158671d03e9aba5da77bd"
+  },
+  {
+    "file": "macros-before/pi-connector--interfaces51.png",
+    "sha256": "2e538e2a681955295ad89ceb8d887b9f5389546ba3c1be595db7a30004106bcc"
+  },
+  {
+    "file": "macros-before/cooling-housing--duct51.png",
+    "sha256": "22f698eb3162e0942bbfd970af0d27cf4ad7a42826e009a4184cf3c991064492"
+  },
+  {
+    "file": "macros-before/cooling-heatsink--base51.png",
+    "sha256": "4a0cab5f570ad6752abe7a45149fcc822c4ac8629cfd0be6686c2a20c5d44ca1"
+  },
+  {
+    "file": "macros-before/cooling-fan--hub51.png",
+    "sha256": "504140e65772eecb477b16ef3ca8b523e7f025213e2f163834247fc5d685a502"
+  },
+  {
+    "file": "macros-before/gps-housing--supports51.png",
+    "sha256": "f8396a68c2a7956e3ced4d757780e8c420c70c6f14b3ca1e0c1538c38c09c3c6"
+  },
+  {
+    "file": "macros-before/gps-board--antenna51.png",
+    "sha256": "29cea7958cf707e9bd5ae6cc0b56df8ab87d1a394259681568eb287d5ff938ed"
+  },
+  {
+    "file": "macros-before/gps-mounts--clamp51.png",
+    "sha256": "e75232da122f234bb7cb13ac8a13f366034fd37ea5b6d653d5cdc36947f20d8d"
+  },
+  {
+    "file": "macros-before/radio-housing--case51.png",
+    "sha256": "63f808601d456bf801cc06a874a9448b896f04e02b0066d8a04cdf6e574af614"
+  },
+  {
+    "file": "macros-before/radio-housing--front51.png",
+    "sha256": "34276d0afa623f788da694676f49fca715b633009a379a42ca5ff99712d6e2ae"
+  },
+  {
+    "file": "macros-before/radio-board--shield51.png",
+    "sha256": "75353061a95d1ddeba1fb4eb68358a9796438a5ddabce1df77ea3884e85c9fd9"
+  },
+  {
+    "file": "macros-before/radio-connector--bases51.png",
+    "sha256": "fd4e295c4847d331d07e91b39922a57fd44d49c58633aec4a13c4f135991bfae"
+  },
+  {
+    "file": "macros-before/camera-housing--open-case51.png",
+    "sha256": "ced00cb926032ef4882e1acf58d472202dee5e6df8e7d8490676b75a320ee942"
+  },
+  {
+    "file": "macros-before/camera-housing--back51.png",
+    "sha256": "b494da322ae5ad5ab14e9bf5ea8120ff79f94eab934d868a9902813abc084c9b"
+  },
+  {
+    "file": "macros-before/camera-housing--sensor51.png",
+    "sha256": "a76ad3d6c27a976826dc52bd2d674c77131f42939c7f8a776c5900f7885ff801"
+  },
+  {
+    "file": "macros-before/camera-optics--barrel51.png",
+    "sha256": "0f32dc1aabc10125e201bd769a5dd1d4cc2b7105bbc4d4c6fa9b507f0a30af00"
+  },
+  {
+    "file": "macros-before/camera-optics--element51.png",
+    "sha256": "70698d2f204ab1f86b44e9af5ed7af2d7f81698303ca6eefba3012345cc985b8"
+  },
+  {
+    "file": "macros-before/camera-mounts--bushings51.png",
+    "sha256": "95f0b5777ba7915fc5b4bcd01fc4f78639d9856fa549bbf80c2f78e172112ca5"
+  },
+  {
+    "file": "macros-before/wiring-connector--insert51.png",
+    "sha256": "83f6b64636f166e93887a9e4cc5cc2bf78f62f85d0f8e7944ee21a3590da63b3"
+  },
+  {
+    "file": "macros-before/wiring-loom--boots51.png",
+    "sha256": "330b72fe5a611eb23f0211ad46319936c048327d2ce3731da2369af2a499d9b0"
+  },
+  {
+    "file": "macros-before/wiring-mounts--locks51.png",
+    "sha256": "430cc2477ea13c3249c7e394cd24268c0c50dbd3a8a07bea943f409fbfe78014"
+  },
+  {
+    "file": "after/frame-assembled.png",
+    "sha256": "f991ef5e6486af09343052248b2a2ed1506355d005fcc452fd18bd6561b0b9f0"
+  },
+  {
+    "file": "after/frame-opened.png",
+    "sha256": "236d9087e20e218869f4a0096c2280e2409895de88b72f3fa3f6966a5ca7f01d"
+  },
+  {
+    "file": "after/motors-assembled.png",
+    "sha256": "10a647afbd3f96a68403825a776674336efc7d004fd768c12e43304d36bde8d1"
+  },
+  {
+    "file": "after/motors-opened.png",
+    "sha256": "e80a26645541747b6cf3da4ee323d227ca2a072cbdc700947ee05a7a8a39ad31"
+  },
+  {
+    "file": "after/esc-assembled.png",
+    "sha256": "b7e423697b5ad1547334c57da2c7298e65025dde5203376a8672ff248628c514"
+  },
+  {
+    "file": "after/esc-opened.png",
+    "sha256": "2df6fb741b3960790a0a38608224b2b182305f0b347142026565d8cc73ee8bb9"
+  },
+  {
+    "file": "after/props-assembled.png",
+    "sha256": "bb9fe55f445225a34127684e7e0d3ac1f4a863e3fc4159012ea71a13e4eef681"
+  },
+  {
+    "file": "after/props-opened.png",
+    "sha256": "895421e812467b9526dc05bb52041c2ff0e3b01879abeaa2304d1db68933d43a"
+  },
+  {
+    "file": "after/fc-assembled.png",
+    "sha256": "cc318a9ce32155c5130b19ec6b192a9f8488584a35a262c452750573a4687456"
+  },
+  {
+    "file": "after/fc-opened.png",
+    "sha256": "b3c8ee2da46d5d80d59bd8b4503eca3762c1d34926e58260750a7516176fbcfb"
+  },
+  {
+    "file": "after/power-assembled.png",
+    "sha256": "28350ab0addac43dc37af81eee3b580e4bed0fb5020b44181689e3a3616d8e2c"
+  },
+  {
+    "file": "after/power-opened.png",
+    "sha256": "3d0ddd49e99d04c5a6b90554e9fc2179960a1b2b426a225a444b223e227d6f0f"
+  },
+  {
+    "file": "after/becpi-assembled.png",
+    "sha256": "c2b4517397a43e5fe63c7e5746413616571a31c83ebe0c4a351dbc632fc6923d"
+  },
+  {
+    "file": "after/becpi-opened.png",
+    "sha256": "2cd80095ece6c856f2e2d1cd8c2d310ac81081bb2f691e3807279eab770fe52d"
+  },
+  {
+    "file": "after/becfc-assembled.png",
+    "sha256": "7df5b171bff27802058d15566fb61fcfcd073c306263f925ee6e9f74b66b9582"
+  },
+  {
+    "file": "after/becfc-opened.png",
+    "sha256": "76e40de77098a5b5476f6f565b3268d690c55e952fe1023abc2a9bb2dafcf422"
+  },
+  {
+    "file": "after/battery-assembled.png",
+    "sha256": "488a5ed36a08c3095826a71cc4fdce8766aa9c74747ff0c3839ebe85ee032f6b"
+  },
+  {
+    "file": "after/battery-opened.png",
+    "sha256": "52d11421b62fb0cdd53aaf384458c80c19f467d6d00f730bca5691c569ce42fa"
+  },
+  {
+    "file": "after/pi-assembled.png",
+    "sha256": "f49184c7bfdeed5bdcf7035ce5c4c6526e42ef16706672f1eaf25ef4b8567d50"
+  },
+  {
+    "file": "after/pi-opened.png",
+    "sha256": "0beb832baa7a9819a52fb300c0cec8c543da956f998c9cf98e39ec128015ae3c"
+  },
+  {
+    "file": "after/cooling-assembled.png",
+    "sha256": "c3040dbed910cdc2c9b6716dcb335a8b35e4e6a48aabfcd93c029eca3203a643"
+  },
+  {
+    "file": "after/cooling-opened.png",
+    "sha256": "bc3c86eaa9c3cb8f473d7a9024230dc3128d17c38c8c19177143609105134fb3"
+  },
+  {
+    "file": "after/gps-assembled.png",
+    "sha256": "a6a01efb646aa4494b039b889ec8f21586c3fb868b65029324bd2f5766a595ac"
+  },
+  {
+    "file": "after/gps-opened.png",
+    "sha256": "0c6b06851b75b1716a7b6800e6fea5aa8ddf82a2f3a98737ee26f8eef0c19dc9"
+  },
+  {
+    "file": "after/radio-assembled.png",
+    "sha256": "70e88ca85125e2eef0f670351184278341c96e3655253587fd06846971f858cd"
+  },
+  {
+    "file": "after/radio-opened.png",
+    "sha256": "c83ebd58b4def98dba2a6de1803b573977d5c3c80e35fd1d8d1a343c858b44d8"
+  },
+  {
+    "file": "after/camera-assembled.png",
+    "sha256": "a3730383ead826f1a0e7f54079bc15c884c7a0a0fee37aeaa92251cf51acf1f1"
+  },
+  {
+    "file": "after/camera-opened.png",
+    "sha256": "79ee3b955b3aadd2d6f45ea7f26ae080c55274b4cd2f05ae5ccd3acbc4d229b3"
+  },
+  {
+    "file": "after/wiring-assembled.png",
+    "sha256": "04bd8654fdddc441ea2ecf1e3caf1f9e9e24f37f3a2ab9d531b0fc01429dce98"
+  },
+  {
+    "file": "after/wiring-opened.png",
+    "sha256": "b5694531c245ddc729cc29e149e0fac36d025638f74b135e5ceecc822c414ba1"
+  },
+  {
+    "file": "after/atlas-assembled.png",
+    "sha256": "c9aa6e38af01ec7b7a6162105e56ec00130002732640886c807e18f7db44cb57"
+  },
+  {
+    "file": "after/atlas-opened.png",
+    "sha256": "7f7e8a75a9bdc398c9696f81b3d2c88c39c34cd69c6922ab5923da4f38d92923"
+  },
+  {
+    "file": "sections-after/frame-plates-assembled.png",
+    "sha256": "92ec6e8942c3b887aecb0fb313b291b76c8d921fa729ebeef057522aa6307f2e"
+  },
+  {
+    "file": "sections-after/frame-arms-assembled.png",
+    "sha256": "f53ac754862a42bce20bd4147649be91ba778e27687de87343671b556eca2595"
+  },
+  {
+    "file": "sections-after/frame-mounts-assembled.png",
+    "sha256": "a9d5fb66b3a89efcbc8289f6e8f08cf7a3a8a55805fccf73550c5394093c626f"
+  },
+  {
+    "file": "sections-after/frame-landing-assembled.png",
+    "sha256": "c605c81fe6a9a18b34a7e17a6ef36b02c667836bccb4ff7f9cd5e87a1db4faf4"
+  },
+  {
+    "file": "sections-after/frame-plates-opened.png",
+    "sha256": "92ec6e8942c3b887aecb0fb313b291b76c8d921fa729ebeef057522aa6307f2e"
+  },
+  {
+    "file": "sections-after/frame-arms-opened.png",
+    "sha256": "f53ac754862a42bce20bd4147649be91ba778e27687de87343671b556eca2595"
+  },
+  {
+    "file": "sections-after/frame-mounts-opened.png",
+    "sha256": "a9d5fb66b3a89efcbc8289f6e8f08cf7a3a8a55805fccf73550c5394093c626f"
+  },
+  {
+    "file": "sections-after/frame-landing-opened.png",
+    "sha256": "c605c81fe6a9a18b34a7e17a6ef36b02c667836bccb4ff7f9cd5e87a1db4faf4"
+  },
+  {
+    "file": "sections-after/motors-shell-assembled.png",
+    "sha256": "bc5ba89cfeb728183a9f9d7614d5ca0e4f1371ee047568e23ab5abce7f15d9eb"
+  },
+  {
+    "file": "sections-after/motors-stator-assembled.png",
+    "sha256": "4f22bd246141215b0589c6c19e58d3de51e54e1c1749e83c46438b8e450d6faa"
+  },
+  {
+    "file": "sections-after/motors-shaft-assembled.png",
+    "sha256": "6dbea471ca64e924c0055289d0cb83c11e90999206cf1fa12e9e2ed4322a3e77"
+  },
+  {
+    "file": "sections-after/motors-base-assembled.png",
+    "sha256": "85ec3cf79f6eab4649fc19e424aa9a1ab2284d93f24767c69c4c16502d3a7021"
+  },
+  {
+    "file": "sections-after/motors-shell-opened.png",
+    "sha256": "bc5ba89cfeb728183a9f9d7614d5ca0e4f1371ee047568e23ab5abce7f15d9eb"
+  },
+  {
+    "file": "sections-after/motors-stator-opened.png",
+    "sha256": "4f22bd246141215b0589c6c19e58d3de51e54e1c1749e83c46438b8e450d6faa"
+  },
+  {
+    "file": "sections-after/motors-shaft-opened.png",
+    "sha256": "6dbea471ca64e924c0055289d0cb83c11e90999206cf1fa12e9e2ed4322a3e77"
+  },
+  {
+    "file": "sections-after/motors-base-opened.png",
+    "sha256": "85ec3cf79f6eab4649fc19e424aa9a1ab2284d93f24767c69c4c16502d3a7021"
+  },
+  {
+    "file": "sections-after/esc-board-assembled.png",
+    "sha256": "bae820e2d7a0dedb6f4c780ce2fc36b533d737b5b1a719b5bd0a24666897b3b1"
+  },
+  {
+    "file": "sections-after/esc-devices-assembled.png",
+    "sha256": "61da71dd9ff50f0b45ad5827cb807d87e71c73bafdd88481e58930f1ac7d6876"
+  },
+  {
+    "file": "sections-after/esc-connector-assembled.png",
+    "sha256": "572acef9c5bc417af98f3650c47bb244e0410df99485e0fb546ea7d0641c0bb4"
+  },
+  {
+    "file": "sections-after/esc-cover-assembled.png",
+    "sha256": "5cb1c01f8c21aeb850bf0074ed1864a65acb567b5c9d2d8853b3c58765eaf845"
+  },
+  {
+    "file": "sections-after/esc-board-opened.png",
+    "sha256": "bae820e2d7a0dedb6f4c780ce2fc36b533d737b5b1a719b5bd0a24666897b3b1"
+  },
+  {
+    "file": "sections-after/esc-devices-opened.png",
+    "sha256": "7f2b6286617027765afc7f2b992a9514f0d573aaf6fd9d5e7bc14e2cb0592b36"
+  },
+  {
+    "file": "sections-after/esc-connector-opened.png",
+    "sha256": "572acef9c5bc417af98f3650c47bb244e0410df99485e0fb546ea7d0641c0bb4"
+  },
+  {
+    "file": "sections-after/esc-cover-opened.png",
+    "sha256": "5cb1c01f8c21aeb850bf0074ed1864a65acb567b5c9d2d8853b3c58765eaf845"
+  },
+  {
+    "file": "sections-after/props-blades-assembled.png",
+    "sha256": "f30f670f4121e5a21e0ee90e7ec81f6dd6a097517a501ba39b5301fda6eb5a21"
+  },
+  {
+    "file": "sections-after/props-hub-assembled.png",
+    "sha256": "10f42f0a474723945239378b3a4ea082d04bb51a1490f84ec96ee74692b15c47"
+  },
+  {
+    "file": "sections-after/props-blades-opened.png",
+    "sha256": "f30f670f4121e5a21e0ee90e7ec81f6dd6a097517a501ba39b5301fda6eb5a21"
+  },
+  {
+    "file": "sections-after/props-hub-opened.png",
+    "sha256": "10f42f0a474723945239378b3a4ea082d04bb51a1490f84ec96ee74692b15c47"
+  },
+  {
+    "file": "sections-after/fc-board-assembled.png",
+    "sha256": "74df9f44bf42db017fc4596b449f9ecffd51f6d797308c334718eb651891b52c"
+  },
+  {
+    "file": "sections-after/fc-devices-assembled.png",
+    "sha256": "9f85a138251bdec99c0ef10cf0f007924389dc42b130a7bbdd920c9626a326ea"
+  },
+  {
+    "file": "sections-after/fc-connector-assembled.png",
+    "sha256": "5d98b0f76eb86245f543f920ce7249675934edaf922461aaf9262004f8756b0e"
+  },
+  {
+    "file": "sections-after/fc-cover-assembled.png",
+    "sha256": "65f82e1af08b1cf539e50c13fd7c955bd8f7216659064df7fa12aeaf22af0835"
+  },
+  {
+    "file": "sections-after/fc-board-opened.png",
+    "sha256": "74df9f44bf42db017fc4596b449f9ecffd51f6d797308c334718eb651891b52c"
+  },
+  {
+    "file": "sections-after/fc-devices-opened.png",
+    "sha256": "f21cad337fc7543d109b2de2bb51d094c2238898302c4af0fbe101ccee33a038"
+  },
+  {
+    "file": "sections-after/fc-connector-opened.png",
+    "sha256": "5d98b0f76eb86245f543f920ce7249675934edaf922461aaf9262004f8756b0e"
+  },
+  {
+    "file": "sections-after/fc-cover-opened.png",
+    "sha256": "65f82e1af08b1cf539e50c13fd7c955bd8f7216659064df7fa12aeaf22af0835"
+  },
+  {
+    "file": "sections-after/power-board-assembled.png",
+    "sha256": "9497f5cdf57c549c9bee7f2a5441ad57f0469082f19a0b10fee740299751884b"
+  },
+  {
+    "file": "sections-after/power-devices-assembled.png",
+    "sha256": "55b3374e4cf0553527163ac1fe76ae02bda0bfa2b515e8322b5564183d8ad295"
+  },
+  {
+    "file": "sections-after/power-connector-assembled.png",
+    "sha256": "f5d0fca102b67496467ba4f94a5395029e0e29c0d240701e8c943c1cfc4516be"
+  },
+  {
+    "file": "sections-after/power-cover-assembled.png",
+    "sha256": "8a009f7ccce9270f2e92db8e927f2800e4fb08e436f6655886260f05bdbcdaa4"
+  },
+  {
+    "file": "sections-after/power-board-opened.png",
+    "sha256": "9497f5cdf57c549c9bee7f2a5441ad57f0469082f19a0b10fee740299751884b"
+  },
+  {
+    "file": "sections-after/power-devices-opened.png",
+    "sha256": "0f60490b18aec0e03c089e6939b35598bdae81f5b210c1702b0102a5ae37ad35"
+  },
+  {
+    "file": "sections-after/power-connector-opened.png",
+    "sha256": "f5d0fca102b67496467ba4f94a5395029e0e29c0d240701e8c943c1cfc4516be"
+  },
+  {
+    "file": "sections-after/power-cover-opened.png",
+    "sha256": "8a009f7ccce9270f2e92db8e927f2800e4fb08e436f6655886260f05bdbcdaa4"
+  },
+  {
+    "file": "sections-after/becpi-board-assembled.png",
+    "sha256": "be2bd2316912a144a17f148c0118f0323f4afb3609344d66e8c6eb880aa02a7b"
+  },
+  {
+    "file": "sections-after/becpi-devices-assembled.png",
+    "sha256": "873d1882944c2062f8aa997131d69d8cabddd1c3378de6614136d55c7382d1df"
+  },
+  {
+    "file": "sections-after/becpi-connector-assembled.png",
+    "sha256": "27cbcff4abfd2948ff81ff139a742fcbf5c03580d8ada2081698156728062b2e"
+  },
+  {
+    "file": "sections-after/becpi-cover-assembled.png",
+    "sha256": "05ab1cca8509bdda5b3c3f24d558f81aa9f92b45dc56548bdc96dc20de52f05f"
+  },
+  {
+    "file": "sections-after/becpi-board-opened.png",
+    "sha256": "be2bd2316912a144a17f148c0118f0323f4afb3609344d66e8c6eb880aa02a7b"
+  },
+  {
+    "file": "sections-after/becpi-devices-opened.png",
+    "sha256": "5f88b38a1c34b2aa645ab73a568a7f55314e234ff820a60d95c0fcd883c6415f"
+  },
+  {
+    "file": "sections-after/becpi-connector-opened.png",
+    "sha256": "27cbcff4abfd2948ff81ff139a742fcbf5c03580d8ada2081698156728062b2e"
+  },
+  {
+    "file": "sections-after/becpi-cover-opened.png",
+    "sha256": "05ab1cca8509bdda5b3c3f24d558f81aa9f92b45dc56548bdc96dc20de52f05f"
+  },
+  {
+    "file": "sections-after/becfc-board-assembled.png",
+    "sha256": "d55b86bece561ec976199799f46043717b9fb184f3b2576e86720863f109f267"
+  },
+  {
+    "file": "sections-after/becfc-devices-assembled.png",
+    "sha256": "e272c17ea2665550abccaf7c3724e7b1da347b48ae4d5e5a2b52fead881eecc5"
+  },
+  {
+    "file": "sections-after/becfc-connector-assembled.png",
+    "sha256": "db9d0ad12a8b7017a351c8d277426b3a730c8584c9d68ef015aca8d2eac6bc03"
+  },
+  {
+    "file": "sections-after/becfc-cover-assembled.png",
+    "sha256": "8f12f6a9b56986bedd15c9f5fa990ec0e8afa8e657b65e869f029305fee25fa7"
+  },
+  {
+    "file": "sections-after/becfc-board-opened.png",
+    "sha256": "d55b86bece561ec976199799f46043717b9fb184f3b2576e86720863f109f267"
+  },
+  {
+    "file": "sections-after/becfc-devices-opened.png",
+    "sha256": "6aa7fc0e79b96275d49cdbba126e68962eab271127890ffe945e5520d8f9d47e"
+  },
+  {
+    "file": "sections-after/becfc-connector-opened.png",
+    "sha256": "db9d0ad12a8b7017a351c8d277426b3a730c8584c9d68ef015aca8d2eac6bc03"
+  },
+  {
+    "file": "sections-after/becfc-cover-opened.png",
+    "sha256": "8f12f6a9b56986bedd15c9f5fa990ec0e8afa8e657b65e869f029305fee25fa7"
+  },
+  {
+    "file": "sections-after/battery-shell-assembled.png",
+    "sha256": "ef5d00e5e6490038db1df97d100e09f5130a694a5eaf3abe59361455c722e7df"
+  },
+  {
+    "file": "sections-after/battery-straps-assembled.png",
+    "sha256": "97141658f86a8b89cfa84ba23b1506c4b28a9e16aba7275eff2421d4b06167f8"
+  },
+  {
+    "file": "sections-after/battery-connector-assembled.png",
+    "sha256": "68630ede647f28e5edd37cf4f74fa6bf1c5690a22244a92640fb1213ff33c3da"
+  },
+  {
+    "file": "sections-after/battery-shell-opened.png",
+    "sha256": "00043f0872f3f8977ad339e8a150aeacc6f450da634e39e8859e136b0a8f9689"
+  },
+  {
+    "file": "sections-after/battery-straps-opened.png",
+    "sha256": "97141658f86a8b89cfa84ba23b1506c4b28a9e16aba7275eff2421d4b06167f8"
+  },
+  {
+    "file": "sections-after/battery-connector-opened.png",
+    "sha256": "0e77509d2de1a3f1d9c7028e596a0731ac417aae0f71b21c4c0f7841842ec63d"
+  },
+  {
+    "file": "sections-after/pi-board-assembled.png",
+    "sha256": "8941f52829e5f30255fafea45d39511ed2065c90efb7fe975ce134f58537cb35"
+  },
+  {
+    "file": "sections-after/pi-devices-assembled.png",
+    "sha256": "db25bfe679b14ed0dcb748cfb3b78ae51dfd3379bde43bb93e852aa8d9ca93d8"
+  },
+  {
+    "file": "sections-after/pi-connector-assembled.png",
+    "sha256": "4d33cb4bf44bd189bdc94439c1b3a89252fe4974c8065401247b3319ccc8903f"
+  },
+  {
+    "file": "sections-after/pi-cover-assembled.png",
+    "sha256": "5585dc832a06de6dfdff0c5ebf0385307444820bc5bb266dc85add4bcf622751"
+  },
+  {
+    "file": "sections-after/pi-board-opened.png",
+    "sha256": "8941f52829e5f30255fafea45d39511ed2065c90efb7fe975ce134f58537cb35"
+  },
+  {
+    "file": "sections-after/pi-devices-opened.png",
+    "sha256": "176b32115bf2f5adb46f23892b74927d777deec9004033af0280e20b23229823"
+  },
+  {
+    "file": "sections-after/pi-connector-opened.png",
+    "sha256": "4d33cb4bf44bd189bdc94439c1b3a89252fe4974c8065401247b3319ccc8903f"
+  },
+  {
+    "file": "sections-after/pi-cover-opened.png",
+    "sha256": "5585dc832a06de6dfdff0c5ebf0385307444820bc5bb266dc85add4bcf622751"
+  },
+  {
+    "file": "sections-after/cooling-housing-assembled.png",
+    "sha256": "37a5377fdb3bba1f2754e7d82d9a7b94824088772aecd2b9343cae82ffcb539d"
+  },
+  {
+    "file": "sections-after/cooling-heatsink-assembled.png",
+    "sha256": "19ed256dfc5077aa224d50ac7c709c825803c160feba1de6d83e75cadd49942b"
+  },
+  {
+    "file": "sections-after/cooling-fan-assembled.png",
+    "sha256": "82733b8d40d45b409a5b3f92a740e1dc06f4d81c8f17ca93b5f4ed7baf75e505"
+  },
+  {
+    "file": "sections-after/cooling-housing-opened.png",
+    "sha256": "37a5377fdb3bba1f2754e7d82d9a7b94824088772aecd2b9343cae82ffcb539d"
+  },
+  {
+    "file": "sections-after/cooling-heatsink-opened.png",
+    "sha256": "19ed256dfc5077aa224d50ac7c709c825803c160feba1de6d83e75cadd49942b"
+  },
+  {
+    "file": "sections-after/cooling-fan-opened.png",
+    "sha256": "82733b8d40d45b409a5b3f92a740e1dc06f4d81c8f17ca93b5f4ed7baf75e505"
+  },
+  {
+    "file": "sections-after/gps-housing-assembled.png",
+    "sha256": "4b62c666850ea76b67b906c7ff0ed45929ebba79dfb9dcd1eaeb06c474991cd3"
+  },
+  {
+    "file": "sections-after/gps-board-assembled.png",
+    "sha256": "75bb5d3251c36cecbac81ad9f41b805d8ac3f451753123351d104fbe4e46755e"
+  },
+  {
+    "file": "sections-after/gps-mounts-assembled.png",
+    "sha256": "e9f9950e0305c8c7c5379d51ae8d7685ef7b1e2f9cf846eca02935d36c408df6"
+  },
+  {
+    "file": "sections-after/gps-housing-opened.png",
+    "sha256": "9e326ec98253f286d22f14303ac9732e9bc2868faef9959d54135e0570bae360"
+  },
+  {
+    "file": "sections-after/gps-board-opened.png",
+    "sha256": "75bb5d3251c36cecbac81ad9f41b805d8ac3f451753123351d104fbe4e46755e"
+  },
+  {
+    "file": "sections-after/gps-mounts-opened.png",
+    "sha256": "e9f9950e0305c8c7c5379d51ae8d7685ef7b1e2f9cf846eca02935d36c408df6"
+  },
+  {
+    "file": "sections-after/radio-housing-assembled.png",
+    "sha256": "0e8453f0617b735a276271ca65bcc37141e672f57c44f4950ce471bb9badfd86"
+  },
+  {
+    "file": "sections-after/radio-board-assembled.png",
+    "sha256": "0552e34f9d818e8e999d2e33ccc6bbfdbbb06c8558b07652ac71113eded383e9"
+  },
+  {
+    "file": "sections-after/radio-connector-assembled.png",
+    "sha256": "65d8dfd156225ca8162c8530e411af201d92ebb045026cb4599ef634d6d9cc5d"
+  },
+  {
+    "file": "sections-after/radio-housing-opened.png",
+    "sha256": "f9b8064a104de12f2fe56449b072beaa0db6a52ba87d691f73eaf8eb6a672c38"
+  },
+  {
+    "file": "sections-after/radio-board-opened.png",
+    "sha256": "0552e34f9d818e8e999d2e33ccc6bbfdbbb06c8558b07652ac71113eded383e9"
+  },
+  {
+    "file": "sections-after/radio-connector-opened.png",
+    "sha256": "65d8dfd156225ca8162c8530e411af201d92ebb045026cb4599ef634d6d9cc5d"
+  },
+  {
+    "file": "sections-after/camera-housing-assembled.png",
+    "sha256": "285045f05a4159201d02aa5bc28d1675cb192e23753e0b82e98655491a951e72"
+  },
+  {
+    "file": "sections-after/camera-optics-assembled.png",
+    "sha256": "0a557c698b583dd4d3e78565dbed2b575d9123c4d930856b6bffb439bebc99bf"
+  },
+  {
+    "file": "sections-after/camera-mounts-assembled.png",
+    "sha256": "7237ef840f0e0f6efea98f4744e548c4e159b1b52908036965db2de4e4063228"
+  },
+  {
+    "file": "sections-after/camera-housing-opened.png",
+    "sha256": "52c58c98f4cdf19f26020b129222b258e1db9aebfa6ca774102e2cb10ac7aec0"
+  },
+  {
+    "file": "sections-after/camera-optics-opened.png",
+    "sha256": "f3572e35bea15d54df5f4e03a6ae0f6e5fa49ef12d382ce6ce3c9310fbaa85ce"
+  },
+  {
+    "file": "sections-after/camera-mounts-opened.png",
+    "sha256": "7237ef840f0e0f6efea98f4744e548c4e159b1b52908036965db2de4e4063228"
+  },
+  {
+    "file": "sections-after/wiring-loom-assembled.png",
+    "sha256": "946cf0eb7cdac164c67f55e11cf76096fe0b15efb822aca0457a27e9e06b6dea"
+  },
+  {
+    "file": "sections-after/wiring-connector-assembled.png",
+    "sha256": "e9fee3a74f6c1fdf618e1d663fff91912def456964d62e72d3f51dbc903a117c"
+  },
+  {
+    "file": "sections-after/wiring-mounts-assembled.png",
+    "sha256": "f0ea4650548409d16cdd08a546b780b8b016f66391e5576b88506b4dce6284ec"
+  },
+  {
+    "file": "sections-after/wiring-loom-opened.png",
+    "sha256": "946cf0eb7cdac164c67f55e11cf76096fe0b15efb822aca0457a27e9e06b6dea"
+  },
+  {
+    "file": "sections-after/wiring-connector-opened.png",
+    "sha256": "e9fee3a74f6c1fdf618e1d663fff91912def456964d62e72d3f51dbc903a117c"
+  },
+  {
+    "file": "sections-after/wiring-mounts-opened.png",
+    "sha256": "f0ea4650548409d16cdd08a546b780b8b016f66391e5576b88506b4dce6284ec"
+  },
+  {
+    "file": "macros-after/frame-mounts--through-bolts51.png",
+    "sha256": "0f0d2f73c6d8e3f35fc2bd288c09b3fcdce408d6d3fde66776e4c64dfdda1dc3"
+  },
+  {
+    "file": "macros-after/frame-arms--saddles51.png",
+    "sha256": "4f0d93327a252fdc8262527eea8672f0a398b554fda2f431a6aaea68197609ad"
+  },
+  {
+    "file": "macros-after/frame-landing--pins51.png",
+    "sha256": "90f380311cb6e9d07c4cc93907d6d4ea239c6f1790f61de9600a9912e18fd09d"
+  },
+  {
+    "file": "macros-after/motors-shaft--rolling51.png",
+    "sha256": "a83d9dd35442e3e01c7e2a5c8f666e6fa1b92ddcbf92b0c0abea2bdd76eab53b"
+  },
+  {
+    "file": "macros-after/motors-stator--insulation51.png",
+    "sha256": "4bba80ffcb96ef55e333a043eed206e45a994645b52e5c9a77e5b22780452db7"
+  },
+  {
+    "file": "macros-after/motors-stator--tails51.png",
+    "sha256": "fb4c2d8a1f5897949c5d4011841f6e1beaa44e861684cdbed6a8ff3d5d62387b"
+  },
+  {
+    "file": "macros-after/motors-base--mounting51.png",
+    "sha256": "210e077c1b5a7047cede40bc167efece491af0f857b5e93bf4d39d34b2958116"
+  },
+  {
+    "file": "macros-after/motors-shell--retention51.png",
+    "sha256": "606b603073f2f922b6c830d78711357eca542ed50ab529931c132774e1ae8fad"
+  },
+  {
+    "file": "macros-after/esc-board--laminate51.png",
+    "sha256": "ec50a9617ea97176eee018505e2052f67f60bd21c52fb9c0bb27f8f630cbd133"
+  },
+  {
+    "file": "macros-after/esc-cover--mounts51.png",
+    "sha256": "1ff30bd90bdbacc7bfcc88043666b88345dc64d72e4456e14552d0a5f24b0c5b"
+  },
+  {
+    "file": "macros-after/esc-devices--packages51.png",
+    "sha256": "f63dc9a611f332347ac867f767d05e74ccf5b7d84378811395c2bfb9c209f061"
+  },
+  {
+    "file": "macros-after/esc-connector--tails51.png",
+    "sha256": "18131d7e573f1c805e111657168adb2547ed7e4502d63f230e35719eed294cc1"
+  },
+  {
+    "file": "macros-after/props-hub--clamp51.png",
+    "sha256": "f9ecaa4c464b4066068b650f0a8adecfd091d40342fbd657ffbd4624cd02f5dd"
+  },
+  {
+    "file": "macros-after/fc-board--laminate51.png",
+    "sha256": "96c8fa51cd5a6005255c22df85495c3644a9e422f38df2cf8e97c7b4cd8be850"
+  },
+  {
+    "file": "macros-after/fc-cover--mounts51.png",
+    "sha256": "ebe6d60adf0c392a37fd9726439505ad2f485b1db6e499ea6cb36a34ca8fbf95"
+  },
+  {
+    "file": "macros-after/fc-devices--packages51.png",
+    "sha256": "9a8c705e680a0dce3e6912772ddf5cc791e803ab2cef6ff331aee1903d3c4800"
+  },
+  {
+    "file": "macros-after/fc-connector--tails51.png",
+    "sha256": "b34eb8071a929449ce6ebe7fab8faecd7bd55dee246799b0ece817bc9c9ad9d5"
+  },
+  {
+    "file": "macros-after/fc-devices--qfp51.png",
+    "sha256": "f7088d2c488f61b1409cc0419f75384da1b57f117d2fa36e3b2e8c09f392387a"
+  },
+  {
+    "file": "macros-after/fc-connector--interfaces51.png",
+    "sha256": "e17677bb85899d54142355102cbfe3f4dcbc7777db10b69cf44fc2d8386d65e8"
+  },
+  {
+    "file": "macros-after/power-board--laminate51.png",
+    "sha256": "3092eb583bc0d3d7e6131a3f983e6ca67febeb92b7c12325d181b1d3786a7a13"
+  },
+  {
+    "file": "macros-after/power-cover--mounts51.png",
+    "sha256": "729739e0c3d441fbe26e4447d73744ff6680dc21f7c6b9afd80bbb8051859564"
+  },
+  {
+    "file": "macros-after/power-devices--packages51.png",
+    "sha256": "bc0f272b3fb103cfb279ea8f7e6696d1e9230653fb8c7eaf0cfe1d26b85bbfdf"
+  },
+  {
+    "file": "macros-after/power-connector--tails51.png",
+    "sha256": "7637e6390e64723fe066dc9397464bc52916bc56fa1db7e56552ce4932e20942"
+  },
+  {
+    "file": "macros-after/becpi-board--laminate51.png",
+    "sha256": "187ace6b0aff55d93b08540498a9c2780a7691188d97ee65871156989caac999"
+  },
+  {
+    "file": "macros-after/becpi-cover--mounts51.png",
+    "sha256": "7cccc47f6bb0eabe611bd4e7034b4c71228b6cc91dc0e7381c69d9c73b4e803b"
+  },
+  {
+    "file": "macros-after/becpi-devices--packages51.png",
+    "sha256": "1f0e5d9009a5193c46d60aa668b051386b48f73687d42953afb65bd4406971be"
+  },
+  {
+    "file": "macros-after/becpi-connector--tails51.png",
+    "sha256": "eed2a1c3242cc7090ad4eea197439e3ce5aae4c953e0614b80926a144de3aff2"
+  },
+  {
+    "file": "macros-after/becfc-board--laminate51.png",
+    "sha256": "2d8bf8e85131a40458110aae5650d622f7b748195df0959ef2339c9110160970"
+  },
+  {
+    "file": "macros-after/becfc-cover--mounts51.png",
+    "sha256": "9f36f94396f9d04230b66ea4e75df36d7044091c9c882c8e29e800aa63fa847f"
+  },
+  {
+    "file": "macros-after/becfc-devices--packages51.png",
+    "sha256": "dc97468c5467e10de477a4e0007ec0affbf56b600aac70b8d44090a3145df7ce"
+  },
+  {
+    "file": "macros-after/becfc-connector--tails51.png",
+    "sha256": "664a0d878e3ff1572a4887478be2c2b0cde8accd979c397dbaacb130c8b91417"
+  },
+  {
+    "file": "macros-after/becfc-cover--case51.png",
+    "sha256": "a24c38bb94a69d39c3bf643189dca7aa8641f81f5fec9ea74c8cf5fa852afac7"
+  },
+  {
+    "file": "macros-after/battery-shell--tray51.png",
+    "sha256": "14cd7b42021c2aa6811f850009388285346785e57aad766c7908d4faa99c01a0"
+  },
+  {
+    "file": "macros-after/battery-shell--lid51.png",
+    "sha256": "ed8638f71001c8d5c2dd39120a6c252337a11107f622f84a7dab96b0345d6b15"
+  },
+  {
+    "file": "macros-after/battery-shell--cells51.png",
+    "sha256": "bee0235d1d1ccb8ef6e224776562922a378fc1cefbd28690dbb60c7e3063b2a0"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-1.png",
+    "sha256": "f39d3e0d40b1988e13ffceeb905a009dedf209f0a5750fedebde185824b1902b"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-2.png",
+    "sha256": "49a32cc0d6081b154895af589772db0622862f377f9e5da9ee373f2cbf41ae7b"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-3.png",
+    "sha256": "d32a549659447fb5aea5852f8e38cf5a1ab8cac5ba51f33c40b60b20e32d23c0"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-4.png",
+    "sha256": "11ee6344f99d44f1a88489e2b25af3e89d4b74d99b4aa72c4ae68601b10bc8ff"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-5.png",
+    "sha256": "2c201c381f2dbd8c0f4aa2376ec9db1c19acce3da6fb17537185b3b3bce4bf11"
+  },
+  {
+    "file": "macros-after/battery-shell--packet51-6.png",
+    "sha256": "e82e577c041697dc974aca640c228bc2d13225589a914ab12c77ac22882ddc4c"
+  },
+  {
+    "file": "macros-after/battery-straps--pins51.png",
+    "sha256": "0b5202d037e2577a24cc655b578838c7abc1416649a4ed5187ca4fd595895037"
+  },
+  {
+    "file": "macros-after/battery-connector--strain51.png",
+    "sha256": "0e77509d2de1a3f1d9c7028e596a0731ac417aae0f71b21c4c0f7841842ec63d"
+  },
+  {
+    "file": "macros-after/battery-connector--entry-front51.png",
+    "sha256": "2d386786f96d189a5a3e91d26a1bae18fe9275261f4823336f5a5f58735b810f"
+  },
+  {
+    "file": "macros-after/battery-connector--entry-rear51.png",
+    "sha256": "f17e3871cade505e0fed64b8b9101aa2a076cacd9435673a77285ba06e1db1d2"
+  },
+  {
+    "file": "macros-after/pi-board--laminate51.png",
+    "sha256": "17058f934b077eaf850dcc84fe5513d83028b2c27350edc19a48a9a96d888c77"
+  },
+  {
+    "file": "macros-after/pi-cover--mounts51.png",
+    "sha256": "728bbbc26c414020dfc244166518728e07e2ac30c64ff7b36c73ce4fcc93367e"
+  },
+  {
+    "file": "macros-after/pi-devices--packages51.png",
+    "sha256": "729a8f47199c7befe3903d75441565c20af1bb8613363693489b508ebc57afb6"
+  },
+  {
+    "file": "macros-after/pi-connector--gpio51.png",
+    "sha256": "32d2bc788989e5aadf038bcbb281c4dae6bcaf7332ebea3047eb8f6d78b2cbf1"
+  },
+  {
+    "file": "macros-after/pi-connector--interfaces51.png",
+    "sha256": "2e538e2a681955295ad89ceb8d887b9f5389546ba3c1be595db7a30004106bcc"
+  },
+  {
+    "file": "macros-after/cooling-housing--duct51.png",
+    "sha256": "22f698eb3162e0942bbfd970af0d27cf4ad7a42826e009a4184cf3c991064492"
+  },
+  {
+    "file": "macros-after/cooling-heatsink--base51.png",
+    "sha256": "4a0cab5f570ad6752abe7a45149fcc822c4ac8629cfd0be6686c2a20c5d44ca1"
+  },
+  {
+    "file": "macros-after/cooling-fan--hub51.png",
+    "sha256": "48d024ea8ee4dad75cf32465a14f6e249bea034c7ffaa85d88f63e03b9300c09"
+  },
+  {
+    "file": "macros-after/gps-housing--supports51.png",
+    "sha256": "f79c91e309c5db33aeac4f87d44ac0bf835ebad04e4b9cd1af3d70a07cb20ac4"
+  },
+  {
+    "file": "macros-after/gps-board--antenna51.png",
+    "sha256": "29cea7958cf707e9bd5ae6cc0b56df8ab87d1a394259681568eb287d5ff938ed"
+  },
+  {
+    "file": "macros-after/gps-mounts--clamp51.png",
+    "sha256": "91580b627ced9654413d8264dcd6253d38b95f2c07d5f4eede1a83007bed51d0"
+  },
+  {
+    "file": "macros-after/radio-housing--case51.png",
+    "sha256": "63f808601d456bf801cc06a874a9448b896f04e02b0066d8a04cdf6e574af614"
+  },
+  {
+    "file": "macros-after/radio-housing--front51.png",
+    "sha256": "34276d0afa623f788da694676f49fca715b633009a379a42ca5ff99712d6e2ae"
+  },
+  {
+    "file": "macros-after/radio-board--shield51.png",
+    "sha256": "75353061a95d1ddeba1fb4eb68358a9796438a5ddabce1df77ea3884e85c9fd9"
+  },
+  {
+    "file": "macros-after/radio-connector--bases51.png",
+    "sha256": "85940475d1393ed454549bd56ca4598b28cb13d512ee05b3468ba71244ffe4a8"
+  },
+  {
+    "file": "macros-after/camera-housing--open-case51.png",
+    "sha256": "e6ce5afe3bb35fe50a2ce17c01c5bbee8f008d6eba21bc7d8afba64ffe1aae1f"
+  },
+  {
+    "file": "macros-after/camera-housing--back51.png",
+    "sha256": "b494da322ae5ad5ab14e9bf5ea8120ff79f94eab934d868a9902813abc084c9b"
+  },
+  {
+    "file": "macros-after/camera-housing--sensor51.png",
+    "sha256": "1d458c30896a598de1887e33130473df188c6a7ed04d26a8a1bb802f3d884af5"
+  },
+  {
+    "file": "macros-after/camera-optics--barrel51.png",
+    "sha256": "b1d3c2bf5fca9950784e0ef32e2f8dac4cb9b03ddefca7ee2a4bf7860cf5ac84"
+  },
+  {
+    "file": "macros-after/camera-optics--element51.png",
+    "sha256": "70698d2f204ab1f86b44e9af5ed7af2d7f81698303ca6eefba3012345cc985b8"
+  },
+  {
+    "file": "macros-after/camera-mounts--bushings51.png",
+    "sha256": "40a8cb5f75b62d54677a44597395a80be1e6374abedbafbc2e086291a417d8d8"
+  },
+  {
+    "file": "macros-after/wiring-connector--insert51.png",
+    "sha256": "30a98cb137753d755775b0ce999ac0dc7253c054a3358e441f689358904f6c45"
+  },
+  {
+    "file": "macros-after/wiring-loom--boots51.png",
+    "sha256": "aa592b402500459dab494114a0d7e1600ea9c13ccba06a9ebf461a80091d51ac"
+  },
+  {
+    "file": "macros-after/wiring-mounts--locks51.png",
+    "sha256": "430cc2477ea13c3249c7e394cd24268c0c50dbd3a8a07bea943f409fbfe78014"
+  }
+]

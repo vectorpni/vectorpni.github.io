@@ -1,0 +1,179 @@
+{
+  "comparisons": [
+    {
+      "id": "overview",
+      "label": "Общий вид",
+      "beforeSHA256": "908a84cf3926038a224a31a6d3ed458148bb5901ed92e9694cd6630048b2546c",
+      "afterSHA256": "2f0dae9dce4e44fc297614b0d7404d869b1f81de5b4e8e77a25288a4aa4b6d3d",
+      "byteIdentical": false
+    },
+    {
+      "id": "top",
+      "label": "Сверху",
+      "beforeSHA256": "2ea5d8b57661362528dda08b0f6ee76e1177a9cf3e558e3af45ba555e949bfbe",
+      "afterSHA256": "e0c1b9a9d952bec5f4b2d899318368a4ecbfd6789982d4a08732eda1d881a363",
+      "byteIdentical": false
+    },
+    {
+      "id": "front",
+      "label": "Спереди",
+      "beforeSHA256": "ca616df16a042e45a318a4cf10c0d3eeabc36a6c0c7c92285fb38df07ff04656",
+      "afterSHA256": "f2005fbe2dae8fdbb2881dc3a395a84b726465b33e428205f01a089ff64a98f5",
+      "byteIdentical": false
+    },
+    {
+      "id": "frame",
+      "label": "Карбоновая рама",
+      "beforeSHA256": "a11e34a57052eb6314a4f98a1a614670d33b3073b3854786c29cb9eaaaaed656",
+      "afterSHA256": "d15a5639f58a8fdb397f3028dc2b5500be695a3905bcaa827b3534ec777a8284",
+      "byteIdentical": false
+    },
+    {
+      "id": "motors",
+      "label": "Двигатель",
+      "beforeSHA256": "8dc63cb77e4f70fccf169baeffc908fce18025f2a57f019dcf9ec0fd3a287551",
+      "afterSHA256": "8dc63cb77e4f70fccf169baeffc908fce18025f2a57f019dcf9ec0fd3a287551",
+      "byteIdentical": true
+    },
+    {
+      "id": "props",
+      "label": "Пропеллеры",
+      "beforeSHA256": "3f4e88a17510ac4a0615a5ffca194c46183a42436caf53ecd946ffdb590fedc1",
+      "afterSHA256": "3f4e88a17510ac4a0615a5ffca194c46183a42436caf53ecd946ffdb590fedc1",
+      "byteIdentical": true
+    },
+    {
+      "id": "battery",
+      "label": "Аккумулятор",
+      "beforeSHA256": "d1ebef50e5faf77f4b276f6577aa7dd7658230e271adebcd8b0caceaf9b8c2eb",
+      "afterSHA256": "9277110c3f457f7db19284cd2c6363981ce1ad9402952f6f4033362aefd6cd2d",
+      "byteIdentical": false
+    },
+    {
+      "id": "camera",
+      "label": "Камера",
+      "beforeSHA256": "8d67b9e5b4a4ed16e3eb144bda1a18f3a5d903e871bd58050dcf136aca9f6b3b",
+      "afterSHA256": "974506da443766a8734c8572d1b104e8a853076d85b3df3859388db77204651c",
+      "byteIdentical": false
+    },
+    {
+      "id": "electronics",
+      "label": "Электроника",
+      "beforeSHA256": "1e927847cf46178f86c6eb49f809b939c8949352d7840c996d85d66fccc59020",
+      "afterSHA256": "44de69d7dd6475baf60b22134d489bcd3f0948ba147eda6810ede5ff87e90945",
+      "byteIdentical": false
+    },
+    {
+      "id": "landing",
+      "label": "Посадочные опоры",
+      "beforeSHA256": "21a167aa61e39c9bffacaefaf1027c918f3033c993d617d58c79cfb5fe3ff404",
+      "afterSHA256": "21a167aa61e39c9bffacaefaf1027c918f3033c993d617d58c79cfb5fe3ff404",
+      "byteIdentical": true
+    },
+    {
+      "id": "fasteners",
+      "label": "Крепёж крупным планом",
+      "beforeSHA256": "381397e8cf8cd6418cd7d5932feb5a05e9423e2255e309b3022ef56f0111a87a",
+      "afterSHA256": "381397e8cf8cd6418cd7d5932feb5a05e9423e2255e309b3022ef56f0111a87a",
+      "byteIdentical": true
+    },
+    {
+      "id": "exploded",
+      "label": "Общая разборка",
+      "beforeSHA256": "af1eb1ac1ddf19c9edda440008e3083b300c12cc754032dd48ccf52fe3a55012",
+      "afterSHA256": "021aa7cf009b00c739262d7a2a8a8cacff844f98db1e03f78ffa7c37b7c9b539",
+      "byteIdentical": false
+    },
+    {
+      "id": "mobile",
+      "label": "Мобильный интерфейс",
+      "beforeSHA256": "3cc99b2c929e8a4378413f94f2572d6522502aa2005fd6b6f3c101a5994f3b71",
+      "afterSHA256": "e9a14cc1ade8fdd1d301cdec0b6b871c93d62ac2c02efa2c4e1dd0d45079d270",
+      "byteIdentical": false
+    },
+    {
+      "id": "mobile-card",
+      "label": "Мобильная карточка",
+      "beforeSHA256": "5649dfd389da9387f8e80d02c41e2a287ab6d11fc467b556136484d7196c6a1a",
+      "afterSHA256": "e96760ead611d1815ea52ddf9226b8164f5853e8b353416da6109ce0688084d4",
+      "byteIdentical": false
+    }
+  ],
+  "internals": [
+    {
+      "id": "frame",
+      "file": "after/internal-frame.png",
+      "SHA256": "ba5a9f611956a7407874ee3824ca3f6bc14944e7f1c4a86b2c481a02c092b20b"
+    },
+    {
+      "id": "motors",
+      "file": "after/internal-motors.png",
+      "SHA256": "f7f13490e6f1efe6b1c890cde2f07061c3e4e3734f7698e0aa9064d542701714"
+    },
+    {
+      "id": "props",
+      "file": "after/internal-props.png",
+      "SHA256": "d8b8ce97286a1aa5cd27d9c5d32f61b11e7a2dc52da5fcb5f33461023ccc79b0"
+    },
+    {
+      "id": "battery",
+      "file": "after/internal-battery.png",
+      "SHA256": "e51d15b150d060719cf7e0b22d58c49bdb99bffa78f3355c9248d051f14ae7ee"
+    },
+    {
+      "id": "camera",
+      "file": "after/internal-camera.png",
+      "SHA256": "38fa4a91501272a1bee2d3aa58dbea1c3cc3886d60cb056925583cf813f7e36a"
+    },
+    {
+      "id": "cooling",
+      "file": "after/internal-cooling.png",
+      "SHA256": "df86f4540b858a7b97e21e739a19a2f3e4eee14d390ba83240d2852e812238ff"
+    },
+    {
+      "id": "gps",
+      "file": "after/internal-gps.png",
+      "SHA256": "7001faf57c440aed11a08be672770da6da08194ca315e767ef6efb3b2c8c7085"
+    },
+    {
+      "id": "radio",
+      "file": "after/internal-radio.png",
+      "SHA256": "9e47db50469d4fd19384505b7af9673f30518aa653eea2fb60fe6dcc282e314c"
+    },
+    {
+      "id": "wiring",
+      "file": "after/internal-wiring.png",
+      "SHA256": "9d98e3e8ed4fe327104acf45a720ea6dab6884d69f20ee36095bd20440625761"
+    },
+    {
+      "id": "fc",
+      "file": "after/internal-fc.png",
+      "SHA256": "1015360b5867352b69e84cd5324b0163e9b91aca51881b464bb240b3980eadca"
+    },
+    {
+      "id": "pi",
+      "file": "after/internal-pi.png",
+      "SHA256": "ccb3bbbc499d2f8840e20cf4e1e20533019aab7bedc7c20eaa61607df8941dd3"
+    },
+    {
+      "id": "power",
+      "file": "after/internal-power.png",
+      "SHA256": "d0962880625b85c4f7fa87deee4a94940463822a9b0ac903697f542d40c32a98"
+    },
+    {
+      "id": "becpi",
+      "file": "after/internal-becpi.png",
+      "SHA256": "8dd84a85ba99b16677c8385c0c6b7197d69a6f676254e03e8fcfb954f308a2fc"
+    },
+    {
+      "id": "becfc",
+      "file": "after/internal-becfc.png",
+      "SHA256": "72e426cbb67dc27f52a3bd317f7977ebd1f885bb735c515afc762a8c88ad92a4"
+    },
+    {
+      "id": "esc",
+      "file": "after/internal-esc.png",
+      "SHA256": "9e91d9b320f38a2c94531eb4fddc7f81599e34157d3a8b3069a273c1db475a4f"
+    }
+  ]
+}

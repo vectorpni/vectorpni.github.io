@@ -1,0 +1,67 @@
+{
+  "browser": "firefox",
+  "browserVersion": "157.0",
+  "finishedAt": "2026-10-30T23:41:01.348Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail51-navigation.js",
+      "passed": true,
+      "durationMs": 2439,
+      "result": {
+        "loadMs": 2106,
+        "pending": [],
+        "failed": [],
+        "responses": [
+          {
+            "url": "http://127.0.0.1:5175/",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/index-B8j9w___.js",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggOxSuXd.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggOxSuXd.woff2",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggOxSuXd.woff2",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:5175/favicon.svg",
+            "status": 200
+          }
+        ]
+      }
+    }
+  ]
+}

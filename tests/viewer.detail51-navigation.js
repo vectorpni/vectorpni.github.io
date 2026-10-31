@@ -1,0 +1,4 @@
+async original=>{
+  const context=await original.context().browser().newContext(),page=await context.newPage(),pending=new Set(),failed=[],responses=[];page.on('request',r=>pending.add(r.url()));page.on('requestfinished',r=>pending.delete(r.url()));page.on('requestfailed',r=>{pending.delete(r.url());failed.push({url:r.url(),reason:r.failure()?.errorText});});page.on('response',r=>responses.push({url:r.url(),status:r.status()}));
+  const start=Date.now();try{await page.goto(new URL(original.url()).origin,{waitUntil:'load',timeout:30000});await page.locator('.model-stage.ready').waitFor();return {loadMs:Date.now()-start,pending:[...pending],failed,responses};}catch(e){throw Error(JSON.stringify({message:e.message,elapsedMs:Date.now()-start,pending:[...pending],failed,responses}));}finally{await context.close();}
+}

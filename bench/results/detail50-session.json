@@ -1,0 +1,24 @@
+{
+  "baseline": "4d70bae8ff6277c209fb6876c4b673f0b905ca72",
+  "startedAt": "2026-10-30T17:34:14Z",
+  "frozenAt": "2026-10-30T18:35:17.572Z",
+  "sourceSHA256": {
+    "src.jsx": "2b801e30e9187e2868f58db717db0cde2e5cd2c1e483bc207c8201edd266330a",
+    "style.css": "d98107ad86f272fc1b3b3cdf205be8f40751a3f994822089b06bd2eede3b443a",
+    "viewer-preview.js": "ad6b7b1b71bdd78a45aed48c5fe2b56d6d0fca3acc76c5196d0a316bce07439c",
+    "detail-primitives.js": "8cd2099c119bdac752a0c6c81aff9231f20668497c7b42b6f756020b984b9c3d",
+    "engineering-detail.js": "f1c9bd21113e9318901427121ce75e0dc55b63610a254294dbe8c86db79d198e",
+    "engineering-catalog.js": "53d5545b2e212ccba47c3c314906a4269cf7a08dd7f61d7fd7cb3f1fccf3402b",
+    "engineering-assembly.js": "44baf237557591238d8b131be3ee644f2a1c4b0cc4a44385122ecacbdead21cf",
+    "engineering-inspector.jsx": "e0b58d8cac133a26f716ae903a682ad00af089c9456155114b8674aeadba39d2",
+    "package.json": "c83888872b0f64a0391c32e9ad9e4b185640a1f748c4b29fe2557fc226347068",
+    "package-lock.json": "f9b83acb2290084585b61a13a01fdebd0495f2a6319a4876b0a73d6313590fe9"
+  },
+  "assets": [
+    "engineering-inspector-B4E9U7d0.js",
+    "index-BvDkDNUR.js",
+    "index-cxVmL9Tn.css"
+  ],
+  "finishedAt": "2026-10-30T18:39:13.917Z",
+  "elapsedMs": 3899917
+}

@@ -1,0 +1,5 @@
+async page=>{
+  await page.setViewportSize({width:1200,height:740});await page.goto('file:///C:/Sites/MyWebsite/drone-lab/qa-artifacts/detail52/featured.html');await page.evaluate(()=>Promise.all([...document.images].map(im=>im.decode())));await page.screenshot({path:'qa-artifacts/detail52/featured.png',fullPage:true});
+  await page.setViewportSize({width:1200,height:900});await page.goto('file:///C:/Sites/MyWebsite/drone-lab/qa-artifacts/detail52/index.html');if(await page.locator('img').count()!==410)throw Error('Gallery image count');await page.waitForFunction(()=>[...document.images].slice(0,2).every(im=>im.complete&&im.naturalWidth===1000));await page.screenshot({path:'qa-artifacts/detail52/gallery-desktop.png'});await page.setViewportSize({width:390,height:844});if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Gallery overflow');await page.screenshot({path:'qa-artifacts/detail52/gallery-mobile.png'});
+  return {galleryImages:410,featuredPairs:4,desktop:[1200,900],mobile:[390,844]};
+}

@@ -1,0 +1,103 @@
+{
+  "browser": "firefox",
+  "browserVersion": "157.0",
+  "finishedAt": "2026-10-30T23:38:49.789Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail51-regression.js",
+      "passed": false,
+      "durationMs": 30340,
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5175/\", waiting until \"load\"\u001b[22m\n\n    at evalmachine.<anonymous>:8:16\n    at async file:///C:/Sites/MyWebsite/drone-lab/tests/viewer.ultimate-runner.mjs:27:20"
+    },
+    {
+      "filename": "tests/viewer.detail50-focus.js",
+      "passed": true,
+      "durationMs": 13405,
+      "result": {
+        "checks": [
+          {
+            "name": "Focus follows a moving node through animation reversal",
+            "passed": true
+          },
+          {
+            "name": "Actual ray click selects one instanced element",
+            "passed": true
+          },
+          {
+            "name": "Only the selected instance remains visible",
+            "passed": true
+          },
+          {
+            "name": "Overview restores all instances",
+            "passed": true
+          },
+          {
+            "name": "Maximum zoom stays outside closed battery housing",
+            "passed": true
+          }
+        ],
+        "batteryCameraDistanceToRadius": 1.0500272472903527
+      }
+    },
+    {
+      "filename": "tests/viewer.shared-resource-lifecycle.js",
+      "passed": true,
+      "durationMs": 26518,
+      "result": {
+        "cycles": 24,
+        "before": {
+          "geometryListeners": 209,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 209,
+            "textures": 9
+          }
+        },
+        "after": {
+          "geometryListeners": 209,
+          "textureListeners": 8,
+          "maxGeometryListeners": 1,
+          "maxTextureListeners": 1,
+          "memory": {
+            "geometries": 209,
+            "textures": 9
+          }
+        },
+        "restores": [
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          },
+          {
+            "geometryListeners": 209,
+            "textureListeners": 8,
+            "maxGeometryListeners": 1,
+            "maxTextureListeners": 1,
+            "memory": {
+              "geometries": 209,
+              "textures": 9
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

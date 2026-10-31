@@ -1,6 +1,6 @@
 {
   "name": "aerofiber-explorer",
-  "version": "4.2.0",
+  "version": "5.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -12,7 +12,7 @@
     "test:detail": "node --test tests/airfoil.test.mjs tests/ultra-detail.test.mjs",
     "test:presentation": "node --test tests/viewer-presentation.test.mjs",
     "test:preview": "node --test tests/viewer-preview.test.mjs",
-    "test": "node --test tests/viewer-motion.test.mjs tests/viewer-instancing.test.mjs tests/airfoil.test.mjs tests/ultra-detail.test.mjs tests/viewer-presentation.test.mjs tests/viewer-preview.test.mjs tests/viewer-picking.test.mjs tests/viewer-resolution.test.mjs tests/viewer-controls.test.mjs tests/viewer-resources.test.mjs"
+    "test": "node --test tests/viewer-motion.test.mjs tests/viewer-instancing.test.mjs tests/airfoil.test.mjs tests/ultra-detail.test.mjs tests/viewer-presentation.test.mjs tests/viewer-preview.test.mjs tests/viewer-picking.test.mjs tests/viewer-resolution.test.mjs tests/viewer-controls.test.mjs tests/viewer-resources.test.mjs tests/engineering-detail.test.mjs tests/completeness.test.mjs tests/interiors51.test.mjs tests/refinement52.test.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",

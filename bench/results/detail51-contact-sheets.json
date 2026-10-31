@@ -1,0 +1,26 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T23:40:03.840Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail51-contacts.js",
+      "passed": true,
+      "durationMs": 1399,
+      "result": {
+        "files": [
+          "sections-0.png",
+          "sections-1.png",
+          "sections-2.png",
+          "sections-3.png",
+          "macros-0.png",
+          "macros-1.png",
+          "macros-2.png",
+          "macros-3.png",
+          "macros-4.png",
+          "macros-5.png"
+        ]
+      }
+    }
+  ]
+}

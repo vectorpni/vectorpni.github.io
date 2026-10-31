@@ -1,0 +1,513 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T18:30:32.844Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail50-profile.js",
+      "passed": true,
+      "durationMs": 86118,
+      "result": {
+        "method": "counterbalanced ABBA per CPU rate, 1440x1000 DPR1, cold browser cache, warmed render, one wrapper per frame; hover uses synchronous synthetic pointer events",
+        "rows": [
+          {
+            "port": 5176,
+            "cpuRate": 1,
+            "runtimeAssets": [
+              "http://127.0.0.1:5176/assets/index-CuL2hyd5.js",
+              "http://127.0.0.1:5176/assets/index-Dhi-h_IZ.css"
+            ],
+            "readyMs": 1223.5,
+            "pending": 0,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 380.79999999981374,
+                "ms": 325
+              },
+              {
+                "start": 707.2000000001863,
+                "ms": 508
+              }
+            ],
+            "heapBytes": 11177928,
+            "rotation": {
+              "frames": 429,
+              "fps": 142.66191126964205,
+              "p95FrameMs": 8.100000000558794,
+              "p99FrameMs": 10.100000000558794,
+              "p95RenderMs": 2.099999999627471,
+              "p99RenderMs": 2.3999999994412065,
+              "p95CallbackMs": 2.2999999998137355,
+              "p99CallbackMs": 2.599999999627471,
+              "calls": 202,
+              "triangles": 325286,
+              "mainThreadBusyPct": 21.202727877578177
+            },
+            "assembly": {
+              "frames": 168,
+              "fps": 144.07730135442972,
+              "p95FrameMs": 7.2999999998137355,
+              "p99FrameMs": 8.099999999627471,
+              "p95RenderMs": 1.7999999998137355,
+              "p99RenderMs": 2.6000000005587935,
+              "p95CallbackMs": 2.099999999627471,
+              "p99CallbackMs": 2.800000000745058,
+              "calls": 202,
+              "triangles": 325286
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0,
+              "p95Ms": 0.6999999992549419,
+              "p99Ms": 0.900000000372529,
+              "meanRaycastsPerEvent": 27.90277777777778
+            }
+          },
+          {
+            "port": 5175,
+            "cpuRate": 1,
+            "runtimeAssets": [
+              "http://127.0.0.1:5175/assets/index-BvDkDNUR.js",
+              "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css"
+            ],
+            "readyMs": 772.5,
+            "pending": 0,
+            "memory": {
+              "geometries": 204,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 387.69999999925494,
+                "ms": 258
+              },
+              {
+                "start": 646.3999999994412,
+                "ms": 123
+              }
+            ],
+            "heapBytes": 11711296,
+            "rotation": {
+              "frames": 432,
+              "fps": 144.01710829684671,
+              "p95FrameMs": 7.1000000005587935,
+              "p99FrameMs": 7.2000000001862645,
+              "p95RenderMs": 1.7000000001862645,
+              "p99RenderMs": 2.099999999627471,
+              "p95CallbackMs": 1.7999999998137355,
+              "p99CallbackMs": 2.1000000005587935,
+              "calls": 225,
+              "triangles": 334034,
+              "mainThreadBusyPct": 19.716378162450063
+            },
+            "assembly": {
+              "frames": 168,
+              "fps": 144.05244544123767,
+              "p95FrameMs": 7.099999999627471,
+              "p99FrameMs": 7.1000000005587935,
+              "p95RenderMs": 1.1000000005587935,
+              "p99RenderMs": 1.7000000001862645,
+              "p95CallbackMs": 1.2000000001862645,
+              "p99CallbackMs": 1.8999999994412065,
+              "calls": 225,
+              "triangles": 334034
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0,
+              "p95Ms": 0.8999999994412065,
+              "p99Ms": 1.2999999998137355,
+              "meanRaycastsPerEvent": 29.916666666666668
+            }
+          },
+          {
+            "port": 5175,
+            "cpuRate": 1,
+            "runtimeAssets": [
+              "http://127.0.0.1:5175/assets/index-BvDkDNUR.js",
+              "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css"
+            ],
+            "readyMs": 768.5999999996275,
+            "pending": 0,
+            "memory": {
+              "geometries": 204,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 401.59999999962747,
+                "ms": 242
+              },
+              {
+                "start": 644.7000000001863,
+                "ms": 121
+              }
+            ],
+            "heapBytes": 11691800,
+            "rotation": {
+              "frames": 433,
+              "fps": 144.03360784183872,
+              "p95FrameMs": 7.1000000005587935,
+              "p99FrameMs": 7.2000000001862645,
+              "p95RenderMs": 1.7999999998137355,
+              "p99RenderMs": 1.900000000372529,
+              "p95CallbackMs": 1.8999999994412065,
+              "p99CallbackMs": 2,
+              "calls": 225,
+              "triangles": 334034,
+              "mainThreadBusyPct": 19.821770972037285
+            },
+            "assembly": {
+              "frames": 168,
+              "fps": 144.02759810263044,
+              "p95FrameMs": 7.1000000005587935,
+              "p99FrameMs": 7.2000000001862645,
+              "p95RenderMs": 1.7000000001862645,
+              "p99RenderMs": 1.800000000745058,
+              "p95CallbackMs": 1.7999999998137355,
+              "p99CallbackMs": 1.900000000372529,
+              "calls": 225,
+              "triangles": 334034
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0,
+              "p95Ms": 0.7999999998137355,
+              "p99Ms": 1.099999999627471,
+              "meanRaycastsPerEvent": 29.916666666666668
+            }
+          },
+          {
+            "port": 5176,
+            "cpuRate": 1,
+            "runtimeAssets": [
+              "http://127.0.0.1:5176/assets/index-CuL2hyd5.js",
+              "http://127.0.0.1:5176/assets/index-Dhi-h_IZ.css"
+            ],
+            "readyMs": 771.7000000001863,
+            "pending": 0,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 400.90000000037253,
+                "ms": 232
+              },
+              {
+                "start": 633.7999999998137,
+                "ms": 135
+              }
+            ],
+            "heapBytes": 11176128,
+            "rotation": {
+              "frames": 432,
+              "fps": 144.0219207378379,
+              "p95FrameMs": 7.1000000005587935,
+              "p99FrameMs": 7.2000000001862645,
+              "p95RenderMs": 1.6000000005587935,
+              "p99RenderMs": 1.7000000001862645,
+              "p95CallbackMs": 1.7000000001862645,
+              "p99CallbackMs": 1.7999999998137355,
+              "calls": 202,
+              "triangles": 325286,
+              "mainThreadBusyPct": 18.499766899766897
+            },
+            "assembly": {
+              "frames": 168,
+              "fps": 144.02759810263044,
+              "p95FrameMs": 7.099999999627471,
+              "p99FrameMs": 7.1000000005587935,
+              "p95RenderMs": 1.6000000005587935,
+              "p99RenderMs": 1.7000000001862645,
+              "p95CallbackMs": 1.7999999998137355,
+              "p99CallbackMs": 1.8999999994412065,
+              "calls": 202,
+              "triangles": 325286
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0,
+              "p95Ms": 1.3999999994412065,
+              "p99Ms": 1.599999999627471,
+              "meanRaycastsPerEvent": 27.90277777777778
+            }
+          },
+          {
+            "port": 5176,
+            "cpuRate": 4,
+            "runtimeAssets": [
+              "http://127.0.0.1:5176/assets/index-CuL2hyd5.js",
+              "http://127.0.0.1:5176/assets/index-Dhi-h_IZ.css"
+            ],
+            "readyMs": 1851.7000000001863,
+            "pending": 0,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 414.70000000018626,
+                "ms": 93
+              },
+              {
+                "start": 682.0999999996275,
+                "ms": 964
+              },
+              {
+                "start": 1650.3999999994412,
+                "ms": 186
+              },
+              {
+                "start": 1854.5999999996275,
+                "ms": 53
+              }
+            ],
+            "heapBytes": 11175168,
+            "rotation": {
+              "frames": 396,
+              "fps": 131.5570358034971,
+              "p95FrameMs": 10.300000000745058,
+              "p99FrameMs": 12.700000000186265,
+              "p95RenderMs": 8.700000000186265,
+              "p99RenderMs": 11,
+              "p95CallbackMs": 9.100000000558794,
+              "p99CallbackMs": 11.200000000186265,
+              "calls": 202,
+              "triangles": 325286,
+              "mainThreadBusyPct": 94.6705277132426
+            },
+            "assembly": {
+              "frames": 155,
+              "fps": 133.61096651054118,
+              "p95FrameMs": 10.099999999627471,
+              "p99FrameMs": 11.599999999627471,
+              "p95RenderMs": 8.400000000372529,
+              "p99RenderMs": 9,
+              "p95CallbackMs": 8.699999999254942,
+              "p99CallbackMs": 10.400000000372529,
+              "calls": 202,
+              "triangles": 325286
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0.10000000055879354,
+              "p95Ms": 3.5,
+              "p99Ms": 5.2000000001862645,
+              "meanRaycastsPerEvent": 27.90277777777778
+            }
+          },
+          {
+            "port": 5175,
+            "cpuRate": 4,
+            "runtimeAssets": [
+              "http://127.0.0.1:5175/assets/index-BvDkDNUR.js",
+              "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css"
+            ],
+            "readyMs": 2177.5999999996275,
+            "pending": 0,
+            "memory": {
+              "geometries": 204,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 517.3999999994412,
+                "ms": 98
+              },
+              {
+                "start": 803.5,
+                "ms": 1146
+              },
+              {
+                "start": 1953.3999999994412,
+                "ms": 209
+              },
+              {
+                "start": 2181.199999999255,
+                "ms": 55
+              }
+            ],
+            "heapBytes": 11625124,
+            "rotation": {
+              "frames": 405,
+              "fps": 134.65768948735914,
+              "p95FrameMs": 9.799999999813735,
+              "p99FrameMs": 11.100000000558794,
+              "p95RenderMs": 8.5,
+              "p99RenderMs": 9.5,
+              "p95CallbackMs": 9,
+              "p99CallbackMs": 9.900000000372529,
+              "calls": 225,
+              "triangles": 334034,
+              "mainThreadBusyPct": 97.49654714475433
+            },
+            "assembly": {
+              "frames": 150,
+              "fps": 129.004329004329,
+              "p95FrameMs": 11.100000000558794,
+              "p99FrameMs": 11.799999999813735,
+              "p95RenderMs": 8.299999999813735,
+              "p99RenderMs": 10.199999999254942,
+              "p95CallbackMs": 8.700000000186265,
+              "p99CallbackMs": 11.399999999441206,
+              "calls": 225,
+              "triangles": 334034
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0.10000000055879354,
+              "p95Ms": 3.900000000372529,
+              "p99Ms": 5.400000000372529,
+              "meanRaycastsPerEvent": 29.916666666666668
+            }
+          },
+          {
+            "port": 5175,
+            "cpuRate": 4,
+            "runtimeAssets": [
+              "http://127.0.0.1:5175/assets/index-BvDkDNUR.js",
+              "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css"
+            ],
+            "readyMs": 2011.5,
+            "pending": 0,
+            "memory": {
+              "geometries": 204,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 380.20000000018626,
+                "ms": 99
+              },
+              {
+                "start": 665.5999999996275,
+                "ms": 1141
+              },
+              {
+                "start": 1810.2000000001863,
+                "ms": 187
+              },
+              {
+                "start": 2014.0999999996275,
+                "ms": 54
+              }
+            ],
+            "heapBytes": 11654152,
+            "rotation": {
+              "frames": 432,
+              "fps": 143.66187793741992,
+              "p95FrameMs": 7.8999999994412065,
+              "p99FrameMs": 9.5,
+              "p95RenderMs": 6.2000000001862645,
+              "p99RenderMs": 8.199999999254942,
+              "p95CallbackMs": 6.599999999627471,
+              "p99CallbackMs": 8.5,
+              "calls": 225,
+              "triangles": 334034,
+              "mainThreadBusyPct": 84.1983710106383
+            },
+            "assembly": {
+              "frames": 167,
+              "fps": 143.90983961855224,
+              "p95FrameMs": 7.800000000745058,
+              "p99FrameMs": 10.599999999627471,
+              "p95RenderMs": 6,
+              "p99RenderMs": 8.700000000186265,
+              "p95CallbackMs": 6.400000000372529,
+              "p99CallbackMs": 9.5,
+              "calls": 225,
+              "triangles": 334034
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0.19999999925494194,
+              "p95Ms": 4,
+              "p99Ms": 5.1000000005587935,
+              "meanRaycastsPerEvent": 29.916666666666668
+            }
+          },
+          {
+            "port": 5176,
+            "cpuRate": 4,
+            "runtimeAssets": [
+              "http://127.0.0.1:5176/assets/index-CuL2hyd5.js",
+              "http://127.0.0.1:5176/assets/index-Dhi-h_IZ.css"
+            ],
+            "readyMs": 1799.5,
+            "pending": 0,
+            "memory": {
+              "geometries": 181,
+              "textures": 9
+            },
+            "programs": 9,
+            "longTasks": [
+              {
+                "start": 350.79999999981374,
+                "ms": 95
+              },
+              {
+                "start": 629.2000000001863,
+                "ms": 972
+              },
+              {
+                "start": 1606.2999999998137,
+                "ms": 178
+              },
+              {
+                "start": 1803.6000000005588,
+                "ms": 55
+              }
+            ],
+            "heapBytes": 11188424,
+            "rotation": {
+              "frames": 411,
+              "fps": 136.99545576050036,
+              "p95FrameMs": 10,
+              "p99FrameMs": 12.5,
+              "p95RenderMs": 8.100000000558794,
+              "p99RenderMs": 10.299999999813735,
+              "p95CallbackMs": 8.599999999627471,
+              "p99CallbackMs": 11.099999999627471,
+              "calls": 202,
+              "triangles": 325286,
+              "mainThreadBusyPct": 84.34554224883567
+            },
+            "assembly": {
+              "frames": 160,
+              "fps": 137.86525622130034,
+              "p95FrameMs": 10.600000000558794,
+              "p99FrameMs": 11.799999999813735,
+              "p95RenderMs": 8.5,
+              "p99RenderMs": 9.600000000558794,
+              "p95CallbackMs": 8.899999999441206,
+              "p99CallbackMs": 10.100000000558794,
+              "calls": 202,
+              "triangles": 325286
+            },
+            "pointer": {
+              "events": 1152,
+              "medianMs": 0.09999999962747097,
+              "p95Ms": 3,
+              "p99Ms": 4.2000000001862645,
+              "meanRaycastsPerEvent": 27.90277777777778
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

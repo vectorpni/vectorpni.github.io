@@ -1,0 +1,22 @@
+{
+  "baseline": "C:/Sites/MyWebsite/vector-pni-pre-5.1",
+  "baselineFiles": 224,
+  "changedExisting": [
+    "detail-primitives.js",
+    "engineering-assembly.js",
+    "engineering-catalog.js",
+    "package-lock.json",
+    "package.json"
+  ],
+  "preserved": [
+    "src.jsx",
+    "style.css",
+    "viewer-presentation.js",
+    "reference-detail.js",
+    "ultra-detail.js",
+    "airfoil-geometry.js",
+    "motor-geometry.js",
+    "viewer-preview.js",
+    ".github/workflows/pages.yml"
+  ]
+}

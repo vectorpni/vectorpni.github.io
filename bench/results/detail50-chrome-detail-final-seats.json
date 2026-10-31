@@ -1,0 +1,1254 @@
+{
+  "browser": "chrome",
+  "browserVersion": "156.0.8078.79",
+  "finishedAt": "2026-10-30T18:35:47.453Z",
+  "results": [
+    {
+      "filename": "tests/viewer.detail50.js",
+      "passed": true,
+      "durationMs": 23915,
+      "result": {
+        "checks": [
+          {
+            "name": "Detailed module not fetched on first screen",
+            "passed": true
+          },
+          {
+            "name": "16 main components",
+            "passed": true
+          },
+          {
+            "name": "frame no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "frame finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "frame reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "frame section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "frame section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "frame section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "frame section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "frame section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "frame visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "frame exterior restored",
+            "passed": true
+          },
+          {
+            "name": "motors no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "motors finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "motors reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "motors section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "motors section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "motors section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "motors section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "motors section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "motors visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "Detail WebGL loss supported",
+            "passed": true
+          },
+          {
+            "name": "Detail WebGL restored",
+            "passed": true
+          },
+          {
+            "name": "motors exterior restored",
+            "passed": true
+          },
+          {
+            "name": "esc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "esc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "esc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "esc section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "esc section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "esc section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "esc section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "esc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "esc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "esc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "props no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "props finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "props reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "props section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "props section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "props visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "props section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "props section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "props visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "props exterior restored",
+            "passed": true
+          },
+          {
+            "name": "fc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "fc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "fc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "fc section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "fc section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "fc section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "fc section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "fc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "fc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "fc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "power no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "power finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "power reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "power section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "power section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "power section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "power section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "power section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "power section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "power section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "power section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "power visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "power exterior restored",
+            "passed": true
+          },
+          {
+            "name": "becpi no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "becpi finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "becpi reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "becpi section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "becpi section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "becpi section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "becpi section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "becpi section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "becpi visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "becpi exterior restored",
+            "passed": true
+          },
+          {
+            "name": "becfc no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "becfc finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "becfc reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "becfc section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "becfc section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "becfc section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "becfc section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "becfc section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "becfc visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "becfc exterior restored",
+            "passed": true
+          },
+          {
+            "name": "battery no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "battery finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "battery reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "battery section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "battery section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "battery section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "battery section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "battery visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "battery exterior restored",
+            "passed": true
+          },
+          {
+            "name": "pi no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "pi finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "pi reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "pi section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "pi section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "pi section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "pi section 3 selection",
+            "passed": true
+          },
+          {
+            "name": "pi section 3 not empty",
+            "passed": true
+          },
+          {
+            "name": "pi visible isolated leaf 3",
+            "passed": true
+          },
+          {
+            "name": "pi exterior restored",
+            "passed": true
+          },
+          {
+            "name": "cooling no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "cooling finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "cooling reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "cooling section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "cooling section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "cooling section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "cooling section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "cooling visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "cooling exterior restored",
+            "passed": true
+          },
+          {
+            "name": "gps no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "gps finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "gps reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "gps section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "gps section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "gps section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "gps section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "gps visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "gps exterior restored",
+            "passed": true
+          },
+          {
+            "name": "radio no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "radio finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "radio reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "radio section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "radio section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "radio section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "radio section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "radio visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "radio exterior restored",
+            "passed": true
+          },
+          {
+            "name": "camera no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "camera finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "camera reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "camera section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "camera section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "camera section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "camera section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "camera visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "camera exterior restored",
+            "passed": true
+          },
+          {
+            "name": "Charger remains external without invented internals",
+            "passed": true
+          },
+          {
+            "name": "wiring no initialization failure",
+            "passed": true
+          },
+          {
+            "name": "wiring finite geometry and normals",
+            "passed": true
+          },
+          {
+            "name": "wiring reversible opening state",
+            "passed": true
+          },
+          {
+            "name": "wiring section 0 selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 0 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 0",
+            "passed": true
+          },
+          {
+            "name": "wiring section 1 selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 1 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 1",
+            "passed": true
+          },
+          {
+            "name": "wiring section 2 selection",
+            "passed": true
+          },
+          {
+            "name": "wiring section 2 not empty",
+            "passed": true
+          },
+          {
+            "name": "wiring visible isolated leaf 2",
+            "passed": true
+          },
+          {
+            "name": "wiring exterior restored",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 320",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 320",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 375",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 375",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 390",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 390",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 430",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 430",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 768",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 768",
+            "passed": true
+          },
+          {
+            "name": "Internal mobile bounds 844",
+            "passed": true
+          },
+          {
+            "name": "No horizontal overflow 844",
+            "passed": true
+          },
+          {
+            "name": "No JS errors",
+            "passed": true
+          }
+        ],
+        "rows": [
+          {
+            "id": "frame",
+            "sections": 4,
+            "meshes": 20,
+            "instances": 14,
+            "triangles": 33808,
+            "geometries": 20,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 20
+          },
+          {
+            "id": "motors",
+            "sections": 4,
+            "meshes": 17,
+            "instances": 5,
+            "triangles": 44784,
+            "geometries": 16,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 17
+          },
+          {
+            "id": "esc",
+            "sections": 4,
+            "meshes": 9,
+            "instances": 6,
+            "triangles": 5240,
+            "geometries": 9,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 9
+          },
+          {
+            "id": "props",
+            "sections": 2,
+            "meshes": 8,
+            "instances": 0,
+            "triangles": 6168,
+            "geometries": 8,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 8
+          },
+          {
+            "id": "fc",
+            "sections": 4,
+            "meshes": 21,
+            "instances": 12,
+            "triangles": 26852,
+            "geometries": 21,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 21
+          },
+          {
+            "id": "power",
+            "sections": 4,
+            "meshes": 14,
+            "instances": 8,
+            "triangles": 11428,
+            "geometries": 14,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 14
+          },
+          {
+            "id": "becpi",
+            "sections": 4,
+            "meshes": 14,
+            "instances": 8,
+            "triangles": 11428,
+            "geometries": 14,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 14
+          },
+          {
+            "id": "becfc",
+            "sections": 4,
+            "meshes": 15,
+            "instances": 8,
+            "triangles": 11440,
+            "geometries": 15,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 15
+          },
+          {
+            "id": "battery",
+            "sections": 3,
+            "meshes": 17,
+            "instances": 5,
+            "triangles": 6554,
+            "geometries": 17,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 17
+          },
+          {
+            "id": "pi",
+            "sections": 4,
+            "meshes": 25,
+            "instances": 16,
+            "triangles": 29388,
+            "geometries": 20,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 25
+          },
+          {
+            "id": "cooling",
+            "sections": 3,
+            "meshes": 22,
+            "instances": 9,
+            "triangles": 19422,
+            "geometries": 22,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 22
+          },
+          {
+            "id": "gps",
+            "sections": 3,
+            "meshes": 11,
+            "instances": 3,
+            "triangles": 3082,
+            "geometries": 11,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 11
+          },
+          {
+            "id": "radio",
+            "sections": 3,
+            "meshes": 12,
+            "instances": 1,
+            "triangles": 1468,
+            "geometries": 12,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 12
+          },
+          {
+            "id": "camera",
+            "sections": 3,
+            "meshes": 19,
+            "instances": 3,
+            "triangles": 8884,
+            "geometries": 19,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 19
+          },
+          {
+            "id": "wiring",
+            "sections": 3,
+            "meshes": 30,
+            "instances": 5,
+            "triangles": 19444,
+            "geometries": 30,
+            "invalid": 0,
+            "badNormals": 0,
+            "zeroArea": 0,
+            "reversed": 0,
+            "calls": 30
+          }
+        ],
+        "errors": [],
+        "runtimeAssets": [
+          "http://127.0.0.1:5175/assets/index-BvDkDNUR.js",
+          "http://127.0.0.1:5175/assets/index-cxVmL9Tn.css",
+          "http://127.0.0.1:5175/assets/engineering-inspector-B4E9U7d0.js"
+        ]
+      }
+    },
+    {
+      "filename": "tests/viewer.detail50-focus.js",
+      "passed": true,
+      "durationMs": 9659,
+      "result": {
+        "checks": [
+          {
+            "name": "Focus follows a moving node through animation reversal",
+            "passed": true
+          },
+          {
+            "name": "Actual ray click selects one instanced element",
+            "passed": true
+          },
+          {
+            "name": "Only the selected instance remains visible",
+            "passed": true
+          },
+          {
+            "name": "Overview restores all instances",
+            "passed": true
+          },
+          {
+            "name": "Maximum zoom stays outside closed battery housing",
+            "passed": true
+          }
+        ],
+        "batteryCameraDistanceToRadius": 1.0702508978713827
+      }
+    },
+    {
+      "filename": "tests/viewer.detail50-interaction.js",
+      "passed": true,
+      "durationMs": 6292,
+      "result": {
+        "checks": [
+          {
+            "name": "Native emulated pinch zooms inner node",
+            "passed": true
+          },
+          {
+            "name": "Pinch does not select a leaf",
+            "passed": true
+          },
+          {
+            "name": "Native emulated touch drag rotates inner node",
+            "passed": true
+          },
+          {
+            "name": "Drag does not select a leaf",
+            "passed": true
+          },
+          {
+            "name": "Native emulated tap selects a visible nested leaf",
+            "passed": true
+          },
+          {
+            "name": "Keyboard selects section",
+            "passed": true
+          },
+          {
+            "name": "Section button retains keyboard focus",
+            "passed": true
+          },
+          {
+            "name": "Keyboard selects nested detail",
+            "passed": true
+          },
+          {
+            "name": "Reduced motion settles with no idle render loop",
+            "passed": true
+          },
+          {
+            "name": "Rapid reversals retain assembled state",
+            "passed": true
+          },
+          {
+            "name": "Orientation retains selected detail",
+            "passed": true
+          },
+          {
+            "name": "Landscape has no overflow",
+            "passed": true
+          },
+          {
+            "name": "Escape closes nested inspector",
+            "passed": true
+          },
+          {
+            "name": "No JS errors",
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "cpuRate": 4,
+        "DPR": 2,
+        "physicalDevice": false
+      }
+    }
+  ]
+}
