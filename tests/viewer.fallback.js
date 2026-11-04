@@ -35,7 +35,7 @@ async original=>{
         await page.getByRole('button',{name:'Разобрать',exact:true}).click();await page.getByRole('button',{name:'Собрать',exact:true}).click();
       }else if(['unsupported','creation','construction','render-failure','resource','timeout','stalled-frame','keyboard-mobile'].includes(scenario)){
         await retry.waitFor({timeout:25000});check(await page.locator('.controls').count()===0,'Dead 3D toolbar remains');check(await page.locator('.desktop-instructions,.mobile-instructions').count()===0,'False gesture instructions');
-        const image=page.locator('.fallback-image-map img');check(await image.evaluate(img=>img.complete&&img.naturalWidth===1600),'Static model image did not load');
+        const image=page.locator('.fallback-image-map img');check(await image.evaluate(async img=>{await img.decode();return img.complete&&img.naturalWidth===1600;}),'Static model image did not load');
         if(['unsupported','keyboard-mobile'].includes(scenario)){check(await page.locator('canvas').count()===0,'Fallback created canvas');check(await page.evaluate(()=>!performance.getEntriesByType('resource').some(e=>/viewer-engine-|viewer-motion-|engineering-inspector-/.test(e.name))),'No-WebGL loaded heavy scene');}
         if(scenario==='unsupported'){
           await page.screenshot({path:'qa-artifacts/fallback/02-fallback-desktop.png',fullPage:true});await page.locator('.fallback-image-map').screenshot({path:'qa-artifacts/fallback/03-numbered-points.png'});
