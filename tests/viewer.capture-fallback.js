@@ -1,0 +1,14 @@
+async original=>{
+  const page=await original.context().newPage();
+  await page.addInitScript(()=>{window.__capture={};window.__THREE_DEVTOOLS__=new EventTarget();window.__THREE_DEVTOOLS__.addEventListener('observe',e=>{const r=e.detail;if(!r.isWebGLRenderer)return;const render=r.render;r.render=function(s,c){if(c.isPerspectiveCamera){if(this.domElement.closest('.model-stage'))window.__capture.main={r,s,c};if(this.domElement.closest('.part-preview'))window.__capture.part={r,s,c};}return render.call(this,s,c);};});});
+  await page.goto(new URL(original.url()).origin);await page.locator('.model-stage.ready').waitFor();
+  await page.screenshot({path:'qa-artifacts/fallback/before-3d.png',fullPage:true});
+  const main=await page.evaluate(()=>{const {r,s,c}=window.__capture.main;r.setPixelRatio(1);r.setSize(1800,1200,false);c.aspect=1.5;c.fov=34;c.position.set(5.8,6.2,11.5);c.lookAt(0,.1,0);c.updateProjectionMatrix();c.updateMatrixWorld(true);r.render(s,c);const points={frame:[-.65,.55,.7],motors:[2.08,.65,2.08],props:[-2.7,.82,2.08],battery:[0,1.15,-.1],gps:[-.62,1.93,-.78],camera:[0,-1.1,.7],wiring:[-.75,.65,.48]};return {image:r.domElement.toDataURL('image/webp',.91),points:Object.fromEntries(Object.entries(points).map(([id,p])=>{const v=c.position.clone().set(...p).project(c);return [id,{x:(v.x+1)/2,y:(1-v.y)/2}];})),camera:{position:c.position.toArray(),quaternion:c.quaternion.toArray(),fov:c.fov,aspect:c.aspect}};});
+  const flattened=await page.evaluate(async data=>{const source=new Image();source.src=data;await source.decode();const canvas=document.createElement('canvas');canvas.width=1600;canvas.height=1000;const ctx=canvas.getContext('2d');ctx.fillStyle='#edf0f2';ctx.fillRect(0,0,1600,1000);ctx.drawImage(source,-100,-100);return canvas.toDataURL('image/webp',.92);},main.image);
+  for(const point of Object.values(main.points)){point.x=(point.x*1800-100)/1600;point.y=(point.y*1200-100)/1000;}
+  await original.__qaSaveImage('fallback/af18-overview.webp',flattened);
+  await page.reload();await page.locator('.model-stage.ready').waitFor();await page.getByRole('button',{name:'Исследовать компоненты',exact:true}).click();
+  const ids=await page.locator('.modal-navigation option').evaluateAll(opts=>opts.map(o=>o.value));
+  for(const id of ids){if(id==='charger')continue;await page.locator('.modal-navigation select').selectOption(id);await page.locator('.part-preview canvas').waitFor();await page.waitForTimeout(80);const image=await page.evaluate(()=>{const {r,s,c}=window.__capture.part;r.setPixelRatio(1);r.setSize(600,480,false);c.aspect=1.25;c.updateProjectionMatrix();r.render(s,c);return r.domElement.toDataURL('image/webp',.88);});await original.__qaSaveImage('fallback/parts/'+id+'.webp',image);}
+  await page.close();return {points:main.points,camera:main.camera,parts:ids};
+}

@@ -1,0 +1,64 @@
+/* Static study mode deliberately uses only HTML, images and shared card data. */
+.explorer-trigger{display:flex;align-items:center;justify-content:center;gap:9px;align-self:center;min-height:44px;padding:10px 18px;margin:12px 12px 4px;border:1px solid #aebfb3;border-radius:8px;background:#f8fbf8;color:#294c37;font-size:12px;font-weight:600}
+.explorer-trigger:hover{background:#e1ece3}
+.fallback-mode .model-stage{height:auto;min-height:0;flex:none}
+.fallback-mode .model-stage>.three-view{visibility:hidden;pointer-events:none}
+.fallback-mode .hover-label,.fallback-mode .side-index{display:none}
+.fallback-mode .title p{display:none}
+.fallback-view{width:100%;padding:0 20px 8px;color:#365343}
+.fallback-figure{margin:0 auto;max-width:960px}
+.fallback-image-map{position:relative;width:100%;max-width:800px;margin:auto;isolation:isolate}
+.fallback-image-map>img{display:block;width:100%;height:auto;border-radius:12px}
+.fallback-figure figcaption{max-width:640px;margin:4px auto 12px;text-align:center;font-size:11px;line-height:1.7;color:#51695b;padding:0 12px}
+.component-point{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #315b42;border-radius:50%;background:#f7fbf5ee;color:#173f2b;font-size:12px;font-weight:800;box-shadow:0 2px 7px #18382420;z-index:1}
+.component-point:hover,.component-point[aria-pressed=true]{background:#294735;color:white}
+.component-point:focus-visible{outline:3px solid #294735;outline-offset:3px;z-index:2}
+.fallback-message{max-width:620px;margin:0 auto;text-align:center}
+.fallback-message>p{font-size:13px;line-height:1.75;margin:10px 0;color:#3c5948}
+.fallback-actions{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.fallback-actions button{min-height:44px;padding:10px 14px;border:1px solid #aebfb3;border-radius:8px;font-size:12px;line-height:1.5;display:flex;align-items:center;justify-content:center;gap:8px}
+.fallback-actions .primary-action{color:#fff;background:#294735;border-color:#294735}
+.fallback-actions button:disabled{cursor:wait;color:#526a5a;background:#e9eeea}
+.fallback-mode .studio>.explorer-trigger{display:none} /* Same visible action lives under the image. */
+.explorer-overlay{position:fixed;inset:0;z-index:20;background:#15201945;backdrop-filter:blur(7px);display:grid;align-items:end;justify-items:center;padding:max(13px,env(safe-area-inset-top)) max(13px,env(safe-area-inset-right)) max(13px,env(safe-area-inset-bottom)) max(13px,env(safe-area-inset-left))}
+.component-explorer{display:flex;flex-direction:column;min-width:0;width:min(520px,100%);max-height:calc(85svh - env(safe-area-inset-top) - env(safe-area-inset-bottom));background:#f9fbfa;border:1px solid #d9e3dc;border-radius:16px;box-shadow:0 16px 60px #17332718;overflow:hidden;animation:inspector-in .24s ease-out}
+.explorer-heading{display:flex;justify-content:space-between;gap:16px;padding:22px 20px 16px;border-bottom:1px solid #dfe8df;flex-shrink:0}
+.explorer-heading span{font-size:9px;letter-spacing:1px;color:#526b5b}
+.explorer-heading h2{font-size:25px;font-weight:500;letter-spacing:-.7px;margin:8px 0}
+.explorer-heading p{font-size:11px;line-height:1.7;color:#526b5b;margin:0}
+.explorer-close{display:grid;place-items:center;min-width:44px;height:44px;color:#365b43;border-radius:50%}
+.explorer-close:hover{background:#e1ece3}
+.component-list{padding:6px 12px 14px;margin:0;list-style:none;overflow:auto;overscroll-behavior:contain;min-height:0}
+.component-list li+li{border-top:1px solid #dfe8df}
+.component-list li>button{display:flex;align-items:start;gap:12px;width:100%;text-align:left;min-height:64px;padding:14px 8px;border-radius:7px;color:#2d4d38}
+.component-list li>button:hover{background:#e8f0e9}
+.component-list li>button:focus-visible{outline-offset:-2px}
+.component-list-number{font-size:11px;border:1px solid #b7cbbd;border-radius:50%;width:29px;height:29px;display:grid;place-items:center;flex-shrink:0}
+.component-list b{font-size:13px;line-height:1.6;font-weight:600;display:block}
+.component-list small{font-size:11px;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:#4f6757;margin-top:4px}
+.component-list em{font-size:10px;font-style:normal;display:block;margin-top:4px;color:#4f6757}
+.component-list svg{flex-shrink:0;margin-top:6px}
+.static-part-study{grid-row:1/4;min-width:0;grid-column:1/-1}
+.static-part-image{display:block;width:100%;height:auto;max-height:210px;object-fit:contain;background:#edf0f2;border:1px solid #d6e1d9;border-radius:8px}
+.static-internals{margin:12px 0 0;font-size:11px;line-height:1.7;color:#365343}
+.static-internals summary{cursor:pointer;min-height:44px;padding:10px 6px;border-bottom:1px solid #d6e1d9;font-weight:600}
+.static-internals p{margin:10px 4px;font-size:11px;line-height:1.75}
+.static-section{background:#eef3ee;border-radius:6px;margin:8px 0;padding:0 8px 4px}
+.static-section dl{margin-bottom:8px}.static-section dl>div{gap:12px;padding:8px 0;align-items:start}.static-section dt,.static-section dd{font-size:11px;text-align:left;line-height:1.65}.static-section dd{max-width:62%}
+@media(min-width:1100px){
+ .explorer-overlay{background:transparent;backdrop-filter:none;pointer-events:none;display:block;padding:0}
+ .component-explorer{position:fixed;top:88px;right:24px;bottom:24px;width:416px;max-width:416px;max-height:none;pointer-events:auto}
+}
+@media(max-width:700px){
+ .fallback-view{padding:8px 12px}.fallback-image-map{max-width:560px}
+ .component-point:not(.compact-point){display:none}
+ .fallback-figure figcaption{font-size:11px;padding:0 2px;margin-top:12px}
+ .fallback-message>p{font-size:12px;margin:8px 0 12px}
+ .fallback-actions{gap:8px}.fallback-actions button{flex:1 1 160px;font-size:12px;padding:10px}
+ .fallback-actions .primary-action{flex-basis:100%}
+ .explorer-trigger{margin:12px 12px 0;width:calc(100% - 24px)}
+ .component-list-number{width:27px;height:27px}.component-list li>button{gap:9px;padding:13px 6px}
+ .explorer-heading{padding:16px}.explorer-heading h2{font-size:23px}
+}
+@media(max-height:500px){.component-explorer{max-height:calc(100svh - 26px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){.component-explorer{animation:none}}

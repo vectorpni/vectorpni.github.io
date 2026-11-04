@@ -13,7 +13,7 @@ async original=>{
     const after=await snapshot();if(JSON.stringify(before)!==JSON.stringify(after))throw Error(JSON.stringify({before,after}));
     const restores=[];
     for(let i=0;i<3;i++){
-      await page.evaluate(()=>{window.__sharedLoss=document.querySelector('.model-stage canvas').getContext('webgl2').getExtension('WEBGL_lose_context');window.__sharedLoss.loseContext();});await page.getByRole('alert').waitFor();await page.evaluate(()=>window.__sharedLoss.restoreContext());await page.getByRole('alert').waitFor({state:'hidden'});await page.waitForTimeout(100);
+      await page.evaluate(()=>{window.__sharedLoss=document.querySelector('.model-stage canvas').getContext('webgl2').getExtension('WEBGL_lose_context');window.__sharedLoss.loseContext();});await page.locator('.fallback-view').waitFor();await page.evaluate(()=>window.__sharedLoss.restoreContext());await page.locator('.fallback-view').waitFor({state:'hidden'});await page.waitForTimeout(100);
       restores.push(await snapshot());if(JSON.stringify(before)!==JSON.stringify(restores.at(-1)))throw Error(JSON.stringify({before,after,restores}));
     }
     return {cycles:24,before,after,restores};

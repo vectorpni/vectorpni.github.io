@@ -1,0 +1,14 @@
+async original=>{
+  const page=await original.context().newPage(),errors=[],failed=[];
+  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push({url:r.url(),status:r.status()});});
+  await page.addInitScript(()=>{const get=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return type==='webgl2'?null:get.call(this,type,...args);};});
+  await page.goto(new URL(original.url()).origin);await page.getByRole('button',{name:'Повторить запуск 3D',exact:true}).waitFor();await page.getByRole('button',{name:'Посмотреть компоненты',exact:true}).click();
+  const names=await page.locator('.component-list b').allInnerTexts();if(names.length!==16)throw Error('Missing list entries');await page.locator('.component-list li').first().getByRole('button').click();
+  const ids=await page.locator('.modal-navigation option').evaluateAll(opts=>opts.map(o=>o.value)),rows=[];
+  for(const id of ids){await page.locator('.modal-navigation select').selectOption(id);if(id!=='charger'){await page.locator('.static-part-image').evaluate(async img=>{await img.decode();if(img.naturalWidth!==600||img.naturalHeight!==480)throw Error('Invalid static preview');});await page.locator('.static-internals>summary').click();const summaries=page.locator('.static-section>summary');for(const summary of await summaries.all()){await summary.click();const text=await summary.locator('..').innerText();if(text.length<100)throw Error('Empty static section '+id);}rows.push({id,sections:await summaries.count()});}else if(await page.locator('.static-part-image').count())throw Error('Invented charger illustration');}
+  if(rows.reduce((n,r)=>n+r.sections,0)!==52)throw Error('Incomplete hierarchy');await page.keyboard.press('Escape');
+  for(const [width,height]of [[320,568],[375,667],[390,844],[430,932],[768,1024],[1024,768],[1440,1000],[844,390]]){
+    await page.setViewportSize({width,height});await page.getByRole('button',{name:'Посмотреть компоненты',exact:true}).click();const panel=await page.locator('.component-explorer').boundingBox();if(panel.x<0||panel.y<0||panel.x+panel.width>width+.1||panel.y+panel.height>height+.1)throw Error('List outside viewport '+width);await page.locator('.component-list li').last().getByRole('button').click();const card=await page.locator('.spec-modal').boundingBox();if(card.x<0||card.y<0||card.x+card.width>width+.1||card.y+card.height>height+.1)throw Error('Card outside viewport '+width);if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Overflow '+width);await page.keyboard.press('Escape');
+  }
+  if(errors.length||failed.length)throw Error(JSON.stringify({errors,failed}));await page.close();return {names,rows,staticImages:15,sections:52,viewports:8,errors,failed};
+}
