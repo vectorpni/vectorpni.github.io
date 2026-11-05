@@ -69,8 +69,11 @@ async original=>{
           }
           await page.setViewportSize({width:390,height:844});await page.screenshot({path:'qa-artifacts/fallback/06-fallback-mobile.png',fullPage:true});
           const trigger=page.getByRole('button',{name:'Посмотреть компоненты',exact:true});await trigger.focus();await page.keyboard.press('Enter');check(await page.locator('.explorer-close').evaluate(e=>e===document.activeElement),'List focus');
-          await page.keyboard.press('Tab');await page.keyboard.press('Space');await page.locator('.spec-modal').waitFor();check(await page.locator('.modal-close').evaluate(e=>e===document.activeElement),'Card focus');
-          await page.keyboard.press('Tab');check(await page.locator('.static-internals>summary').evaluate(e=>e===document.activeElement),'Static hierarchy keyboard access');await page.keyboard.press('Enter');check(await page.locator('.static-internals').getAttribute('open')!==null,'Cannot expand static hierarchy');await page.keyboard.press('Escape');check(await trigger.evaluate(e=>e===document.activeElement),'Return focus');
+          // Firefox also tabs through native scroll containers. Reach the
+          // control using real Tab events, without assuming exactly one stop.
+          const tabTo=async selector=>{for(let i=0;i<7;i++){if(await page.locator(selector).evaluate(e=>e===document.activeElement))return;await page.keyboard.press('Tab');}throw Error('Keyboard cannot reach '+selector);};
+          await tabTo('.component-list li:first-child button');await page.keyboard.press('Space');await page.locator('.spec-modal').waitFor();check(await page.locator('.modal-close').evaluate(e=>e===document.activeElement),'Card focus');
+          await tabTo('.static-internals>summary');check(await page.locator('.static-internals>summary').evaluate(e=>e===document.activeElement),'Static hierarchy keyboard access');await page.keyboard.press('Enter');check(await page.locator('.static-internals').getAttribute('open')!==null,'Cannot expand static hierarchy');await page.keyboard.press('Escape');check(await trigger.evaluate(e=>e===document.activeElement),'Return focus');
           await page.locator('.component-point:visible').first().tap();await page.locator('.spec-modal').waitFor();const bounds=await page.locator('.spec-modal').boundingBox();check(bounds.x>=0&&bounds.x+bounds.width<=390&&bounds.y>=0&&bounds.y+bounds.height<=844,'Mobile card clipped');await page.keyboard.press('Escape');
           results.push({scenario,widths:rows});
         }

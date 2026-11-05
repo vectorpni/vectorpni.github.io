@@ -10,6 +10,7 @@ import {createGullwingLeadGeometry} from './lead-geometry.js';
 import {addInteriorGeometry} from './engineering-interiors.js';
 import {compactStudyMeshes} from './engineering-batches.js';
 import {indexStudyGeometry} from './engineering-indexing.js';
+import {createStudyMaterialPool} from './engineering-materials.js';
 
 // This module is fetched only when the visitor opens a node's construction.
 // All exterior geometry is borrowed through renderer-private GPU wrappers.
@@ -48,6 +49,15 @@ export function createEngineeringAssembly(group) {
   const preview=createPreviewPart(group,{classify:o=>classify(id,o),leafFor:o=>id==='gps'&&o.position.y>=1.895?{id:'lid',label:'Крышка и её крепёж'}:null,include:o=>(o!==gpsHousing)&&(id!=='motors'||(!['ad6b3c','a96e38'].includes(o.material.color.getHexString())&&!(o.geometry.type==='CylinderGeometry'&&Math.abs(o.position.y-.48)<1e-6&&o.geometry.parameters.height===.28)))});
   const {object,sections}=preview,materials=createEngineeringMaterials(),b=createDetailBuilder(),nodes=[],added=[];
   const privateGeometries=new Set();
+  if(id==='battery'){
+    // Existing stitched edge tubes were centred inside the .17-deep webbing
+    // faces. Seat them tangent to those faces instead of letting draw order
+    // decide which coincident fragments appear. Never change source buffers.
+    for(const source of getPartSourceMeshes(group))if(source.geometry.type==='TubeGeometry'&&source.geometry.parameters.radius===.0038){
+      source.geometry.computeBoundingBox();const z=source.geometry.boundingBox.getCenter(new THREE.Vector3()).z,strap=[-.6,.43].find(at=>Math.abs(Math.abs(z-at)-.083)<1e-5);if(strap===undefined)continue;
+      object.traverse(o=>{if(!o.isMesh||o.geometry.attributes.position!==source.geometry.attributes.position)return;const geometry=o.geometry.clone();geometry.translate(0,0,Math.sign(z-strap)*(.085+.0038-.083));privateGeometries.add(geometry);o.geometry=geometry;});
+    }
+  }
   if(id==='becfc')for(const [key,delta]of [['board',-.041],['devices',-.041],['connector',-.0485]])for(const child of sections.get(key)?.children||[]){if(child.isInstancedMesh){for(let i=0;i<child.count;i++)child.instanceMatrix.array[i*16+13]+=delta;child.instanceMatrix.needsUpdate=true;child.computeBoundingBox();child.computeBoundingSphere();}else{child.position.y+=delta;child.updateMatrix();}}
   if(id==='pi'){
     let lead;const matrix=new THREE.Matrix4(),p=new THREE.Vector3(),q=new THREE.Quaternion(),scale=new THREE.Vector3();
@@ -126,15 +136,31 @@ export function createEngineeringAssembly(group) {
   b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
   const retired=[];
   const interior=addInteriorGeometry({id,group,object,sections,detail,materials,privateGeometries,retired});
+  if(id==='esc'){
+    // The existing ESC shell is mounted diagonally along the arm. Newly
+    // reconstructed PCB/supports used world axes and poked through its wall.
+    // Rotate only authored internals about the shell centre, never the source
+    // exterior or the assembly's world-space explosion offsets.
+    const shell=getPartSourceMeshes(group).find(o=>o.geometry.type==='RoundedBoxGeometry'&&Math.abs(o.geometry.parameters.width-.46)<1e-6&&Math.abs(o.position.x-1.45)<1e-6&&Math.abs(o.position.z-1.45)<1e-6);
+    if(shell&&Math.abs(shell.rotation.y)>1e-8){
+      for(const [key,section]of sections){const children=section.children.filter(o=>o.isGroup&&o.userData.leaf&&!o.userData.leaf.endsWith('/exterior'));if(!children.length)continue;
+        const owner=new THREE.Group();owner.name='Внутренние детали в системе корпуса ESC';owner.userData={part:id,section:key};
+        // Leave room for the existing .08-high illustrative header under the
+        // shell roof. Its slight board-edge overhang also needs an inward seat.
+        const dy=shell.position.y+shell.geometry.parameters.height/2-.09-.509;
+        owner.applyMatrix4(new THREE.Matrix4().makeTranslation(shell.position.x,dy,shell.position.z).multiply(new THREE.Matrix4().makeRotationY(shell.rotation.y)).multiply(new THREE.Matrix4().makeTranslation(-shell.position.x,0,-shell.position.z+(key==='connector'?.014:0))));
+        for(const child of children)owner.add(child);section.add(owner);
+      }
+    }
+  }
   const borrowed=new Set(getPartSourceMeshes(group).map(o=>o.geometry.attributes.position)),indexed=new Map();
   object.traverse(o=>{if(!o.isMesh||o.geometry.index||borrowed.has(o.geometry.attributes.position))return;const source=o.geometry;if(!indexed.has(source)){const result=indexStudyGeometry(source);indexed.set(source,result);if(result!==source){privateGeometries.delete(source);privateGeometries.add(result);source.dispose();}}o.geometry=indexed.get(source);});
   indexed.clear();
   for(const section of sections.values())for(const child of [...section.children])if(child.isGroup&&!child.children.length)child.removeFromParent();
   // A replaced proxy must disappear from the tree as well as the scene.
   for(let i=nodes.length-1;i>=0;i--){let present=false;object.traverse(o=>{if(o.userData.leaf===nodes[i].id&&o.children?.length)present=true;});if(!present)nodes.splice(i,1);}
-  // A selected leaf must not recolour a neighbour using the same source material.
-  const leafMaterials=new Map();object.traverse(o=>{if(!o.isMesh)return;const key=o.userData.leaf+':'+o.material.uuid;if(!leafMaterials.has(key))leafMaterials.set(key,o.material.clone());o.material=leafMaterials.get(key);});
   const renderBatches=compactStudyMeshes(object);
+  const materialPool=createStudyMaterialPool(object);
   const extraMeshes=[...retired,...renderBatches.created];for(const parent of added)parent.traverse(o=>{if(o.isMesh)extraMeshes.push(o);});
   const states=[...sections].map(([key,section])=>({key,section,offset:new THREE.Vector3(...catalog.sections.find(s=>s.id===key).offset)}));
   const motion={value:0,velocity:0};let selected=null,isolated=false;
@@ -156,8 +182,8 @@ export function createEngineeringAssembly(group) {
     const chosen=parse(key);
     for(const entry of instances.values()){entry.object.count=entry.count;entry.object.instanceMatrix.array.set(entry.matrix);entry.object.instanceMatrix.needsUpdate=true;if(entry.object.instanceColor){entry.object.instanceColor.array.fill(1);entry.object.instanceColor.needsUpdate=true;}}
     const inLeaf=o=>{while(o&&o!==object){if(o.userData.leaf===chosen.leaf)return true;o=o.parent;}return false;};
-    object.traverse(o=>{if(!o.isMesh)return;const section=o.userData.section||o.parent.userData.section,match=key===section||(inLeaf(o)&&(!chosen.instance||chosen.instance.object===o));const material=o.material;
-      material.emissive?.set(match?'#46715a':'#000000');material.emissiveIntensity=match&&!chosen.instance?.22:0;
+    object.traverse(o=>{if(!o.isMesh)return;const section=o.userData.section||o.parent.userData.section,match=key===section||(inLeaf(o)&&(!chosen.instance||chosen.instance.object===o));
+      materialPool.setHighlighted(o,match&&!chosen.instance);
     });
     for(const {key:sectionId,section}of states){
       const visit=(o,inherited=false)=>{const match=inherited||key===sectionId||chosen.leaf===o.userData.leaf;let childMatch=false;for(const c of o.children)childMatch=visit(c,match)||childMatch;const own=o.isMesh?(chosen.instance?o===chosen.instance.object:match):match;const visible=own||childMatch;o.visible=!only||!key||visible;return visible;};visit(section);
@@ -170,8 +196,8 @@ export function createEngineeringAssembly(group) {
     const chosen=parse(selected);if(chosen.instance){const node=chosen.instance.object,matrix=new THREE.Matrix4().fromArray(chosen.instance.matrix,chosen.index*16).premultiply(node.matrixWorld);node.geometry.computeBoundingBox();return {node,sphere:node.geometry.boundingBox.clone().applyMatrix4(matrix).getBoundingSphere(new THREE.Sphere())};}
     let node;object.traverse(o=>{if(!node&&(o.userData.leaf===selected||o.userData.section===selected))node=o;});return node?{node,sphere:new THREE.Box3().setFromObject(node).getBoundingSphere(new THREE.Sphere())}:null;
   }
-  return {object,sphere,catalog,nodes,select,pick,selectionBounds,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
+  return {object,sphere,catalog,nodes,select,pick,selectionBounds,detail60:interior.refinement60,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
     update(dt,opened,reduced=false){const changed=springTo(motion,opened?1:0,Math.min(dt,.05),12,reduced);if(changed)place(motion.value);return changed;},
-    dispose(){renderBatches.dispose();preview.dispose();disposeSceneResources(new THREE.Group(),extraMeshes);privateGeometries.forEach(g=>g.dispose());leafMaterials.forEach(m=>m.dispose());Object.values(materials).forEach(m=>m.dispose());}
+    dispose(){renderBatches.dispose();preview.dispose();disposeSceneResources(new THREE.Group(),extraMeshes);privateGeometries.forEach(g=>g.dispose());materialPool.dispose();Object.values(materials).forEach(m=>m.dispose());}
   };
 }

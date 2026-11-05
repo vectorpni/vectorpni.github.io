@@ -29,7 +29,9 @@ export default function EngineeringInspector({group}) {
       frame=null;if(dead||contextLost||document.hidden)return;
       const dt=Math.min((now-last)/1000,.05);last=now;let active=assembly.update(dt,targetOpen,motion.matches);
       if(cameraMove){if(cameraMove.focus){const {node,localCenter,direction,distance}=cameraMove.focus;trackedCenter.copy(localCenter);node.localToWorld(trackedCenter);for(const axis of ['x','y','z']){cameraMove.goal['t'+axis]=trackedCenter[axis];cameraMove.goal['p'+axis]=trackedCenter[axis]+direction[axis]*distance;}}let moving=false;for(const [key,state]of Object.entries(cameraMove.states)){moving=springTo(state,cameraMove.goal[key],dt,12,motion.matches)||moving;if(key[0]==='p')camera.position[key[1]]=state.value;else control.target[key[1]]=state.value;}if(!moving&&!active){control.minDistance=cameraMove.minimum;cameraMove=null;}active=active||moving;}
-      control.update();if(dirty||active){scene.updateMatrixWorld(true);renderer.render(scene,camera);dirty=false;if(firstFrame){firstFrame=false;setReady(true);}}
+      // WebGLRenderer updates scene matrices before drawing. A forced traversal
+      // here repeated the same work for every static mesh on every orbit frame.
+      control.update();if(dirty||active){renderer.render(scene,camera);dirty=false;if(firstFrame){firstFrame=false;setReady(true);}}
       if(active&&frame===null)frame=requestAnimationFrame(tick);
     }
     function moveCamera(position,target,minimum=control.minDistance) {

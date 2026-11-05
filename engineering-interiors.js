@@ -3,6 +3,9 @@ import {createDetailBuilder} from './detail-primitives.js';
 import {createPanelGeometry,createBoardGeometry,createLensElementGeometry,createOpenSocketGeometry,createCoreWindingGeometry,removeCollapsedFaces,createSplitCollarHalfGeometry,createBearingRaceGeometry} from './interior-geometry.js';
 import {getPartSourceMeshes} from './viewer-instancing.js';
 import {indexStudyGeometry} from './engineering-indexing.js';
+import {addCameraBatteryRefinement} from './detail60-camera-battery.js';
+import {addMechanicalRefinement} from './detail60-mechanical.js';
+import {addElectronicsRefinement} from './detail60-electronics.js';
 
 // 5.1 construction studies. Every new leaf explicitly says that its layout is
 // illustrative. These objects never enter the main AF-18 or its source buffers.
@@ -79,9 +82,9 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
     const body=leaf('housing','open-case51','Полый корпус камеры — условно','Четыре стенки, передняя плита с отверстием и задняя крышка. Толщина и расположение крепежа иллюстративны.');
     const sensorMounts=[-.175,.175].flatMap(x=>[-.105,.105].map(y=>[x,y,.006]));
     for(const sign of [-1,1]){b.box(body,m.dark,[sign*.272,-1.25,.2],[.016,.4,.45]);b.box(body,m.dark,[0,-1.25+sign*.192,.1895],[.528,.016,.429]);}panel(body,m.dark,[0,-1.25,.411],.528,.4,.016,[[0,0,.191],...sensorMounts]);
-    const back=motion(leaf('housing','back51','Задняя крышка','Крышка с четырьмя согласованными винтами отделяется назад, освобождая условный электронный модуль.'),[0,0,-.30],.2,1);panel(back,m.dark,[0,-1.25,-.025],.56,.4,.014,[[-.21,-.14,.012],[.21,-.14,.012],[-.21,.14,.012],[.21,.14,.012]]);
+    const back=motion(leaf('housing','back51','Задняя крышка','Крышка с четырьмя согласованными винтами отделяется назад, освобождая условный электронный модуль.'),[0,0,-.40],.2,1);panel(back,m.dark,[0,-1.25,-.025],.56,.4,.014,[[-.21,-.14,.012],[.21,-.14,.012],[-.21,.14,.012],[.21,.14,.012]]);
     for(const x of [-.21,.21])for(const y of [-1.39,-1.11]){b.sleeve(body,m.dark,[x,y,.012],.024,.011,.06,[Math.PI/2,0,0]);b.rod(back,m.metal,[x,y,-.043],[x,y,.021],.009);b.socket(back,m.metal,[x,y,-.052],.019,[-Math.PI/2,0,0]);}
-    const sensor=motion(leaf('housing','sensor51','Условный сенсорный модуль','Плата, корпус сенсора, защитное окно и шлейф показывают общий принцип цифровой камеры. Марка, размер сенсора и реальная компоновка AF-18 неизвестны.'),[0,0,-.14],.45,1);
+    const sensor=motion(leaf('housing','sensor51','Условный сенсорный модуль','Плата, корпус сенсора, защитное окно и шлейф показывают общий принцип цифровой камеры. Марка, размер сенсора и реальная компоновка AF-18 неизвестны.'),[0,0,-.46],.45,1);
     const sensorBoard=createPanelGeometry(.42,.29,.018,[[-.175,-.105,.012],[.175,-.105,.012],[-.175,.105,.012],[.175,.105,.012]]);b.add(sensor,m.pcb,sensorBoard,[0,-1.25,.29]);sensorBoard.dispose();
     b.box(sensor,m.dark,[0,-1.25,.311],[.17,.15,.024]);panel(sensor,m.metal,[0,-1.25,.327],.19,.17,.008,[[0,0,.064]]);b.box(sensor,m.glass,[0,-1.25,.325],[.11,.085,.004]);
     for(const sign of [-1,1]){b.box(sensor,m.contact,[sign*.13,-1.25,.302],[.035,.20,.003]);for(let k=0;k<5;k++)b.box(sensor,m.ceramic,[sign*.13,-1.33+k*.04,.311],[.026,.017,.015]);}
@@ -90,8 +93,9 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
     // Their axes match both the sensor PCB bores and the front plate bores.
     for(const x of [-.175,.175])for(const y of [-1.355,-1.145]){b.sleeve(sensor,m.dark,[x,y,.352],.012,.006,.106,[Math.PI/2,0,0]);b.rod(sensor,m.metal,[x,y,.271],[x,y,.409],.005);b.socket(sensor,m.metal,[x,y,.266],.012,[-Math.PI/2,0,0]);}
     // Existing solid barrel hides everything: replace only its cylindrical wall.
-    remove('optics',o=>{const s=shellSize(o);return s.x>.37&&s.x<.39&&s.z>.14&&s.z<.16;});
-    const barrel=leaf('optics','barrel51','Открытый оптический канал','Полая оправка и разнесённые посадочные кольца. Это не восстановленная многолинзовая схема.');b.sleeve(barrel,m.dark,[0,-1.25,.48],.19,.133,.15,[Math.PI/2,0,0],128);for(const z of [.423,.465,.515])b.sleeve(barrel,m.dark,[0,-1.25,z],.132,.091,.009,[Math.PI/2,0,0],96);
+    let barrelMaterial;
+    remove('optics',o=>{if(o.isInstancedMesh)return false;o.updateMatrix();o.geometry.computeBoundingBox();const bounds=o.geometry.boundingBox.clone().applyMatrix4(o.matrix),s=bounds.getSize(new T.Vector3()),c=bounds.getCenter(new T.Vector3());const match=Math.abs(s.x-.38)<1e-5&&Math.abs(s.z-.15)<1e-5&&Math.abs(c.y+1.25)<1e-5&&Math.abs(c.z-.48)<1e-5;if(match)barrelMaterial=o.material;return match;});
+    const barrel=leaf('optics','barrel51','Открытый оптический канал','Полая оправка и разнесённые посадочные кольца. Это не восстановленная многолинзовая схема.');b.sleeve(barrel,barrelMaterial||m.dark,[0,-1.25,.48],.19,.133,.15,[Math.PI/2,0,0],128);for(const z of [.423,.465,.515])b.sleeve(barrel,m.dark,[0,-1.25,z],.132,.091,.009,[Math.PI/2,0,0],96);
     const lens=motion(leaf('optics','element51','Учебный оптический элемент','Один выпуклый элемент иллюстрирует форму оптической поверхности. Число линз, фокусное расстояние и схема настоящей камеры не известны.'),[0,0,.16],.55,1);const g=createLensElementGeometry();b.add(lens,m.glass,g,[0,-1.25,.49]);g.dispose();
     const pivot=leaf('mounts','bushings51','Посадки осей подвеса','Соосные втулки, упорные кольца и винты на существующих боковых осях; приводы стабилизации не выдуманы.');for(const sign of [-1,1]){b.sleeve(pivot,m.rubber,[sign*.32,-1.25,.2],.076,.037,.014,[0,0,Math.PI/2]);b.socket(pivot,m.metal,[sign*.36,-1.25,.2],.029,[0,0,-sign*Math.PI/2]);}
   }else if(['fc','pi','power','becpi','becfc','esc'].includes(id)){
@@ -191,10 +195,16 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
     const strain=leaf('loom','boots51','Рёбра локальной разгрузки','Рифлёные наконечники повторяют существующие концы. Они не соединяют расходящиеся подузлы.');for(const z of [.5,-1.28])for(let k=0;k<4;k++)b.sleeve(strain,m.rubber,[-.55,.65,z+k*.014],.035-k*.002,.026,.006,[Math.PI/2,0,0]);
     const mounts=leaf('mounts','locks51','Замки кабельных фиксаторов','Существующие фиксаторы дополнены замками и короткими язычками без вымышленных трасс кабелей.');for(const x of [-1,1])for(const z of [-1,1])for(const t of [.9,1.2,1.7]){b.box(mounts,m.dark,[x*t,.51,z*t],[.04,.018,.07]);b.box(mounts,m.rubber,[x*t,.525,z*t+.035],[.022,.01,.05]);}
   }
+  // Flush prior construction first so 6.0 can replace real owned geometry,
+  // rather than layering new objects over unfinished solid proxies.
+  b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
+  const context60={id,group,object,sections,b,m,leaf,panel,board,motion,own,remove,meshes,privateGeometries};
+  const refinements=[addMechanicalRefinement(context60),addElectronicsRefinement(context60),addCameraBatteryRefinement(context60)];
+  const refinement60={pieces:refinements.reduce((n,r)=>n+r.pieces,0),features:refinements.flatMap(r=>r.features),sections:[...new Set(refinements.flatMap(r=>r.sections))],conditional:true};
   b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
   for(const g of spheres.values())g.dispose();
   // Nested children use the owning leaf's metadata. Avoid accidental selection
   // of an invisible object from a different section during isolation.
   for(const p of created)p.traverse(o=>{if(o.isMesh){let parent=o.parent;while(parent&&!parent.userData.leaf)parent=parent.parent;o.userData={...o.userData,part:id,section:p.userData.section,leaf:parent?.userData.leaf||p.userData.leaf};}});
-  return {created,replacements,changed:Object.fromEntries(changed),pieces:created.reduce((n,p)=>n+(p.userData.modeledPieces||0),0)};
+  return {created,replacements,changed:Object.fromEntries(changed),pieces:created.reduce((n,p)=>n+(p.userData.modeledPieces||0),0),refinement60};
 }
