@@ -29,7 +29,6 @@ export function addElectronicsRefinement(ctx){
     }
     const packages=find('devices/packages51');
     if(packages&&!id.startsWith('bec')){
-      remove('devices',o=>o.parent===packages);
       const ww=small*.115,dd=small*.10,z=cz-d*.08;
       const lead=createGullwingLeadGeometry(Math.min(.009,ww*.14),.018);lead.scale(1,1,dd/.06);
       for(let i=0;i<(id==='pi'?2:3);i++){
@@ -56,7 +55,7 @@ export function addElectronicsRefinement(ctx){
       note('devices','У существующих условных цилиндрических корпусов появились изолирующие основания, парные выводы с площадками и разделённые торцы. Восемь инстансированных витков преобразователя сохранены.');
     }
     if(id==='fc'){
-      const qfp=find('devices/qfp51');if(qfp){remove('devices',o=>o.parent===qfp&&o.material===m.dark);rounded(qfp,m.dark,[0,.3875,.2],[.22,.055,.22],.003);}
+      const qfp=find('devices/qfp51');if(qfp)rounded(qfp,m.dark,[0,.3875,.2],[.22,.055,.22],.003);
     }
     const mounts=find('cover/mounts51');
     if(mounts){for(const sx of [-1,1])for(const sz of [-1,1]){const x=cx+sx*w*.42,z=cz+(id==='pi'&&sz<0?-.64:sz*d*.38),r=id==='pi'?.018:id==='fc'?.022:.010;b.sleeve(mounts,m.metal,[x,top-.0605,z],r*1.45,r*.75,.005,undefined,16);b.sleeve(mounts,m.metal,[x,top-.0685,z],r*1.20,r*.75,.011,undefined,6);}
@@ -95,7 +94,6 @@ export function addElectronicsRefinement(ctx){
     note('board','Корпуса с двумя различимыми окончаниями и посадочными площадками по краям исходной платы; новая RF-топология не создавалась.');
   }else if(id==='cooling'){
     const duct=find('housing/duct51');if(duct){
-      remove('housing',o=>o.parent===duct);
       for(const x of [-.603,.603])b.box(duct,m.metal,[x,-.625,.08],[.014,.55,1.45]);b.box(duct,m.metal,[0,-.893,.08],[1.192,.014,1.45]);
       panel(duct,m.metal,[0,-.65,.798],1.192,.70,.014,[[0,0,.335],...[-.48,.48].flatMap(x=>[-.15,.17].map(y=>[x,y,.0115]))]);panel(duct,m.metal,[0,-.625,-.638],1.192,.55,.014);
       const pins=leaf('housing','front-fasteners60','Сквозные посадки передней панели','Четыре отверстия в панели, стержни и внутренние ответные шайбы согласованы с прежними наружными головками. Монтажный стандарт и реальный кожух неизвестны.');

@@ -20,7 +20,6 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
   const meshes=section=>{const list=[];sections.get(section)?.traverse(o=>{if(o.isMesh)list.push(o);});return list;};
   const remove=(section,test)=>{for(const o of meshes(section))if(test(o)){o.removeFromParent();retired.push(o);replacements.push({section,name:o.name||'source surface'});}};
   const panel=(p,mat,at,w,h,t,holes=[],rot)=>{const g=createPanelGeometry(w,h,t,holes);b.add(p,mat,g,at,rot);g.dispose();};
-  const board=(p,at,w,d,h,holes=[])=>{const g=createBoardGeometry(w,d,h,holes);b.add(p,m.pcb,g,at);g.dispose();};
   const sphere=(p,mat,at,r)=>{if(!spheres.has(r))spheres.set(r,new T.SphereGeometry(r,12,8));b.add(p,mat,spheres.get(r),at);};
   const motion=(p,offset,start=.4,end=1)=>{p.userData.openOffset=offset;p.userData.openRange=[start,end];return p;};
   function tray(p,mat,c,w,h,d,t=.014){
@@ -117,19 +116,15 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
     // the existing MCU and upper SMD rows. A rotation preserves handedness.
     packages.rotation.x=Math.PI;packages.position.set(0,2*top-.018,2*cz);
     motion(packages,[w*1.25,0,0],0,.33);
-    const size=Math.min(w,d),z=cz-d*.08;
+    const size=Math.min(w,d);
     if(id==='becpi'||id==='becfc'){
       // Teaching a converter's mechanical parts, not asserting its topology.
       const ox=cx,oz=cz+.015,r=size*.19;b.sleeve(packages,m.dark,[ox,top+.026,oz],r,r*.55,.032,undefined,64);b.sleeve(packages,m.metal,[ox,top+.009,oz],r*1.08,r*.55,.008,undefined,64);
       const winding=createCoreWindingGeometry(r*.55,r,.032),mid=r*.775;for(let i=0;i<8;i++){const a=i*Math.PI/4;b.add(packages,m.copper,winding,[ox+Math.cos(a)*mid,top+.026,oz+Math.sin(a)*mid],[0,-a,0]);}winding.dispose();
       for(const side of [-1,1]){b.cylinder(packages,m.metal,[cx+side*w*.27,top+.023,cz-d*.12],.015,.040,undefined,12);b.ring(packages,m.dark,[cx+side*w*.27,top+.044,cz-d*.12],.011,.002);}
-    }else{
-      for(let i=0;i<(id==='pi'?2:3);i++){
-        const x=cx+(i-1)*w*.18,px=id==='pi'?cx-w*.35+i*w*.2:x,ww=size*.115,dd=size*.10;
-        b.box(packages,m.dark,[px,top+.016,z],[ww,.028,dd]);b.box(packages,m.metal,[px,top+.031,z],[ww*.8,.003,dd*.8]);
-        for(const side of [-1,1])for(let j=0;j<4;j++){const xx=px+(j-1.5)*ww*.21;b.box(packages,m.contact,[xx,top+.001,z+side*dd*.58],[ww*.15,.002,dd*.22]);b.rod(packages,m.metal,[xx,top+.002,z+side*dd*.58],[xx,top+.018,z+side*dd*.45],ww*.045);}
-      }
     }
+    // Other packages are built directly by the refinement below. Keep their
+    // selectable/moving owner, without constructing superseded solid proxies.
     if(id!=='pi'){
       const contacts=leaf('connector','tails51','Корни контактов и фиксаторы','Отдельные посадочные площадки под имеющейся колодкой, боковые зацепы и локальные окончания. Порядок и функции контактов неизвестны.');
       for(let i=0;i<6;i++)b.box(contacts,m.contact,[cx+(i-2.5)*w*.09,top+.001,cz-d*.43],[.012,.002,.033]);for(const side of [-1,1])b.box(contacts,m.dark,[cx+side*w*.31,top+.025,cz-d*.43],[.018,.035,.025]);
@@ -158,7 +153,7 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
     }
     if(id==='fc'){
       remove('devices',o=>{const s=shellSize(o);return Math.abs(s.x-.22)<.001&&Math.abs(s.z-.22)<.001&&Math.abs(s.y-.04)<.001||Math.abs(s.x-.20)<.001&&Math.abs(s.z-.20)<.001&&Math.abs(s.y-.035)<.001;});
-      const qfp=leaf('devices','qfp51','Единый корпус контроллера','Два взаимно пересекавшихся сплошных объёма заменены одним корпусом с посадкой на существующие выводы. Маркировка и точный корпус неизвестной ревизии не заявляются.');b.box(qfp,m.dark,[0,.3875,.2],[.22,.055,.22]);b.cylinder(qfp,m.rubber,[-.078,.4155,.122],.009,.001,undefined,12);
+      const qfp=leaf('devices','qfp51','Единый корпус контроллера','Два взаимно пересекавшихся сплошных объёма заменены одним корпусом с посадкой на существующие выводы. Маркировка и точный корпус неизвестной ревизии не заявляются.');b.cylinder(qfp,m.rubber,[-.078,.4155,.122],.009,.001,undefined,12);
       const ports=leaf('connector','interfaces51','Интерфейсы семейства H743-SLIM','USB-C и держатель microSD показаны по официальному примеру H743-SLIM-V4. Ревизия платы AF-18 неизвестна; позиции и крепёж условны.');
       const socket=createOpenSocketGeometry(.13,.055,.14,.008);b.add(ports,m.metal,socket,[0,.312,.49]);socket.dispose();b.box(ports,m.dark,[0,.309,.52],[.095,.008,.10]);
       b.box(ports,m.metal,[-.10,.319,-.045],[.18,.008,.17]);for(const side of [-1,1])b.box(ports,m.metal,[-.10+side*.09,.328,-.045],[.009,.018,.17]);b.box(ports,m.dark,[-.10,.336,-.045],[.16,.006,.10]);
@@ -184,7 +179,7 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
   }else if(id==='cooling'){
     remove('housing',o=>{const s=shellSize(o);return s.x>1.2&&s.x<1.24&&s.y>.5&&s.y<.54&&s.z>1.4;});
     const duct=leaf('housing','duct51','Полый кожух и воздуховод','Пустой внешний блок заменён стенками и отверстием вентилятора. Это условная механическая компоновка, без теплового расчёта.');
-    for(const x of [-.603,.603])b.box(duct,m.metal,[x,-.625,.08],[.014,.55,1.45]);b.box(duct,m.metal,[0,-.893,.08],[1.192,.014,1.45]);panel(duct,m.metal,[0,-.65,.798],1.192,.70,.014,[[0,0,.335]]);panel(duct,m.metal,[0,-.625,-.638],1.192,.55,.014);
+    // The perforated duct is built directly in the refinement pass.
     const base=leaf('heatsink','base51','Основание радиатора и термопрокладка','Рёбра соединены общей подошвой, под ней показан условный термоинтерфейс. Точная зона контакта неизвестна.');b.box(base,m.metal,[0,-.416,.05],[1.04,.012,.87]);b.box(base,m.rubber,[0,-.427,.05],[.35,.010,.35]);
     const hub=leaf('fan','hub51','Ступица и задние опоры','Локальная осевая втулка и три радиальные опоры существующего вентилятора. Мотор и схема питания не утверждаются.');for(let i=0;i<3;i++){const a=i*Math.PI*2/3;b.rod(hub,m.dark,[Math.cos(a)*.075,-.65+Math.sin(a)*.075,.772],[Math.cos(a)*.31,-.65+Math.sin(a)*.31,.772],.009);}b.sleeve(hub,m.dark,[0,-.65,.77],.075,.033,.022,[Math.PI/2,0,0]);
     remove('fan',o=>{const s=shellSize(o);return s.x>.67&&s.x<.69&&s.z>.67&&s.z<.69&&s.y<.04;});b.sleeve(hub,m.dark,[0,-.65,.814],.34,.31,.035,[Math.PI/2,0,0]);b.cylinder(hub,m.dark,[0,-.65,.814],.075,.035,[Math.PI/2,0,0]);
@@ -198,7 +193,7 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
   // Flush prior construction first so 6.0 can replace real owned geometry,
   // rather than layering new objects over unfinished solid proxies.
   b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
-  const context60={id,group,object,sections,b,m,leaf,panel,board,motion,own,remove,meshes,privateGeometries};
+  const context60={id,group,object,sections,b,m,leaf,panel,motion,own,remove,meshes,privateGeometries};
   const refinements=[addMechanicalRefinement(context60),addElectronicsRefinement(context60),addCameraBatteryRefinement(context60)];
   const refinement60={pieces:refinements.reduce((n,r)=>n+r.pieces,0),features:refinements.flatMap(r=>r.features),sections:[...new Set(refinements.flatMap(r=>r.sections))],conditional:true};
   b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});

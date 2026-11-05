@@ -1,21 +1,12 @@
 ﻿import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {createStudyMaterialKey} from './study-material-key.js';
 
 // Consolidate only within one selectable leaf and one transform owner. This
 // needs no duplicate render tree, per-frame rebaking or selection fallback.
 // Original instances and independently animated parts retain their draws.
-export function compactStudyMeshes(root) {
-  const buckets=new Map(),created=[],signatures=new Map();
-  const signature=m=>{
-    if(signatures.has(m))return signatures.get(m);
-    // Compare texture identities, never serialise their pixel data to PNG/JSON
-    // just to compare materials during construction.
-    const meta={textures:{},images:{}};for(const value of Object.values(m))if(value?.isTexture)meta.textures[value.uuid]={uuid:value.uuid};
-    const json=m.toJSON(meta);delete json.uuid;delete json.name;delete json.metadata;delete json.userData;
-    for(const [key,value]of Object.entries(m))if(value?.isColor)json[key]=value.toArray();
-    if(m.emissive?.getHex()===0)delete json.emissiveIntensity;
-    const result=JSON.stringify(json);signatures.set(m,result);return result;
-  };
+export function compactStudyMeshes(root,{materialKey:signature=createStudyMaterialKey()}={}) {
+  const buckets=new Map(),created=[];
   root.traverse(o=>{
     if(!o.isMesh||o.isInstancedMesh||Array.isArray(o.material)||o.isSkinnedMesh||o.morphTargetInfluences)return;
     const m=o.material,g=o.geometry;o.updateMatrix();
@@ -39,6 +30,6 @@ export function compactStudyMeshes(root) {
     // replaced wrappers now and don't retain a second copy of their CPU arrays.
     for(const o of objects){o.removeFromParent();o.geometry.dispose();}parent.add(mesh);created.push(mesh);savedCalls+=objects.length-1;
   }
-  buckets.clear();signatures.clear();
+  buckets.clear();
   return {created,savedCalls,dispose(){for(const mesh of created)mesh.geometry.dispose();}};
 }

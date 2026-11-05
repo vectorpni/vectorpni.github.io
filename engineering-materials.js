@@ -1,18 +1,11 @@
 import * as THREE from 'three';
+import {createStudyMaterialKey} from './study-material-key.js';
 
 // Immutable ordinary surfaces can be shared across selectable leaves. A
 // highlight is a separate variant, so selecting one leaf never tints another.
 // Texture objects remain owned by the preview; this pool owns materials only.
-export function createStudyMaterialPool(root) {
-  const signatures=new WeakMap(),ordinary=new Map(),highlighted=new Map(),surfaces=new WeakMap();
-  const signature=m=>{
-    if(signatures.has(m))return signatures.get(m);
-    const meta={textures:{},images:{}};for(const value of Object.values(m))if(value?.isTexture)meta.textures[value.uuid]={uuid:value.uuid};
-    const json=m.toJSON(meta);delete json.uuid;delete json.name;delete json.metadata;delete json.userData;
-    for(const [key,value]of Object.entries(m))if(value?.isColor)json[key]=value.toArray();
-    if(m.emissive?.getHex()===0)delete json.emissiveIntensity;
-    const key=JSON.stringify(json);signatures.set(m,key);return key;
-  };
+export function createStudyMaterialPool(root,{materialKey:signature=createStudyMaterialKey()}={}) {
+  const ordinary=new Map(),highlighted=new Map(),surfaces=new WeakMap();
   root.traverse(object=>{
     if(!object.isMesh||Array.isArray(object.material))return;
     const source=object.material;

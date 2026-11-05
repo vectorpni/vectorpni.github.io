@@ -1,22 +1,30 @@
 ﻿import * as THREE from 'three';
 const sourceMeshes = new WeakMap();
+// Only the completed main model opts in. Preview wrappers share these immutable
+// CPU attributes, never GPU handles. Weak keys let an unmounted model go away.
+const immutableGeometryKeys=new WeakMap();
 export const getPartSourceMeshes = group => sourceMeshes.get(group) || group.children;
 
 // Compare actual vertex data, not constructor names: custom airfoils stay distinct.
-function geometryKey(geometry) {
+function geometryKey(geometry,remember=false) {
   let hash = 2166136261;
   const attributes = [...Object.entries(geometry.attributes).sort(([a], [b]) => a.localeCompare(b)), ['index', geometry.index]].filter(([, a]) => a);
+  const position=geometry.attributes.position,cached=immutableGeometryKeys.get(position),topology=JSON.stringify([geometry.groups,geometry.drawRange]);
+  if(cached&&cached.topology===topology&&cached.attributes.length===attributes.length&&attributes.every(([name,a],i)=>{const old=cached.attributes[i];return old.name===name&&old.attribute===a&&old.version===a.version&&old.array===a.array&&old.itemSize===a.itemSize&&old.normalized===a.normalized&&old.count===a.count;}))return cached.key;
   const layout = attributes.map(([name, a]) => {
     const bytes = new Uint8Array(a.array.buffer, a.array.byteOffset, a.array.byteLength);
     for (let i = 0; i < bytes.length; i++) hash = Math.imul(hash ^ bytes[i], 16777619);
     return [name, a.itemSize, a.normalized, a.array.constructor.name, a.count];
   });
-  return JSON.stringify([layout, geometry.groups, geometry.drawRange, hash >>> 0]);
+  const key=JSON.stringify([layout, geometry.groups, geometry.drawRange, hash >>> 0]);
+  if(position&&(remember||cached))immutableGeometryKeys.set(position,{key,topology,attributes:attributes.map(([name,a])=>({name,attribute:a,version:a.version,array:a.array,itemSize:a.itemSize,normalized:a.normalized,count:a.count}))});
+  return key;
 }
 function sameGeometry(a, b) {
   for (const key of [...Object.keys(a.attributes), 'index']) {
     const x = key === 'index' ? a.index : a.attributes[key], y = key === 'index' ? b.index : b.attributes[key];
     if (!x || !y) { if (x !== y) return false; else continue; }
+    if(x===y)continue;
     const left = new Uint8Array(x.array.buffer, x.array.byteOffset, x.array.byteLength), right = new Uint8Array(y.array.buffer, y.array.byteOffset, y.array.byteLength);
     if (left.length !== right.length) return false;
     for (let i = 0; i < left.length; i++) if (left[i] !== right[i]) return false;
@@ -34,13 +42,13 @@ function materialKey(material) {
   return JSON.stringify(fields);
 }
 
-export function instancePartMeshes(groups, meshes, {disposeDeduplicatedGeometry=true}={}) {
-  const canonicalGeometry = new WeakMap(), geometryBuckets = new Map();
+export function instancePartMeshes(groups, meshes, {disposeDeduplicatedGeometry=true,cacheImmutableGeometry=false}={}) {
+  const canonicalGeometry = new WeakMap(), geometryBuckets = new Map(),materialKeys=new WeakMap();
   const rendered = [];
   const intern = geometry => {
     if (canonicalGeometry.has(geometry)) return canonicalGeometry.get(geometry);
     if (Object.keys(geometry.morphAttributes).length || Object.values(geometry.attributes).some(a => a.isInterleavedBufferAttribute)) return geometry;
-    const key = geometryKey(geometry), bucket = geometryBuckets.get(key) || [];
+    const key = geometryKey(geometry,cacheImmutableGeometry), bucket = geometryBuckets.get(key) || [];
     const existing = bucket.find(other => sameGeometry(other, geometry));
     if (existing) { canonicalGeometry.set(geometry, existing); if(disposeDeduplicatedGeometry)geometry.dispose(); return existing; }
     bucket.push(geometry); geometryBuckets.set(key, bucket); canonicalGeometry.set(geometry, geometry); return geometry;
@@ -51,7 +59,8 @@ export function instancePartMeshes(groups, meshes, {disposeDeduplicatedGeometry=
     for (const mesh of originals) {
       if (!mesh.isMesh || Array.isArray(mesh.material) || !mesh.material.isMeshStandardMaterial || mesh.material.onBeforeCompile !== THREE.Material.prototype.onBeforeCompile) { rendered.push(mesh); continue; }
       mesh.geometry = intern(mesh.geometry);
-      const signature = materialKey(mesh.material), shared = materials.get(signature);
+      if(!materialKeys.has(mesh.material))materialKeys.set(mesh.material,materialKey(mesh.material));
+      const signature = materialKeys.get(mesh.material), shared = materials.get(signature);
       if (shared) { if (shared !== mesh.material) mesh.material.dispose(); mesh.material = shared; }
       else materials.set(signature, mesh.material);
       mesh.updateMatrix(); mesh.matrixAutoUpdate = false;

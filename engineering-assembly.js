@@ -11,6 +11,7 @@ import {addInteriorGeometry} from './engineering-interiors.js';
 import {compactStudyMeshes} from './engineering-batches.js';
 import {indexStudyGeometry} from './engineering-indexing.js';
 import {createStudyMaterialPool} from './engineering-materials.js';
+import {createStudyMaterialKey} from './study-material-key.js';
 
 // This module is fetched only when the visitor opens a node's construction.
 // All exterior geometry is borrowed through renderer-private GPU wrappers.
@@ -159,8 +160,9 @@ export function createEngineeringAssembly(group) {
   for(const section of sections.values())for(const child of [...section.children])if(child.isGroup&&!child.children.length)child.removeFromParent();
   // A replaced proxy must disappear from the tree as well as the scene.
   for(let i=nodes.length-1;i>=0;i--){let present=false;object.traverse(o=>{if(o.userData.leaf===nodes[i].id&&o.children?.length)present=true;});if(!present)nodes.splice(i,1);}
-  const renderBatches=compactStudyMeshes(object);
-  const materialPool=createStudyMaterialPool(object);
+  const materialKey=createStudyMaterialKey();
+  const renderBatches=compactStudyMeshes(object,{materialKey});
+  const materialPool=createStudyMaterialPool(object,{materialKey});
   const extraMeshes=[...retired,...renderBatches.created];for(const parent of added)parent.traverse(o=>{if(o.isMesh)extraMeshes.push(o);});
   const states=[...sections].map(([key,section])=>({key,section,offset:new THREE.Vector3(...catalog.sections.find(s=>s.id===key).offset)}));
   const motion={value:0,velocity:0};let selected=null,isolated=false;
@@ -190,8 +192,9 @@ export function createEngineeringAssembly(group) {
     }
     if(chosen.instance){const o=chosen.instance.object;if(only){o.instanceMatrix.array.copyWithin(0,chosen.index*16,chosen.index*16+16);o.instanceMatrix.needsUpdate=true;o.count=1;}else{const hadColor=!!o.instanceColor;o.setColorAt(chosen.index,new THREE.Color('#88b195'));o.instanceColor.needsUpdate=true;if(!hadColor)o.material.needsUpdate=true;}}
   }
-  const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),hits=[];
-  function pick(x,y,camera){pointer.set(x,y);raycaster.setFromCamera(pointer,camera);hits.length=0;raycaster.intersectObject(object,true,hits);const hit=hits.find(h=>{let o=h.object;while(o){if(!o.visible)return false;o=o.parent;}return true;});if(!hit)return null;const base=nodeFor(hit.object);if(hit.instanceId!==undefined){const chosen=parse(selected),index=isolated&&chosen.instance?.object===hit.object?chosen.index:hit.instanceId;return base+'@'+hit.object.id+':'+index;}return base;}
+  const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),hits=[],pickCandidates=[];
+  const addPickCandidate=o=>{if(o.isMesh)pickCandidates.push(o);};
+  function pick(x,y,camera){pointer.set(x,y);raycaster.setFromCamera(pointer,camera);hits.length=0;pickCandidates.length=0;object.traverseVisible(addPickCandidate);raycaster.intersectObjects(pickCandidates,false,hits);const hit=hits[0];if(!hit)return null;const base=nodeFor(hit.object);if(hit.instanceId!==undefined){const chosen=parse(selected),index=isolated&&chosen.instance?.object===hit.object?chosen.index:hit.instanceId;return base+'@'+hit.object.id+':'+index;}return base;}
   function selectionBounds(){
     const chosen=parse(selected);if(chosen.instance){const node=chosen.instance.object,matrix=new THREE.Matrix4().fromArray(chosen.instance.matrix,chosen.index*16).premultiply(node.matrixWorld);node.geometry.computeBoundingBox();return {node,sphere:node.geometry.boundingBox.clone().applyMatrix4(matrix).getBoundingSphere(new THREE.Sphere())};}
     let node;object.traverse(o=>{if(!node&&(o.userData.leaf===selected||o.userData.section===selected))node=o;});return node?{node,sphere:new THREE.Box3().setFromObject(node).getBoundingSphere(new THREE.Sphere())}:null;

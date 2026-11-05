@@ -80,7 +80,7 @@ const motion=matchMedia('(prefers-reduced-motion: reduce)');
 scene.updateMatrixWorld(true);
 // Cache world-space mesh bounds once; fit the camera, never scale the model.
 const framing=[];for(const m of meshes){const box=new THREE.Box3().setFromObject(m),offset=assemblyOffsets[m.userData.part]||[0,0,0];for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z])framing.push({x,y,z,offset});}
-instancePartMeshes(groups,meshes);
+instancePartMeshes(groups,meshes,{cacheImmutableGeometry:true});
 // Scene transforms change only during assembly; camera transforms stay automatic.
 scene.updateMatrixWorld(true);scene.matrixWorldAutoUpdate=false;
 const pick=createPartPicker(groups);

@@ -39,7 +39,7 @@ export default function EngineeringInspector({group}) {
     }
     const overview=()=>moveCamera(new THREE.Vector3(.8,.6,1).normalize().multiplyScalar(fitDistance),new THREE.Vector3(),defaultMinimum());
     const focus=()=>{
-      const key=assembly.selected,selection=assembly.selectionBounds();if(!selection)return;const {node,sphere}=selection;if(!Number.isFinite(sphere.radius)||sphere.radius===0)return;
+      const selection=assembly.selectionBounds();if(!selection)return;const {node,sphere}=selection;if(!Number.isFinite(sphere.radius)||sphere.radius===0)return;
       const minimum=Math.max(.008,sphere.radius*1.05);
       const half=Math.min(THREE.MathUtils.degToRad(camera.fov)/2,Math.atan(Math.tan(THREE.MathUtils.degToRad(camera.fov)/2)*camera.aspect));
       const direction=camera.position.clone().sub(control.target).normalize(),distance=Math.max(sphere.radius/Math.sin(half)*1.15,minimum*1.1),localCenter=node.worldToLocal(sphere.center.clone());moveCamera(direction.clone().multiplyScalar(distance).add(sphere.center),sphere.center,minimum);cameraMove.focus={node,localCenter,direction,distance};
