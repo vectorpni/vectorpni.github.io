@@ -1,29 +1,13 @@
-# AF-18 static views
+# AF-18 static views — Vector PNI 7.0
 
-These files are captures of the existing Vector PNI 5.2 procedural model, not
-photographs, generated illustrations or manufacturer CAD documentation.
+These are real captures of the existing AF-18 procedural model, not photographs, AI-generated illustrations or manufacturer CAD.
 
-Source: stable commit `7e781eb831a663a70c2eafcc99bc233c7405a20f`.
-Captured on 2026-11-04 with local Chrome / Playwright, using the project's
-unchanged materials, lighting and geometry. No image-generation service was used.
+Source: local 7.0 working tree based on stable 6.1 commit d6a1ac10925e9137f11478e498f37160b20a4141. Captured during the 2026-11-07 development task with local Chrome / Playwright; no publication or image-generation service.
 
-`af18-overview.webp`: 1600 × 1000 pixels, 55,212 bytes, opaque #edf0f2 background.
-The 1800 × 1200 scene capture uses a 34° perspective camera at (5.8, 6.2, 11.5),
-looking at (0, 0.1, 0); the saved image crops 100 pixels from each outer edge.
-Projected landmarks in `fallback-landmarks.js` use this cropped image's axes.
-Its maximum CSS width is 800 pixels, providing 2× resolution at that size.
+af18-overview.webp: 1600 × 1000 pixels, 55164 bytes, opaque #edf0f2 background. The real 1800 × 1200 renderer uses a 34° camera at (5.8, 6.2, 11.5), looking at (0, 0.1, 0), then crops 100 pixels from each edge. This is the same camera/landmark coordinate system as the earlier capture.
 
-`parts/*.webp`: 15 actual component-preview captures, 600 × 480 pixels.
-There is intentionally no image of the external charger: its appearance is not
-documented and it is not installed on the drone.
+parts/*.webp: 15 actual exterior previews, 600 × 480 pixels. No invented charger image: the external charger is not installed on the drone and its appearance remains unknown.
 
-To reproduce the development captures with the existing local production preview:
+WebGL is used only to prepare these files during development. The fallback displays ordinary img resources, and its numbered buttons, shared catalogue, 52 section descriptions and retry action do not require a running 3D engine.
 
-```
-node tests/viewer.ultimate-runner.mjs --browser=chrome --url=http://127.0.0.1:5175 --output=qa-artifacts/fallback/capture.json tests/viewer.capture-fallback.js
-```
-
-The helper writes images and camera/landmark metadata to `qa-artifacts/fallback`.
-Review them before copying them here; do not regenerate these resources at runtime.
-The fallback uses ordinary HTML `<img>` elements and shared component/catalogue
-data, with no renderer, canvas or Three.js dependency for displaying these images.
+Previous images remain available in the stable 6.1 Git branch and source ZIP.

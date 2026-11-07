@@ -6,6 +6,7 @@ import {indexStudyGeometry} from './engineering-indexing.js';
 import {addCameraBatteryRefinement} from './detail60-camera-battery.js';
 import {addMechanicalRefinement} from './detail60-mechanical.js';
 import {addElectronicsRefinement} from './detail60-electronics.js';
+import {addMicroDetail70} from './micro-detail70.js';
 
 // 5.1 construction studies. Every new leaf explicitly says that its layout is
 // illustrative. These objects never enter the main AF-18 or its source buffers.
@@ -20,7 +21,7 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
   const meshes=section=>{const list=[];sections.get(section)?.traverse(o=>{if(o.isMesh)list.push(o);});return list;};
   const remove=(section,test)=>{for(const o of meshes(section))if(test(o)){o.removeFromParent();retired.push(o);replacements.push({section,name:o.name||'source surface'});}};
   const panel=(p,mat,at,w,h,t,holes=[],rot)=>{const g=createPanelGeometry(w,h,t,holes);b.add(p,mat,g,at,rot);g.dispose();};
-  const sphere=(p,mat,at,r)=>{if(!spheres.has(r))spheres.set(r,new T.SphereGeometry(r,12,8));b.add(p,mat,spheres.get(r),at);};
+  const sphere=(p,mat,at,r)=>{if(!spheres.has(r))spheres.set(r,new T.SphereGeometry(r,24,16));b.add(p,mat,spheres.get(r),at);};
   const motion=(p,offset,start=.4,end=1)=>{p.userData.openOffset=offset;p.userData.openRange=[start,end];return p;};
   function tray(p,mat,c,w,h,d,t=.014){
     b.box(p,mat,[c[0],c[1]-h/2+t/2,c[2]],[w,t,d]);
@@ -197,9 +198,11 @@ export function addInteriorGeometry({id,group,object,sections,detail,materials:m
   const refinements=[addMechanicalRefinement(context60),addElectronicsRefinement(context60),addCameraBatteryRefinement(context60)];
   const refinement60={pieces:refinements.reduce((n,r)=>n+r.pieces,0),features:refinements.flatMap(r=>r.features),sections:[...new Set(refinements.flatMap(r=>r.sections))],conditional:true};
   b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
+  const refinement70=addMicroDetail70(context60);
+  b.finish({instanceRepeated:true,indexed:true,normalizeGeometry:indexStudyGeometry});
   for(const g of spheres.values())g.dispose();
   // Nested children use the owning leaf's metadata. Avoid accidental selection
   // of an invisible object from a different section during isolation.
   for(const p of created)p.traverse(o=>{if(o.isMesh){let parent=o.parent;while(parent&&!parent.userData.leaf)parent=parent.parent;o.userData={...o.userData,part:id,section:p.userData.section,leaf:parent?.userData.leaf||p.userData.leaf};}});
-  return {created,replacements,changed:Object.fromEntries(changed),pieces:created.reduce((n,p)=>n+(p.userData.modeledPieces||0),0),refinement60};
+  return {created,replacements,changed:Object.fromEntries(changed),pieces:created.reduce((n,p)=>n+(p.userData.modeledPieces||0),0),refinement60,refinement70};
 }

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {createRecessedSocketGeometry} from './micro-geometry.js';
 
 // Illustrative mechanical reconstruction, not manufacturer CAD. All detail is
 // baked once into its owning part; no extra animation loop or dynamic geometry.
@@ -39,8 +40,8 @@ export function addUltraDetail({groups, meshes, mesh, carbon, black, grey, rubbe
   const box=(id,m,p,size,rot,anchor)=>add(id,m,geometry('b'+size,()=>new THREE.BoxGeometry(...size)),p,rot,anchor);
   const ring=(id,m,p,r,t,rot=[Math.PI/2,0,0],anchor)=>add(id,m,geometry('r'+r+':'+t,()=>new THREE.TorusGeometry(r,t,6,32)),p,rot,anchor);
   const bolt=(id,p,anchor)=>{
-    // A real open hex socket instead of a dark decal on a solid screw head.
-    add(id,metal,geometry('socket',()=>{const s=new THREE.Shape();s.absarc(0,0,.026,0,Math.PI*2,false);const h=new THREE.Path();for(let i=0;i<6;i++){const a=-i*Math.PI/3; i?h.lineTo(Math.cos(a)*.012,Math.sin(a)*.012):h.moveTo(.012,0);}h.closePath();s.holes.push(h);return new THREE.ExtrudeGeometry(s,{depth:.015,bevelEnabled:false,curveSegments:8});}),p,[-Math.PI/2,0,0],anchor);
+    // Same base and height, now with a blind tool recess and rim/edge bevels.
+    add(id,metal,geometry('socket',()=>createRecessedSocketGeometry(.026,.015).translate(0,.0075,0)),p,[0,0,0],anchor);
     ring(id,metal,[p[0],p[1]-.004,p[2]],.034,.005,undefined,anchor);
   };
   // Exposed laminate edges follow the existing chamfered plate outline.

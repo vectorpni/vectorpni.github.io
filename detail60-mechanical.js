@@ -1,6 +1,7 @@
 import * as T from 'three';
 import {getPartSourceMeshes} from './viewer-instancing.js';
 import {createPanelGeometry,removeCollapsedFaces} from './interior-geometry.js';
+import {createBevelledAnnulusGeometry} from './micro-geometry.js';
 
 // All dimensions are the existing reconstruction's display units. These
 // refinements explain joints visible in that model; they are not AF-18 CAD,
@@ -105,7 +106,7 @@ export function addMechanicalRefinement(ctx){
     remove('hub',o=>o.userData.leaf==='hub/bore');
     const seats=[[.78,.09,.09,.767,.064],[.807,.105,.016,.807,.016],[.83,.045,.035,.83125,.0325],[.857,.043,.045,.8635,.032]];
     for(const src of sourceMeshes){if(!(src.position.x>1&&src.position.z>1))continue;src.geometry.computeBoundingBox();const size=src.geometry.boundingBox.getSize(new T.Vector3()),seat=seats.find(([y,r,h])=>Math.abs(src.position.y-y)<1e-6&&Math.abs(size.x-r*2)<1e-5&&Math.abs(size.y-h)<1e-5);if(!seat)continue;
-      for(const clone of meshes('hub').filter(o=>o.geometry.attributes.position===src.geometry.attributes.position)){b.sleeve(hub,clone.material,[src.position.x,seat[3],src.position.z],seat[1],.028,seat[4],src.rotation.toArray().slice(0,3),64);remove('hub',o=>o===clone);}
+      for(const clone of meshes('hub').filter(o=>o.geometry.attributes.position===src.geometry.attributes.position)){const g=createBevelledAnnulusGeometry(seat[1],.028,seat[4],48);b.add(hub,clone.material,g,[src.position.x,seat[3],src.position.z],src.rotation.toArray().slice(0,3));g.dispose();remove('hub',o=>o===clone);}
     }
     const clamp=existing('hub','clamp51');if(clamp){remove('hub',o=>o.parent===clamp);b.sleeve(clamp,m.metal,[2.08,.88275,2.08],.052,.028,.0065);b.cylinder(clamp,m.metal,[2.08,.843,2.08],.024,.09,undefined,16);}
     note('hub','Four existing hollow hub surfaces now mate at shared axial planes instead of intersecting; the clamp washer meets the upper sleeve and the existing bolt head. Overall radii and endpoints retained.');

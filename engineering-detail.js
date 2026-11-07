@@ -3,10 +3,17 @@ import {createDetailBuilder,createEngineeringMaterials} from './detail-primitive
 import {createTwinSocketGeometry} from './socket-geometry.js';
 import {createHollowTubeGeometry} from './frame-tube-geometry.js';
 import {createGullwingLeadGeometry} from './lead-geometry.js';
+import {createCoolingBladeGeometry} from './micro-geometry.js';
 
 // Exterior additions only. Nothing is animated independently of its 16 owners.
 // Opened internals live in a separate, on-demand module.
 export function addEngineeringDetail({mesh,groups}) {
+  const fanSpokes=(groups?.cooling?.children||[]).filter(o=>o.geometry.type==='CylinderGeometry'&&o.geometry.parameters.radiusTop===.035&&Math.abs(o.position.z-.84)<1e-6);
+  if(fanSpokes.length===6){
+    const material=fanSpokes[0].material,g=createCoolingBladeGeometry();
+    for(let i=0;i<6;i++){const blade=mesh(g,material,'cooling',0,-.65,.834);blade.rotation.z=i*Math.PI/3;blade.name='Условная тонкая лопасть существующего вентилятора';blade.userData.detailSection='fan';}
+    for(const spoke of fanSpokes){spoke.removeFromParent();spoke.geometry.dispose();spoke.material.dispose();}
+  }
   const tubes=new Map();for(const source of groups?.frame?.children||[]){const p=source.geometry.parameters;if(source.geometry.type!=='CylinderGeometry'||![.105,.055,.065].includes(p.radiusTop)||p.height<.5)continue;if(!tubes.has(source.geometry))tubes.set(source.geometry,createHollowTubeGeometry(p.radiusTop,p.height,p.radialSegments));source.geometry=tubes.get(source.geometry);source.userData.detailSection=p.radiusTop===.105?'arms':'landing';source.name='Полая карбоновая труба';}
   const hubs=new Map();for(const source of groups?.props?.children||[]){const p=source.geometry.parameters;if(source.geometry.type!=='CylinderGeometry'||p.radiusTop<.043)continue;if(!hubs.has(source.geometry))hubs.set(source.geometry,createHollowTubeGeometry(p.radiusTop,p.height,p.radialSegments,.028));source.geometry=hubs.get(source.geometry);source.userData.detailSection='hub';source.name='Ступица с осевой посадкой';}
   const printedTraces=new Map();let fcLead;

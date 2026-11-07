@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {createRecessedSocketGeometry} from './micro-geometry.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {createHollowTubeGeometry} from './frame-tube-geometry.js';
 
@@ -40,13 +41,7 @@ export function createDetailBuilder({smoothSleeves=false}={}) {
     const g=new THREE.TubeGeometry(curve,24,r,6,false);add(p,m,g);g.dispose();
   }
   function socket(p,m,at,r=.026,rotation=[0,0,0]) {
-    const head=geometry('hex-head'+r,()=>{
-      const shape=new THREE.Shape();shape.absarc(0,0,r,0,Math.PI*2,false);const hole=new THREE.Path();
-      for(let i=0;i<6;i++){const a=-i*Math.PI/3;i?hole.lineTo(Math.cos(a)*r*.43,Math.sin(a)*r*.43):hole.moveTo(r*.43,0);}hole.closePath();shape.holes.push(hole);
-      const g=new THREE.ExtrudeGeometry(shape,{depth:.018,bevelEnabled:false,curveSegments:smoothSleeves?16:8});g.translate(0,0,-.009);g.rotateX(-Math.PI/2);
-      if(smoothSleeves){const p=g.attributes.position,n=g.attributes.normal;for(let i=0;i<p.count;i++){const x=p.getX(i),z=p.getZ(i),radius=Math.hypot(x,z);if(Math.abs(radius-r)<1e-7&&Math.abs(n.getY(i))<1e-6)n.setXYZ(i,x/radius,0,z/radius);}}
-      return g;
-    });add(p,m,head,at,rotation);
+    const head=geometry('hex-head'+r,()=>createRecessedSocketGeometry(r));add(p,m,head,at,rotation);
     // Washer and head share the same axis and meet, with an open centre.
     const delta=new THREE.Vector3(0,-.012,0).applyEuler(new THREE.Euler(...rotation));
     sleeve(p,m,new THREE.Vector3(...at).add(delta).toArray(),r*1.25,r*.49,.006,rotation,24);

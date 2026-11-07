@@ -1,3 +1,4 @@
+import {micro70Notes} from './micro-detail-notes.js';
 // Geometry dimensions are display units inherited from the reconstruction,
 // never manufacturer measurements. No electrical routing or BOM is asserted.
 const entry=(known,unknown,sections)=>({known,unknown,sections:sections.map(([id,label,purpose,geometry,material,attachment,offset])=>({id,label,purpose,geometry,material,attachment,offset,status:'Условная реконструкция',level:3}))});
@@ -82,4 +83,9 @@ detail60Notes.battery.straps+=' Существующая краевая стро
 for(const [id,entry]of Object.entries(engineeringCatalog))for(const section of entry.sections){
   section.review60=detail60Notes[id][section.id];
   section.geometry+=' Проверка 6.0: '+section.review60+' Добавленная конструкция условна.';
+}
+
+for(const [id,entry]of Object.entries(engineeringCatalog))for(const section of entry.sections){
+  const [change,description]=micro70Notes[id][section.id];section.review70={change,description,conditional:true};
+  section.geometry+=' '+description;
 }

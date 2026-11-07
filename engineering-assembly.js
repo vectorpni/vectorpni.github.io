@@ -12,6 +12,7 @@ import {compactStudyMeshes} from './engineering-batches.js';
 import {indexStudyGeometry} from './engineering-indexing.js';
 import {createStudyMaterialPool} from './engineering-materials.js';
 import {createStudyMaterialKey} from './study-material-key.js';
+import {createLaminatedToothGeometry} from './micro-geometry.js';
 
 // This module is fetched only when the visitor opens a node's construction.
 // All exterior geometry is borrowed through renderer-private GPU wrappers.
@@ -82,15 +83,15 @@ export function createEngineeringAssembly(group) {
   if(id==='motors') {
     const cx=2.08,cz=2.08,stator=detail('stator','laminations','Пакет и зубцы статора','Показан принцип неподвижного статора, а не подтверждённое число полюсов.'),coils=detail('stator','windings','Изолированные обмотки','Условные пучки витков на зубцах. Количество витков и схема соединений не воспроизводятся.'),bearing=detail('shaft','bearings','Подшипниковые кольца','Условные наружное и внутреннее кольца; тип и размер подшипника неизвестны.');
     for(let k=0;k<5;k++)b.sleeve(stator,materials.metal,[cx,.53+k*.017,cz],.115,.04,.013);
-    const windingGeometry=createWindingLoopGeometry();
+    const windingGeometry=createWindingLoopGeometry(),toothGeometry=createLaminatedToothGeometry();
     for(let i=0;i<12;i++) {
       const a=i*Math.PI/6,rot=[0,-a,0],x=cx+Math.cos(a)*.137,z=cz+Math.sin(a)*.137;
-      b.box(stator,materials.metal,[x,.575,z],[.085,.09,.035],rot);
+      b.add(stator,materials.metal,toothGeometry,[x,.575,z],rot);
       // Coil loops surround a radial tooth, with an insulating inner clearance.
       const q=new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,0,1),new THREE.Vector3(Math.cos(a),0,Math.sin(a))),e=new THREE.Euler().setFromQuaternion(q);
       for(let k=0;k<5;k++)b.add(coils,materials.copper,windingGeometry,[cx+Math.cos(a)*(.123+k*.0105),.575,cz+Math.sin(a)*(.123+k*.0105)],e.toArray().slice(0,3));
     }
-    windingGeometry.dispose();
+    windingGeometry.dispose();toothGeometry.dispose();
     for(const y of [.5,.69]) {b.sleeve(bearing,materials.metal,[cx,y,cz],.055,.03,.025);b.sleeve(bearing,materials.dark,[cx,y,cz],.046,.035,.027);}
     const base=detail('base','seat','Открытое основание','В учебном разрезе сплошной внутренний цилиндр прежней модели заменён полой посадкой, чтобы он не закрывал статор. Общая модель дрона не изменена.');b.sleeve(base,materials.dark,[cx,.4,cz],.24,.14,.06);
   } else if(id==='gps'||id==='radio') {
@@ -199,7 +200,7 @@ export function createEngineeringAssembly(group) {
     const chosen=parse(selected);if(chosen.instance){const node=chosen.instance.object,matrix=new THREE.Matrix4().fromArray(chosen.instance.matrix,chosen.index*16).premultiply(node.matrixWorld);node.geometry.computeBoundingBox();return {node,sphere:node.geometry.boundingBox.clone().applyMatrix4(matrix).getBoundingSphere(new THREE.Sphere())};}
     let node;object.traverse(o=>{if(!node&&(o.userData.leaf===selected||o.userData.section===selected))node=o;});return node?{node,sphere:new THREE.Box3().setFromObject(node).getBoundingSphere(new THREE.Sphere())}:null;
   }
-  return {object,sphere,catalog,nodes,select,pick,selectionBounds,detail60:interior.refinement60,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
+  return {object,sphere,catalog,nodes,select,pick,selectionBounds,detail70:interior.refinement70,detail60:interior.refinement60,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
     update(dt,opened,reduced=false){const changed=springTo(motion,opened?1:0,Math.min(dt,.05),12,reduced);if(changed)place(motion.value);return changed;},
     dispose(){renderBatches.dispose();preview.dispose();disposeSceneResources(new THREE.Group(),extraMeshes);privateGeometries.forEach(g=>g.dispose());materialPool.dispose();Object.values(materials).forEach(m=>m.dispose());}
   };
