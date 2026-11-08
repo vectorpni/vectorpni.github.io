@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {findManufacturingSurface,createManufacturingSurfaceTexture,refineCameraStudySurfaces,refineStudyWasherSurfaces} from './physical-surfaces.js';
 import {createPreviewPart} from './viewer-preview.js';
 import {createDetailBuilder,createEngineeringMaterials} from './detail-primitives.js';
 import {engineeringCatalog} from './engineering-catalog.js';
@@ -49,8 +50,10 @@ export function createEngineeringAssembly(group) {
   if(!catalog?.sections.length)throw Error('No documented model geometry for '+id);
   const gpsHousing=id==='gps'?getPartSourceMeshes(group).find(o=>o.geometry.type==='CylinderGeometry'&&Math.abs(o.position.y-1.84)<.001):null;
   const preview=createPreviewPart(group,{classify:o=>classify(id,o),leafFor:o=>id==='gps'&&o.position.y>=1.895?{id:'lid',label:'Крышка и её крепёж'}:null,include:o=>(o!==gpsHousing)&&(id!=='motors'||(!['ad6b3c','a96e38'].includes(o.material.color.getHexString())&&!(o.geometry.type==='CylinderGeometry'&&Math.abs(o.position.y-.48)<1e-6&&o.geometry.parameters.height===.28)))});
-  const {object,sections}=preview,materials=createEngineeringMaterials(),b=createDetailBuilder(),nodes=[],added=[];
+  const {object,sections}=preview,materials=createEngineeringMaterials(findManufacturingSurface(object)||createManufacturingSurfaceTexture(),id),b=createDetailBuilder({smoothSleeves:true,bevelSleeves:true}),nodes=[],added=[];
   const privateGeometries=new Set();
+  const surface71=id==='camera'?refineCameraStudySurfaces(getPartSourceMeshes(group),object,privateGeometries):null;
+  const washers71=refineStudyWasherSurfaces(getPartSourceMeshes(group),object,privateGeometries);
   if(id==='battery'){
     // Existing stitched edge tubes were centred inside the .17-deep webbing
     // faces. Seat them tangent to those faces instead of letting draw order
@@ -200,7 +203,7 @@ export function createEngineeringAssembly(group) {
     const chosen=parse(selected);if(chosen.instance){const node=chosen.instance.object,matrix=new THREE.Matrix4().fromArray(chosen.instance.matrix,chosen.index*16).premultiply(node.matrixWorld);node.geometry.computeBoundingBox();return {node,sphere:node.geometry.boundingBox.clone().applyMatrix4(matrix).getBoundingSphere(new THREE.Sphere())};}
     let node;object.traverse(o=>{if(!node&&(o.userData.leaf===selected||o.userData.section===selected))node=o;});return node?{node,sphere:new THREE.Box3().setFromObject(node).getBoundingSphere(new THREE.Sphere())}:null;
   }
-  return {object,sphere,catalog,nodes,select,pick,selectionBounds,detail70:interior.refinement70,detail60:interior.refinement60,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
+  return {object,sphere,catalog,nodes,select,pick,selectionBounds,surface71,washers71,detail70:interior.refinement70,detail60:interior.refinement60,detail52:{batchCount:renderBatches.created.length,savedCalls:renderBatches.savedCalls},detail51:{pieces:interior.pieces,replacements:interior.replacements,changed:interior.changed},get selected(){return selected;},get isolated(){return isolated;},get amount(){return motion.value;},
     update(dt,opened,reduced=false){const changed=springTo(motion,opened?1:0,Math.min(dt,.05),12,reduced);if(changed)place(motion.value);return changed;},
     dispose(){renderBatches.dispose();preview.dispose();disposeSceneResources(new THREE.Group(),extraMeshes);privateGeometries.forEach(g=>g.dispose());materialPool.dispose();Object.values(materials).forEach(m=>m.dispose());}
   };

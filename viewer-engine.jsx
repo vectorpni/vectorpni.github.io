@@ -1,3 +1,5 @@
+import {cameraWindowSeat71} from './physical-surfaces.js';
+import {compactMainSurfaces} from './viewer-static-batches.js';
 import {escFastenerSeat} from './esc-fasteners.js';
 import {createPreviewPart} from './viewer-preview.js';
 import {createPartPicker} from './viewer-picking.js';
@@ -31,7 +33,7 @@ box('battery',grey,0,.91,-.12,1.05,.65,1.65);box('battery',black,0,.91,.73,1.05,
 box('fc',green,0,.32,.2,.65,.08,.65);box('fc',black,0,.38,.2,.22,.04,.22);for(let x of[-.24,.24])for(let z of[-.05,.45])cyl('fc',gold,x,.37,z,.025,.025);box('power',green,0,.18,-.28,1.25,.06,.95);box('becpi',green,-.62,.33,-.42,.25,.12,.4);box('becfc',gold,.62,.33,-.42,.25,.12,.4);
 box('pi',green,0,-.38,.05,1.12,.1,1.37);box('pi',grey,.42,-.29,.51,.27,.18,.2);box('pi',grey,-.02,-.29,.51,.27,.18,.2);box('cooling',grey,0,-.64,.08,1.22,.52,1.45);for(let i=0;i<7;i++)box('cooling',black,.618,-.65,.08+(i-3)*.15,.015,.32,.065);const fan=cyl('cooling',black,0,-.65,.814,.34,.035);fan.rotation.x=Math.PI/2;for(let i=0;i<6;i++){let a=i*Math.PI/3;rod('cooling',grey,[Math.cos(a)*.1,-.65+Math.sin(a)*.1,.84],[Math.cos(a+.5)*.28,-.65+Math.sin(a+.5)*.28,.84],.035)}
 rod('gps',grey,[-.62,.6,-.78],[-.62,1.8,-.78],.035);cyl('gps',black,-.62,1.84,-.78,.28,.1);cyl('gps',grey,-.62,1.9,-.78,.25,.04);box('radio',black,.71,.79,-.76,.27,.34,.25);rod('radio',black,[.71,.94,-.76],[.71,2.22,-.76],.025);rod('radio',black,[.32,2.22,-.76],[1.1,2.22,-.76],.025);rod('radio',black,[.86,.75,-.45],[.86,1.54,-.45],.02);
-rod('camera',grey,[0,-.9,.2],[0,-1.13,.2],.1);box('camera',black,0,-1.25,.2,.56,.4,.45);const lens=cyl('camera',black,0,-1.25,.48,.19,.15);lens.rotation.x=Math.PI/2;const glass=cyl('camera',mat('#254b56',.85,.1),0,-1.25,.57,.13,.025);glass.rotation.x=Math.PI/2;
+rod('camera',grey,[0,-.9,.2],[0,-1.13,.2],.1);box('camera',black,0,-1.25,.2,.56,.4,.45);const lens=cyl('camera',black,0,-1.25,.48,.19,.15);lens.rotation.x=Math.PI/2;const glass=cyl('camera',mat('#254b56',.85,.1),0,-1.25,cameraWindowSeat71.cylinderCentreZ,.13,cameraWindowSeat71.cylinderThickness);glass.rotation.x=Math.PI/2;
 for(let x of[-1,1]){rod('frame',carbon,[x*.64,.1,-.61],[x*1.24,-1.64,-1.05],.055);rod('frame',carbon,[x*.64,.1,.61],[x*1.24,-1.64,1.05],.055);rod('frame',carbon,[x*1.24,-1.64,-1.65],[x*1.24,-1.64,1.65],.065);for(let z of[-1.6,1.6]){const foot=rod('frame',rubber,[x*1.24,-1.64,z-.1],[x*1.24,-1.64,z+.1],.09)}}
 // Mechanical detail: fasteners, windings, heat sinks, connectors and cables.
 function screw(id,x,y,z,r=.035){cyl(id,grey,x,y,z,r,.023);box(id,black,x,y+.013,z,r*1.2,.004,.008)}
@@ -41,7 +43,7 @@ function cable(id,color,points,r=.023){const curve=new THREE.CatmullRomCurve3(po
 cable('wiring','#c32636',[[.25,1.03,.77],[.65,.84,1.12],[.9,.54,.8],[.58,.22,.52]],.04);cable('wiring','#181a1e',[[.1,.95,.77],[.4,.7,1.13],[.77,.3,.95],[.4,.2,.5]],.035);
 for(let x of[-1,1])for(let z of[-1,1])for(let k=0;k<3;k++)cable('wiring',k===0?'#b92a35':'#25272b',[[x*.8,.27,z*.8],[x*1.2,.42+k*.025,z*1.2],[x*1.8,.34+k*.025,z*1.8],[x*2.08,.34,z*2.08]],.014);
 for(let i=0;i<14;i++){box('pi',grey,-.49+i*.073,-.285,-.48,.035,.08,.04);box('fc',gold,-.28+i*.043,.382,-.08,.015,.025,.08)}for(let x of[-.38,.38])for(let z of[-.4,.42])screw('cooling',x,-.38,z,.027);for(let i=0;i<10;i++)box('cooling',grey,-.47+i*.105,-.36,.05,.035,.1,.85);
-for(let i=0;i<4;i++){const ring=mesh(new THREE.TorusGeometry(.14+i*.018,.008,8,32),grey,'camera',0,-1.25,.57+i*.009);ring.rotation.x=0}const lensGlass=mesh(new THREE.SphereGeometry(.115,32,20),mat('#183c59',.9,.08),'camera',0,-1.25,.605);lensGlass.scale.set(1,1,.22);for(const x of[-.32,.32]){rod('camera',grey,[x,-1.02,.2],[x,-1.3,.2],.035);const pivot=cyl('camera',grey,x,-1.25,.2,.09,.06);pivot.rotation.z=Math.PI/2}
+for(let i=0;i<4;i++){const ring=mesh(new THREE.TorusGeometry(.14+i*.018,.008,8,32),grey,'camera',0,-1.25,.57+i*.009);ring.rotation.x=0}const lensGlass=mesh(new THREE.SphereGeometry(cameraWindowSeat71.convexRadius,32,20),mat('#183c59',.9,.08),'camera',0,-1.25,.605);lensGlass.scale.set(1,1,cameraWindowSeat71.convexScaleZ);for(const x of[-.32,.32]){rod('camera',grey,[x,-1.02,.2],[x,-1.3,.2],.035);const pivot=cyl('camera',grey,x,-1.25,.2,.09,.06);pivot.rotation.z=Math.PI/2}
 function label(id,text,x,y,z,w,h,rotation=-Math.PI/2){const c=document.createElement('canvas');c.width=512;c.height=256;const ctx=c.getContext('2d');ctx.fillStyle='#16191d';ctx.fillRect(0,0,512,256);ctx.fillStyle='#d9dde0';ctx.font='bold 52px Arial';ctx.fillText(text,28,82);ctx.fillStyle='#e74246';ctx.fillRect(28,110,80,8);ctx.fillStyle='#9ba3aa';ctx.font='24px Arial';ctx.fillText('AEROFIBER / SYSTEMS',28,175);const t=new THREE.CanvasTexture(c);const o=mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshStandardMaterial({map:t,roughness:.7} ),id,x,y,z);o.rotation.x=rotation;return o}label('battery','6S 16000',0,1.243,-.1,.9,.65);label('gps','GNSS',-.62,1.926,-.78,.35,.2);label('cooling','RPI 4 / 4GB',0,-.64,-.65,.9,.36,Math.PI);
 
 // Additional visible engineering detail. Geometry remains illustrative rather than CAD.
@@ -81,6 +83,7 @@ scene.updateMatrixWorld(true);
 // Cache world-space mesh bounds once; fit the camera, never scale the model.
 const framing=[];for(const m of meshes){const box=new THREE.Box3().setFromObject(m),offset=assemblyOffsets[m.userData.part]||[0,0,0];for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z])framing.push({x,y,z,offset});}
 instancePartMeshes(groups,meshes,{cacheImmutableGeometry:true});
+compactMainSurfaces(groups,meshes);
 // Scene transforms change only during assembly; camera transforms stay automatic.
 scene.updateMatrixWorld(true);scene.matrixWorldAutoUpdate=false;
 const pick=createPartPicker(groups);

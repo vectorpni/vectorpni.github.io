@@ -1,10 +1,11 @@
 import * as THREE from 'three';
-import {createRecessedSocketGeometry} from './micro-geometry.js';
+import {createHexSeatGeometry,applyManufacturingFinish} from './physical-surfaces.js';
+import {createRecessedSocketGeometry,createBevelledAnnulusGeometry} from './micro-geometry.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {createHollowTubeGeometry} from './frame-tube-geometry.js';
 
 // Short-lived construction cache. The finished batches own their vertex buffers.
-export function createDetailBuilder({smoothSleeves=false}={}) {
+export function createDetailBuilder({smoothSleeves=false,bevelSleeves=false}={}) {
   const cache=new Map(), batches=new Map();
   const geometry=(key,make)=>{if(!cache.has(key))cache.set(key,make());return cache.get(key);};
   function add(parent,material,g,position=[0,0,0],rotation=[0,0,0],scale=[1,1,1]) {
@@ -19,10 +20,17 @@ export function createDetailBuilder({smoothSleeves=false}={}) {
   // An actual bore, not a dark disc over a solid cylinder. Axis is local Y.
   function sleeve(p,m,at,outer,inner,height,rot=[0,0,0],segments=32) {
     const g=geometry('sleeve'+[outer,inner,height,segments],()=>{
+      if(segments===6)return createHexSeatGeometry(outer,inner,height);
       // Study-only option: radial wall normals, separate flat annular ends and
       // at least 16 sides for a round bore at macro scale. Polygonal nuts retain
       // their hard edges. The main AF-18 uses the unchanged default builder.
-      if(smoothSleeves&&segments>6)return createHollowTubeGeometry(outer,height,Math.max(outer>=.1?48:outer>=.03?24:16,Math.round(segments/2)),inner);
+      if(smoothSleeves&&segments>6){
+        const sides=Math.max(outer>=.1?48:outer>=.03?24:16,Math.round(segments/2));
+        // A very small edge break on visible study seats, within the existing
+        // radius/height. This is a conditional finish, not a measured tolerance.
+        if(bevelSleeves&&outer>=.07&&height>=.012)return createBevelledAnnulusGeometry(outer,inner,height,sides,outer*.012);
+        return createHollowTubeGeometry(outer,height,sides,inner);
+      }
       const shape=new THREE.Shape();shape.absarc(0,0,outer,0,Math.PI*2,false);
       const hole=new THREE.Path();hole.absarc(0,0,inner,0,Math.PI*2,true);shape.holes.push(hole);
       const result=new THREE.ExtrudeGeometry(shape,{depth:height,bevelEnabled:false,curveSegments:segments/4});
@@ -68,7 +76,7 @@ export function createDetailBuilder({smoothSleeves=false}={}) {
   return {add,box,cylinder,sleeve,ring,rod,cable,socket,finish};
 }
 
-export function createEngineeringMaterials() {
+export function createEngineeringMaterials(surface=null,id=null) {
   const m=(color,metalness,roughness)=>new THREE.MeshStandardMaterial({color,metalness,roughness,envMapIntensity:.75});
-  return {metal:m('#7a838a',.92,.34),dark:m('#24292d',0,.6),rubber:m('#202321',0,.88),pcb:m('#234a37',0,.64),contact:m('#c4a462',.95,.32),copper:m('#ad6b3c',.96,.34),ceramic:m('#8a8170',0,.77),red:m('#8d3038',0,.67),glass:m('#253e47',0,.075)};
+  const materials={solder:m('#a6aba8',1,.30),metal:m('#7a838a',.92,.34),dark:m('#24292d',0,.6),rubber:m('#202321',0,.88),pcb:m('#234a37',0,.64),contact:m('#c4a462',.95,.32),copper:m('#ad6b3c',.96,.34),ceramic:m('#8a8170',0,.77),red:m('#8d3038',0,.67),glass:m('#172127',0,.085)};materials.pcb.roughness=.50;if(id==='fc')materials.pcb.color.set('#1b4e6f');materials.glass.envMapIntensity=1.25;if(surface)for(const material of Object.values(materials))applyManufacturingFinish(material,surface);return materials;
 }

@@ -32,9 +32,9 @@ export function createRecessedSocketGeometry(radius=.026,height=.018){
   if(socketTemplates.size>=32){const oldest=socketTemplates.keys().next().value;socketTemplates.get(oldest).dispose();socketTemplates.delete(oldest);}socketTemplates.set(key,geometry);return geometry.clone();
 }
 
-export function createBevelledAnnulusGeometry(outer,inner,height,segments=32){
+export function createBevelledAnnulusGeometry(outer,inner,height,segments=32,bevelLimit=Infinity){
   if(!(outer>inner&&inner>0&&height>0))throw Error('Invalid open seat');
-  const b=Math.min((outer-inner)*.15,height*.2),y=height/2;
+  const b=Math.min((outer-inner)*.15,height*.2,bevelLimit),y=height/2;
   const profile=[[outer-b,-y],[outer,-y+b],[outer,y-b],[outer-b,y],[inner+b,y],[inner,y-b],[inner,-y+b],[inner+b,-y],[outer-b,-y]].map(p=>new T.Vector2(...p));
   const g=new T.LatheGeometry(profile,segments);g.normalizeNormals();g.userData.micro70='open seat with four edge bevels';return g;
 }

@@ -11,7 +11,7 @@ import {addMicroDetail70} from './micro-detail70.js';
 // 5.1 construction studies. Every new leaf explicitly says that its layout is
 // illustrative. These objects never enter the main AF-18 or its source buffers.
 export function addInteriorGeometry({id,group,object,sections,detail,materials:m,privateGeometries,retired}){
-  const b=createDetailBuilder({smoothSleeves:true}),created=[],replacements=[],changed=new Map(),spheres=new Map();
+  const b=createDetailBuilder({smoothSleeves:true,bevelSleeves:id==='camera'||id==='motors'}),created=[],replacements=[],changed=new Map(),spheres=new Map();
   const leaf=(section,key,label,description,offset)=>{
     const p=detail(section,key,label,description);created.push(p);
     if(offset)p.userData.openOffset=offset;

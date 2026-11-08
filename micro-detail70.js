@@ -52,7 +52,7 @@ export function addMicroDetail70(ctx){
       for(const sign of [-1,1]){
         box(sensor,m.contact,[x,y+sign*.0105,.300],[.032,.008,.002]);
         box(sensor,m.metal,[x,y+sign*.007,.311],[.027,.004,.015]);
-        add(sensor,m.metal,fillet,[x,y+sign*.0105,.301],[Math.PI/2,sign<0?Math.PI:0,0]);
+        add(sensor,m.solder,fillet,[x,y+sign*.0105,.301],[Math.PI/2,sign<0?Math.PI:0,0]);
       }
     }
     fillet.dispose();packageGeometry.dispose();
@@ -100,7 +100,7 @@ export function addMicroDetail70(ctx){
       for(const sign of [-1,1]){
         box(passives,m.metal,[x,top+.010,z+sign*.025],[w*.047,.018,.012]);
         box(footprint,m.contact,[x,top+.0005,z+sign*.028],[w*.052,.001,padDepth]);
-        add(footprint,m.metal,solder,[x,top+.001,z+sign*.033],[0,sign>0?Math.PI:0,0]);
+        add(footprint,m.solder,solder,[x,top+.001,z+sign*.033],[0,sign>0?Math.PI:0,0]);
       }
     }
     body.dispose();solder.dispose();

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {createManufacturingSurfaceTexture,applyManufacturingFinish,createWebbingTextures} from './physical-surfaces.js';
 
 // Small deterministic textures: no downloads, runtime noise or per-frame work.
 export function createCarbonTextures(anisotropy=1) {
@@ -7,50 +8,41 @@ export function createCarbonTextures(anisotropy=1) {
     const cx=Math.floor(x/16),cy=Math.floor(y/16),horizontal=((cx-cy+16)%4)<2;
     const strand=(horizontal?y:x)%16,along=(horizontal?x:y)%16;
     const crown=Math.sin(Math.PI*(strand+.5)/16),filament=Math.cos(strand*Math.PI*.75);
-    const tone=48+17*crown+2*filament+2*Math.sin(along*Math.PI/16),i=(y*size+x)*4;
+    const tone=52+8*crown+1.5*filament+Math.sin(along*Math.PI/16),i=(y*size+x)*4;
     color[i]=tone*.94;color[i+1]=tone*.98;color[i+2]=tone;color[i+3]=255;
     // R: height, G: roughness. Both remain linear non-color data.
-    surface[i]=112+28*crown+3*filament;surface[i+1]=208+15*(1-crown);surface[i+2]=255;surface[i+3]=255;
+    surface[i]=124+12*crown+filament;surface[i+1]=223+9*(1-crown);surface[i+2]=255;surface[i+3]=255;
   }
   const make=(data,colorSpace)=>{const t=new THREE.DataTexture(data,size,size);t.colorSpace=colorSpace;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(5,5);t.magFilter=THREE.LinearFilter;t.minFilter=THREE.LinearMipmapLinearFilter;t.generateMipmaps=true;t.anisotropy=anisotropy;t.needsUpdate=true;return t;};
   return {color:make(color,THREE.SRGBColorSpace),surface:make(surface,THREE.NoColorSpace)};
 }
 
 export function applyStudioMaterials(groups,carbonTexture,anisotropy=1) {
-  const carbon=createCarbonTextures(anisotropy),clothData=new Map();
+  const carbon=createCarbonTextures(anisotropy),clothData=new Map(),grain=createManufacturingSurfaceTexture(anisotropy),mappedGeometry=new Set(),finishedMaterials=new Set();
   for(const [id,group]of Object.entries(groups))for(const o of group.children){
-    if(!o.isMesh)continue;const m=o.material,hex=m.color.getHexString();
+    if(!o.isMesh)continue;const m=o.material,hex=m.color.getHexString();if(id==='fc'&&['264b38','234a37'].includes(hex))o.userData.detailSection='board';
+    if(!finishedMaterials.has(m)){
     if(m.map===carbonTexture){
       if(id==='props'){
         // Project data describes reinforced polymer, not bare carbon fabric.
         m.map=null;m.bumpMap=null;m.metalness=0;m.roughness=.52;m.color.set('#22272a');m.envMapIntensity=.75;
       }else{
-        m.map=carbon.color;m.bumpMap=carbon.surface;m.roughnessMap=carbon.surface;m.bumpScale=.0009;m.metalness=0;m.roughness=.55;m.color.set('#7d858a');m.envMapIntensity=.75;
+        m.map=carbon.color;m.bumpMap=carbon.surface;m.roughnessMap=carbon.surface;m.bumpScale=.0006;m.metalness=0;m.roughness=.55;m.color.set('#7d858a');m.envMapIntensity=.75;m.userData.pniCarbon71=true;
         if(hex==='353a3c'){m.roughness=.86;m.bumpScale=.0004;m.color.set('#62686b');}
-        if(id==='frame'&&o.geometry.type==='ExtrudeGeometry'){
-          // Optical laminate edge treatment only: vertex positions/normals and
-          // triangles are untouched, and the plate remains one draw call.
-          const g=o.geometry,p=g.attributes.position,n=g.attributes.normal,c=new Float32Array(p.count*3);
-          for(let i=0;i<p.count;i++){
-            const face=Math.abs(n.getZ(i)),layers=.5+.065*Math.cos(p.getZ(i)*Math.PI*240),shade=THREE.MathUtils.lerp(layers,1,Math.pow(face,4));
-            c[i*3]=shade;c[i*3+1]=shade;c[i*3+2]=shade;
-          }
-          g.setAttribute('color',new THREE.BufferAttribute(c,3));m.vertexColors=true;
-        }
+
       }
     }else if(m.map&&m.roughness>=.9){
-      // Textile color and height have distinct encodings, shared by both bands.
-      const source=m.map;source.colorSpace=THREE.SRGBColorSpace;source.needsUpdate=true;
-      if(!clothData.has(source)){const data=source.clone();data.colorSpace=THREE.NoColorSpace;data.needsUpdate=true;clothData.set(source,data);}
-      m.bumpMap=clothData.get(source);m.bumpScale=.00065;m.color.set('#c7c9c9');m.metalness=0;m.roughness=.94;
+      const source=m.map;
+      if(!clothData.has(source)){clothData.set(source,createWebbingTextures(anisotropy,source.repeat.toArray()));source.dispose();}
+      const cloth=clothData.get(source);m.map=cloth.color;m.bumpMap=cloth.surface;m.roughnessMap=cloth.surface;m.bumpScale=.00045;m.color.set('#c7c9c9');m.metalness=0;m.roughness=.97;
     }else if(m.map){m.map.colorSpace=THREE.SRGBColorSpace;m.map.needsUpdate=true;m.metalness=0;m.roughness=.68;}
     else if(['183c59','254b56'].includes(hex)){
-      m.color.set(hex==='183c59'?'#172c35':'#253e47');m.metalness=0;m.roughness=.075;m.envMapIntensity=1.65;
+      m.color.set('#172127');m.metalness=0;m.roughness=.085;m.envMapIntensity=1.25;
     }else if(['ad6b3c','a96e38'].includes(hex)){m.metalness=.96;m.roughness=.34;}
     else if(hex==='adb5b8'){m.metalness=.96;m.roughness=.3;m.color.set('#9ea5a8');}
     else if(hex==='d4aa46'){m.metalness=id==='wiring'?0:.95;m.roughness=id==='wiring'?.6:.32;}
     else if(hex==='dba53b'||o.geometry.type==='TubeGeometry'){m.metalness=0;m.roughness=id==='battery'?.9:.67;}
-    else if(['264b38','234a37'].includes(hex)){m.metalness=0;m.roughness=.64;}
+    else if(['264b38','234a37'].includes(hex)){m.metalness=0;m.roughness=.50;if(id==='fc')m.color.set('#1b4e6f');}
     else if(hex==='51575c'){m.metalness=0;m.roughness=.43;m.color.set('#3c4349');}
     else if(hex==='24292d'){m.metalness=0;m.roughness=.64;}
     else if(hex==='202321'){m.metalness=0;m.roughness=.88;}
@@ -61,7 +53,23 @@ export function applyStudioMaterials(groups,carbonTexture,anisotropy=1) {
       else{m.metalness=.8;m.roughness=.43;}
     }else if(hex==='b83239'){m.metalness=['frame','props'].includes(id)?.75:0;m.roughness=['frame','props'].includes(id)?.38:.63;}
     else if(hex==='25292d'){m.metalness=0;m.roughness=.57;}
-    m.needsUpdate=true;
+    if(m.userData.surfaceRole==='solderMaskTrace'){m.metalness=0;m.roughness=.50;if(id==='fc')m.color.set('#245979');}
+    applyManufacturingFinish(m,grain);m.needsUpdate=true;finishedMaterials.add(m);
+    }
+        if(m.userData.pniCarbon71&&id==='frame'&&o.geometry.type==='ExtrudeGeometry'){
+          // Optical laminate edge treatment only: vertex positions/normals and
+          // triangles are untouched, and the plate remains one draw call.
+          const g=o.geometry,p=g.attributes.position,n=g.attributes.normal,c=new Float32Array(p.count*3);
+          for(let i=0;i<p.count;i++){
+            const face=Math.abs(n.getZ(i)),layers=.5+.065*Math.cos(p.getZ(i)*Math.PI*240),shade=THREE.MathUtils.lerp(layers,1,Math.pow(face,4));
+            c[i*3]=shade;c[i*3+1]=shade;c[i*3+2]=shade;
+          }
+          g.setAttribute('color',new THREE.BufferAttribute(c,3));m.vertexColors=true;
+        }
+    if(m.map===carbon.color&&o.geometry.userData.surfaceCylinder&&!mappedGeometry.has(o.geometry)){
+      const g=o.geometry,{outer,inner,height,segments}=g.userData.surfaceCylinder,uv=g.attributes.uv,p=g.attributes.position,wall=(segments+1)*2;
+      for(let i=0;i<uv.count;i++){if(i<wall*2)uv.setXY(i,uv.getX(i)*2*Math.PI*(i<wall?outer:inner),uv.getY(i)*height);else uv.setXY(i,p.getX(i),p.getZ(i));}uv.needsUpdate=true;mappedGeometry.add(g);
+    }
   }
   // Removed color/height texture was never uploaded. The new textures are owned
   // by the scene materials and follow the existing shared-resource cleanup.

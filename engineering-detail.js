@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {createOpticalHoodSeatGeometry} from './physical-surfaces.js';
 import {createDetailBuilder,createEngineeringMaterials} from './detail-primitives.js';
 import {createTwinSocketGeometry} from './socket-geometry.js';
 import {createHollowTubeGeometry} from './frame-tube-geometry.js';
@@ -8,6 +9,8 @@ import {createCoolingBladeGeometry} from './micro-geometry.js';
 // Exterior additions only. Nothing is animated independently of its 16 owners.
 // Opened internals live in a separate, on-demand module.
 export function addEngineeringDetail({mesh,groups}) {
+  const barrel=groups?.camera?.children.find(o=>o.geometry.type==='CylinderGeometry'&&o.geometry.parameters.radiusTop===.19);
+  if(barrel){const hood=mesh(createOpticalHoodSeatGeometry(),barrel.material,'camera',0,-1.25,0);hood.name='Условная опорная юбка существующей оправы';hood.userData.detailSection='optics';}
   const fanSpokes=(groups?.cooling?.children||[]).filter(o=>o.geometry.type==='CylinderGeometry'&&o.geometry.parameters.radiusTop===.035&&Math.abs(o.position.z-.84)<1e-6);
   if(fanSpokes.length===6){
     const material=fanSpokes[0].material,g=createCoolingBladeGeometry();
@@ -20,7 +23,7 @@ export function addEngineeringDetail({mesh,groups}) {
   for(const [id,top]of Object.entries({fc:.36,pi:-.33,power:.21,becpi:.39,becfc:.39}))for(const source of groups?.[id]?.children||[]){
     const g=source.geometry,p=g.parameters;if(!p)continue;
     if(g.type==='TorusGeometry'&&p.tube===.012&&[.022,.033].includes(p.radius)){source.position.y=top+.012;source.userData.detailSection='cover';}
-    if(g.type==='CylinderGeometry'&&p.radiusTop===.0035){if(!printedTraces.has(g))printedTraces.set(g,new THREE.BoxGeometry(.007,.001,p.height));source.geometry=printedTraces.get(g);source.quaternion.identity();source.position.y=top+.0005;source.userData.detailSection='board';source.name='Условная печатная дорожка';}
+    if(g.type==='CylinderGeometry'&&p.radiusTop===.0035){if(!printedTraces.has(g))printedTraces.set(g,new THREE.BoxGeometry(.007,.001,p.height));source.geometry=printedTraces.get(g);source.quaternion.identity();source.position.y=top+.0005;source.userData.detailSection='board';source.name='Условная дорожка под паяльной маской';source.material.color.set('#2b5945');source.material.metalness=0;source.material.roughness=.50;source.material.userData.surfaceRole='solderMaskTrace';}
     if(g.type==='CylinderGeometry'&&p.radiusTop===.012&&p.height===.008){source.position.y=top+.004;source.userData.detailSection='board';}
     if(g.type==='RoundedBoxGeometry'&&p.width===.025&&p.height===.025&&p.depth===.05)source.position.y=top+.0125;
     if(g.type==='RoundedBoxGeometry'&&p.width===.03&&p.height===.018&&p.depth===.008)source.position.y=top+.009;
@@ -96,7 +99,7 @@ export function addEngineeringDetail({mesh,groups}) {
   }
   b.finish();
   for(const {id,g,anchor,section} of temporary)for(const o of [...g.children]) {
-    const copy=at=>{const child=mesh(o.geometry,o.material,id,...at);child.name=g.name;child.userData.detailSection=section;};copy(anchor);
+    const copy=at=>{const child=mesh(o.geometry,o.material,id,...at);child.name=g.name;child.userData.detailSection=section;if(id==='camera'&&o.material===m.dark)child.userData.studySurface71='front-retainer';};copy(anchor);
     if(['motors','props','esc'].includes(id)&&anchor[0]>1)for(const x of [-1,1])for(const z of [-1,1])if(x!==1||z!==1)copy([x*anchor[0],anchor[1],z*anchor[2]]);
   }
   for(const material of Object.values(m))material.dispose();

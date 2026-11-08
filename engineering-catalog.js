@@ -89,3 +89,6 @@ for(const [id,entry]of Object.entries(engineeringCatalog))for(const section of e
   const [change,description]=micro70Notes[id][section.id];section.review70={change,description,conditional:true};
   section.geometry+=' '+description;
 }
+
+engineeringCatalog.fc.sections.find(s=>s.id==='board').geometry+=' Цвет паяльной маски ориентирован на официальный пример H743-SLIM-V4; ревизия платы AF-18 и расположение её элементов не подтверждены.';
+engineeringCatalog.camera.sections.find(s=>s.id==='optics').geometry+=' Существующие наружные кольца соединены с корпусом открытой опорной юбкой; окна разведены без пересечений. Посадка реконструирована условно, оптическая схема AF-18 неизвестна.';
