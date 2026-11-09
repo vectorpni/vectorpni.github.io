@@ -76,6 +76,10 @@ select:focus-visible,[tabindex]:focus-visible{outline:2px solid #2f6d57;outline-
 @media(max-width:350px){.title h1{font-size:23px}.title p{font-size:11px}.component-visual{display:block}.part-preview{height:160px;margin-bottom:12px}.component-summary{margin:10px 0}.related{margin-top:12px}.modal-top{padding-left:16px}.modal-tabs{gap:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+/* The reconstruction context stays in reading order, before the viewer. */
+.title .reconstruction-summary{font-size:17px;line-height:1.6;color:#465c50;max-width:760px;margin:14px auto 8px}
+@media(max-width:700px){.title .reconstruction-summary{font-size:16px;line-height:1.6;margin:12px auto 4px}}
+
 /* Vector PNI 2.0: restrained motion and an unobstructed engineering workspace. */
 .model-stage .three-view canvas{opacity:0;transition:opacity .32s ease-out}
 .model-stage.ready .three-view canvas{opacity:1}

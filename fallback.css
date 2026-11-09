@@ -4,7 +4,6 @@
 .fallback-mode .model-stage{height:auto;min-height:0;flex:none}
 .fallback-mode .model-stage>.three-view{visibility:hidden;pointer-events:none}
 .fallback-mode .hover-label,.fallback-mode .side-index{display:none}
-.fallback-mode .title p{display:none}
 .fallback-view{width:100%;padding:0 20px 8px;color:#365343}
 .fallback-figure{margin:0 auto;max-width:960px}
 .fallback-image-map{position:relative;width:100%;max-width:800px;margin:auto;isolation:isolate}
